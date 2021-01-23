@@ -1,5 +1,5 @@
-site_name: MFEM
-site_url: http://mfem.org
+site_name: LaghosROM
+site_url: http://laghosrom.org
 docs_dir: 'src'
 
 markdown_extensions:
@@ -8,7 +8,7 @@ markdown_extensions:
 - footnotes
 - attr_list  # Allow us to add link attributes
 
-repo_url: https://github.com/mfem/mfem
+repo_url: https://github.com/CEED/Laghos/tree/rom/rom
 remote_name: origin
 
 nav:
@@ -49,4 +49,4 @@ theme:
 extra:
   include_next_prev: false  # turn off next/previous buttons
 
-google_analytics: ['UA-101697-3', 'mfem.org']
+google_analytics: ['UA-101697-3', 'laghosrom.org']
