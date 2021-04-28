@@ -1,4 +1,4 @@
-# Building MFEM
+# Building libROM
 
 A simple tutorial how to build and run the serial and parallel version of MFEM
 together with GLVis. For more details, see the
