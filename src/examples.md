@@ -75,7 +75,11 @@ Lagrangian frame using unstructured high-order finite element spatial
 discretization and explicit high-order time-stepping. **LaghosROM** introduces
 reduced order models of Laghos simulations. 
 
-A list of example problems that you can solve with LaghosROM includes:
+A list of example problems that you can solve with LaghosROM includes Sedov
+blast, Gresho vortex, Taylor--Green vortex, triple-point, and Rayleigh--Taylor
+instability problems. Below are command line options for each problems and some
+numerical results. For each problem, four different phases need to be taken,
+i.e., the offline, hyper-reduction preprocessing, online, and restore phase. 
 
 <a href="https://glvis.org/live/?stream=../data/laghos.saved" target="_blank">
 <img class="floatright" src="../img/examples/laghos.png">
@@ -90,7 +94,27 @@ A list of example problems that you can solve with LaghosROM includes:
     * **online**: add the following options to the basic: -online -romhr -romsns -rdimv 169 -rdime 26 -rdimx 29 -sfacv 44 -sface 79 
     * **restore**: add the following options to the basic: -restore -soldiff -romsns -rdimv 169 -rdime 26 -rdimx 29 
 * **Gresho vortex** problem is a two-dimensional benchmark test for the
-  incompressible inviscid Navier--Stokes equations. 
+  incompressible inviscid Navier--Stokes equations. The computational domain is
+  the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
+  all surfaces, i.e., $v\dot n = 0$. Let $(r,\phi)$ denote the polar coordinates
+  of a particle $\tilde{x} \in \tilde{\Omega}$. The initial angular velocity is
+  given by 
+
+  $$v_\phi =  
+    \cases{
+    \displaystyle 5r   & for 0 $\leq$ r < 0.2 \cr
+    \displaystyle 2-5r & for 0.2 $\leq$ r < 0.4 \cr
+    \displaystyle 0 i  & for r $\geq$ 0.4.                                             
+    }$$
+
+  The initial density if given by $\rho=1$. The initial thermodynamic pressure
+  is given by 
+
+  $$p = \cases{
+  5 + \frac{25}{2} r^2                             & for 0 $\leq$ r < 0.2 \cr
+  9 - 4 \log(0.2) + \frac{25}{2} - 20r + 4 \log(r) & for 0.2 $\leq$ r < 0.4 \cr
+  3 + 4\log(2)                                     & for r $\geq$ 0.4.}$$
+
     * **basic**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 
 * **Taylor--Green vortex** problem is a three-dimensional benchmark test for the
   incompressible Navier--Stokes equasions. 
