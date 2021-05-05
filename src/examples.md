@@ -85,20 +85,23 @@ i.e., the offline, hyper-reduction preprocessing, online, and restore phase.
 <img class="floatright" src="../img/examples/sedov.gif" width="300"  >
 <!-- </a> -->
 
-* **Sedov blast** problem is a three-dimensional standard shock hydrodynamic
-  benchmark test. An initial delta source of internal energy deposited at the
-  origin of a three-dimensional cube is considered. 
-    * **offline**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
-    * **hyper-reduction preprocessing**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhrprep -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
-    * **online**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhr -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
-    * **restore**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -restore -soldiff -nwin 71 -romsns -rostype load -visit -k rom
+###Sedov blast problem
+**Sedov blast** problem is a three-dimensional standard shock hydrodynamic
+benchmark test. An initial delta source of internal energy deposited at the
+origin of a three-dimensional cube is considered. 
+
+* **offline**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
+* **hyper-reduction preprocessing**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhrprep -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
+* **online**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhr -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
+* **restore**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -restore -soldiff -nwin 71 -romsns -rostype load -visit -k rom
 
    |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
    | -- | ----------------- | ----------------- | -------- | ----------------------- |
    |    |  382 sec          |  77 sec           |   5.0    |           0.01          |
 
 
-* **Gresho vortex** problem is a two-dimensional benchmark test for the
+### Gresho vortex problem
+**Gresho vortex** problem is a two-dimensional benchmark test for the
   incompressible inviscid Navier--Stokes equations. The computational domain is
   the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
   all surfaces, i.e., $v\dot n = 0$. Let $(r,\phi)$ denote the polar coordinates
@@ -121,11 +124,17 @@ i.e., the offline, hyper-reduction preprocessing, online, and restore phase.
   3 + 4\log(2)                                     & for r $\geq$ 0.4.}$$
 
     * **basic**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 
-* **Taylor--Green vortex** problem is a three-dimensional benchmark test for the
+
+### Taylor--Green vortex
+**Taylor--Green vortex** problem is a three-dimensional benchmark test for the
   incompressible Navier--Stokes equasions. 
-    * **basic**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 
-* **Triple-point** problem
-    * **basic**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 
+
+  * **basic**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 
+
+### Triple-point problem
+**Triple-point** problem
+
+  * **basic**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 
   
 
 _This is an external miniapp, available at
