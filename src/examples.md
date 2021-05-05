@@ -81,18 +81,23 @@ instability problems. Below are command line options for each problems and some
 numerical results. For each problem, four different phases need to be taken,
 i.e., the offline, hyper-reduction preprocessing, online, and restore phase. 
 
-<a href="https://glvis.org/live/?stream=../data/laghos.saved" target="_blank">
-<img class="floatright" src="../img/examples/laghos.png">
-</a>
+<!-- <a href="https://glvis.org/live/?stream=../data/laghos.saved" target="_blank"> -->
+<img class="floatright" src="../img/examples/sedov.gif" width="300"  >
+<!-- </a> -->
 
 * **Sedov blast** problem is a three-dimensional standard shock hydrodynamic
   benchmark test. An initial delta source of internal energy deposited at the
   origin of a three-dimensional cube is considered. 
-    * **basic**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 
-    * **offline**: add the following options to the basic: -offline -writesol -romsns -ef 0.9999
-    * **hyper-reduction preprocessing**: add the following options to the basic: -online -romhrprep -romsns -rdimv 169 -rdime 26 -rdimx 29 -sfacv 44 -sface 79 
-    * **online**: add the following options to the basic: -online -romhr -romsns -rdimv 169 -rdime 26 -rdimx 29 -sfacv 44 -sface 79 
-    * **restore**: add the following options to the basic: -restore -soldiff -romsns -rdimv 169 -rdime 26 -rdimx 29 
+    * **offline**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
+    * **hyper-reduction preprocessing**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhrprep -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
+    * **online**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhr -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
+    * **restore**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -restore -soldiff -nwin 71 -romsns -rostype load -visit -k rom
+
+   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   | -- | ----------------- | ----------------- | -------- | ----------------------- |
+   |    |  382 sec          |  77 sec           |   5.0    |           0.01          |
+
+
 * **Gresho vortex** problem is a two-dimensional benchmark test for the
   incompressible inviscid Navier--Stokes equations. The computational domain is
   the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
