@@ -14,6 +14,19 @@ To make changes to the website:
 - preview locally with ```mkdocs serve``` (Windows users may need to specify a port, such as ```mkdocs serve --dev-addr 127.0.0.1:4000```),
 - publish with ```mkdocs gh-deploy```.
 
+To run the website locally:
+ 
+- Clone the repo
+- Checkout the 'website-setup' branch.
+- In the parent directory of the repo, run 'python3 -m venv web'
+- 'source web/bin/activate' for bash or 'source web/bin/activate.csh' for tcsh. You must make sure you are in the 'web' virtual environment which you can see on the left side of your terminal as (web) to run the website locally.
+- pip install mkdocs
+- Go into the directory of laghosromweb
+- mkdocs serve
+- When you run mkdocs serve, you should see a line that looks like: "Browser Connected: http://127.0.0.1:8000/"
+- You can open up another terminal, run ‘firefox’ and type in that link and you will be able to see the webpage along with any changes you’ve made the repo.
+
+
 
 Checklist for adding examples:
 
