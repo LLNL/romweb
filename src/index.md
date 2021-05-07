@@ -4,7 +4,7 @@
 
 libROM is a _free_, _lightweight_, _scalable_ C++ library for data-driven
 physical simulation methods. It is the main tool box that the reduced order
-model team at LLNL uses to develop efficient model order reduction techqniues.
+modeling team at LLNL uses to develop efficient model order reduction techniques.
 libROM is open source, so anyone is welcome to contribute to the development!
 
 

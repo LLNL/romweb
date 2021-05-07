@@ -8,27 +8,27 @@ models.
 
 High-fidelity physical simulations generate intensive data in its size, which
 makes the data collection daunting. The libROM can be integrated in the physics
-solver and the data is extracted dynamically as the physics solver is running.
-For example the following line can be inserted in the time loop of the physics
+solver, and the data is extracted dynamically as the physics solver is running.
+For example, the following line can be inserted in the time loop of the physics
 solver where the solution is computed:
 
 ## Proper orthogonal decomposition
 
-The proper othogonal decomposition (POD) is a popular way of compressing
-physical simulation data and obtain an optimal "reduced" bases. The POD modes
-can be obtained by two equivalent ways: (i) eigenvalue decomposition and (ii)
+The proper othogonal decomposition (POD) is a popular method for compressing
+physical simulation data to obtain optimal "reduced" bases. The POD modes
+can be obtained in two equivalent ways: (i) eigenvalue decomposition and (ii)
 singular value decomposition (SVD). We take the latter approach.  The POD can be
-applied to both spatial and temporal data whose procedure is schematically
+applied to both spatial and temporal data, and the procedure is schematically
 depicted in the figure below:
 
-<img src="../img/svd.png" align="right" alt="H(curl) and H(div) spaces">
+<img src="../img/svd.png" align="right" alt="POD">
 
-We introduce three different ways of SVDs:
+We introduce three different methods for computing SVDs:
 
 - Static SVD
 - incremental SVD
 - randomized SVD
-- space--time SVD
+- space-time SVD
 
 ### Static SVD
 
@@ -42,7 +42,7 @@ Greedy algorithm is a major approach to build a
 
 ## Hyper-reduction
 
-Hyper-reduction is essential to reduced the complexity caused of nonlinear terms
+Hyper-reduction is essential to reduce the complexity of nonlinear terms
 in physical simulations.
 
 ## Extensive Examples
