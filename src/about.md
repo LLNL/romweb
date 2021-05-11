@@ -3,40 +3,17 @@
 
 Please cite with:
 ```c
-@article{libROM,
-  title = {Limited-memory adaptive snapshot selection for proper orthogonal
-  decomposition},
-  author = {G. Oxberry, T. Kostova–Vassilevska, W. Arrighi, K. Chand},
-  journal = {International Journal of Numerical Methods in Engineering},
-  doi = {10.1002/nme.5283},
-  year = {2016}
+@misc{ doecode_24508,
+title = {libROM},
+author = {Choi, Youngsoo and Arrighi, William J. and Copeland, Dylan M. and Anderson, Robert W. and Oxberry, Geoffrey M.},
+abstractNote = {libROM is a collection of C++ classes that compute reduced order models and hyperreduced order models for systems of ordinary differential equations. libROM includes parallel, adaptive methods for proper orthogonal decomposition, and parallel, non-adaptive methods for hyperreduction using the discrete empirical interpolation method.},
+doi = {10.11578/dc.20190408.3},
+url = {https://doi.org/10.11578/dc.20190408.3},
+howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20190408.3}},
+year = {2019},
+month = {oct}
 }
 
-@article{spacetimeROM,
-  title = {Space--time reduced order model for large-scale linear dynamical
-  systems with application to Boltzmann transport problems},
-  author = {Youngsoo Choi, Peter Brown, William Arrighi, Robert Anderson, Kevin
-  Huynh},
-  journal = {Journal of Computational Physics},
-  doi = {10.1016/j.jcp.2020.109845},
-  year = {2021}
-}
-
-@article{laghosROM,
-  title = {Reduced order models for Lagrangian hydrodynamics},
-  author = {Dylan Matthew Copeland, Siu Wun Cheung, Kevin Huynh, Youngsoo Choi},
-  journal = {arXiv preprint},
-  url = {https://arxiv.org/pdf/2104.11404.pdf},
-  year = {2021}
-}
-
-
-@misc{libROM-web,
-  key = {libROM},
-  title = {{libROM}: ? {[Software]}},
-  howpublished = {\url{librom.org}},
-  doi = {?}
-}
 ```
 
 ## Contributors
@@ -61,9 +38,9 @@ Please cite with:
 This work performed under the auspices of the U.S. Department of Energy
 by Lawrence Livermore Laboratory under Contract DE-AC52-07NA27344.
 
-Software release number: LLNL-CODE-806117.
+Software release number: LLNL-CODE-766763.
 
-DOI: [10.11578/dc.20171025.1248](https://doi.org/10.11578/dc.20171025.1248).
+DOI: [10.11578/dc.20190408.3](https://www.osti.gov/doecode/biblio/24508).
 
 ----
 

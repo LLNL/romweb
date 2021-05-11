@@ -76,10 +76,16 @@ discretization and explicit high-order time-stepping. **LaghosROM** introduces
 reduced order models of Laghos simulations. 
 
 A list of example problems that you can solve with LaghosROM includes Sedov
-blast, Gresho vortex, Taylor--Green vortex, triple-point, and Rayleigh--Taylor
+blast, Gresho vortex, Taylor-Green vortex, triple-point, and Rayleigh-Taylor
 instability problems. Below are command line options for each problems and some
 numerical results. For each problem, four different phases need to be taken,
-i.e., the offline, hyper-reduction preprocessing, online, and restore phase. 
+i.e., the offline, hyper-reduction preprocessing, online, and restore phase. The
+online phase runs necessary full order model (FOM) to generate simulation data.
+libROM dynamically collects the data as the FOM simulation marches in time
+domain. In the hyper-reduction preprocessing phase, the libROM builds a library
+of reduced basis as well as hyper-reduction operators. The online phase runs the
+ROM and the restore phase projects the ROM solutions to the full order model
+dimension.  
 
 <!-- <a href="https://glvis.org/live/?stream=../data/laghos.saved" target="_blank"> -->
 <img class="floatright" src="../img/examples/sedov.gif" width="300"  >
@@ -88,7 +94,15 @@ i.e., the offline, hyper-reduction preprocessing, online, and restore phase.
 ###Sedov blast problem
 **Sedov blast** problem is a three-dimensional standard shock hydrodynamic
 benchmark test. An initial delta source of internal energy deposited at the
-origin of a three-dimensional cube is considered. 
+origin of a three-dimensional cube is considered. The computational domain is
+the unit cube $\tilde{\Omega} = \[0,1\]^3$ with wall boundary conditions on all
+surfaces, i.e., $v\cdot n = 0$. The initial velocity is given by $v=0$. The
+initial density is given by $\rho = 1$. The initial energy is given by a delta
+function at the origin. The adiabatic index in the ideal gas equations of state
+is set $\gamma = 1.4$. The initial mesh is a uniform Catesian hexahedral mesh,
+which deforms over time. It can be seen that the radial symmetry is maintained
+in the shock wave propagation in both FOM and ROM simulations. One can reproduce
+the numerical result, following the command line options described below:
 
 * **offline**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
 * **hyper-reduction preprocessing**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhrprep -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
@@ -99,43 +113,126 @@ origin of a three-dimensional cube is considered.
    | -- | ----------------- | ----------------- | -------- | ----------------------- |
    |    |  382 sec          |  77 sec           |   5.0    |           0.01          |
 
+<img class="floatright" src="../img/examples/gresho.png" width="250"  >
 
 ### Gresho vortex problem
 **Gresho vortex** problem is a two-dimensional benchmark test for the
-  incompressible inviscid Navier--Stokes equations. The computational domain is
-  the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
-  all surfaces, i.e., $v\dot n = 0$. Let $(r,\phi)$ denote the polar coordinates
-  of a particle $\tilde{x} \in \tilde{\Omega}$. The initial angular velocity is
-  given by 
+incompressible inviscid Navier-Stokes equations. The computational domain is
+the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
+all surfaces, i.e., $v\dot n = 0$. Let $(r,\phi)$ denote the polar coordinates
+of a particle $\tilde{x} \in \tilde{\Omega}$. The initial angular velocity is
+given by 
 
-  $$v_\phi =  
-    \cases{
-    \displaystyle 5r   & for 0 $\leq$ r < 0.2 \cr
-    \displaystyle 2-5r & for 0.2 $\leq$ r < 0.4 \cr
-    \displaystyle 0 i  & for r $\geq$ 0.4.                                             
-    }$$
+$$v_\phi =  
+  \cases{
+  \displaystyle 5r   & for 0 $\leq$ r < 0.2 \cr
+  \displaystyle 2-5r & for 0.2 $\leq$ r < 0.4 \cr
+  \displaystyle 0 i  & for r $\geq$ 0.4.                                             
+  }$$
 
-  The initial density if given by $\rho=1$. The initial thermodynamic pressure
-  is given by 
+The initial density if given by $\rho=1$. The initial thermodynamic pressure is
+given by 
 
-  $$p = \cases{
-  5 + \frac{25}{2} r^2                             & for 0 $\leq$ r < 0.2 \cr
-  9 - 4 \log(0.2) + \frac{25}{2} - 20r + 4 \log(r) & for 0.2 $\leq$ r < 0.4 \cr
-  3 + 4\log(2)                                     & for r $\geq$ 0.4.}$$
+$$p = \cases{
+5 + \frac{25}{2} r^2                             & for 0 $\leq$ r < 0.2 \cr
+9 - 4 \log(0.2) + \frac{25}{2} - 20r + 4 \log(r) & for 0.2 $\leq$ r < 0.4 \cr
+3 + 4\log(2)                                     & for r $\geq$ 0.4 }$$
 
-    * **basic**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 
+* **offline**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
+* **hyper-reduction preprocessing**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -online -romhrprep -nwin 168 -romsns -rostype load -sfacv 75 -sface 37 
+* **online**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -online -romhr -nwin 168 -romsns -rostype load -sfacv 75 -sface 37
+* **restore**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -restore -soldiff -nwin 168 -romsns -rostype load -visit -k rom
 
-### Taylor--Green vortex
-**Taylor--Green vortex** problem is a three-dimensional benchmark test for the
-  incompressible Navier--Stokes equasions. 
+   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   | -- | ----------------- | ----------------- | -------- | ----------------------- |
+   |    |  238 sec          |  30.2 sec         |   7.9    |      2.1e-7             |
 
-  * **basic**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 
+<img class="floatright" src="../img/examples/taylorGreen.png" width="250"  >
+
+### Taylor-Green vortex
+**Taylor-Green vortex** problem is a three-dimensional benchmark test for the
+incompressible Navier-Stokes equasions. A manufactured smooth solution is
+considered by extending the steady state Taylor-Green vortex solution to the
+compressible Euler equations. The computational domain is the unit cube
+$\tilde{\Omega}=\[0,1\]^3$ with wall boundary conditions on all surfaces,
+i.e., $v\cdot n = 0$. The initial velocity is given by
+
+$$ v = (\sin{(\pi x)} \cos{(\pi y)} \cos{(\pi z)}, -\cos{(\pi x)}\sin{(\pi y)}\cos{(\pi z)}, 0)  $$
+
+The initial density is given by $\rho =1$. The initial thermodynamic pressure
+is given by
+
+$$ p = 100 + \frac{(\cos{(2\pi x)} + \cos{(2\pi y))(\cos{(2\pi z)+2})-2}}{16} $$
+
+The initial energy is related to the pressure and the density by the equation
+of state for the ideal gas, $p=(\gamma-1)\rho e$, with $\gamma = 5/3$. The
+initial mesh is a uniform Cartesian hexahedral mesh, which deforms over time.
+The visualized solution is given on the right.  One can reproduce the
+numerical result, following the command line options described below:
+
+* **offline**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
+* **hyper-reduction preprocessing**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -online -romhrprep -nwin 90 -romsns -rostype load -sfacv 295 -sface 82
+* **online**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -online -romhr -nwin 90 -romsns -rostype load -sfacv 295 -sface 82
+* **restore**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -restore -soldiff -nwin 90 -romsns -rostype load -visit -k rom
+
+   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   | -- | ----------------- | ----------------- | -------- | ----------------------- |
+   |    |  370 sec          |  127.2 sec        |   2.9    |      0.006              |
+
+
+<img class="floatright" src="../img/examples/triple.png" width="280"  >
 
 ### Triple-point problem
-**Triple-point** problem
+**Triple-point** problem is a three-dimensional shock test with two materials in
+three states. The computational domain is $\tilde{\Omega} = \[0,7\] \times \[0,3
+\] \times \[0,1.5\]$ with wall boundary conditions on all surfaces, i.e.,
+$v\cdot n = 0$. The initial velocity is given by $v=0$. The initial density is
+given by
 
-  * **basic**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 
-  
+$$\rho =  
+  \cases{
+  \displaystyle 1   & for x $\leq$ 1 or y $\leq$ 1.5, \cr
+  \displaystyle 1/8 & for x $>$ 1 and y $>$ 1.5 
+  }$$
+
+The initial thermodynamic pressure is given for
+
+$$p =  
+  \cases{
+  \displaystyle 1   & for x $\leq$ 1, \cr
+  \displaystyle 0.1 & for x $>$ 1
+  }$$
+
+The initial energy is related to the pressure and the density by the equation
+of state for the ideal gas, $p=(\gamma-1)\rho e$, with 
+
+$$\gamma =  
+  \cases{
+  \displaystyle 1.5   & for x $\leq$ 1 or y $>$ 1.5\cr
+  \displaystyle 1.4   & for x $>$ 1 and y $\leq$ 1.5
+  }$$
+
+The initial mesh is a uniform Cartesian hexahedral mesh, which deforms over
+time.  The visualized solution is given on the right.  One can reproduce the
+numerical result, following the command line options described below:
+
+* **offline**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
+* **hyper-reduction preprocessing**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -online -romhrprep -nwin 20 -romsns -rostype load -sfacv 231 -sface 65
+* **online**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -online -romhr -nwin 20 -romsns -rostype load -sfacv 231 -sface 65
+* **restore**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -restore -soldiff -nwin 20 -romsns -rostype load -visit -k rom
+ 
+   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   | -- | ----------------- | ----------------- | -------- | ----------------------- |
+   |    |  263 sec          |   32.1 sec        |   8.2    |     0.006               |
+
+### Rayleigh-Taylor instability problem 
+**Rayleigh-Taylor instability** problem
+
+* **offline**: 
+* **hyper-reduction preprocessing**: 
+* **online**: 
+* **restore**: 
+
 
 _This is an external miniapp, available at
 [https://github.com/CEED/Laghos/tree/rom](https://github.com/CEED/Laghos/tree/rom)._
