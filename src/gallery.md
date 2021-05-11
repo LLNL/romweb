@@ -33,7 +33,7 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
 
-</div><div class="col-md-5"  markdown="1">
+</div><div class="col-md-4"  markdown="1">
 
 
 [![](img/examples/triple.png)](img/examples/triple.png)
@@ -52,8 +52,17 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
+----
 
-</div><div class="col-md-3"  markdown="1">
+[![](img/gallery/final1_strom.png)](img/gallery/final1_strom.png)
+
+*3D Boltzmann particle transport problem solved with 
+[ARDRA](https://computing.llnl.gov/projects/ardra-scaling-up-sweep-transport-algorithms)
+and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
+[VisIt](https://visit-dav.github.io/visit-website/).*
+
+
+</div><div class="col-md-4"  markdown="1">
 
 [![](img/examples/taylorGreen.png)](img/examples/taylorGreen.png)
 
@@ -80,6 +89,14 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
+----
+
+[![](img/gallery/final2_strom.png)](img/gallery/final2_strom.png)
+
+*3D Boltzmann particle transport problem solved with 
+[ARDRA](https://computing.llnl.gov/projects/ardra-scaling-up-sweep-transport-algorithms)
+and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
+[VisIt](https://visit-dav.github.io/visit-website/).*
 
 
 </div>
