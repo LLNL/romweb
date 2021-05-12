@@ -17,6 +17,7 @@ libROM is open source, so anyone is welcome to contribute to the development!
 * ... and [many more](features.md).
 
 libROM is used in many projects, including
+[MFEM](https://github.com/mfem/mfem),
 [BLAST](http://www.llnl.gov/casc/blast),
 [ARDRA](https://computing.llnl.gov/projects/ardra-scaling-up-sweep-transport-algorithms),
 and [SU2](https://su2code.github.io/).
