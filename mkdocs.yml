@@ -18,29 +18,20 @@ nav:
 - Documentation:
   - '_News': news.md   # pages starting with '_' are hidden from the menu
   - 'Building libROM': building.md
-  - 'Serial Tutorial': serial-tutorial.md
-  - 'Parallel Tutorial': parallel-tutorial.md
+  - 'Poisson equation': poisson.md
   - 'Reduced Order Models': rom.md
-  - '_Primal and Dual Vectors': pri-dual-vec.md
-  - '_Bilinear Form Integrators': bilininteg.md
-  - '_Linear Form Integrators': lininteg.md
   - '_Linear Interpolators': lininterp.md
   - '_Weak Formulations': fem_weak_form.md
   - '_Boundary Conditions': fem_bc.md
-  - 'Electromagnetics': electromagnetics.md
-  - 'Fluids': fluids.md
-  - 'Meshing': meshing.md
   - '_Mesh Formats': mesh-formats.md
   - '_Mesh Format v1.x': mesh-format-v1.x.md
-  - 'Performance': performance.md
   - '_High Performance Templated Code': tperformance.md
   - '_Code Overview': code-overview.md
-  - 'Tools': tools.md
-  - 'Toys': toys.md
   - 'Publications': publications.md
   - 'About': about.md
 - Gallery: gallery.md
 - Download: download.md
+- DDPS: ddps.md
 
 theme:
   name: mkdocs  # required. Can be anything as long as custom_dir is set correctly below
@@ -49,4 +40,4 @@ theme:
 extra:
   include_next_prev: false  # turn off next/previous buttons
 
-google_analytics: ['UA-101697-3', 'laghosrom.org']
+google_analytics: ['UA-101697-3', 'librom.org']

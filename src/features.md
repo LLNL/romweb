@@ -1,10 +1,35 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+
 # Features
 
-The goal of libROM is is to provide high-performance scalable library for
-data-driven physical simulation modeling, such as surrogate and reduced order
-models.
+The goal of libROM is to provide high-performance scalable library for
+data-driven reduced order modeling. 
 
-## Efficient data collection
+
+## Proper orthogonal decomposition
+
+One of the core features in libROM is the ability to extract important modes
+from given physical simulation data.  The proper othogonal decomposition (POD)
+is a popular method for compressing physical simulation data to obtain optimal
+"reduced" bases in the following sense:
+
+$$f =\minimize
+  \cases{
+  \displaystyle \sin(\kappa (x_0+x_1+x_2)) & for 2D  \cr
+  \displaystyle \sin(\kappa (x_0+x_1))     & for 3D  
+  }$$
+
+The POD modes can be obtained in two equivalent ways: (i)
+eigenvalue decomposition and (ii) singular value decomposition (SVD). We take
+the latter approach.  
+
+### Efficient data collection
 
 High-fidelity physical simulations generate intensive data in its size, which
 makes the data collection daunting. The libROM can be integrated in the physics
@@ -12,18 +37,7 @@ solver, and the data is extracted dynamically as the physics solver is running.
 For example, the following line can be inserted in the time loop of the physics
 solver where the solution is computed:
 
-## Proper orthogonal decomposition
-
-The proper othogonal decomposition (POD) is a popular method for compressing
-physical simulation data to obtain optimal "reduced" bases. The POD modes
-can be obtained in two equivalent ways: (i) eigenvalue decomposition and (ii)
-singular value decomposition (SVD). We take the latter approach.  The POD can be
-applied to both spatial and temporal data, and the procedure is schematically
-depicted in the figure below:
-
-<img src="../img/svd.png" align="right" alt="POD">
-
-We introduce three different methods for computing SVDs:
+We introduce four different methods for computing SVDs:
 
 - Static SVD
 - incremental SVD
@@ -35,6 +49,12 @@ We introduce three different methods for computing SVDs:
 ### Incremental SVD
 
 ### Randomized SVD
+
+### Space--time SVD
+The SVD can be applied to extract reduced bases for both spatial and temporal
+data.  The procedure is schematically depicted in the figure below:
+
+<img src="../img/svd.png" align="right" alt="POD">
 
 ## Greedy algorithm
 

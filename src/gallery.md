@@ -1,6 +1,6 @@
 # Gallery
 
-This page collects screenshots from various simulations based on libROM. 
+This page collects screenshots from various ROM simulations based on libROM. 
 
 <br>
 <center>
@@ -41,6 +41,14 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 [libROM](https://github.com/LLNL/libROM).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
+----
+
+<img src="../img/examples/rt-2x1-q12.gif" width="70"  >
+
+*2D Rayleigh-Taylor instability problem simulated with
+[Laghos](https://github.com/CEED/Laghos/tree/rom) and accelerated by
+[libROM](https://github.com/LLNL/libROM).  Visualization with
+[VisIt](https://visit-dav.github.io/visit-website/).*
 
 </div><div class="col-md-4"  markdown="1">
 
@@ -107,9 +115,25 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
+----
 
+[![](img/gallery/cylinder.gif)](img/gallery/cylinder.gif.png)
 
+*2D vortex shedding cylinder problem solved by [SU2](https://su2code.github.io/)
+and its reduced basis by [libROM](https://github.com/LLNL/libROM) below. Click
+image below for zoomed-in picture.  Visualization with
+[ParaView](https://www.paraview.org/).*
 
+[![](img/gallery/PODmodes.png)](img/gallery/PODmodes.png)
+
+----
+
+[![](img/gallery/airfoil_PODmodes.png)](img/gallery/airfoil_PODmodes.png)
+
+*2D NACA0012 airfoil problem solved by [SU2](https://su2code.github.io/)
+and its reduced basis by [libROM](https://github.com/LLNL/libROM). Click
+image above for zoomed-in picture.  Visualization with
+[MATLAB](https://www.mathworks.com/).*
 
 </div>
 

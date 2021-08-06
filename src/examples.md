@@ -32,6 +32,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    <h5>**Application (PDE)**</h5>
    <select id="group1" onchange="update()">
       <option id="all1">All</option>
+      <option id="diffusion">Diffusion</option>
       <option id="compressibleflow">Compressible flow</option>
    </select>
 </div>
@@ -49,6 +50,8 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    <select id="group3" onchange="update()">
       <option id="all3">All</option>
       <option id="galerkin">Galerkin FEM</option>
+      <option id="staticcond">Static condensation</option>
+      <option id="nurbs">Isogeometric analysis (NURBS)</option>
       <option id="dg">Discontinuous Galerkin (DG)</option>
       <option id="pa">Partial assembly</option>
    </select>
@@ -57,6 +60,11 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    <h5>**Solver**</h5>
    <select id="group4" onchange="update()">
       <option id="all4">All</option>
+      <option id="gs">Gauss-Seidel</option>
+      <option id="pcg">PCG</option>
+      <option id="umfpack">UMFPACK (serial direct)</option>
+      <option id="petsc">PETSc solvers</option>
+      <option id="amg">Algebraic Multigrid (BoomerAMG)</option>
       <option id="rk">Explicit Runge-Kutta (ODE integration)</option>
    </select>
 </div>
@@ -65,6 +73,47 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
 <hr>
 
 <!-- ------------------------------------------------------------------------- -->
+
+<div id="poisson" markdown="1">
+## Poisson Problem
+<a target="_blank">
+<img class="floatright" src="../img/examples/poisson.png" width="250">
+</a>
+
+This example code demonstrates the use of libROM and MFEM to define a reduced
+order model for a simple isoparametric finite element discretization of the
+Poisson problem $$-\Delta u = f$$ with homogeneous Dirichlet boundary
+conditions. The example parameterizes the righthand side with frequency
+variable, $\kappa$:
+
+$$f =  
+  \cases{
+  \displaystyle \sin(\kappa (x_0+x_1+x_2)) & for 2D  \cr
+  \displaystyle \sin(\kappa (x_0+x_1))     & for 3D  
+  }$$
+
+The 2D solutoin contour plot for $\kappa=1$ is shown in the figure
+on the right to show the effect of $\kappa$. For demonstration, we sample
+solutions at $\kappa=1$, $1.1$, and $1.2$. Then a ROM is build with basis size
+of 3, which is used to predict the solution for $\kappa = 1.15$.  The ROM is
+able to achieve a speedup of $7.5$ with a relative error of $6.4\times10^{-4}$.
+One can follow the command line options below to reproduce the numerical results
+summarized in the table below:
+
+* **offline1**: poisson -offline -f 1.0 -id 0
+* **offline2**: poisson -offline -f 1.1 -id 1
+* **offline3**: poisson -offline -f 1.2 -id 2
+* **merge**: poisson -merge -ns 3 
+* **online**: poisson -online -f 1.15
+
+   |    | FOM solution time | ROM solution time | Speed-up | Solution relative error |
+   | -- | ----------------- | ----------------- | -------- | ----------------------- |
+   |    |  0.22 sec         |  0.029 sec        |   7.5    |           6.4e-4        |
+
+
+_The code to generate the numerical results above can be found in ([poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp)) and the explanation of codes is provided in [here]()_
+<div style="clear:both;"></div>
+<br></div>
 
 <div id="laghos" markdown="1">
 ##Laghos ROM Miniapp
@@ -104,14 +153,14 @@ which deforms over time. It can be seen that the radial symmetry is maintained
 in the shock wave propagation in both FOM and ROM simulations. One can reproduce
 the numerical result, following the command line options described below:
 
-* **offline**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
-* **hyper-reduction preprocessing**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhrprep -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
-* **online**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -online -romhr -nwin 71 -romsns -rostype load -sfacv 177 -sface 49
-* **restore**: ./laghos -p 1 -m data/cube01_hex.mesh -pt 211 -tf 0.8 -o tw_sedov -restore -soldiff -nwin 71 -romsns -rostype load -visit -k rom
+* **offline**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages
+* **hyper-reduction preprocessing**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2
+* **online**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2
+* **restore**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66
 
-   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
    | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  382 sec          |  77 sec           |   5.0    |           0.01          |
+   |    |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4          |
 
 <img class="floatright" src="../img/examples/gresho.png" width="250"  >
 
@@ -138,14 +187,22 @@ $$p = \cases{
 9 - 4 \log(0.2) + \frac{25}{2} - 20r + 4 \log(r) & for 0.2 $\leq$ r < 0.4 \cr
 3 + 4\log(2)                                     & for r $\geq$ 0.4 }$$
 
-* **offline**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
-* **hyper-reduction preprocessing**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -online -romhrprep -nwin 168 -romsns -rostype load -sfacv 75 -sface 37 
-* **online**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -online -romhr -nwin 168 -romsns -rostype load -sfacv 75 -sface 37
-* **restore**: ./laghos -p 4 -m data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -o tw_gresho -restore -soldiff -nwin 168 -romsns -rostype load -visit -k rom
+* **offline**: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
+  -ok 3 -ot 2 -tf 0.62 -s 7 -visit -writesol -offline -ef 0.9999 -romsvds -romos
+  -rostype load -romsns -nwinsamp 21 -sample-stages 
+* **hyper-reduction preprocessing**: ./laghos -o twp_gresho -p 4 -m
+  ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhrprep
+  -romsvds -romos -rostype load -romsns -romgs -nwin 152 -sfacv 2 -sface 2
+* **online**: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
+  -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhr -romsvds -romos -rostype load -romsns
+  -romgs -nwin 152 -sfacv 2 -sface 2
+* **restore**: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
+  -ok 3 -ot 2 -tf 0.62 -s 7 -soldiff -restore -romsvds -romos -rostype load
+  -romsns -romgs -nwin 152
 
-   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
    | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  238 sec          |  30.2 sec         |   7.9    |      2.1e-7             |
+   |    |  218 sec          |   8.4 sec         |   25.9   |      2.1e-4             |
 
 <img class="floatright" src="../img/examples/taylorGreen.png" width="250"  >
 
@@ -170,14 +227,22 @@ initial mesh is a uniform Cartesian hexahedral mesh, which deforms over time.
 The visualized solution is given on the right.  One can reproduce the
 numerical result, following the command line options described below:
 
-* **offline**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
-* **hyper-reduction preprocessing**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -online -romhrprep -nwin 90 -romsns -rostype load -sfacv 295 -sface 82
-* **online**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -online -romhr -nwin 90 -romsns -rostype load -sfacv 295 -sface 82
-* **restore**: ./laghos -p 0 -m data/cube01_hex.mesh -cfl 0.1 -tf 0.25 -o tw_taylor -restore -soldiff -nwin 90 -romsns -rostype load -visit -k rom
+* **offline**: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
+  0.1 -tf 0.25 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos
+  -rostype load -romsns -nwinsamp 21 -sdim 1000 -sample-stages 
+* **hyper-reduction preprocessing**: ./laghos -o twp_taylor -m
+  ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -online -romsvds
+  -romos -rostype load -romhrprep -romsns -romgs -nwin 82 -sfacv 2 -sface 2
+* **online**: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
+  0.1 -tf 0.25 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns
+  -romgs -nwin 82 -sfacv 2 -sface 2
+* **restore**: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
+  0.1 -tf 0.25 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns
+  -romgs -nwin 82
 
-   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
    | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  370 sec          |  127.2 sec        |   2.9    |      0.006              |
+   |    |  170 sec          |   5.4 sec         |   31.2   |      1.1e-6             |
 
 
 <img class="floatright" src="../img/examples/triple.png" width="280"  >
@@ -216,23 +281,44 @@ The initial mesh is a uniform Cartesian hexahedral mesh, which deforms over
 time.  The visualized solution is given on the right.  One can reproduce the
 numerical result, following the command line options described below:
 
-* **offline**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -offline -writesol -nwinsamp 10 -romsns -rostype load -ef 0.9999 -visit -k fom 
-* **hyper-reduction preprocessing**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -online -romhrprep -nwin 20 -romsns -rostype load -sfacv 231 -sface 65
-* **online**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -online -romhr -nwin 20 -romsns -rostype load -sfacv 231 -sface 65
-* **restore**: ./laghos -p 3 -m data/box01_hex.mesh -tf 0.8 -o tw_triple -restore -soldiff -nwin 20 -romsns -rostype load -visit -k rom
+* **offline**: ./laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
+  0.8 -s 7 -cfl 0.5 -pa -offline -writesol -visit -romsvds -romos -rostype load
+  -romsns -nwinsamp 21 -ef 0.9999 -sdim 200 -sample-stages 
+* **hyper-reduction preprocessing**: ./laghos  -o twp_triple -p 3 -m
+  ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -online -romhrprep
+  -romsvds -romos -rostype load -romgs -romsns -nwin 18 -sfacv 2 -sface 2
+* **online**: ./laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
+  0.8 -s 7 -cfl 0.5 -pa -online -romhr -romsvds -romos -rostype load -romgs
+  -romsns -nwin 18 -sfacv 2 -sface 2
+* **restore**: ./laghos  -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
+  0.8 -s 7 -cfl 0.5 -pa -restore -soldiff -romsvds -romos -rostype load -romgs
+  -romsns -nwin 18 
  
-   |    | FOM solution time | ROM solution time | Speed-up | Position relative error |
+   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
    | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  263 sec          |   32.1 sec        |   8.2    |     0.006               |
+   |    |  122 sec          |  1.4  sec         |   87.8   |     8.1e-4              |
+
+
+<img class="floatright" src="../img/examples/rt-2x1-q12.gif" width="60"  >
 
 ### Rayleigh-Taylor instability problem 
 **Rayleigh-Taylor instability** problem
 
-* **offline**: 
-* **hyper-reduction preprocessing**: 
-* **online**: 
-* **restore**: 
+* **offline**: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
+  -o twp_rt -s 7 -writesol -offline -romsns -sdim 200000 -romsvds -romos -romgs
+  -nwinsamp 21 -ef 0.9999999999 -sample-stages
+* **hyper-reduction preprocessing**: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5
+  -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187
+  -sfacv 2 -sface 2 -romhrprep
+* **online**: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
+  -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187 -sfacv 2 -sface 2
+  -romhr
+* **restore**: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
+  -o twp_rt -s 7 -restore -romsns -romos -romgs -soldiff -nwin 187
 
+   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
+   | -- | ----------------- | ----------------- | -------- | ----------------------- |
+   |    |  127 sec          |  8.7  sec         |   14.6   |     7.8e-3              |
 
 _This is an external miniapp, available at
 [https://github.com/CEED/Laghos/tree/rom](https://github.com/CEED/Laghos/tree/rom)._
@@ -292,6 +378,9 @@ function update()
    getBooleans("group4");
 
    numShown = 0 // expression continued...
+
+   // example codes
+   + showElement("poisson",  (diffusion) && h1 && (galerkin || nurbs || staticcond || pa) && (gs || pcg || umfpack || amg || petsc))
 
    // external miniapps
    + showElement("laghos", (compressibleflow) && (l2 || h1) && (galerkin || dg || pa) && (rk))
