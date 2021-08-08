@@ -14,28 +14,39 @@ data-driven reduced order modeling.
 
 ## Proper orthogonal decomposition
 
-One of the core features in libROM is the ability to extract important modes
-from given physical simulation data.  The proper othogonal decomposition (POD)
-is a popular method for compressing physical simulation data to obtain optimal
-"reduced" bases in the following sense:
+One of the core features in libROM is the ability to extract important
+modes from given physical simulation data.  The proper othogonal
+decomposition (POD) is a popular method for compressing physical
+simulation data to obtain optimal "reduced" bases in the following sense:
 
-$$f =\minimize
-  \cases{
-  \displaystyle \sin(\kappa (x_0+x_1+x_2)) & for 2D  \cr
-  \displaystyle \sin(\kappa (x_0+x_1))     & for 3D  
-  }$$
+$$\boldsymbol{\Phi} =\underset{\boldsymbol{A}\in\mathbb{R}^{n\times m},
+\boldsymbol{A}^T\boldsymbol{A} = \boldsymbol{I}_{m\times m} }{minimize} \||
+\boldsymbol{X} - \boldsymbol{A}\boldsymbol{A}^T\boldsymbol{X} \||_F^2, $$
 
-The POD modes can be obtained in two equivalent ways: (i)
-eigenvalue decomposition and (ii) singular value decomposition (SVD). We take
-the latter approach.  
+where $\boldsymbol{X}\in\mathbb{R}^{n\times m}$ is simulation data.  That is,
+the POD tries to find the orthogonal matrix, $\boldsymbol{\Phi}$, whose span
+minimizes the projection error in the Frobenius norm.  The POD modes can be
+obtained in two equivalent ways: (i) eigenvalue decomposition and (ii) singular
+value decomposition (SVD). We take the latter approach, i.e., let's say the thin SVD of $\boldsymbol{X}$ is given by 
+
+$$\boldsymbol{X} = \boldsymbol{U\Sigma V}^T.$$
+
+Then the solution of the POD is given by taking the first $m$ columns of the
+left singular matrix, i.e., $\boldsymbol{\Phi} = [\boldsymbol{u}_1,\ldots
+,\boldsymbol{u}_m]$, where $\boldsymbol{u}_k$ is $k$th left singular vector, assuming that the singular value is written in the decreasing order. 
+
 
 ### Efficient data collection
 
 High-fidelity physical simulations generate intensive data in its size, which
-makes the data collection daunting. The libROM can be integrated in the physics
-solver, and the data is extracted dynamically as the physics solver is running.
-For example, the following line can be inserted in the time loop of the physics
-solver where the solution is computed:
+makes the data collection process daunting. Therefore, the libROM aims to
+ease the difficulty associated with the intensive data size. 
+
+The libROM can be directly integrated to the physics solver that generates the
+intensive simulation data. For example, if the physical simulation is time
+dependent, then each time step solution data can be feed into the libROM
+incrementally so that the singular value decomposition is efficiently updated
+in parallel. 
 
 We introduce four different methods for computing SVDs:
 
