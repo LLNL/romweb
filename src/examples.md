@@ -34,39 +34,37 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    <select id="group1" onchange="update()">
       <option id="all1">All</option>
       <option id="diffusion">Diffusion</option>
+      <option id="elasticity">Elasticity</option>
+      <option id="euler">Euler</option>
+      <option id="advection">Advection</option>
       <option id="compressibleflow">Compressible flow</option>
    </select>
 </div>
 <div class="col-sm-6 col-md-3 small" markdown="1">
-   <h5>**Finite Elements**</h5>
+   <h5>**Reduced order models type**</h5>
    <select id="group2" onchange="update()">
       <option id="all2">All</option>
-      <option id="h1">H1 nodal elements</option>
-      <option id="l2">L2 discontinuous elements</option>
+      <option id="prom">pROM</option>
+      <option id="dmd">DMD</option>
    </select>
 </div>
 <div class="clearfix hidden-md hidden-lg"></div>
 <div class="col-sm-6 col-md-3 small" markdown="1">
-   <h5>**Discretization**</h5>
+   <h5>**Parameterization type**</h5>
    <select id="group3" onchange="update()">
       <option id="all3">All</option>
-      <option id="galerkin">Galerkin FEM</option>
-      <option id="staticcond">Static condensation</option>
-      <option id="nurbs">Isogeometric analysis (NURBS)</option>
-      <option id="dg">Discontinuous Galerkin (DG)</option>
-      <option id="pa">Partial assembly</option>
+      <option id="tr">Trust region</option>
+      <option id="interpolation">Interpolation</option>
+      <option id="global">Global</option>
+      <option id="reproductive">Reproductive</option>
    </select>
 </div>
 <div class="col-sm-6 col-md-4 small" markdown="1">
-   <h5>**Solver**</h5>
+   <h5>**hyper-reduction**</h5>
    <select id="group4" onchange="update()">
       <option id="all4">All</option>
-      <option id="gs">Gauss-Seidel</option>
-      <option id="pcg">PCG</option>
-      <option id="umfpack">UMFPACK (serial direct)</option>
-      <option id="petsc">PETSc solvers</option>
-      <option id="amg">Algebraic Multigrid (BoomerAMG)</option>
-      <option id="rk">Explicit Runge-Kutta (ODE integration)</option>
+      <option id="hr">Hyper-reduction</option>
+      <option id="no-hr">No hyper-reduction</option>
    </select>
 </div>
 </div>
@@ -115,6 +113,8 @@ summarized in the table below:
 _The code that generates the numerical results above can be found in
 ([poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp))
 and the explanation of codes is provided in [here](poisson.md#poisson-equation)_
+<div style="clear:both;"/></div>
+<br></div>
 
 <div id="dg_advection" markdown="1">
 ## Advection
@@ -182,8 +182,9 @@ summarized in the table below:
 
 _The code that generates the numerical results above can be found in
 ([dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp))_
-
+<div style="clear:both;"/></div>
 <br></div>
+
 
 
 <div id="heat_conduction" markdown="1">
@@ -212,6 +213,7 @@ summarized in the table below:
 
 _The code that generates the numerical results above can be found in
 ([heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp))_
+<div style="clear:both;"/></div>
 <br></div>
 
 
@@ -248,6 +250,7 @@ summarized in the table below:
 
 _The code that generates the numerical results above can be found in
 ([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/mixed_nonlinear_diffusion.cpp))_
+<div style="clear:both;"/></div>
 <br></div>
 
 
@@ -276,6 +279,7 @@ summarized in the table below:
 
 _The code that generates the numerical results above can be found in
 ([nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp))_
+<div style="clear:both;"/></div>
 <br></div>
 
 <div id="laghos" markdown="1">
@@ -544,10 +548,13 @@ function update()
    numShown = 0 // expression continued...
 
    // example codes
-   + showElement("poisson",  (diffusion) && h1 && (galerkin || nurbs || staticcond || pa) && (gs || pcg || umfpack || amg || petsc))
-
-   // external miniapps
-   + showElement("laghos", (compressibleflow) && (l2 || h1) && (galerkin || dg || pa) && (rk))
+   + showElement("poisson", (diffusion) && (prom) && (global) && (no-hr))
+   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no-hr))
+   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no-hr))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no-hr))
+   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr))
+   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no-hr))
+   + showElement("laghos", (compressibleflow) && (prom) && (global) && (hr))
 
    ; // ...end of expression
 
