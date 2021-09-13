@@ -53,7 +53,6 @@ Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFr
 ┊ [Code documentation](http://software.llnl.gov/libROM/html/index.html)
 ┊ [Sources](https://github.com/LLNL/libROM)
 
-*TODO: update the download file*
 [<button type="button" class="btn btn-success">
 **Download libROM-master.zip**
 </button>](https://github.com/LLNL/libROM/archive/refs/heads/master.zip)
