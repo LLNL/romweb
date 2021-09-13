@@ -38,14 +38,14 @@ Date         | Message
 Oct 1, 2021  | [Domain decomposition ROM](https://www.sciencedirect.com/science/article/pii/S0045782521003285) paper is published in CMAME
 Sep XX, 2021 | First version of libROM webpage is launched
 July 19, 2021| [Space time ROM-Python](https://www.mdpi.com/2227-7390/9/14/1690) paper is published in Mathematics
-Apr 23, 2021 | [Laghos ROM](https://arxiv.org/pdf/2104.11404.pdf) arXiv preprint is available 
+Apr 23, 2021 | [Laghos ROM](https://arxiv.org/pdf/2104.11404.pdf) arXiv preprint is available
 Jan 1, 2021  | [Space-time ROM](https://doi.org/10.1016/j.jcp.2020.109845) paper is published in Journal of Computational Physics
 
 ## libROM tutorials in YouTube
 Date         | Title
 ------------ | -----------------------------------------------------------------
-July 22, 2021| [Poisson equation & its finite element discretization](https://youtu.be/YaZPtlbGay4) 
-Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFrBP31riA) 
+July 22, 2021| [Poisson equation & its finite element discretization](https://youtu.be/YaZPtlbGay4)
+Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFrBP31riA)
 
 ## Latest Release
 
@@ -55,8 +55,8 @@ Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFr
 
 *TODO: update the download file*
 [<button type="button" class="btn btn-success">
-**Download libROM.tgz**
-</button>](https://bit.ly/mfem-4-2)
+**Download libROM-master.zip**
+</button>](https://github.com/LLNL/libROM/archive/refs/heads/master.zip)
 
 <!---
 [Older releases](download.md) ┊ [Python wrapper](https://github.com/mfem/PylibROM)
