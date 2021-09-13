@@ -15,6 +15,6 @@ or [comments](https://github.com/LLNL/libROM/issues/new?labels=comments).
 
 ## All Releases
 
- **Filename** | **Version** | **Release Date** | **Size** | **[SLOC](https://github.com/AlDanial/cloc)** | **Notes** |
+ **Filename** | **Version** | **Release Date** | **Size** | **[CLOC](https://github.com/AlDanial/cloc)** | **Notes** |
  ------------ | ----------- | ---------------- | -------- | --------------------------------------- | --------- |
- [mfem-v1.0.tgz](http://goo.gl/gY141R) | v1.0 | Jul 2010 | 160K | 22K | *initial release* |
+ [libROM-master.zip](https://github.com/LLNL/libROM/archive/refs/heads/master.zip) | v1.0 | Sep 2021 | 160K | 22K | *initial release* |
