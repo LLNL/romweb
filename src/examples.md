@@ -12,7 +12,7 @@ documentation of the libROM sources, including the examples, see the [online
 Doxygen documentation](http://mfem.github.io/doxygen/html/index.html),<- (needs
 update) or the `doc` directory in the distribution.  The goal of the example
 codes is to provide a step-by-step introduction to libROM in simple model
-settings. 
+settings.
 
 Select from the categories below to display examples and miniapps that contain
 the respective feature. _All examples support (arbitrarily) high-order meshes
@@ -25,7 +25,7 @@ Users are encouraged to submit any example codes and miniapps that they have
 created and would like to share. <br>
 _Contact a member of the libROM team to report
 [bugs](https://github.com/LLNL/libROM/labels/bug)
-or post [questions](https://github.com/LLNL/libROM/labels/question) 
+or post [questions](https://github.com/LLNL/libROM/labels/question)
 or [comments](https://github.com/LLNL/libROM/labels/comments)_.
 
 <div class="row" markdown="1">
@@ -64,7 +64,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    <select id="group4" onchange="update()">
       <option id="all4">All</option>
       <option id="hr">Hyper-reduction</option>
-      <option id="no-hr">No hyper-reduction</option>
+      <option id="no_hr">No hyper-reduction</option>
    </select>
 </div>
 </div>
@@ -102,7 +102,7 @@ summarized in the table below:
 * **offline1**: poisson -offline -f 1.0 -id 0
 * **offline2**: poisson -offline -f 1.1 -id 1
 * **offline3**: poisson -offline -f 1.2 -id 2
-* **merge**: poisson -merge -ns 3 
+* **merge**: poisson -merge -ns 3
 * **online**: poisson -online -f 1.15
 
    | FOM solution time | ROM solution time | Speed-up | Solution relative error |
@@ -127,7 +127,7 @@ For a given initial condition, i.e., $u_0(x) = u(0,x)$,
 
 $$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$
 
-where $v$ is a given advectopm velocity. 
+where $v$ is a given advectopm velocity.
 
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
@@ -172,7 +172,7 @@ p\delta_{i,1}, \rho v_i H]$$
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
 
-* mpirun -n 8 ./dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit 
+* mpirun -n 8 ./dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit
 
    |                   |                |                |                |  DMD rel.error |         |        |
    | ----------------- | -------------- | -------------- | -------------- | ----------- | ---------- | ------ |
@@ -218,7 +218,7 @@ _The code that generates the numerical results above can be found in
 
 
 <div id="mixed_nonlinear_diffusion" markdown="1">
-## Mixed nonlinear diffusion 
+## Mixed nonlinear diffusion
 <a target="_blank">
 <img class="floatright" src="../img/examples/mixed_nonlinear_diffusion.gif" width="350">
 </a>
@@ -233,7 +233,7 @@ with a natural insulating boundary condition $\frac{dv}{dn}=0$. The
 Raviart-Thomas finite element basis functions are used for $\boldsymbol{v} \in
 H(div)$ space. $L2$ finite element space is used for pressure function, $p$.
 This example introduces how the hyper-reduction is implemented and how the
-reduced bases for two field varibles, $p$ and $\boldsymbol{v}$. 
+reduced bases for two field varibles, $p$ and $\boldsymbol{v}$.
 
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
@@ -261,7 +261,7 @@ _The code that generates the numerical results above can be found in
 </a>
 
 For a given initial condition, i.e., $u_0(x) = u(0,x)$, **nonlinear
-elasticity** solves a time dependent nonlinear elasticity problem of the form 
+elasticity** solves a time dependent nonlinear elasticity problem of the form
 
 $$\frac{\partial v}{\partial t} = H(x) + Sv,$$
 $$\frac{\partial x}{\partial t} = v,$$
@@ -271,7 +271,7 @@ where $H is a hyperelastic model and S is a viscosity operator of Laplacian type
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
 
-* mpirun -np 8 ./nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit 
+* mpirun -np 8 ./nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit
 
    | FOM solution time | DMD setup  time | DMD query time | DMD relative error, $x$ |   $v$    |
    | ----------------- | --------------- | -------------- | ----------------------- | -------- |
@@ -289,7 +289,7 @@ _The code that generates the numerical results above can be found in
 time-dependent Euler equations of compressible gas dynamics in a moving
 Lagrangian frame using unstructured high-order finite element spatial
 discretization and explicit high-order time-stepping. **LaghosROM** introduces
-reduced order models of Laghos simulations. 
+reduced order models of Laghos simulations.
 
 A list of example problems that you can solve with LaghosROM includes Sedov
 blast, Gresho vortex, Taylor-Green vortex, triple-point, and Rayleigh-Taylor
@@ -337,7 +337,7 @@ incompressible inviscid Navier-Stokes equations. The computational domain is
 the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
 all surfaces, i.e., $v\dot n = 0$. Let $(r,\phi)$ denote the polar coordinates
 of a particle $\tilde{x} \in \tilde{\Omega}$. The initial angular velocity is
-given by 
+given by
 
 $$v_\phi =  
   \cases{
@@ -347,7 +347,7 @@ $$v_\phi =
   }$$
 
 The initial density if given by $\rho=1$. The initial thermodynamic pressure is
-given by 
+given by
 
 $$p = \cases{
 5 + \frac{25}{2} r^2                             & for 0 $\leq$ r < 0.2 \cr
@@ -356,7 +356,7 @@ $$p = \cases{
 
 * **offline**: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
   -ok 3 -ot 2 -tf 0.62 -s 7 -visit -writesol -offline -ef 0.9999 -romsvds -romos
-  -rostype load -romsns -nwinsamp 21 -sample-stages 
+  -rostype load -romsns -nwinsamp 21 -sample-stages
 * **hyper-reduction preprocessing**: ./laghos -o twp_gresho -p 4 -m
   ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhrprep
   -romsvds -romos -rostype load -romsns -romgs -nwin 152 -sfacv 2 -sface 2
@@ -396,7 +396,7 @@ numerical result, following the command line options described below:
 
 * **offline**: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
   0.1 -tf 0.25 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos
-  -rostype load -romsns -nwinsamp 21 -sdim 1000 -sample-stages 
+  -rostype load -romsns -nwinsamp 21 -sdim 1000 -sample-stages
 * **hyper-reduction preprocessing**: ./laghos -o twp_taylor -m
   ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -online -romsvds
   -romos -rostype load -romhrprep -romsns -romgs -nwin 82 -sfacv 2 -sface 2
@@ -424,7 +424,7 @@ given by
 $$\rho =  
   \cases{
   \displaystyle 1   & for x $\leq$ 1 or y $\leq$ 1.5, \cr
-  \displaystyle 1/8 & for x $>$ 1 and y $>$ 1.5 
+  \displaystyle 1/8 & for x $>$ 1 and y $>$ 1.5
   }$$
 
 The initial thermodynamic pressure is given for
@@ -436,7 +436,7 @@ $$p =
   }$$
 
 The initial energy is related to the pressure and the density by the equation
-of state for the ideal gas, $p=(\gamma-1)\rho e$, with 
+of state for the ideal gas, $p=(\gamma-1)\rho e$, with
 
 $$\gamma =  
   \cases{
@@ -450,7 +450,7 @@ numerical result, following the command line options described below:
 
 * **offline**: ./laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
   0.8 -s 7 -cfl 0.5 -pa -offline -writesol -visit -romsvds -romos -rostype load
-  -romsns -nwinsamp 21 -ef 0.9999 -sdim 200 -sample-stages 
+  -romsns -nwinsamp 21 -ef 0.9999 -sdim 200 -sample-stages
 * **hyper-reduction preprocessing**: ./laghos  -o twp_triple -p 3 -m
   ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -online -romhrprep
   -romsvds -romos -rostype load -romgs -romsns -nwin 18 -sfacv 2 -sface 2
@@ -459,8 +459,8 @@ numerical result, following the command line options described below:
   -romsns -nwin 18 -sfacv 2 -sface 2
 * **restore**: ./laghos  -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
   0.8 -s 7 -cfl 0.5 -pa -restore -soldiff -romsvds -romos -rostype load -romgs
-  -romsns -nwin 18 
- 
+  -romsns -nwin 18
+
    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
    | ----------------- | ----------------- | -------- | ----------------------- |
    |  122 sec          |  1.4  sec         |   87.8   |     8.1e-4              |
@@ -468,7 +468,7 @@ numerical result, following the command line options described below:
 
 <img class="floatright" src="../img/examples/rt-2x1-q12.gif" width="60"  >
 
-### Rayleigh-Taylor instability problem 
+### Rayleigh-Taylor instability problem
 **Rayleigh-Taylor instability** problem
 
 * **offline**: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
@@ -548,12 +548,12 @@ function update()
    numShown = 0 // expression continued...
 
    // example codes
-   + showElement("poisson", (diffusion) && (prom) && (global) && (no-hr))
-   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no-hr))
-   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no-hr))
-   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no-hr))
+   + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr))
+   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr))
+   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr))
    + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr))
-   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no-hr))
+   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr))
    + showElement("laghos", (compressibleflow) && (prom) && (global) && (hr))
 
    ; // ...end of expression
