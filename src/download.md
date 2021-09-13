@@ -4,10 +4,9 @@
 [Code documentation](http://software.llnl.gov/libROM/html/index.html)
 ┊ [Sources](https://github.com/LLNL/libROM)
 
-*TODO: update the download file*
 [<button type="button" class="btn btn-success">
-**Download libROM.tgz**
-</button>](https://bit.ly/mfem-4-2)
+**Download libROM-master.zip**
+</button>](https://github.com/LLNL/libROM/archive/refs/heads/master.zip)
 
 Please use the GitHub [issue tracker](https://github.com/LLNL/libROM/issues)
 to report [bugs](https://github.com/LLNL/libROM/issues/new?labels=bug)
