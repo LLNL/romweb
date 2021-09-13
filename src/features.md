@@ -368,6 +368,6 @@ We recommend another excellent paper for the greedy algorithm:
 ## Open Source
 
 libROM is an open-source software, and can be freely used under the terms of the
-[MIT](https://github.com/LLNL/libROM/blob/master/LICENSEi-MIT) and
+[MIT](https://github.com/LLNL/libROM/blob/master/LICENSE-MIT) and
 [APACHE](https://github.com/LLNL/libROM/blob/master/LICENSE-APACHE) license.
 

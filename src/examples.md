@@ -9,8 +9,7 @@
 
 This page provides a list of libROM example applications.  For detailed
 documentation of the libROM sources, including the examples, see the [online
-Doxygen documentation](http://mfem.github.io/doxygen/html/index.html),<- (needs
-update) or the `doc` directory in the distribution.  The goal of the example
+Doxygen documentation](http://software.llnl.gov/libROM/html/index.html) or the `doc` directory in the distribution.  The goal of the example
 codes is to provide a step-by-step introduction to libROM in simple model
 settings.
 
