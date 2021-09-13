@@ -19,14 +19,7 @@ nav:
   - '_News': news.md   # pages starting with '_' are hidden from the menu
   - 'Building libROM': building.md
   - 'Poisson equation': poisson.md
-  - 'Reduced Order Models': rom.md
-  - '_Linear Interpolators': lininterp.md
-  - '_Weak Formulations': fem_weak_form.md
-  - '_Boundary Conditions': fem_bc.md
-  - '_Mesh Formats': mesh-formats.md
-  - '_Mesh Format v1.x': mesh-format-v1.x.md
-  - '_High Performance Templated Code': tperformance.md
-  - '_Code Overview': code-overview.md
+  - 'Greedy for Poisson': poisson_greedy.md
   - 'Publications': publications.md
   - 'About': about.md
 - Gallery: gallery.md

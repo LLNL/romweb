@@ -10,17 +10,19 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Aug. 13, 10 AM | [Dmitriy Anistratov](https://www.ne.ncsu.edu/people/dyanistr/) | North Carolina State U.| Reduced order models for thermal radiative transfer problems based on moment equations and POD/DMD of Eddington tensor | [link]()
-Aug. 19, 10 AM | [Christopher J. Earls](https://earls.cee.cornell.edu) | Cornell U. | TBD | [link]()
-Aug. 26, 10 AM | [Jesse Capecelatro](http://www-personal.umich.edu/~jcaps/) | U. of Michagan | Turbulent disperse two-phase flows: simulations and data-driven modeling | [link]()
-Sep. 2,    | [Ionut-Gabriel Farcas](https://www.oden.utexas.edu/people/1712/) | Oden Institute | TBD | [link]()
-Sep. 10,   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]()
-Sep. 30,   | [Peter Benner](https://www.mpi-magdeburg.mpg.de/benner) | Max Planck | TBD | [link]()
+Sep. 30, 9 AM  | [Peter Benner](https://www.mpi-magdeburg.mpg.de/benner) | Max Planck | TBD | [link]()
+Oct. 7, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | TBD | [link]()
+Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | TBD | [link]()
+TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]()
 
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Aug. 5, 10 AM  | Luca Magri | Imperial College, London | Physics-aware reservoir-computing for turbulence and chaotic learning | NA 
+Sep. 2nd | Ionut-Gabriel Farcas | Oden Institute | Learning hierarchies of reduced-dimension and context-aware low-fidelity models for multi-fidelity Monte Carlo sampling | [link](https://youtu.be/rzSpmPb1U-w)
+Aug. 26th | Jesse Capecelatro | U. of Michagan | Turbulent disperse two-phase flows: simulations and data-driven modeling | [link](https://youtu.be/OCEbm-BpB6o)
+Aug. 19th | Christopher J. Earls | Cornell U. | Gaining mechanistic insight through learning Green's functions: Uncovering the solutions to hidden PDEs | [link](https://youtu.be/GVxDaaE51cw)
+Aug. 13, 10 AM | Dmitriy Anistratov | North Carolina State U.| Reduced order models for thermal radiative transfer problems based on moment equations and POD/DMD of Eddington tensor | [link](https://youtu.be/w7IdqXtOUmk)
+Aug. 5th   | Luca Magri | Imperial College, London | Physics-aware reservoir-computing for turbulence and chaotic learning | NA 
 Jul. 30th  | Marta D'Elia   | Sandia            | Data-driven learning of nonlocal models: bridging scales and design of new neural networks | [link](https://youtu.be/LWspDk6JHCQ)
 Jul. 22nd  | Hannah Lu      | Stanford U.       | Dynamic model decomposition for reduced order modeling in flow and transport problems | NA
 Jul. 15th  | Yeonjong Shin  | Brown U.          | Towards a mathematical understanding of modern machine learning: theory, algorithms, and applications | [link](https://youtu.be/hhM3UTa_ib8)

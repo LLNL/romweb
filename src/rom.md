@@ -1,4 +1,4 @@
-# Reduced Order Model 
+# Projection-based Reduced Order Model 
 
 The reduced order models are achieved by applying data-driven model order
 reduction techniques to high-fidelity physics models, typically represented by

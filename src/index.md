@@ -10,16 +10,19 @@ libROM is open source, so anyone is welcome to contribute to the development!
 
 ## Features
 
-* [Efficient data collection](features.md#efficient-data-collection)
-* Proper Orthogonal Decomposition, [POD](features.md#proper-orthogonal-decomposition)
-* [Greedy algorithm](features.md#greedy-algorithm)
+* [Proper Orthogonal Decomposition](features.md#proper-orthogonal-decomposition)
+* [Dynamic mode decomposition](features.md#dynamic-mode-decomposition)
+* [Projection-based reduced order models](features.md#projection-based-reduced-order-model)
 * [Hyper-reduction](features.md#hyper-reduction)
-* ... and [many more](features.md).
+* [Greedy algorithm](features.md#greedy-algorithm)
+
+Many more features will be available soon. Stay tuned!
 
 libROM is used in many projects, including
 [MFEM](https://github.com/mfem/mfem),
 [BLAST](http://www.llnl.gov/casc/blast),
 [ARDRA](https://computing.llnl.gov/projects/ardra-scaling-up-sweep-transport-algorithms),
+[Laghos](https://github.com/CEED/Laghos/tree/rom),
 and [SU2](https://su2code.github.io/).
 
 See also our [Gallery](gallery.md), [Publications](publications.md) and
@@ -40,36 +43,42 @@ Jan 1, 2021  | [spacetimeROM](https://doi.org/10.1016/j.jcp.2020.109845) paper i
 Date         | Title
 ------------ | -----------------------------------------------------------------
 July 22, 2021| [Poisson equation & its finite element discretization](https://youtu.be/YaZPtlbGay4) 
+Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFrBP31riA) 
 
 ## Latest Release
 
 [Examples](examples.md)
-┊ [Code documentation](http://mfem.github.io/doxygen/html/index.html)
+┊ [Code documentation](http://software.llnl.gov/libROM/html/index.html)
 ┊ [Sources](https://github.com/LLNL/libROM)
 
+*TODO: update the download file*
 [<button type="button" class="btn btn-success">
 **Download libROM.tgz**
 </button>](https://bit.ly/mfem-4-2)
 
+<!---
 [Older releases](download.md) ┊ [Python wrapper](https://github.com/mfem/PylibROM)
+-->
 
 ## Documentation
 
 [Building libROM](building.md)
 ┊ [Poisson equation](poisson.md)
-┊ [Code Overview](code-overview.md)
+┊ [Greedy for Poisson](poisson_greedy.md)
 
-New users should start by examining the [example codes](examples.md) and [tutorials](poisson.md).
+New users should start by examining the [example codes](examples.md) and
+[tutorials](poisson.md).
 
-We also recommend using [GLVis](http://glvis.org) for visualization.
+We also recommend using [GLVis](http://glvis.org) or
+[VisIt](https://visit-dav.github.io/visit-website/) for visualization.
 
 
 ## Contact
 
-Use the GitHub [issue tracker](https://github.com/mfem/mfem/issues)
-to report [bugs](https://github.com/mfem/mfem/issues/new?labels=bug)
-or post [questions](https://github.com/mfem/mfem/issues/new?labels=question)
-or [comments](https://github.com/mfem/mfem/issues/new?labels=comment).
+Use the GitHub [issue tracker](https://github.com/LLNL/libROM/issues)
+to report [bugs](https://github.com/LLNL/libROM/issues/new?labels=bug)
+or post [questions](https://github.com/LLNL/libROM/issues/new?labels=question)
+or [comments](https://github.com/LLNL/libROM/issues/new?labels=comments).
 See the [About](about.md) page for citation information.
 
 

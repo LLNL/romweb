@@ -16,9 +16,10 @@ settings.
 
 Select from the categories below to display examples and miniapps that contain
 the respective feature. _All examples support (arbitrarily) high-order meshes
-and finite element spaces_.  The numerical results from the example codes can be
-visualized using the GLVis visualization tool (based on libROM). See the [GLVis
-website](http://glvis.org) for more details.
+and finite element spaces_.  The numerical results from the example codes can
+be visualized using the GLVis or VisIt visualization tools. See the [GLVis
+](http://glvis.org) and [VisIt](https://visit-dav.github.io/visit-website/)
+websites for more details.
 
 Users are encouraged to submit any example codes and miniapps that they have
 created and would like to share. <br>
@@ -88,8 +89,8 @@ variable, $\kappa$:
 
 $$f =  
   \cases{
-  \displaystyle \sin(\kappa (x_0+x_1+x_2)) & for 2D  \cr
-  \displaystyle \sin(\kappa (x_0+x_1))     & for 3D  
+  \displaystyle \sin(\kappa (x_0+x_1+x_2)) & for 3D  \cr
+  \displaystyle \sin(\kappa (x_0+x_1))     & for 2D  
   }$$
 
 The 2D solutoin contour plot for $\kappa=1$ is shown in the figure
@@ -106,13 +107,175 @@ summarized in the table below:
 * **merge**: poisson -merge -ns 3 
 * **online**: poisson -online -f 1.15
 
-   |    | FOM solution time | ROM solution time | Speed-up | Solution relative error |
-   | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  0.22 sec         |  0.029 sec        |   7.5    |           6.4e-4        |
+   | FOM solution time | ROM solution time | Speed-up | Solution relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  0.22 sec         |  0.029 sec        |   7.5    |           6.4e-4        |
 
 
-_The code to generate the numerical results above can be found in ([poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp)) and the explanation of codes is provided in [here]()_
-<div style="clear:both;"></div>
+_The code that generates the numerical results above can be found in
+([poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp))
+and the explanation of codes is provided in [here](poisson.md#poisson-equation)_
+
+<div id="dg_advection" markdown="1">
+## Advection
+<a target="_blank">
+<img class="floatright" src="../img/examples/dg_advection.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**DG advection** solves the time-dependent advection problem:
+
+$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$
+
+where $v$ is a given advectopm velocity. 
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* dg_advection -p 3 -rp 1 -dt 0.005 -tf 4 -visit
+
+   | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
+   | ----------------- | --------------- | -------------- | ------------------ |
+   |  5.2 sec          |  30.6 sec       |   1.9e-2 sec   |      1.9e-4        |
+
+
+_The code that generates the numerical results above can be found in
+([dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_advection.cpp))_
+
+<div style="clear:both;"/></div>
+<br></div>
+
+
+
+<div id="dg_euler" markdown="1">
+## Euler equation
+<a target="_blank">
+<img class="floatright" src="../img/examples/dg_euler.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**DG Euler** solves the compressible Euler system of equation, i.e., a model
+nonlinear hyperbolic PDE:
+
+$$\frac{\partial u}{\partial t} + \nabla\cdot \boldsymbol{F}(u) = 0,$$
+
+with a state vector $\boldsymbol{u} = [\rho,\rho v_0, \rho v_1, \rho E]$, where
+$\rho$ is the density, $v_i$ is the velocity in the $i$th direction, $E$ is the
+total specific energy, and $H = E + p/\rho$ is the total specific enthalpy. The
+pressure, $p$ is computed through a simple equation of state (EOS) call. The
+conservative hydrodynamic flux $\boldsymbol{F}$ in each direction $i$ is
+
+  $$\boldsymbo{F}_{i} = [\rho v_i, \rho v_0 v_i + p \delta_{i,0}, \rho v_1 v_{i,1} +
+p\delta_{i,1}, \rho v_i H]$$
+
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* mpirun -n 8 ./dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit 
+
+   |                   |                |                |                |  DMD rel.error |         |        |
+   | ----------------- | -------------- | -------------- | -------------- | ----------- | ---------- | ------ |
+   | FOM solution time | DMD setup time | DMD query time |    $\rho$      |  $\rho v_0$ | $\rho v_1$ | $E$    |
+   |  5.65 sec         |  38.9 sec      |   1.4e-3 sec   |      8.0e-7    |    1.2e-4   | 1.6e-3     | 2.6e-6 |
+
+
+_The code that generates the numerical results above can be found in
+([dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp))_
+
+<br></div>
+
+
+<div id="heat_conduction" markdown="1">
+## Heat conduction problem
+<a target="_blank">
+<img class="floatright" src="../img/examples/heat_conduction.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**heat conduction** solves a simple 2D/3D time dependent nonlinear heat conduction problem
+
+$$\frac{\partial u}{\partial t} = \nabla\cdot (\kappa + \alpha u)\nabla u,$$
+
+with a natural insulating boundary condition $\frac{du}{dn}=0$. We linearize
+the problem by using the temperature field $u$ from the previous time step to
+compute the conductivity coefficient.
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* mpirun -np 8 ./heat_conduction -s 3 -a 0.5 -k 0.5 -o 4 -tf 0.7 -vs 1 -visit
+
+   | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
+   | ----------------- | --------------- | -------------- | ------------------ |
+   |  4.8 sec          |  0.34 sec       |   1.4e-3 sec   |      8.2e-4        |
+
+_The code that generates the numerical results above can be found in
+([heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp))_
+<br></div>
+
+
+<div id="mixed_nonlinear_diffusion" markdown="1">
+## Mixed nonlinear diffusion 
+<a target="_blank">
+<img class="floatright" src="../img/examples/mixed_nonlinear_diffusion.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**mixed nonlinear diffusion problem** solves a simple 2D/3D time dependent nonlinear problem:
+
+$$\frac{\partial p}{\partial t} + \nabla\cdot \boldsymbol{v} = f,$$
+$$\nabla p = -a(p)\boldsymbol{v},$$
+
+with a natural insulating boundary condition $\frac{dv}{dn}=0$. The
+Raviart-Thomas finite element basis functions are used for $\boldsymbol{v} \in
+H(div)$ space. $L2$ finite element space is used for pressure function, $p$.
+This example introduces how the hyper-reduction is implemented and how the
+reduced bases for two field varibles, $p$ and $\boldsymbol{v}$. 
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* **offline1**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 0 -sh 0.25
+* **offline2**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 1 -sh 0.15
+* **merge**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -merge -ns 2
+* **offline3**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 2 -sh 0.2
+* **online**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2
+
+   | FOM solution time | ROM solution time | Speed-up       | Solution relative error |
+   | ----------------- | ----------------- | -------------- | ----------------------- |
+   |  41.68 sec        |  1.7 sec          |   24.5         |      1.6e-3             |
+
+_The code that generates the numerical results above can be found in
+([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/mixed_nonlinear_diffusion.cpp))_
+<br></div>
+
+
+<div id="nonlinear_elasticity" markdown="1">
+## Nonlinear elasticity
+<a target="_blank">
+<img class="floatright" src="../img/examples/nonlinear_elasticity.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$, **nonlinear
+elasticity** solves a time dependent nonlinear elasticity problem of the form 
+
+$$\frac{\partial v}{\partial t} = H(x) + Sv,$$
+$$\frac{\partial x}{\partial t} = v,$$
+
+where $H is a hyperelastic model and S is a viscosity operator of Laplacian type.
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* mpirun -np 8 ./nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit 
+
+   | FOM solution time | DMD setup  time | DMD query time | DMD relative error, $x$ |   $v$    |
+   | ----------------- | --------------- | -------------- | ----------------------- | -------- |
+   |  3.7 sec          |  4.7e-1 sec     |   6.9e-4 sec   |      7.0e-5             |  1.4e-3  |
+
+_The code that generates the numerical results above can be found in
+([nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp))_
 <br></div>
 
 <div id="laghos" markdown="1">
@@ -158,9 +321,9 @@ the numerical result, following the command line options described below:
 * **online**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2
 * **restore**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66
 
-   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
-   | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4          |
+   | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4          |
 
 <img class="floatright" src="../img/examples/gresho.png" width="250"  >
 
@@ -200,9 +363,9 @@ $$p = \cases{
   -ok 3 -ot 2 -tf 0.62 -s 7 -soldiff -restore -romsvds -romos -rostype load
   -romsns -romgs -nwin 152
 
-   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
-   | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  218 sec          |   8.4 sec         |   25.9   |      2.1e-4             |
+   | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  218 sec          |   8.4 sec         |   25.9   |      2.1e-4             |
 
 <img class="floatright" src="../img/examples/taylorGreen.png" width="250"  >
 
@@ -240,9 +403,9 @@ numerical result, following the command line options described below:
   0.1 -tf 0.25 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns
   -romgs -nwin 82
 
-   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
-   | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  170 sec          |   5.4 sec         |   31.2   |      1.1e-6             |
+   | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  170 sec          |   5.4 sec         |   31.2   |      1.1e-6             |
 
 
 <img class="floatright" src="../img/examples/triple.png" width="280"  >
@@ -294,9 +457,9 @@ numerical result, following the command line options described below:
   0.8 -s 7 -cfl 0.5 -pa -restore -soldiff -romsvds -romos -rostype load -romgs
   -romsns -nwin 18 
  
-   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
-   | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  122 sec          |  1.4  sec         |   87.8   |     8.1e-4              |
+   | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  122 sec          |  1.4  sec         |   87.8   |     8.1e-4              |
 
 
 <img class="floatright" src="../img/examples/rt-2x1-q12.gif" width="60"  >
@@ -316,12 +479,13 @@ numerical result, following the command line options described below:
 * **restore**: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
   -o twp_rt -s 7 -restore -romsns -romos -romgs -soldiff -nwin 187
 
-   |    | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
-   | -- | ----------------- | ----------------- | -------- | ----------------------- |
-   |    |  127 sec          |  8.7  sec         |   14.6   |     7.8e-3              |
+   | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  127 sec          |  8.7  sec         |   14.6   |     7.8e-3              |
 
 _This is an external miniapp, available at
 [https://github.com/CEED/Laghos/tree/rom](https://github.com/CEED/Laghos/tree/rom)._
+
 <div style="clear:both;"/></div>
 <br></div>
 
