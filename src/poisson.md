@@ -127,7 +127,7 @@ whose solution contour corresponds, respectively, to:
 Once the simulation data are collected within libROM basis files, they can be
 merged to form a reduced basis. This process is called the *merge phase*. It is
 implemented in [Lines
-218--236](https://github.com/LLNL/libROM/blob/                               b1390ea5f6e4b641a6779cb07f5e3e8f01b2731e/examples/poisson.cpp#L218).
+218--236](https://github.com/LLNL/libROM/blob/b1390ea5f6e4b641a6779cb07f5e3e8f01b2731e/examples/poisson.cpp#L218). 
 As in [Tutorial 1](#tutorial-1), the objects,
 [Options](https://github.com/LLNL/libROM/blob/master/Options.h) and
 [BasisGenerator](https://github.com/LLNL/libROM/blob/master/BasisGenerator.h)
@@ -177,7 +177,7 @@ row-wise. The MFEM matrix is defined to form a reduced system operator, whose
 process is implemented in [Lines
 321--332](https://github.com/LLNL/libROM/blob/b1390ea5f6e4b641a6779cb07f5e3e8f01b2731e/examples/poisson.cpp#L321).
 Then the reduced system operator is inverted at [Line
-333](https://github.com/LLNL/libROM/blob/                                     b1390ea5f6e4b641a6779cb07f5e3e8f01b2731e/examples/poisson.cpp#L333).
+333](https://github.com/LLNL/libROM/blob/b1390ea5f6e4b641a6779cb07f5e3e8f01b2731e/examples/poisson.cpp#L333).
 The reduced right-hand-side is formed by multiplying the reduced basis
 transpose to the full order model right-hand-side vector, $B$ at [Line
 327](https://github.com/LLNL/libROM/blob/b1390ea5f6e4b641a6779cb07f5e3e8f01b2731e/examples/poisson.cpp#L327).

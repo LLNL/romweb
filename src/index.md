@@ -14,7 +14,7 @@ libROM is open source, so anyone is welcome to contribute to the development!
 * [Dynamic mode decomposition](features.md#dynamic-mode-decomposition)
 * [Projection-based reduced order models](features.md#projection-based-reduced-order-model)
 * [Hyper-reduction](features.md#hyper-reduction)
-* [Greedy algorithm](features.md#greedy-algorithm)
+* [Greedy algorithm](features.md#greedy-sampling-algorithm)
 
 Many more features will be available soon. Stay tuned!
 
