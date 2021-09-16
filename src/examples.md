@@ -111,7 +111,13 @@ summarized in the table below:
 
 _The code that generates the numerical results above can be found in
 ([poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp))
-and the explanation of codes is provided in [here](poisson.md#poisson-equation)_
+and the explanation of codes is provided in
+[here](poisson.md#poisson-equation). 
+The
+[poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp)
+is based on
+[ex1p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex1p.cpp) from
+MFEM with a modification on the right hand side function._ 
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -139,8 +145,11 @@ summarized in the table below:
 
 
 _The code that generates the numerical results above can be found in
-([dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_advection.cpp))_
-
+([dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_advection.cpp)).
+The
+[dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_advection.cpp)
+is based on
+[ex9p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp) from MFEM._
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -180,7 +189,12 @@ summarized in the table below:
 
 
 _The code that generates the numerical results above can be found in
-([dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp))_
+([dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp)).
+The
+[dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp)
+is based on
+[ex18p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex18p.cpp) from
+MFEM._
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -211,7 +225,11 @@ summarized in the table below:
    |  4.8 sec          |  0.34 sec       |   1.4e-3 sec   |      8.2e-4        |
 
 _The code that generates the numerical results above can be found in
-([heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp))_
+([heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp)).
+The
+[heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp)
+is based on
+[ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM._
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -248,7 +266,11 @@ summarized in the table below:
    |  41.68 sec        |  1.7 sec          |   24.5         |      1.6e-3             |
 
 _The code that generates the numerical results above can be found in
-([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/mixed_nonlinear_diffusion.cpp))_
+([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/mixed_nonlinear_diffusion.cpp)).
+The
+[mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/master/examples/mixed_nonlinear_diffusion.cpp)
+is based on
+[ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM and modified to support mixed finite element approach._
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -277,7 +299,11 @@ summarized in the table below:
    |  3.7 sec          |  4.7e-1 sec     |   6.9e-4 sec   |      7.0e-5             |  1.4e-3  |
 
 _The code that generates the numerical results above can be found in
-([nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp))_
+([nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp)).
+The
+[nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp)
+is based on
+[ex10p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex10p.cpp) from MFEM._
 <div style="clear:both;"/></div>
 <br></div>
 
