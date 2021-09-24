@@ -154,7 +154,7 @@ The DMD is trying to find the best $\boldsymbol{A}$ such that
 $$\boldsymbol{U}^+ = \boldsymbol{A}\boldsymbol{U}^-,$$ 
 
 where $\boldsymbol{U}^+ = [\boldsymbol{u}_2,\ldots,\boldsymbol{u}_m]$ and
-$\boldsymbol{U}^- = [\boldsymbol{u}_1, \ldots, \boldsymbol{u}{m-1}]$. The
+$\boldsymbol{U}^- = [\boldsymbol{u}_1, \ldots, \boldsymbol{u}\_{m-1}]$. The
 following procedure is taken to find the best $\boldsymbol{A}$.
 
   1. Take the singular value decomposition (SVD) of $\boldsymbol{U}^-$  
