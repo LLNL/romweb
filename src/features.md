@@ -1,189 +1,373 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+
 # Features
 
-The goal of MFEM is is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to supercomputers.
+The goal of libROM is to provide high-performance scalable library for
+data-driven reduced order modeling. 
 
-Conceptually, MFEM can be viewed as a finite element toolbox that provides the building blocks for developing finite element algorithms in a manner similar to that of MATLAB for linear algebra methods.
 
-## Higher-order Finite Element Spaces
+## Proper orthogonal decomposition
 
-<img src="../img/ho-spaces-padding.png" align="right" alt="H(curl) and H(div) spaces">
+One of the core features in libROM is the ability to extract important
+modes from given physical simulation data.  The proper othogonal
+decomposition (POD) is a popular method for compressing physical
+simulation data to obtain optimal "reduced" bases in the following sense:
 
-MFEM supports a wide variety of [finite element][FiniteElement] [spaces][FiniteElementCollection] in 2D and 3D, including arbitrary high-order:
+$$\boldsymbol{\Phi} =\underset{\boldsymbol{A}\in\mathbb{R}^{n\times r},
+\boldsymbol{A}^T\boldsymbol{A} = \boldsymbol{I}_{r\times r} }{\arg\min} \||
+\boldsymbol{U} - \boldsymbol{A}\boldsymbol{A}^T\boldsymbol{U} \||_F^2, $$
 
- - [H<sup>1</sup>](examples.md?h1)-conforming, [H(div)](examples.md?hdiv)-conforming, [H(curl)](examples.md?hcurl)-conforming spaces,
- - discontinuous [L<sub>2</sub>](examples.md?l2) spaces,
- - numerical trace ([interfacial](examples.md?h12)) spaces,
- - [NURBS](examples.md?nurbs) spaces for isogeometric analysis.
+where $\boldsymbol{U}\in\mathbb{R}^{n\times m}$ is simulation data and
+$\boldsymbol{I}_{r\times r} \in \mathbb{R}^{r\times r}$ denotes an identity
+matrix.  That is, the POD tries to find the orthogonal matrix,
+$\boldsymbol{\Phi}$, whose span minimizes the projection error in the Frobenius
+norm.  The POD modes can be obtained in two equivalent ways: (i) eigenvalue
+decomposition and (ii) singular value decomposition (SVD). We take the latter
+approach, i.e., let's say the thin SVD of $\boldsymbol{U}$ is given by 
 
-Many [bilinear][NonlinearFormIntegrator] and [linear][LinearFormIntegrator] forms defined on these spaces, as well as linear operators such as gradient, curl and embedding between these spaces, are available in the code.
+$$\boldsymbol{U} = \boldsymbol{W\Sigma V}^T.$$
 
-## Flexible Discretization
+Then the solution of the POD is given by taking the first $r$ columns of the
+left singular matrix, i.e., $\boldsymbol{\Phi} = [\boldsymbol{w}_{1},\ldots
+,\boldsymbol{w}_r]$, where $\boldsymbol{w}_k$ is $k$th left singular vector,
+assuming that the singular value is written in the decreasing order. 
 
-In addition to classical Galerkin methods, MFEM enables the quick prototyping of
 
- - [mixed](examples.md?mixed) finite elements,
- - Discontinuous Galerkin ([DG](examples.md?dg)) methods,
- - [isogeometric](examples.md?nurbs) analysis methods,
- - Discontinuous Petrov-Galerkin ([DPG](examples.md?dpg)) approaches,
- - [Hybridization](examples.md?hybr) and [static condensation](examples.md?staticcond) for high-order problems.
+### Efficient data collection
 
-<img src="../img/examples/ex6.png" align="right" width="230">
+High-fidelity physical simulations generate intensive data in its size, which
+makes the data collection process daunting. Therefore, the libROM aims to
+ease the difficulty associated with the intensive data size. 
 
-## Wide Range of Mesh Types
+The libROM can be directly integrated to the physics solver that generates the
+intensive simulation data. For example, if the physical simulation is time
+dependent, then each time step solution data can be feed into the libROM
+incrementally so that the singular value decomposition is efficiently updated
+in parallel. This approach is *incremental SVD*. There are other types of SVDs
+which exploits efficiency.  The libROM provides following four SVDs:
 
-MFEM supports arbitrary element [transformations][ElementTransformation] and includes classes for dealing with:
+- Static SVD
+- incremental SVD
+- randomized SVD
+- space-time SVD
 
- - triangular, quadrilateral, tetrahedral, wedge, and hexahedral [elements][Element],
- - uniform refinement (all element types),
- - conforming local mesh refinement (triangular/tetrahedral meshes),
- - non-conforming mesh refinement (quadrilateral/hexahedral meshes), including anisotropic refinement,
- - [mesh optimization][HyperelasticModel] based on the Target-Matrix Optimization Paradigm (TMOP),
- - higher-order elements with [curved](mesh-formats.md#curvilinear-vtk-meshes) boundaries,
- - [surface](https://github.com/mfem/mfem/blob/master/data/square-disc-surf.mesh) meshes embedded in 3D, topologically [periodic](https://github.com/mfem/mfem/blob/master/data/periodic-hexagon.mesh) meshes, 1D meshes.
 
-Additional support for automated adaptive analysis and parallel unstructured modifications on simplex meshes is provided via integration with the [PUMI](https://scorec.rpi.edu/pumi) distributed mesh management system.
+### Static SVD
+The static SVD waits the libROM to collect all the simulation data. Once the
+snapshot matrix $\boldsymbol{U}$ is formed, then the SVD is performed.
+Therefore, if the data size is big, this approach is not efficient and not
+recommended. However, because it gives the most accurate SVD results, it is
+ideal for a small problem.
 
-## Parallel, Scalable and GPU-ready
+### Incremental SVD
+Unlike the static SVD, the incremental SVD does not wait. Instead, as the data
+comes in, the SVD is performed right away. Because the incremental SVD only
+needs to find out the effect of one additional simulation data vector to the
+previous SVD, the update can be done very efficiently without requiring much
+memory. Therefore, it is useful for large-scale problems. For the detailed
+explanation about the incremental SVD, we refer to the following journal papers:
 
-MFEM supports MPI-based parallelism throughout the library, and can readily be used as a scalable unstructured finite element problem generator.
+- M. Brand, [Incremental singular value decomposition of uncertain data with
+     missing
+     values](https://www.cse.wustl.edu/~zhang/teaching/cs517/Spring12/CourseProjects/incremental%20svd%20missing%20value.pdf),
+     In *European Conference on Computer Vision*, p707-720, Springer, **2002**
+- G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, [Limited-memory
+     adaptive snapshot selection for proper orthogonal
+     decomposition](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283),
+     *International Journal of Numerical Methods in Engineering*, 109(2),
+     p198-217, **2016**
+- H. Fareed, J.R. Singler, [Error Analysis of an Incremental Proper
+     Orthogonal Decomposition Algorithm for PDE Simulation
+     Data](https://www.sciencedirect.com/science/article/pii/S0377042719305308),
+     *Journal of Computational and Applied Mathematics*, 368, **2020**
 
- - MFEM-based [applications](http://www.llnl.gov/casc/blast) have been [scaled](http://computation.llnl.gov/blast/parallel-performance) to [hundreds of thousands](http://computation.llnl.gov/sites/default/files/public/NewBLASTScaling.png) of parallel cores.
- - The library supports [efficient operator assembly/evaluation](performance.md) for tensor-product high-order elements.
- - Support for hardware devices, such as GPUs, and programming models, such as CUDA, HIP, [OCCA](https://libocca.org), [RAJA](https://github.com/LLNL/RAJA) and OpenMP is also included.
 
-A serial MFEM application typically requires [minimal](http://mfem.github.io/doxygen/html/examples_2ex1_8cpp_source.html) [changes](http://mfem.github.io/doxygen/html/examples_2ex1p_8cpp_source.html) to transition to a scalable parallel version of the code, where it can take advantage of the integrated scalable linear solvers from the *[hypre](http://www.llnl.gov/CASC/hypre)* library. Both of these versions can be further transitioned to [high-performing](http://mfem.github.io/doxygen/html/miniapps_2performance_2ex1_8cpp_source.html) [templated variants](http://mfem.github.io/doxygen/html/miniapps_2performance_2ex1p_8cpp_source.html), where operator assembly/evaluation is fully inlined for particular runtime parameters. As of version 4.0, GPU acceleration of several [examples](examples.md?pa) and many [linear algebra](http://mfem.github.io/doxygen/html/vector_8cpp_source.html) and [finite element](http://mfem.github.io/doxygen/html/bilininteg__diffusion_8cpp_source.html) operations is available.
+### Randomized SVD
+Randomization can bring computational efficiency in computing SVDs. For
+example, consider that one needs to extract $p$ dominant modes from $n \times
+m$ tall dense matrix, using SVD. The *randomized SVD* requires
+$\mathcal{O}(nm\log(p))$ floating-point operations, while the *static SVD*
+algorithm requires $\mathcal{O}(nmp)$ flops. The *randomized SVD* that is
+implemented in libROM can be found in the following journal paper:
 
-## Built-in Solvers
+- N. Halko, P.G. Martinsson, J.A. Tropp, [Finding structure with
+      randomness: Probabilistic algorithms for constructing approximate matrix
+      decompositions](https://epubs.siam.org/doi/abs/10.1137/090771806). *SIAM
+      review*, 53(2), p217-288, **2011**
 
-MFEM is commonly used as a "finite element to linear algebra translator", since it can take a problem described in terms of finite element-type objects, and produce the corresponding linear algebra [vectors][Vector] and [sparse matrices][SparseMatrix].
+### Space-time SVD
+For time dependent problems, one can reduce not only the spatial degrees of
+freedom, but also the temporal degrees of freedom by representing the
+space-time solution as a linear combination of a space-time reduced basis.
+The space-time reduced basis can be mathematically written as a Kronecker
+product of temporal and spatial bases. Fortunately, one can extract temporal as
+well as spatial reduced bases from one single SVD.  The procedure is
+schematically depicted in the figure below:
 
-Several matrix storage formats are available including dense, compressed sparse row ([CSR][SparseMatrix]) and parallel compressed sparse row ([ParCSR][HypreParMatrix]). Block vectors, operators and [matrices][BlockMatrix] are also supported.
+<img src="../img/svd.png" align="right" alt="POD">
 
-A variety of solvers are available for the resulting linear algebra systems (or semi-discrete time-integration problems):
+For the detailed explanation about the incremental SVD, we refer to the
+following three journal papers:
 
- - point-wise and polynomial [serial][SparseSmoother] and [parallel][HypreSmoother] smoothers,
-<img src="../img/hypre_wiw.gif" align="right" width="250">
- - [Krylov solvers][IterativeSolver], such as PCG, MINRES and GMRES applicable to general [operators][Operator] in serial and in parallel,
- - parallel [eigensolvers](examples.md?lobpcg): LOBPCG and AME,
- - high-performance preconditioners from the *[hypre](http://www.llnl.gov/CASC/hypre)* library including the [BoomerAMG](examples.md?amg), [AMS](examples.md?ams) and [ADS](examples.md?ads) solvers,
- - many linear and nonlinear solvers, preconditioners and time integrators from the [PETSc](https://www.mcs.anl.gov/petsc) suite,
- - several eigensolvers from the [SLEPc](https://slepc.upv.es/) suite,
- - various iterative solvers and preconditioners on multiple architectures (OpenMP, CUDA and HIP) from the [Ginkgo](https://github.com/ginkgo-project/ginkgo) library.
- - time integrators and non-linear solvers from the CVODE, ARKODE and KINSOL libraries of the [SUNDIALS](http://computation.llnl.gov/projects/sundials/sundials-software) suite,
- - discretization-specific solvers for electromagnetic, elasticity, hybridization and DPG methods,
- - [parallel](examples.md?superlu) and [serial](examples.md?umfpack) sparse direct solvers based on [SuperLU](http://crd-legacy.lbl.gov/~xiaoye/SuperLU), [STRUMPACK](http://portal.nersc.gov/project/sparse/strumpack) and the [SuiteSparse](http://faculty.cse.tamu.edu/davis/suitesparse.html) library,
- - explicit and implicit high-order Runge-Kutta [time integrators][ODESolver],
- - solvers for nonlinear problems (Newton, [HiOp](https://github.com/LLNL/hiop)) and for single linearly constrained [quadratic minimization][SLBQPOptimizer] problems.
+- Y. Kim, K. Wang, Y. Choi, [Efficient space–time reduced order model for
+  linear dynamical systems in Python using less than 120 lines of
+  code](https://www.mdpi.com/2227-7390/9/14/1690). *Mathematics*, 9(14),
+  p.1690, **2021**
+- Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, [Space–time reduced
+  order model for large-scale linear dynamical systems with application to
+  boltzmann transport
+  problems](https://www.sciencedirect.com/science/article/pii/S0021999120306197).
+  *Journal of Computational Physics*, 424, p.109845, **2021**
+- Y. Choi, K. Carlberg, [Space-time least-squares Petrov-Galerkin projection
+  for nonlinear model
+          reduction](https://epubs.siam.org/doi/abs/10.1137/17M1120531), *SIAM
+          Journal on Scientific Computing*, 41(1), A26-A58, **2019** 
 
-## Extensive Examples
+## Dynamic Mode Decomposition
+The dynamic mode decomposition (DMD) provides a great way of finding an
+approximate locally linear dynamical system, 
 
-MFEM includes a number of well-documented [example codes](examples.md) that can be used as tutorials, as well as simple starting points for user applications. Some of the included example codes are:
+$$ \frac{d\boldsymbol{u}}{dt} = \mathcal{A}\boldsymbol{u},$$
 
- - [Example 1](http://mfem.github.io/doxygen/html/examples_2ex1_8cpp_source.html): nodal H1 FEM for the Laplace problem,
- - [Example 2](http://mfem.github.io/doxygen/html/ex2_8cpp_source.html): vector FEM for linear elasticity,
- - [Example 3](http://mfem.github.io/doxygen/html/ex3_8cpp_source.html): Nedelec H(curl) FEM for the definite Maxwell problem,
- - [Example 4](http://mfem.github.io/doxygen/html/ex4_8cpp_source.html): Raviart-Thomas H(div) FEM for the grad-div problem,
- - [Example 5](http://mfem.github.io/doxygen/html/ex5_8cpp_source.html): mixed pressure-velocity FEM for the Darcy problem,
- - [Example 6](http://mfem.github.io/doxygen/html/ex6_8cpp_source.html): non-conforming adaptive mesh refinement (AMR) for the Laplace problem,
- - [Example 7](http://mfem.github.io/doxygen/html/ex7_8cpp_source.html): Laplace problem on a surface (the unit sphere),
- - [Example 8](http://mfem.github.io/doxygen/html/ex8_8cpp_source.html): Discontinuous Petrov-Galerkin (DPG) for the Laplace problem,
- - [Example 9](http://mfem.github.io/doxygen/html/ex9_8cpp_source.html): Discontinuous Galerkin (DG) time-dependent advection,
- - [Example 10](http://mfem.github.io/doxygen/html/ex10_8cpp_source.html): time-dependent implicit nonlinear elasticity,
- - [Example 11](http://mfem.github.io/doxygen/html/examples_2ex11p_8cpp_source.html): parallel Laplace eigensolver,
- - [Example 12](http://mfem.github.io/doxygen/html/ex12p_8cpp_source.html): parallel linear elasticity eigensolver,
- - [Example 13](http://mfem.github.io/doxygen/html/ex13p_8cpp_source.html): parallel Maxwell eigensolver,
- - [Example 14](http://mfem.github.io/doxygen/html/ex14_8cpp_source.html): Discontinuous Galerkin (DG) for the Laplace problem,
- - [Example 15](http://mfem.github.io/doxygen/html/ex15_8cpp_source.html): dynamic AMR for Laplace with prescribed time-dependent source,
- - [Example 16](http://mfem.github.io/doxygen/html/ex16_8cpp_source.html): time-dependent nonlinear heat equation,
- - [Example 17](http://mfem.github.io/doxygen/html/ex17_8cpp_source.html): Discontinuous Galerkin (DG) for linear elasticity,
- - [Example 18](http://mfem.github.io/doxygen/html/ex18_8cpp_source.html): Discontinuous Galerkin (DG) for the Euler equations,
- - [Example 19](http://mfem.github.io/doxygen/html/ex19_8cpp_source.html): incompressible nonlinear elasticity,
- - [Example 20](http://mfem.github.io/doxygen/html/ex20_8cpp_source.html): symplectic ODE integration,
- - [Example 21](http://mfem.github.io/doxygen/html/ex21_8cpp_source.html): adaptive mesh refinement for linear elasticity,
- - [Example 22](http://mfem.github.io/doxygen/html/ex22_8cpp_source.html): complex-valued linear systems,
- - [Example 23](http://mfem.github.io/doxygen/html/ex23_8cpp_source.html): second order in time wave equation,
- - [Example 24](http://mfem.github.io/doxygen/html/ex24_8cpp_source.html): mixed finite element spaces and interpolators,
- - [Example 25](http://mfem.github.io/doxygen/html/ex25_8cpp_source.html): Perfectly Matched Layer (PML) for Maxwell equations,
- - [Example 26](http://mfem.github.io/doxygen/html/ex26_8cpp_source.html): multigrid preconditioner for the Laplace problem,
- - [Example 27](http://mfem.github.io/doxygen/html/ex27_8cpp_source.html): boundary conditions for the Laplace problem.
+for a given nonlinear dynamical system,
 
-Most of the examples have a serial and a parallel version, illustrating the ease of transition and the minimal code changes between the two.
+$$ \frac{d\boldsymbol{u}}{dt} =
+\boldsymbol{f}(\boldsymbol{u},t;\boldsymbol{\mu}),$$
 
-Many of the examples also have modifications that take advantage of optional third-party libraries such as [PETSc](http://mfem.github.io/doxygen/html/petsc_8hpp.html), [SLEPc](http://mfem.github.io/doxygen/html/slepc_8hpp.html), [SUNDIALS](http://mfem.github.io/doxygen/html/sundials_8hpp.html), [PUMI](https://mfem.github.io/doxygen/html/pumi_8hpp.html), [Ginkgo](https://mfem.github.io/doxygen/html/ginkgo_8hpp.html) and [HiOp](https://mfem.github.io/doxygen/html/hiop_8hpp.html).
+with initial condition, $\boldsymbol{u}_0$.
+It takes non-intrusive approach, i.e., equation-free method, so it is
+applicable even if there is only data, but no
+$\boldsymbol{f}(\boldsymbol{u},t;\boldsymbol{\mu})$. For example, let's say the
+discrete-time data are given as:
 
-Beyond the examples, a number of miniapps are available that are more representative of the advanced usage of the library in physics/application codes. Some of the included miniapps are:
+$$\boldsymbol{U} = [\boldsymbol{u}_1,\ldots,\boldsymbol{u}_m],$$
 
- - [Volta](http://mfem.github.io/doxygen/html/volta_8cpp_source.html): simple electrostatics simulation code,
- - [Tesla](http://mfem.github.io/doxygen/html/tesla_8cpp_source.html): simple magnetostatics simulation code,
- - [Maxwell](http://mfem.github.io/doxygen/html/maxwell_8cpp_source.html): transient electromagnetics simulation code,
- - [Joule](http://mfem.github.io/doxygen/html/joule_8cpp_source.html): transient magnetics and Joule heating miniapp,
- - [Navier](http://mfem.github.io/doxygen/html/classmfem_1_1navier_1_1NavierSolver.html#details): solver for the incompressible time-dependent Navier-Stokes equations,
- - [Mesh Explorer](http://mfem.github.io/doxygen/html/mesh-explorer_8cpp_source.html): visualize and manipulate meshes,
- - [Mesh Optimizer](http://mfem.github.io/doxygen/html/mesh-optimizer_8cpp_source.html): optimize high-order meshes,
- - [Interpolation](http://mfem.github.io/doxygen/html/findpts_8cpp_source.html): evaluation of high-order finite element functions in physical space,
- - [Minimal Surface](http://mfem.github.io/doxygen/html/minimal-surface_8cpp_source.html): compute the minimal surface of a given mesh,
- - [Display Basis](http://mfem.github.io/doxygen/html/display-basis_8cpp_source.html): visualize finite element basis functions,
- - [Get Values](http://mfem.github.io/doxygen/html/get-values_8cpp_source.html): extract field values via DataCollection classes,
- - [Load DC](http://mfem.github.io/doxygen/html/load-dc_8cpp_source.html): visualize fields saved via DataCollection classes,
- - [Convert DC](http://mfem.github.io/doxygen/html/convert-dc_8cpp_source.html): convert between different DataCollection formats,
- - [LOR Transfer](http://mfem.github.io/doxygen/html/lor-transfer_8cpp_source.html): map functions between high-order and low-order-refined spaces.
+where $\boldsymbol{u}_k\in\mathbb{R}^n$ denotes solution at $t=k\Delta t$.
+The DMD is trying to find the best $\boldsymbol{A}$ such that 
 
-In addition, the sources for several external benchmark/proxy-apps build on top of MFEM are available:
+$$\boldsymbol{U}^+ = \boldsymbol{A}\boldsymbol{U}^-,$$ 
 
-- [Laghos](https://github.com/CEED/Laghos): high-order Lagrangian hydrodynamics miniapp,
-- [Remhos](https://github.com/CEED/Remhos): high-order advection remap miniapp,
-- [Mulard](https://computation.llnl.gov/projects/co-design/mulard): multigroup thermal radiation diffusion mini application.
+where $\boldsymbol{U}^+ = [\boldsymbol{u}_2,\ldots,\boldsymbol{u}_m]$ and
+$\boldsymbol{U}^- = [\boldsymbol{u}_1, \ldots, \boldsymbol{u}\_{m-1}]$. The
+following procedure is taken to find the best $\boldsymbol{A}$.
 
-A handful of "toy" miniapps of less serious nature demonstrate the flexibility of MFEM (and provide a bit of fun):
+  1. Take the singular value decomposition (SVD) of $\boldsymbol{U}^-$  
 
- - [Automata](http://mfem.github.io/doxygen/html/automata_8cpp_source.html): model of a simple cellular automata,
- - [Life](http://mfem.github.io/doxygen/html/life_8cpp_source.html): model of Conway's game of life,
- - [Lissajous](http://mfem.github.io/doxygen/html/lissajous_8cpp_source.html): spinning optical illusion,
- - [Mandel](http://mfem.github.io/doxygen/html/mandel_8cpp_source.html): fractal visualization with AMR,
- - [Mondrian](http://mfem.github.io/doxygen/html/mondrian_8cpp_source.html): convert any image to an AMR mesh,
- - [Rubik](http://mfem.github.io/doxygen/html/rubik_8cpp_source.html): interactive Rubik's Cube&trade; puzzle,
- - [Snake](http://mfem.github.io/doxygen/html/snake_8cpp_source.html): model of the Rubik's Snake&trade; puzzle.
+     $$\boldsymbol{U}^- \approx \boldsymbol{W}\boldsymbol{\Omega}\boldsymbol{V}^*,$$
 
-## Accurate and Flexible Visualization
+     where $*$ denotes the conjugate transpose,
+     $\boldsymbol{W}\in\mathbb{C}^{n\times r}$,
+     $\boldsymbol{\Sigma}\in\mathbb{C}^{r\times r}$,
+     $\boldsymbol{V}\in\mathbb{C}^{m\times r}$, and $r \leq m$.
 
-The general (high-order) meshes and finite element functions in MFEM can be visualized accurately using the companion OpenGL visualization tool [GLVis](http://glvis.org), which is built on top of MFEM.
+  2. Because $\boldsymbol{U}^+ = \boldsymbol{A}\boldsymbol{U}^-$, using the
+     pseudo-inverse of the approximate $\boldsymbol{U}^-$, we have
 
-The [VisIt](http://visit.llnl.gov) visualization and analysis tool also natively supports MFEM formats.
+     $$\boldsymbol{A} \approx \tilde{\boldsymbol{A}} = 
+     \boldsymbol{U}^+\boldsymbol{V}\boldsymbol{\Omega}^{-1}\boldsymbol{W}^*$$
 
-Another visualization tool natively supported by MFEM is [ParaView](https://www.paraview.org). The file format supports high-order (up to order six) meshes and elements.
+  3. It is easier to deal with the reduced operator $\tilde{\boldsymbol{A}}_r$,
+     which relates the discrete-time dynamic of reduced states:
 
-## Lightweight, Portable and Easily Extendable
+     $$\tilde{\boldsymbol{u}}_{k+1} = \tilde{\boldsymbol{A}}_r\tilde{\boldsymbol{u}}_k,$$ 
 
-The MFEM code base is [relatively small](download.md) and is written in highly portable C++ (e.g. with very limited use of templates and the STL).
+     where $\boldsymbol{u}_k = \boldsymbol{W}
+     \tilde{\boldsymbol{u}}_k$ and $\tilde{\boldsymbol{A}}_r$ is defined as 
 
- - The serial version of MFEM has no external dependencies and is [straightforward to build](building.md) on Linux, Mac and Windows machines.
- - The MPI-parallel version uses two third-party libraries (*hypre* and METIS), and is also easy to build with an MPI compiler.
- - On most machines, both versions can be built in under a minute by typing: "`make serial -j`" and "`make parallel -j`" respectively.
+     $$\tilde{\boldsymbol{A}}_r=\boldsymbol{W}^*\tilde{\boldsymbol{A}}\boldsymbol{W}$$
 
-The object-oriented design of MFEM [separates](http://mfem.github.io/doxygen/html/index.html) the mesh, finite element and linear algebra abstractions, making it easy to extend the library and adapt it to a variety of [applications](publications.md).
+     $$\tilde{\boldsymbol{A}}_r=\boldsymbol{W}^*\boldsymbol{U}^+\boldsymbol{V}\boldsymbol{\Omega}^{-1}$$
+
+  4. Let the eigen-decomposition of $\tilde{\boldsymbol{A}}_r$ to be
+
+     $$\tilde{\boldsymbol{A}}_r \boldsymbol{X} = \boldsymbol{\Lambda}\boldsymbol{X}$$
+
+     and set $\boldsymbol{\Phi} = \boldsymbol{W}\boldsymbol{X}$, then the DMD
+     solution at time, $t$, can be found as
+
+     $$\boldsymbol{u}(t) = \boldsymbol{\Phi}\boldsymbol{\Lambda}^{t/\Delta t} \boldsymbol{b}_0,$$
+
+     where $\boldsymbol{b}_0 = \boldsymbol{\Phi}^\dagger \boldsymbol{u}_0$.
+
+For the detailed explanation about the DMD, we refer to the following book:
+
+- J.N. Kutz, S.L. Brunton, B.W. Brunton, J.L. Proctor, [Dynamic mode
+  decomposition: data-driven modeling of complex
+  systems](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974508.ch1).
+  *Society for Industrial and Applied Mathematics*, **2016**
+
+## Projection-based reduced order model
+
+In contrast to the DMD, the projection-based reduced order model (pROM) takes
+an intrusive approach, that is, it is *NOT* equation-free. The pROM first
+represents the solution as a linear combincation of reduced basis. The reduced
+basis can be obtained by the POD, for example. Let's denote the reduced basis
+as $\boldsymbol{\Phi}\in\mathbb{R}^{n\times r}$ and express the solution,
+$\boldsymbol{u}\in\mathbb{R}^n$ as
+
+$$\boldsymbol{u} =
+\boldsymbol{u}_{\text{ref}}+\boldsymbol{\Phi}\hat{\boldsymbol{u}},$$
+
+where $\hat{\boldsymbol{u}} \in \mathbb{R}^r$ denotes the generalized
+coordinates with respect to the reduced basis. Then we substitute
+$\boldsymbol{u}$ in the governing equation, say a nonlinear dynamical system governed by the following ordinary differential equations,
+
+$$\frac{d\boldsymbol{u}}{dt} =
+\boldsymbol{f}(\boldsymbol{u},t;\boldsymbol{\mu}),$$
+
+to obtain the over-determined system, i.e., 
+
+$$\boldsymbol{\Phi}\frac{d\hat{\boldsymbol{u}}}{dt} =
+\boldsymbol{f}(\boldsymbol{u}_{\text{ref}}+\boldsymbol{\Phi}\hat{\boldsymbol{u}},t;\boldsymbol{\mu}),$$
+
+which has more equations than unknowns. Therefore, the system needs to be
+closed by a projection. Galerkin and Petrov-Galerking projections are popular.
+For example, the Galerkin projection multiplies both sides by $\boldsymbol{\Phi}^T$ 
+and the system of equations become
+
+$$\frac{d\hat{\boldsymbol{u}}}{dt} = \boldsymbol{\Phi}^T
+\boldsymbol{f}(\boldsymbol{u}_{\text{ref}}+\boldsymbol{\Phi}\hat{\boldsymbol{u}},t;\boldsymbol{\mu})$$
+
+By the way, the nonlinear term $\boldsymbol{f}$ still scales with the full
+order model size and it needs to be updated every time its argument changes due
+to Newton step updates, for example. The *hyper-reduction* provides an
+efficient way of computing nonlinear terms by sampling an important subset. By
+the way, if $\boldsymbol{f}$ is linear, then
+$\boldsymbol{\Phi}^T\boldsymbol{f}$ can be pre-computed, so the hyper-reduction
+is not necessary.
+
+
+## Hyper-reduction
+
+Hyper-reduction is essential to reduce the complexity of *nonlinear* terms in
+pROM. The most popular hyper-reduction technique is the discrete empirical
+interpolation method (DEIM). The DEIM approximates the nonlinear term with a
+gappy POD, i.e., it expresses the nonlinear term with a linear combination of
+the nonlinear term reduced basis, $\boldsymbol{\Phi}_{f}\in\mathbb{R}^{n\times
+f}$:
+
+$$\boldsymbol{f} \approx \boldsymbol{\Phi}_f \hat{\boldsymbol{f}},$$
+
+where $\hat{\boldsymbol{f}}\in\mathbb{R}^{f}$ is a generalized coordinate for
+the nonlinear term. The usual data for the nonlinear term basis,
+$\boldsymbol{\Phi}_{f}$ is snapshot of nonlinear term itself. Alternatively, it
+can be replaced by the solution basis (i.e., $\boldsymbol{\Phi}$ or slight
+modification of it) via the SNS method introduced in the following journal
+paper:
+
+- Y. Choi, D. Coombs, R. Anderson, [SNS: a solution-based nonlinear subspace
+  method for time-dependent model order
+  reduction](https://epubs.siam.org/doi/abs/10.1137/19M1242963).  *Society for
+  Industrial and Applied Mathematics*, **2020**
+
+Then, we introduce a sampling matrix (in order words, a collocation matrix),
+$\boldsymbol{Z}\in\mathbb{R}^{n\times z}$, which selects a subset of the
+nonliear term, $\boldsymbol{F}$. That is, each column of $\boldsymbol{Z}$ is a
+column of the identity matrix, $\boldsymbol{I} \in \mathbb{R}^{n\times n}$.
+Combining the collocation matrix and the nonlinear basis, we solve the
+following least-squares problem to solve for the generalized coordinate,
+$\hat{\boldsymbol{f}}$:
+
+$$\hat{\boldsymbol{f}} = \underset{\boldsymbol{y}\in{\mathbb{R}^{f}}}{\arg\min} \hspace{3pt} \||
+\boldsymbol{Z}^T\boldsymbol{f} - \boldsymbol{Z}^T\boldsymbol{\Phi}_f
+\boldsymbol{y} \||_2^2$$
+
+The solution to the least-squares problem is known to be 
+
+$$\hat{\boldsymbol{f}} = (\boldsymbol{Z}^T\boldsymbol{\Phi}_{f})^\dagger \boldsymbol{Z}^T\boldsymbol{f}.$$
+
+Note that $(\boldsymbol{Z}^T\boldsymbol{\Phi}_{f})^\dagger$ can be pre-computed
+once the indices for $\boldsymbol{Z}$ and $\boldsymbol{\Phi}_f$ are known. Note
+also that you do not need to construct $\boldsymbol{Z}$. You only need to
+sample selected rows of $\boldsymbol{\Phi}_f$ and do the pseudo-inversion. This
+is what we do in libROM. Also note that we only need to evaluate a subset of
+$\boldsymbol{f}$ because of $\boldsymbol{Z}^T$ in front of $\boldsymbol{f}$.
+
+
+## Parametric ROMs
+Whether it is intrusive or non-intrusive ROM, if the ROM can only reproduce the
+full order model simulation data with high accuracy, it is useless because the
+full order model solution is already available. In order for any ROMs to be
+useful, they must be able to predict the solution which is not generated yet.
+We call such a ROM *parametric* because it is able to predict the solution for
+a new parameter value. Two extreme types of parametric ROMs are global and
+local ROMs. 
+
+### Global ROMs
+The global ROMs collect simulation data over several sampled points in a given
+parameter space and use all of them as a whole, building a global reduced
+basis. The size of the reduced basis becomes larger as the number of samples
+increases. Therefore, the global ROM is only effective when a small number of
+samples are used. 
+
+### Local ROMs
+A local ROM is built with the simulation data corresponding only to one
+specific sample. Usually, several local ROMs are built for several sample
+points and either interpolation or trust-region is used to predict the solution
+at points which were not sampled.
+
+
+## Greedy sampling algorithm
+
+The greedy sampling algorithm is a physics-informed sampling strategy to build
+a _parametric ROM_. The parametric ROM can be used to predict the solution of a
+new parameter point that has not been seen in the training phase. The greey
+algorithms follow the general procedure below:
+
+  1. Define a parameter space 
+  2. Pick an initial point in the parameter space to build a ROM there (a good
+     cancidiate initla point is either the centroid or one of end points)
+  3. Evaluate *error indicator* of the current ROM (either global or local ROM)
+     at $N$ random points within the parameter space
+  4. Check if the maximum error indicator value is less than the desirable
+     accuracy threshold
+  5. If the answer to Step 4 is yes, then *terminate* the greedy process.
+  6. If the answer to Step 4 is no, then collect the full order model
+     simulation data at the maximum error indicator point and add them to
+     update the ROM
+  7. Go to Step 3. 
+
+The success of the greedy algorithm depends on the *error indicator*. The error
+indicator must satisfy the following two criteria:
+
+- Its value must have positive correlation with the relative error measure
+- The evaluation of the error indicator must be computationally efficient
+
+Note that the error indicator plays a role of a proxy for the accuracy of the
+ROM.  The most popular error indicator is residual-based, which we recommend
+you to use for your physical simulations. 
+
+The general framework of the greedy algorithm is implemented in libROM. The
+example of the libROM usage case can be found for the Poisson problem at
+[poisson_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson_greedy.cpp).
+The corresponding tutorial page can be found [here](poisson_greedy.md).
+
+Several variants of the greedy procedure described above is possible.  For more
+detailed explanation about the greedy algorithm, we refer to the following
+jounral paper, where the greedy algorithm is described for the interpolated ROM
+in a matrix manifold:
+
+- Y. Choi, G. Boncoraglio, S. Anderson, D. Amsallem, C. Farhat, [Gradient-based
+  constrained optimization using a database of linear reduced order
+  models](https://www.sciencedirect.com/science/article/pii/S0021999120305611).
+  *Journal of Computational Physics*, **2020**
+
+We recommend another excellent paper for the greedy algorithm:
+
+- A. Paul-Dubois-Taine, D. Amsallem, [An adaptive and efficient greedy
+  procedure for the optimal training of parametric reduced-order
+  models](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.4759).
+  *Numerical Methods in Engineering*, **2014**
 
 ## Open Source
 
-MFEM is an open-source software, and can be freely used under the terms of the [BSD](https://github.com/mfem/mfem/blob/master/LICENSE) license.
+libROM is an open-source software, and can be freely used under the terms of the
+[MIT](https://github.com/LLNL/libROM/blob/master/LICENSE-MIT) and
+[APACHE](https://github.com/LLNL/libROM/blob/master/LICENSE-APACHE) license.
 
-<!-- To update the SVG images: in the gh-pages branch of mfem/doxygen do:
-     grep 'id="node1" href="$classmfem_1_1FiniteElementCollection.html"' html/inherit*map -->
-
-[FiniteElement]:           http://mfem.github.io/doxygen/html/inherit_graph_389.svg
-[FiniteElementCollection]: http://mfem.github.io/doxygen/html/inherit_graph_119.svg
-[Element]:                 http://mfem.github.io/doxygen/html/inherit_graph_94.svg
-[HyperelasticModel]:       http://mfem.github.io/doxygen/html/inherit_graph_175.svg
-[NonlinearFormIntegrator]: http://mfem.github.io/doxygen/html/inherit_graph_296.svg
-[LinearFormIntegrator]:    http://mfem.github.io/doxygen/html/inherit_graph_203.svg
-[Operator]:                http://mfem.github.io/doxygen/html/inherit_graph_361.svg
-[Vector]:                  http://mfem.github.io/doxygen/html/inherit_graph_437.svg
-
-[BlockMatrix]:             http://mfem.github.io/doxygen/html/classmfem_1_1BlockMatrix.html
-[ElementTransformation]:   http://mfem.github.io/doxygen/html/classmfem_1_1ElementTransformation.html
-[HypreParMatrix]:          http://mfem.github.io/doxygen/html/classmfem_1_1HypreParMatrix.html
-[HypreSmoother]:           http://mfem.github.io/doxygen/html/classmfem_1_1HypreSmoother.html
-[IterativeSolver]:         http://mfem.github.io/doxygen/html/classmfem_1_1IterativeSolver.html
-[ODESolver]:               http://mfem.github.io/doxygen/html/classmfem_1_1ODESolver.html
-[SLBQPOptimizer]:          http://mfem.github.io/doxygen/html/classmfem_1_1SLBQPOptimizer.html
-[SparseMatrix]:            http://mfem.github.io/doxygen/html/classmfem_1_1SparseMatrix.html
-[SparseSmoother]:          http://mfem.github.io/doxygen/html/classmfem_1_1SparseSmoother.html
