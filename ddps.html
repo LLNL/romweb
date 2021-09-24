@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="http://librom.org">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="examples.html">Examples</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="active">
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM/">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#ddps-webinar-in-california-time">DDPS Webinar (in California time)</a></li>
+        
+            <li><a href="#scheduled-talks-2021">Scheduled Talks, 2021</a></li>
+        
+            <li><a href="#past-talks-in-2021">Past Talks in 2021</a></li>
+        
+            <li><a href="#past-talks-in-2020">Past Talks in 2020</a></li>
+        
+    
+    </ul>
+</div></div> <!-- toc on top on mobile -->
+            <div class="col-md-9" role="main">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript"
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<h1 id="ddps-webinar-in-california-time">DDPS Webinar (in California time)</h1>
+<h2 id="scheduled-talks-2021">Scheduled Talks, 2021</h2>
+<table>
+<thead>
+<tr>
+<th>When</th>
+<th>Speaker</th>
+<th>Institution</th>
+<th>Title</th>
+<th>WebEx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sep. 30, 9 AM</td>
+<td><a href="https://www.mpi-magdeburg.mpg.de/benner">Peter Benner</a></td>
+<td>Max Planck</td>
+<td>TBD</td>
+<td><a href="">link</a></td>
+</tr>
+<tr>
+<td>Oct. 7, 10 AM</td>
+<td><a href="https://www.cs.cmu.edu/~mkhodak/">Misha Khodak</a></td>
+<td>CMU</td>
+<td>TBD</td>
+<td><a href="">link</a></td>
+</tr>
+<tr>
+<td>Oct. 28, 10 AM</td>
+<td><a href="http://arrow.utias.utoronto.ca/~myano/index.html">Masayuki Yano</a></td>
+<td>U. of Toronto</td>
+<td>TBD</td>
+<td><a href="">link</a></td>
+</tr>
+<tr>
+<td>TBD</td>
+<td><a href="https://sites.psu.edu/suparnob/">Suparno Bhattacharyya</a></td>
+<td>Penn State U.</td>
+<td>TBD</td>
+<td><a href="">link</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="past-talks-in-2021">Past Talks in 2021</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Speaker</th>
+<th>Institution</th>
+<th>Title</th>
+<th>YouTube</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sep. 2nd</td>
+<td>Ionut-Gabriel Farcas</td>
+<td>Oden Institute</td>
+<td>Learning hierarchies of reduced-dimension and context-aware low-fidelity models for multi-fidelity Monte Carlo sampling</td>
+<td><a href="https://youtu.be/rzSpmPb1U-w">link</a></td>
+</tr>
+<tr>
+<td>Aug. 26th</td>
+<td>Jesse Capecelatro</td>
+<td>U. of Michagan</td>
+<td>Turbulent disperse two-phase flows: simulations and data-driven modeling</td>
+<td><a href="https://youtu.be/OCEbm-BpB6o">link</a></td>
+</tr>
+<tr>
+<td>Aug. 19th</td>
+<td>Christopher J. Earls</td>
+<td>Cornell U.</td>
+<td>Gaining mechanistic insight through learning Green's functions: Uncovering the solutions to hidden PDEs</td>
+<td><a href="https://youtu.be/GVxDaaE51cw">link</a></td>
+</tr>
+<tr>
+<td>Aug. 13, 10 AM</td>
+<td>Dmitriy Anistratov</td>
+<td>North Carolina State U.</td>
+<td>Reduced order models for thermal radiative transfer problems based on moment equations and POD/DMD of Eddington tensor</td>
+<td><a href="https://youtu.be/w7IdqXtOUmk">link</a></td>
+</tr>
+<tr>
+<td>Aug. 5th</td>
+<td>Luca Magri</td>
+<td>Imperial College, London</td>
+<td>Physics-aware reservoir-computing for turbulence and chaotic learning</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Jul. 30th</td>
+<td>Marta D'Elia</td>
+<td>Sandia</td>
+<td>Data-driven learning of nonlocal models: bridging scales and design of new neural networks</td>
+<td><a href="https://youtu.be/LWspDk6JHCQ">link</a></td>
+</tr>
+<tr>
+<td>Jul. 22nd</td>
+<td>Hannah Lu</td>
+<td>Stanford U.</td>
+<td>Dynamic model decomposition for reduced order modeling in flow and transport problems</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Jul. 15th</td>
+<td>Yeonjong Shin</td>
+<td>Brown U.</td>
+<td>Towards a mathematical understanding of modern machine learning: theory, algorithms, and applications</td>
+<td><a href="https://youtu.be/hhM3UTa_ib8">link</a></td>
+</tr>
+<tr>
+<td>Jul. 9th</td>
+<td>Rui Wang</td>
+<td>UC, San Diego</td>
+<td>Physics-guided deep learning for dynamics for forecasting</td>
+<td><a href="https://youtu.be/9ZE_LfPeUFY">link</a></td>
+</tr>
+<tr>
+<td>Jul. 1st</td>
+<td>Tan Bui</td>
+<td>UT, Austin</td>
+<td>Model-constrained deep learning approaches for inference, control, and uncertainty quantification</td>
+<td><a href="https://youtu.be/2yhaTyCvCqI">link</a></td>
+</tr>
+<tr>
+<td>Jun. 24th</td>
+<td>Matthew Zahr</td>
+<td>U. of Notre Dame</td>
+<td>Model reduction of convection-dominated partial differential equations via optimization-based implicit feature tracking</td>
+<td><a href="https://youtu.be/SwWForYG00o">link</a></td>
+</tr>
+<tr>
+<td>Jun. 10th</td>
+<td>David Ryckelynck</td>
+<td>Mines ParisTech</td>
+<td>Model order reduction assisted by deep neural networks (ROM-net)</td>
+<td><a href="https://youtu.be/I4rsDnh74LY">link</a></td>
+</tr>
+<tr>
+<td>Jun. 3rd</td>
+<td>Harbir Antil</td>
+<td>George Mason U.</td>
+<td>Applications of Fractional Operators from Optimal Control to Machine Learning</td>
+<td><a href="https://youtu.be/-k1ngMAFlZ0A">link</a></td>
+</tr>
+<tr>
+<td>May 27th</td>
+<td>Romit Maulik</td>
+<td>Argonne</td>
+<td>Neural architecture search for surrogate modeling</td>
+<td><a href="https://youtu.be/2GnOhvNoeC8">link</a></td>
+</tr>
+<tr>
+<td>May 20th</td>
+<td>Tobias Pfaff, Alvaro Sanchez-Gonzalez</td>
+<td>DeepMind</td>
+<td>Learning physical simulation with Graph Network</td>
+<td><a href="https://youtu.be/dtPcqEnLvqc">link</a></td>
+</tr>
+<tr>
+<td>May 14th</td>
+<td>George Karniadakis</td>
+<td>Brown U.</td>
+<td>Approximating functions, functionals, and operators using deep neural networks for diverse applications</td>
+<td><a href="https://youtu.be/X0WOKYKqo5Q">link</a></td>
+</tr>
+<tr>
+<td>Apr. 29th</td>
+<td>Traian Iliescu</td>
+<td>Virginia Tech.</td>
+<td>Large Eddy Simulation Reduced Order Models (LES-ROMs)</td>
+<td><a href="https://youtu.be/8WkhPIKsg7Q">link</a></td>
+</tr>
+<tr>
+<td>Apr. 15th</td>
+<td>Tommaso Taddei</td>
+<td>Inria</td>
+<td>Registration-based model reduction of parameterized advection-dominated PDEs</td>
+<td><a href="https://youtu.be/P10VGXOPNnY">link</a></td>
+</tr>
+<tr>
+<td>Apr. 7th</td>
+<td>Francisco Chinesta</td>
+<td>ENSAM ParisTech</td>
+<td>Empowering Hybrid Twins from Physics-Informed Artificial Intelligence</td>
+<td><a href="https://youtu.be/WKzjAA8isLw">link</a></td>
+</tr>
+<tr>
+<td>Apr. 1st</td>
+<td>Priya Donti</td>
+<td>Carnegie Mellon U.</td>
+<td>Incorporating power system physics into deep learning via implicit layers</td>
+<td><a href="https://youtu.be/5plt1tX7FUU">link</a></td>
+</tr>
+<tr>
+<td>Mar. 25th</td>
+<td>Mario Ohlberger</td>
+<td>U. Munster</td>
+<td>Model reduction with adaptive enrichment for large scale PDE-constrained optimization</td>
+<td><a href="https://youtu.be/4c_VSMpqzEs">link</a></td>
+</tr>
+<tr>
+<td>Mar. 18th</td>
+<td>Karthik Duraisamy</td>
+<td>U. of Michigan</td>
+<td>Towards Robust, Accurate and Tractable Reduced Order Models for Multi-scale, Multi-physics Problems</td>
+<td><a href="https://youtu.be/X2CLfnBuk0I">link</a></td>
+</tr>
+<tr>
+<td>Mar. 10th</td>
+<td>Pawan Goyal</td>
+<td>Max Planck</td>
+<td>Physics-informed learning for nonlinear dynamical systems: a deep learning approach to operator inference</td>
+<td><a href="https://youtu.be/0EHgv2J3Jnk">link</a></td>
+</tr>
+<tr>
+<td>Feb. 18th</td>
+<td>Nils Thuerey</td>
+<td>Technische Universitat Munchen</td>
+<td>Differentiable Physics Simulations for Deep Learning</td>
+<td><a href="https://youtu.be/fKYX3xoZn6c">link</a></td>
+</tr>
+<tr>
+<td>Jan. 27th</td>
+<td>Alfio Quarteroni</td>
+<td>EPFL</td>
+<td>The mathematical heart: a computational model for the simulation of the heart function</td>
+<td><a href="https://youtu.be/j-8zfz-E73c">link</a></td>
+</tr>
+<tr>
+<td>Jan. 21th</td>
+<td>Steven Brunton</td>
+<td>U. of Washington</td>
+<td>Interpretable and Generalizable Machine Learning for Fluid Mechanics</td>
+<td><a href="https://youtu.be/YlVvn38lyWk">link</a></td>
+</tr>
+<tr>
+<td>Jan. 7th</td>
+<td>Irina Tezaur</td>
+<td>Sandia</td>
+<td>The Schwarz alternating methods as a means for concurrent multiscale coupling in solid mechanics</td>
+<td><a href="https://youtu.be/t6hoTpY886k">link</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="past-talks-in-2020">Past Talks in 2020</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Speaker</th>
+<th>Institution</th>
+<th>Title</th>
+<th>YouTube</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dec. 17th</td>
+<td>Jan Hesthaven</td>
+<td>EPFL</td>
+<td>Non-intrusive reduced order models using physics informed neural networks</td>
+<td><a href="https://youtu.be/NcVNI3vNICM">link</a></td>
+</tr>
+<tr>
+<td>Dec. 10th</td>
+<td>Jesse Chan</td>
+<td>Rice U.</td>
+<td>Entropy stable schemes for nonlinear conservation laws: high order discontinuous Galerkin methods and reduced order modeling</td>
+<td><a href="https://youtu.be/5fOCBYHx42w">link</a></td>
+</tr>
+<tr>
+<td>Nov. 18th</td>
+<td>Paris Perdikaris</td>
+<td>UPenn</td>
+<td>When and why physics-informed neural networks fail to train: A neural tangent kernel perspective</td>
+<td><a href="https://youtu.be/xvOsV106kuA">link</a></td>
+</tr>
+<tr>
+<td>Nov. 12th</td>
+<td>Donsub Rim</td>
+<td>Courant Institute</td>
+<td>Distilling nonlinear shock waves: Nonlinear model reduction for transport dominated problems using deep neural networks</td>
+<td><a href="https://youtu.be/CMAGE3K7nTI">link</a></td>
+</tr>
+<tr>
+<td>Oct. 29th</td>
+<td>Byungsoo Kim</td>
+<td>ETH Zurich</td>
+<td>Data-Driven Methods for Fluid Simulations in Computer Graphics</td>
+<td><a href="https://youtu.be/Zd3CP605CW8">link</a></td>
+</tr>
+</tbody>
+</table></div>
+            <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#ddps-webinar-in-california-time">DDPS Webinar (in California time)</a></li>
+        
+            <li><a href="#scheduled-talks-2021">Scheduled Talks, 2021</a></li>
+        
+            <li><a href="#past-talks-in-2021">Past Talks in 2021</a></li>
+        
+            <li><a href="#past-talks-in-2020">Past Talks in 2020</a></li>
+        
+    
+    </ul>
+</div></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>

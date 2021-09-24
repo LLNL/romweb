@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="http://librom.org">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="examples.html">Examples</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="active">
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM/">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#publications">Publications</a></li>
+        
+            <li><a href="#2021">2021</a></li>
+        
+            <li><a href="#2020">2020</a></li>
+        
+            <li><a href="#2019-and-earlier">2019 and earlier</a></li>
+        
+    
+    </ul>
+</div></div> <!-- toc on top on mobile -->
+            <div class="col-md-9" role="main">
+
+<h1 id="publications">Publications</h1>
+<h4 id="2021">2021</h4>
+<ol>
+<li>C. Hoang, Y. Choi, K. Carlberg, <a href="https://www.sciencedirect.com/science/article/pii/S0045782521003285">Domain-decomposition least-squares Petrov-Galerkin (DD-LSPG) nonlinear model reduction</a>, <em>Computer Methods in Applied Mechanics and Engineering</em>, Volume 384, <strong>2021</strong></li>
+<li>S. McBane, Y. Choi, <a href="https://www.sciencedirect.com/science/article/pii/S0045782521001493">Component-wise reduced order model lattice-type structure design</a>, <em>Computer Methods in Applied Mechanics and Engineering</em>, 381, 113813, <strong>2021</strong>.</li>
+<li>D. Copeland, S.W. Cheung, K. Huynh, Y. Choi, <a href="https://arxiv.org/abs/2104.11404">Reduced order models for Lagrangian hydrodynamics</a>, <em>arXiv preprint</em>, arXiv:2104.11404, <strong>2021</strong></li>
+<li>Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, <a href="https://www.sciencedirect.com/science/article/pii/S0021999120306197">Space-time reduced order model for large-scale linear dynamical systems with application to Boltzmann transport problems</a>, <em>Journal of Computational Physics</em>, 424,109845, <strong>2021</strong>. Also available as <a href="https://arxiv.org/pdf/1910.01260.pdf">arXiv:1910.01260</a>.</li>
+</ol>
+<hr />
+<h4 id="2020">2020</h4>
+<ol>
+<li>Y. Choi, D. Coombs, R. Anderson, <a href="https://epubs.siam.org/doi/abs/10.1137/19M1242963">SNS: A Solution-based nonlinear subspace method for time-dependent model order reduction</a>, <em>SIAM Journal on Scientific Computing</em>, 42(2), A1116-A1147, <strong>2020</strong></li>
+<li>Y. Choi, G. Boncoraglio, S. Anderson, D. Amsallem, C. Farhat <a href="https://www.sciencedirect.com/science/article/pii/S0021999120305611">Gradient-based constrained optimization using a database of linear reduced order models</a>, <em>Journal of Computational Physics</em>, 423, 109787, <strong>2020</strong>. Also available as <a href="https://arxiv.org/pdf/1506.07849.pdf">arXiv:1506.07849</a>.</li>
+<li>Y. Kim, K.M. Wang, Y. Choi, <a href="https://arxiv.org/pdf/2011.10648.pdf">Efficient space-time reduced order model for linear dynamical systems in Python using less than 120 lines of code</a>, <em>arXiv preprint</em>, arXiv:2011.10648, <strong>2020</strong> </li>
+<li>Y. Kim, Y. Choi, D. Widemann, T. Zohdi, <a href="https://ml4eng.github.io/camera_readys/10.pdf">Efficient nonlinear manifold reduced order model</a> <em>Workshop on machine learning for engineering modeling, simulation and design @ NeurIPS 2020</em>, <strong>2020</strong>. Also available as <a href="https://arxiv.org/abs/2011.07727">arXiv:2011.07727</a></li>
+<li>Y. Kim, Y. Choi, D. Widemann, T. Zohdi, <a href="https://arxiv.org/pdf/2009.11990.pdf">A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder</a> <em>arXiv preprint</em>, arXiv:2009.11990, <strong>2020</strong></li>
+</ol>
+<hr />
+<h4 id="2019-and-earlier">2019 and earlier</h4>
+<ol>
+<li>Y. Choi, K. Carlberg, <a href="https://epubs.siam.org/doi/abs/10.1137/17M1120531">Space-time least-squares Petrov-Galerkin projection for nonlinear model reduction</a>, <em>SIAM Journal on Scientific Computing</em>, 41(1), A26-A58, <strong>2019</strong></li>
+<li>Y. Choi, G. Oxberry, D. Whit, T. Kirchdoerfer, <a href="https://arxiv.org/pdf/1909.11320.pdf">Accelerating design optimization using reduced order models</a>, <em>arXiv preprint</em>, arXiv:1909.11320, <strong>2019</strong></li>
+<li>K. Carlberg, Y. Choi, S. Sargsyan, <a href="https://www.sciencedirect.com/science/article/pii/S002199911830319X">Conservative model reduction for finite-volume models</a>, 371, p280-314, <strong>2018</strong></li>
+<li>G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283">Limited-memory adaptive snapshot selection for proper orthogonal decomposition</a>, <em>International Journal of Numerical Methods in Engineering</em>, 109(2), p198-217, <strong>2016</strong></li>
+<li>D. Amsallem, M. Zahr, Y. Choi, C. Farhat, <a href="https://link.springer.com/article/10.1007/s00158-014-1183-y">Design optimization using hyper-reduced-order models</a>, <em>Structural and Multidisciplinary Optimization</em>, 51, p919-940, <strong>2015</strong></li>
+</ol>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
+            <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#publications">Publications</a></li>
+        
+            <li><a href="#2021">2021</a></li>
+        
+            <li><a href="#2020">2020</a></li>
+        
+            <li><a href="#2019-and-earlier">2019 and earlier</a></li>
+        
+    
+    </ul>
+</div></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>

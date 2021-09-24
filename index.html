@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="http://librom.org">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="examples.html">Examples</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM/">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            
+
+<div class="col-md-6">
+<p><a href="gallery.html"><img alt="libROM logo" src="img/logo-libROM2.png" /></a></p>
+<p>libROM is a <em>free</em>, <em>lightweight</em>, <em>scalable</em> C++ library for data-driven
+physical simulation methods.  It is the main tool box that the reduced order
+modeling team at LLNL uses to develop efficient <strong>model order reduction</strong>
+techniques and <strong>physics-constrained data-driven methods</strong>. We try to collect
+any useful reduced order model routines, which are separable to the
+high-fidelity physics solvers, into libROM. Plus, libROM is open source, so
+anyone is welcome to suggest new ideas or contribute to the development. Let's
+work together for better data-driven technology!</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><a href="features.html#proper-orthogonal-decomposition">Proper Orthogonal Decomposition</a></li>
+<li><a href="features.html#dynamic-mode-decomposition">Dynamic mode decomposition</a></li>
+<li><a href="features.html#projection-based-reduced-order-model">Projection-based reduced order models</a></li>
+<li><a href="features.html#hyper-reduction">Hyper-reduction</a></li>
+<li><a href="features.html#greedy-sampling-algorithm">Greedy algorithm</a></li>
+</ul>
+<p>Many more features will be available soon. Stay tuned!</p>
+<p>libROM is used in many projects, including
+<a href="http://www.llnl.gov/casc/blast">BLAST</a>,
+<a href="https://computing.llnl.gov/projects/ardra-scaling-up-sweep-transport-algorithms">ARDRA</a>,
+<a href="https://github.com/CEED/Laghos/tree/rom">Laghos</a>,
+and <a href="https://su2code.github.io/">SU2</a>. Many <a href="https://mfem.org">MFEM</a>-based ROM
+examples can be found in <a href="examples.html">Examples</a>.</p>
+<p>See also our <a href="gallery.html">Gallery</a>, <a href="publications.html">Publications</a> and
+<a href="news.html">News</a> pages.</p>
+</div>
+<div class="col-md-6 news-table">
+<h2 id="news">News</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oct 1, 2021</td>
+<td><a href="https://www.sciencedirect.com/science/article/pii/S0045782521003285">Domain decomposition ROM</a> paper is published in CMAME</td>
+</tr>
+<tr>
+<td>Sep XX, 2021</td>
+<td>First version of libROM webpage is launched</td>
+</tr>
+<tr>
+<td>July 19, 2021</td>
+<td><a href="https://www.mdpi.com/2227-7390/9/14/1690">Space time ROM-Python</a> paper is published in Mathematics</td>
+</tr>
+<tr>
+<td>Apr 23, 2021</td>
+<td><a href="https://arxiv.org/pdf/2104.11404.pdf">Laghos ROM</a> arXiv preprint is available</td>
+</tr>
+<tr>
+<td>Jan 1, 2021</td>
+<td><a href="https://doi.org/10.1016/j.jcp.2020.109845">Space-time ROM</a> paper is published in Journal of Computational Physics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="librom-tutorials-in-youtube">libROM tutorials in YouTube</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>July 22, 2021</td>
+<td><a href="https://youtu.be/YaZPtlbGay4">Poisson equation &amp; its finite element discretization</a></td>
+</tr>
+<tr>
+<td>Sep. 1, 2021</td>
+<td><a href="https://youtu.be/YlFrBP31riA">Poisson equation &amp; its reduced order model</a></td>
+</tr>
+<tr>
+<td>Sep. 23, 2021</td>
+<td><a href="https://youtu.be/A5JlIXRHxrI">Physics-informed sampling procedure for reduced order models</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="latest-release">Latest Release</h2>
+<p><a href="examples.html">Examples</a>
+┊ <a href="http://software.llnl.gov/libROM/html/index.html">Code documentation</a>
+┊ <a href="https://github.com/LLNL/libROM">Sources</a></p>
+<p><a href="https://github.com/LLNL/libROM/archive/refs/heads/master.zip"><button type="button" class="btn btn-success">
+<strong>Download libROM-master.zip</strong>
+</button></a></p>
+<!---
+[Older releases](download.md) ┊ [Python wrapper](https://github.com/mfem/PylibROM)
+-->
+<h2 id="documentation">Documentation</h2>
+<p><a href="building.html">Building libROM</a>
+┊ <a href="poisson.html">Poisson equation</a>
+┊ <a href="poisson_greedy.md">Greedy for Poisson</a></p>
+<p>New users should start by examining the <a href="examples.html">example codes</a> and
+<a href="poisson.html">tutorials</a>.</p>
+<p>We also recommend using <a href="http://glvis.org">GLVis</a> or
+<a href="https://visit-dav.github.io/visit-website/">VisIt</a> for visualization.</p>
+<h2 id="contact">Contact</h2>
+<p>Use the GitHub <a href="https://github.com/LLNL/libROM/issues">issue tracker</a>
+to report <a href="https://github.com/LLNL/libROM/issues/new?labels=bug">bugs</a>
+or post <a href="https://github.com/LLNL/libROM/issues/new?labels=question">questions</a>
+or <a href="https://github.com/LLNL/libROM/issues/new?labels=comments">comments</a>.
+See the <a href="about.html">About</a> page for citation information.</p>
+</div>
+<div class="col-md-12"></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>

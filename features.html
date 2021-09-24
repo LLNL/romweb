@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="http://librom.org">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li class="active">
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="examples.html">Examples</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM/">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#features">Features</a></li>
+        
+            <li><a href="#proper-orthogonal-decomposition">Proper orthogonal decomposition</a></li>
+        
+            <li><a href="#dynamic-mode-decomposition">Dynamic Mode Decomposition</a></li>
+        
+            <li><a href="#projection-based-reduced-order-model">Projection-based reduced order model</a></li>
+        
+            <li><a href="#hyper-reduction">Hyper-reduction</a></li>
+        
+            <li><a href="#parametric-roms">Parametric ROMs</a></li>
+        
+            <li><a href="#greedy-sampling-algorithm">Greedy sampling algorithm</a></li>
+        
+            <li><a href="#open-source">Open Source</a></li>
+        
+    
+    </ul>
+</div></div> <!-- toc on top on mobile -->
+            <div class="col-md-9" role="main">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<h1 id="features">Features</h1>
+<p>The goal of libROM is to provide high-performance scalable library for
+data-driven reduced order modeling. </p>
+<h2 id="proper-orthogonal-decomposition">Proper orthogonal decomposition</h2>
+<p>One of the core features in libROM is the ability to extract important
+modes from given physical simulation data.  The proper othogonal
+decomposition (POD) is a popular method for compressing physical
+simulation data to obtain optimal "reduced" bases in the following sense:</p>
+<p>$$\boldsymbol{\Phi} =\underset{\boldsymbol{A}\in\mathbb{R}^{n\times r},
+\boldsymbol{A}^T\boldsymbol{A} = \boldsymbol{I}_{r\times r} }{\arg\min} ||
+\boldsymbol{U} - \boldsymbol{A}\boldsymbol{A}^T\boldsymbol{U} ||_F^2, $$</p>
+<p>where $\boldsymbol{U}\in\mathbb{R}^{n\times m}$ is simulation data and
+$\boldsymbol{I}_{r\times r} \in \mathbb{R}^{r\times r}$ denotes an identity
+matrix.  That is, the POD tries to find the orthogonal matrix,
+$\boldsymbol{\Phi}$, whose span minimizes the projection error in the Frobenius
+norm.  The POD modes can be obtained in two equivalent ways: (i) eigenvalue
+decomposition and (ii) singular value decomposition (SVD). We take the latter
+approach, i.e., let's say the thin SVD of $\boldsymbol{U}$ is given by </p>
+<p>$$\boldsymbol{U} = \boldsymbol{W\Sigma V}^T.$$</p>
+<p>Then the solution of the POD is given by taking the first $r$ columns of the
+left singular matrix, i.e., $\boldsymbol{\Phi} = [\boldsymbol{w}_{1},\ldots
+,\boldsymbol{w}_r]$, where $\boldsymbol{w}_k$ is $k$th left singular vector,
+assuming that the singular value is written in the decreasing order. </p>
+<h3 id="efficient-data-collection">Efficient data collection</h3>
+<p>High-fidelity physical simulations generate intensive data in its size, which
+makes the data collection process daunting. Therefore, the libROM aims to
+ease the difficulty associated with the intensive data size. </p>
+<p>The libROM can be directly integrated to the physics solver that generates the
+intensive simulation data. For example, if the physical simulation is time
+dependent, then each time step solution data can be feed into the libROM
+incrementally so that the singular value decomposition is efficiently updated
+in parallel. This approach is <em>incremental SVD</em>. There are other types of SVDs
+which exploits efficiency.  The libROM provides following four SVDs:</p>
+<ul>
+<li>Static SVD</li>
+<li>incremental SVD</li>
+<li>randomized SVD</li>
+<li>space-time SVD</li>
+</ul>
+<h3 id="static-svd">Static SVD</h3>
+<p>The static SVD waits the libROM to collect all the simulation data. Once the
+snapshot matrix $\boldsymbol{U}$ is formed, then the SVD is performed.
+Therefore, if the data size is big, this approach is not efficient and not
+recommended. However, because it gives the most accurate SVD results, it is
+ideal for a small problem.</p>
+<h3 id="incremental-svd">Incremental SVD</h3>
+<p>Unlike the static SVD, the incremental SVD does not wait. Instead, as the data
+comes in, the SVD is performed right away. Because the incremental SVD only
+needs to find out the effect of one additional simulation data vector to the
+previous SVD, the update can be done very efficiently without requiring much
+memory. Therefore, it is useful for large-scale problems. For the detailed
+explanation about the incremental SVD, we refer to the following journal papers:</p>
+<ul>
+<li>M. Brand, <a href="https://www.cse.wustl.edu/~zhang/teaching/cs517/Spring12/CourseProjects/incremental%20svd%20missing%20value.pdf">Incremental singular value decomposition of uncertain data with
+     missing
+     values</a>,
+     In <em>European Conference on Computer Vision</em>, p707-720, Springer, <strong>2002</strong></li>
+<li>G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283">Limited-memory
+     adaptive snapshot selection for proper orthogonal
+     decomposition</a>,
+     <em>International Journal of Numerical Methods in Engineering</em>, 109(2),
+     p198-217, <strong>2016</strong></li>
+<li>H. Fareed, J.R. Singler, <a href="https://www.sciencedirect.com/science/article/pii/S0377042719305308">Error Analysis of an Incremental Proper
+     Orthogonal Decomposition Algorithm for PDE Simulation
+     Data</a>,
+     <em>Journal of Computational and Applied Mathematics</em>, 368, <strong>2020</strong></li>
+</ul>
+<h3 id="randomized-svd">Randomized SVD</h3>
+<p>Randomization can bring computational efficiency in computing SVDs. For
+example, consider that one needs to extract $p$ dominant modes from $n \times
+m$ tall dense matrix, using SVD. The <em>randomized SVD</em> requires
+$\mathcal{O}(nm\log(p))$ floating-point operations, while the <em>static SVD</em>
+algorithm requires $\mathcal{O}(nmp)$ flops. The <em>randomized SVD</em> that is
+implemented in libROM can be found in the following journal paper:</p>
+<ul>
+<li>N. Halko, P.G. Martinsson, J.A. Tropp, <a href="https://epubs.siam.org/doi/abs/10.1137/090771806">Finding structure with
+      randomness: Probabilistic algorithms for constructing approximate matrix
+      decompositions</a>. <em>SIAM
+      review</em>, 53(2), p217-288, <strong>2011</strong></li>
+</ul>
+<h3 id="space-time-svd">Space-time SVD</h3>
+<p>For time dependent problems, one can reduce not only the spatial degrees of
+freedom, but also the temporal degrees of freedom by representing the
+space-time solution as a linear combination of a space-time reduced basis.
+The space-time reduced basis can be mathematically written as a Kronecker
+product of temporal and spatial bases. Fortunately, one can extract temporal as
+well as spatial reduced bases from one single SVD.  The procedure is
+schematically depicted in the figure below:</p>
+<p><img src="../img/svd.png" align="right" alt="POD"></p>
+<p>For the detailed explanation about the incremental SVD, we refer to the
+following three journal papers:</p>
+<ul>
+<li>Y. Kim, K. Wang, Y. Choi, <a href="https://www.mdpi.com/2227-7390/9/14/1690">Efficient space–time reduced order model for
+  linear dynamical systems in Python using less than 120 lines of
+  code</a>. <em>Mathematics</em>, 9(14),
+  p.1690, <strong>2021</strong></li>
+<li>Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, <a href="https://www.sciencedirect.com/science/article/pii/S0021999120306197">Space–time reduced
+  order model for large-scale linear dynamical systems with application to
+  boltzmann transport
+  problems</a>.
+  <em>Journal of Computational Physics</em>, 424, p.109845, <strong>2021</strong></li>
+<li>Y. Choi, K. Carlberg, <a href="https://epubs.siam.org/doi/abs/10.1137/17M1120531">Space-time least-squares Petrov-Galerkin projection
+  for nonlinear model
+          reduction</a>, <em>SIAM
+          Journal on Scientific Computing</em>, 41(1), A26-A58, <strong>2019</strong> </li>
+</ul>
+<h2 id="dynamic-mode-decomposition">Dynamic Mode Decomposition</h2>
+<p>The dynamic mode decomposition (DMD) provides a great way of finding an
+approximate locally linear dynamical system, </p>
+<p>$$ \frac{d\boldsymbol{u}}{dt} = \mathcal{A}\boldsymbol{u},$$</p>
+<p>for a given nonlinear dynamical system,</p>
+<p>$$ \frac{d\boldsymbol{u}}{dt} =
+\boldsymbol{f}(\boldsymbol{u},t;\boldsymbol{\mu}),$$</p>
+<p>with initial condition, $\boldsymbol{u}_0$.
+It takes non-intrusive approach, i.e., equation-free method, so it is
+applicable even if there is only data, but no
+$\boldsymbol{f}(\boldsymbol{u},t;\boldsymbol{\mu})$. For example, let's say the
+discrete-time data are given as:</p>
+<p>$$\boldsymbol{U} = [\boldsymbol{u}_1,\ldots,\boldsymbol{u}_m],$$</p>
+<p>where $\boldsymbol{u}_k\in\mathbb{R}^n$ denotes solution at $t=k\Delta t$.
+The DMD is trying to find the best $\boldsymbol{A}$ such that </p>
+<p>$$\boldsymbol{U}^+ = \boldsymbol{A}\boldsymbol{U}^-,$$ </p>
+<p>where $\boldsymbol{U}^+ = [\boldsymbol{u}_2,\ldots,\boldsymbol{u}_m]$ and
+$\boldsymbol{U}^- = [\boldsymbol{u}_1, \ldots, \boldsymbol{u}_{m-1}]$. The
+following procedure is taken to find the best $\boldsymbol{A}$.</p>
+<ol>
+<li>
+<p>Take the singular value decomposition (SVD) of $\boldsymbol{U}^-$  </p>
+<p>$$\boldsymbol{U}^- \approx \boldsymbol{W}\boldsymbol{\Omega}\boldsymbol{V}^*,$$</p>
+<p>where $*$ denotes the conjugate transpose,
+ $\boldsymbol{W}\in\mathbb{C}^{n\times r}$,
+ $\boldsymbol{\Sigma}\in\mathbb{C}^{r\times r}$,
+ $\boldsymbol{V}\in\mathbb{C}^{m\times r}$, and $r \leq m$.</p>
+</li>
+<li>
+<p>Because $\boldsymbol{U}^+ = \boldsymbol{A}\boldsymbol{U}^-$, using the
+     pseudo-inverse of the approximate $\boldsymbol{U}^-$, we have</p>
+<p>$$\boldsymbol{A} \approx \tilde{\boldsymbol{A}} = 
+ \boldsymbol{U}^+\boldsymbol{V}\boldsymbol{\Omega}^{-1}\boldsymbol{W}^*$$</p>
+</li>
+<li>
+<p>It is easier to deal with the reduced operator $\tilde{\boldsymbol{A}}_r$,
+     which relates the discrete-time dynamic of reduced states:</p>
+<p>$$\tilde{\boldsymbol{u}}_{k+1} = \tilde{\boldsymbol{A}}_r\tilde{\boldsymbol{u}}_k,$$ </p>
+<p>where $\boldsymbol{u}_k = \boldsymbol{W}
+ \tilde{\boldsymbol{u}}_k$ and $\tilde{\boldsymbol{A}}_r$ is defined as </p>
+<p>$$\tilde{\boldsymbol{A}}_r=\boldsymbol{W}^*\tilde{\boldsymbol{A}}\boldsymbol{W}$$</p>
+<p>$$\tilde{\boldsymbol{A}}_r=\boldsymbol{W}^*\boldsymbol{U}^+\boldsymbol{V}\boldsymbol{\Omega}^{-1}$$</p>
+</li>
+<li>
+<p>Let the eigen-decomposition of $\tilde{\boldsymbol{A}}_r$ to be</p>
+<p>$$\tilde{\boldsymbol{A}}_r \boldsymbol{X} = \boldsymbol{\Lambda}\boldsymbol{X}$$</p>
+<p>and set $\boldsymbol{\Phi} = \boldsymbol{W}\boldsymbol{X}$, then the DMD
+ solution at time, $t$, can be found as</p>
+<p>$$\boldsymbol{u}(t) = \boldsymbol{\Phi}\boldsymbol{\Lambda}^{t/\Delta t} \boldsymbol{b}_0,$$</p>
+<p>where $\boldsymbol{b}_0 = \boldsymbol{\Phi}^\dagger \boldsymbol{u}_0$.</p>
+</li>
+</ol>
+<p>For the detailed explanation about the DMD, we refer to the following book:</p>
+<ul>
+<li>J.N. Kutz, S.L. Brunton, B.W. Brunton, J.L. Proctor, <a href="https://epubs.siam.org/doi/pdf/10.1137/1.9781611974508.ch1">Dynamic mode
+  decomposition: data-driven modeling of complex
+  systems</a>.
+  <em>Society for Industrial and Applied Mathematics</em>, <strong>2016</strong></li>
+</ul>
+<h2 id="projection-based-reduced-order-model">Projection-based reduced order model</h2>
+<p>In contrast to the DMD, the projection-based reduced order model (pROM) takes
+an intrusive approach, that is, it is <em>NOT</em> equation-free. The pROM first
+represents the solution as a linear combincation of reduced basis. The reduced
+basis can be obtained by the POD, for example. Let's denote the reduced basis
+as $\boldsymbol{\Phi}\in\mathbb{R}^{n\times r}$ and express the solution,
+$\boldsymbol{u}\in\mathbb{R}^n$ as</p>
+<p>$$\boldsymbol{u} =
+\boldsymbol{u}_{\text{ref}}+\boldsymbol{\Phi}\hat{\boldsymbol{u}},$$</p>
+<p>where $\hat{\boldsymbol{u}} \in \mathbb{R}^r$ denotes the generalized
+coordinates with respect to the reduced basis. Then we substitute
+$\boldsymbol{u}$ in the governing equation, say a nonlinear dynamical system governed by the following ordinary differential equations,</p>
+<p>$$\frac{d\boldsymbol{u}}{dt} =
+\boldsymbol{f}(\boldsymbol{u},t;\boldsymbol{\mu}),$$</p>
+<p>to obtain the over-determined system, i.e., </p>
+<p>$$\boldsymbol{\Phi}\frac{d\hat{\boldsymbol{u}}}{dt} =
+\boldsymbol{f}(\boldsymbol{u}_{\text{ref}}+\boldsymbol{\Phi}\hat{\boldsymbol{u}},t;\boldsymbol{\mu}),$$</p>
+<p>which has more equations than unknowns. Therefore, the system needs to be
+closed by a projection. Galerkin and Petrov-Galerking projections are popular.
+For example, the Galerkin projection multiplies both sides by $\boldsymbol{\Phi}^T$ 
+and the system of equations become</p>
+<p>$$\frac{d\hat{\boldsymbol{u}}}{dt} = \boldsymbol{\Phi}^T
+\boldsymbol{f}(\boldsymbol{u}_{\text{ref}}+\boldsymbol{\Phi}\hat{\boldsymbol{u}},t;\boldsymbol{\mu})$$</p>
+<p>By the way, the nonlinear term $\boldsymbol{f}$ still scales with the full
+order model size and it needs to be updated every time its argument changes due
+to Newton step updates, for example. The <em>hyper-reduction</em> provides an
+efficient way of computing nonlinear terms by sampling an important subset. By
+the way, if $\boldsymbol{f}$ is linear, then
+$\boldsymbol{\Phi}^T\boldsymbol{f}$ can be pre-computed, so the hyper-reduction
+is not necessary.</p>
+<h2 id="hyper-reduction">Hyper-reduction</h2>
+<p>Hyper-reduction is essential to reduce the complexity of <em>nonlinear</em> terms in
+pROM. The most popular hyper-reduction technique is the discrete empirical
+interpolation method (DEIM). The DEIM approximates the nonlinear term with a
+gappy POD, i.e., it expresses the nonlinear term with a linear combination of
+the nonlinear term reduced basis, $\boldsymbol{\Phi}_{f}\in\mathbb{R}^{n\times
+f}$:</p>
+<p>$$\boldsymbol{f} \approx \boldsymbol{\Phi}_f \hat{\boldsymbol{f}},$$</p>
+<p>where $\hat{\boldsymbol{f}}\in\mathbb{R}^{f}$ is a generalized coordinate for
+the nonlinear term. The usual data for the nonlinear term basis,
+$\boldsymbol{\Phi}_{f}$ is snapshot of nonlinear term itself. Alternatively, it
+can be replaced by the solution basis (i.e., $\boldsymbol{\Phi}$ or slight
+modification of it) via the SNS method introduced in the following journal
+paper:</p>
+<ul>
+<li>Y. Choi, D. Coombs, R. Anderson, <a href="https://epubs.siam.org/doi/abs/10.1137/19M1242963">SNS: a solution-based nonlinear subspace
+  method for time-dependent model order
+  reduction</a>.  <em>Society for
+  Industrial and Applied Mathematics</em>, <strong>2020</strong></li>
+</ul>
+<p>Then, we introduce a sampling matrix (in order words, a collocation matrix),
+$\boldsymbol{Z}\in\mathbb{R}^{n\times z}$, which selects a subset of the
+nonliear term, $\boldsymbol{F}$. That is, each column of $\boldsymbol{Z}$ is a
+column of the identity matrix, $\boldsymbol{I} \in \mathbb{R}^{n\times n}$.
+Combining the collocation matrix and the nonlinear basis, we solve the
+following least-squares problem to solve for the generalized coordinate,
+$\hat{\boldsymbol{f}}$:</p>
+<p>$$\hat{\boldsymbol{f}} = \underset{\boldsymbol{y}\in{\mathbb{R}^{f}}}{\arg\min} \hspace{3pt} ||
+\boldsymbol{Z}^T\boldsymbol{f} - \boldsymbol{Z}^T\boldsymbol{\Phi}_f
+\boldsymbol{y} ||_2^2$$</p>
+<p>The solution to the least-squares problem is known to be </p>
+<p>$$\hat{\boldsymbol{f}} = (\boldsymbol{Z}^T\boldsymbol{\Phi}_{f})^\dagger \boldsymbol{Z}^T\boldsymbol{f}.$$</p>
+<p>Note that $(\boldsymbol{Z}^T\boldsymbol{\Phi}_{f})^\dagger$ can be pre-computed
+once the indices for $\boldsymbol{Z}$ and $\boldsymbol{\Phi}_f$ are known. Note
+also that you do not need to construct $\boldsymbol{Z}$. You only need to
+sample selected rows of $\boldsymbol{\Phi}_f$ and do the pseudo-inversion. This
+is what we do in libROM. Also note that we only need to evaluate a subset of
+$\boldsymbol{f}$ because of $\boldsymbol{Z}^T$ in front of $\boldsymbol{f}$.</p>
+<h2 id="parametric-roms">Parametric ROMs</h2>
+<p>Whether it is intrusive or non-intrusive ROM, if the ROM can only reproduce the
+full order model simulation data with high accuracy, it is useless because the
+full order model solution is already available. In order for any ROMs to be
+useful, they must be able to predict the solution which is not generated yet.
+We call such a ROM <em>parametric</em> because it is able to predict the solution for
+a new parameter value. Two extreme types of parametric ROMs are global and
+local ROMs. </p>
+<h3 id="global-roms">Global ROMs</h3>
+<p>The global ROMs collect simulation data over several sampled points in a given
+parameter space and use all of them as a whole, building a global reduced
+basis. The size of the reduced basis becomes larger as the number of samples
+increases. Therefore, the global ROM is only effective when a small number of
+samples are used. </p>
+<h3 id="local-roms">Local ROMs</h3>
+<p>A local ROM is built with the simulation data corresponding only to one
+specific sample. Usually, several local ROMs are built for several sample
+points and either interpolation or trust-region is used to predict the solution
+at points which were not sampled.</p>
+<h2 id="greedy-sampling-algorithm">Greedy sampling algorithm</h2>
+<p>The greedy sampling algorithm is a physics-informed sampling strategy to build
+a <em>parametric ROM</em>. The parametric ROM can be used to predict the solution of a
+new parameter point that has not been seen in the training phase. The greey
+algorithms follow the general procedure below:</p>
+<ol>
+<li>Define a parameter space </li>
+<li>Pick an initial point in the parameter space to build a ROM there (a good
+     cancidiate initla point is either the centroid or one of end points)</li>
+<li>Evaluate <em>error indicator</em> of the current ROM (either global or local ROM)
+     at $N$ random points within the parameter space</li>
+<li>Check if the maximum error indicator value is less than the desirable
+     accuracy threshold</li>
+<li>If the answer to Step 4 is yes, then <em>terminate</em> the greedy process.</li>
+<li>If the answer to Step 4 is no, then collect the full order model
+     simulation data at the maximum error indicator point and add them to
+     update the ROM</li>
+<li>Go to Step 3. </li>
+</ol>
+<p>The success of the greedy algorithm depends on the <em>error indicator</em>. The error
+indicator must satisfy the following two criteria:</p>
+<ul>
+<li>Its value must have positive correlation with the relative error measure</li>
+<li>The evaluation of the error indicator must be computationally efficient</li>
+</ul>
+<p>Note that the error indicator plays a role of a proxy for the accuracy of the
+ROM.  The most popular error indicator is residual-based, which we recommend
+you to use for your physical simulations. </p>
+<p>The general framework of the greedy algorithm is implemented in libROM. The
+example of the libROM usage case can be found for the Poisson problem at
+<a href="https://github.com/LLNL/libROM/blob/master/examples/poisson_greedy.cpp">poisson_greedy.cpp</a>.
+The corresponding tutorial page can be found <a href="poisson_greedy.md">here</a>.</p>
+<p>Several variants of the greedy procedure described above is possible.  For more
+detailed explanation about the greedy algorithm, we refer to the following
+jounral paper, where the greedy algorithm is described for the interpolated ROM
+in a matrix manifold:</p>
+<ul>
+<li>Y. Choi, G. Boncoraglio, S. Anderson, D. Amsallem, C. Farhat, <a href="https://www.sciencedirect.com/science/article/pii/S0021999120305611">Gradient-based
+  constrained optimization using a database of linear reduced order
+  models</a>.
+  <em>Journal of Computational Physics</em>, <strong>2020</strong></li>
+</ul>
+<p>We recommend another excellent paper for the greedy algorithm:</p>
+<ul>
+<li>A. Paul-Dubois-Taine, D. Amsallem, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.4759">An adaptive and efficient greedy
+  procedure for the optimal training of parametric reduced-order
+  models</a>.
+  <em>Numerical Methods in Engineering</em>, <strong>2014</strong></li>
+</ul>
+<h2 id="open-source">Open Source</h2>
+<p>libROM is an open-source software, and can be freely used under the terms of the
+<a href="https://github.com/LLNL/libROM/blob/master/LICENSE-MIT">MIT</a> and
+<a href="https://github.com/LLNL/libROM/blob/master/LICENSE-APACHE">APACHE</a> license.</p></div>
+            <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#features">Features</a></li>
+        
+            <li><a href="#proper-orthogonal-decomposition">Proper orthogonal decomposition</a></li>
+        
+            <li><a href="#dynamic-mode-decomposition">Dynamic Mode Decomposition</a></li>
+        
+            <li><a href="#projection-based-reduced-order-model">Projection-based reduced order model</a></li>
+        
+            <li><a href="#hyper-reduction">Hyper-reduction</a></li>
+        
+            <li><a href="#parametric-roms">Parametric ROMs</a></li>
+        
+            <li><a href="#greedy-sampling-algorithm">Greedy sampling algorithm</a></li>
+        
+            <li><a href="#open-source">Open Source</a></li>
+        
+    
+    </ul>
+</div></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>

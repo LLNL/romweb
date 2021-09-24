@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="http://librom.org">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="active">
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="examples.html">Examples</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM/">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-12" role="main">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<h1 id="example-applications">Example Applications</h1>
+<p>This page provides a list of libROM example applications.  For detailed
+documentation of the libROM sources, including the examples, see the <a href="http://software.llnl.gov/libROM/html/index.html">online
+Doxygen documentation</a> or the <code>doc</code> directory in the distribution.  The goal of the example
+codes is to provide a step-by-step introduction to libROM in simple model
+settings.</p>
+<p>Select from the categories below to display examples and miniapps that contain
+the respective feature. <em>All examples support (arbitrarily) high-order meshes
+and finite element spaces</em>.  The numerical results from the example codes can
+be visualized using the GLVis or VisIt visualization tools. See the <a href="http://glvis.org">GLVis
+</a> and <a href="https://visit-dav.github.io/visit-website/">VisIt</a>
+websites for more details.</p>
+<p>Users are encouraged to submit any example codes and miniapps that they have
+created and would like to share. <br>
+<em>Contact a member of the libROM team to report
+<a href="https://github.com/LLNL/libROM/labels/bug">bugs</a>
+or post <a href="https://github.com/LLNL/libROM/labels/question">questions</a>
+or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</p>
+<div class="row">
+<div class="col-sm-6 col-md-2 small">
+<h5 id="application-pde">**Application (PDE)**</h5>
+<p><select id="group1" onchange="update()">
+      <option id="all1">All</option>
+      <option id="diffusion">Diffusion</option>
+      <option id="elasticity">Elasticity</option>
+      <option id="euler">Euler</option>
+      <option id="advection">Advection</option>
+      <option id="compressibleflow">Compressible flow</option>
+   </select></p>
+</div>
+<div class="col-sm-6 col-md-3 small">
+<h5 id="reduced-order-models-type">**Reduced order models type**</h5>
+<p><select id="group2" onchange="update()">
+      <option id="all2">All</option>
+      <option id="prom">pROM</option>
+      <option id="dmd">DMD</option>
+   </select></p>
+</div>
+<div class="clearfix hidden-md hidden-lg"></div>
+<div class="col-sm-6 col-md-3 small">
+<h5 id="parameterization-type">**Parameterization type**</h5>
+<p><select id="group3" onchange="update()">
+      <option id="all3">All</option>
+      <option id="tr">Trust region</option>
+      <option id="interpolation">Interpolation</option>
+      <option id="global">Global</option>
+      <option id="reproductive">Reproductive</option>
+   </select></p>
+</div>
+<div class="col-sm-6 col-md-4 small">
+<h5 id="hyper-reduction">**hyper-reduction**</h5>
+<p><select id="group4" onchange="update()">
+      <option id="all4">All</option>
+      <option id="hr">Hyper-reduction</option>
+      <option id="no_hr">No hyper-reduction</option>
+   </select></p>
+</div>
+</div>
+<p><br></p>
+<hr>
+
+<!-- ------------------------------------------------------------------------- -->
+
+<div id="poisson">
+<h2 id="poisson-problem">Poisson Problem</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/poisson.png" width="250">
+</a></p>
+<p>This example code demonstrates the use of libROM and MFEM to define a reduced
+order model for a simple isoparametric finite element discretization of the
+Poisson problem $$-\Delta u = f$$ with homogeneous Dirichlet boundary
+conditions. The example parameterizes the righthand side with frequency
+variable, $\kappa$:</p>
+<p>$$f =<br />
+  \cases{
+  \displaystyle \sin(\kappa (x_0+x_1+x_2)) &amp; for 3D  \cr
+  \displaystyle \sin(\kappa (x_0+x_1))     &amp; for 2D<br />
+  }$$</p>
+<p>The 2D solutoin contour plot for $\kappa=1$ is shown in the figure
+on the right to show the effect of $\kappa$. For demonstration, we sample
+solutions at $\kappa=1$, $1.1$, and $1.2$. Then a ROM is build with basis size
+of 3, which is used to predict the solution for $\kappa = 1.15$.  The ROM is
+able to achieve a speedup of $7.5$ with a relative error of $6.4\times10^{-4}$.
+One can follow the command line options below to reproduce the numerical results
+summarized in the table below:</p>
+<ul>
+<li><strong>offline1</strong>: poisson -offline -f 1.0 -id 0</li>
+<li><strong>offline2</strong>: poisson -offline -f 1.1 -id 1</li>
+<li><strong>offline3</strong>: poisson -offline -f 1.2 -id 2</li>
+<li><strong>merge</strong>: poisson -merge -ns 3</li>
+<li><strong>online</strong>: poisson -online -f 1.15</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Solution relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.22 sec</td>
+<td>0.029 sec</td>
+<td>7.5</td>
+<td>6.4e-4</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp">poisson.cpp</a>)
+and the explanation of codes is provided in
+<a href="poisson.html#poisson-equation">here</a>. 
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/poisson.cpp">poisson.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex1p.cpp">ex1p.cpp</a> from
+MFEM with a modification on the right hand side function.</em> </p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="dg_advection">
+<h2 id="advection">Advection</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/dg_advection.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+<strong>DG advection</strong> solves the time-dependent advection problem:</p>
+<p>$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$</p>
+<p>where $v$ is a given advectopm velocity.</p>
+<p>One can run the following command line options to reproduce the DMD results
+summarized in the table below:</p>
+<ul>
+<li>dg_advection -p 3 -rp 1 -dt 0.005 -tf 4 -visit</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>DMD setup  time</th>
+<th>DMD query time</th>
+<th>DMD relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.2 sec</td>
+<td>30.6 sec</td>
+<td>1.9e-2 sec</td>
+<td>1.9e-4</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/dg_advection.cpp">dg_advection.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/dg_advection.cpp">dg_advection.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp">ex9p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="dg_euler">
+<h2 id="euler-equation">Euler equation</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/dg_euler.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+<strong>DG Euler</strong> solves the compressible Euler system of equation, i.e., a model
+nonlinear hyperbolic PDE:</p>
+<p>$$\frac{\partial u}{\partial t} + \nabla\cdot \boldsymbol{F}(u) = 0,$$</p>
+<p>with a state vector $\boldsymbol{u} = [\rho,\rho v_0, \rho v_1, \rho E]$, where
+$\rho$ is the density, $v_i$ is the velocity in the $i$th direction, $E$ is the
+total specific energy, and $H = E + p/\rho$ is the total specific enthalpy. The
+pressure, $p$ is computed through a simple equation of state (EOS) call. The
+conservative hydrodynamic flux $\boldsymbol{F}$ in each direction $i$ is</p>
+<p>$$\boldsymbo{F}<em i_0="i,0">{i} = [\rho v_i, \rho v_0 v_i + p \delta</em>, \rho v_1 v_{i,1} +
+p\delta_{i,1}, \rho v_i H]$$</p>
+<p>One can run the following command line options to reproduce the DMD results
+summarized in the table below:</p>
+<ul>
+<li>mpirun -n 8 ./dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>DMD rel.error</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOM solution time</td>
+<td>DMD setup time</td>
+<td>DMD query time</td>
+<td>$\rho$</td>
+<td>$\rho v_0$</td>
+<td>$\rho v_1$</td>
+<td>$E$</td>
+</tr>
+<tr>
+<td>5.65 sec</td>
+<td>38.9 sec</td>
+<td>1.4e-3 sec</td>
+<td>8.0e-7</td>
+<td>1.2e-4</td>
+<td>1.6e-3</td>
+<td>2.6e-6</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp">dg_euler.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/dg_euler.cpp">dg_euler.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex18p.cpp">ex18p.cpp</a> from
+MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="heat_conduction">
+<h2 id="heat-conduction-problem">Heat conduction problem</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/heat_conduction.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+<strong>heat conduction</strong> solves a simple 2D/3D time dependent nonlinear heat conduction problem</p>
+<p>$$\frac{\partial u}{\partial t} = \nabla\cdot (\kappa + \alpha u)\nabla u,$$</p>
+<p>with a natural insulating boundary condition $\frac{du}{dn}=0$. We linearize
+the problem by using the temperature field $u$ from the previous time step to
+compute the conductivity coefficient.</p>
+<p>One can run the following command line options to reproduce the DMD results
+summarized in the table below:</p>
+<ul>
+<li>mpirun -np 8 ./heat_conduction -s 3 -a 0.5 -k 0.5 -o 4 -tf 0.7 -vs 1 -visit</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>DMD setup  time</th>
+<th>DMD query time</th>
+<th>DMD relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.8 sec</td>
+<td>0.34 sec</td>
+<td>1.4e-3 sec</td>
+<td>8.2e-4</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp">heat_conduction.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/heat_conduction.cpp">heat_conduction.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp">ex16p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="mixed_nonlinear_diffusion">
+<h2 id="mixed-nonlinear-diffusion">Mixed nonlinear diffusion</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/mixed_nonlinear_diffusion.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+<strong>mixed nonlinear diffusion problem</strong> solves a simple 2D/3D time dependent nonlinear problem:</p>
+<p>$$\frac{\partial p}{\partial t} + \nabla\cdot \boldsymbol{v} = f,$$
+$$\nabla p = -a(p)\boldsymbol{v},$$</p>
+<p>with a natural insulating boundary condition $\frac{dv}{dn}=0$. The
+Raviart-Thomas finite element basis functions are used for $\boldsymbol{v} \in
+H(div)$ space. $L2$ finite element space is used for pressure function, $p$.
+This example introduces how the hyper-reduction is implemented and how the
+reduced bases for two field varibles, $p$ and $\boldsymbol{v}$.</p>
+<p>One can run the following command line options to reproduce the DMD results
+summarized in the table below:</p>
+<ul>
+<li><strong>offline1</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 0 -sh 0.25</li>
+<li><strong>offline2</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 1 -sh 0.15</li>
+<li><strong>merge</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -merge -ns 2</li>
+<li><strong>offline3</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 2 -sh 0.2</li>
+<li><strong>online</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Solution relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>41.68 sec</td>
+<td>1.7 sec</td>
+<td>24.5</td>
+<td>1.6e-3</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/mixed_nonlinear_diffusion.cpp">mixed_nonlinear_diffusion.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/mixed_nonlinear_diffusion.cpp">mixed_nonlinear_diffusion.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp">ex16p.cpp</a> from MFEM and modified to support mixed finite element approach.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="nonlinear_elasticity">
+<h2 id="nonlinear-elasticity">Nonlinear elasticity</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/nonlinear_elasticity.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$, <strong>nonlinear
+elasticity</strong> solves a time dependent nonlinear elasticity problem of the form</p>
+<p>$$\frac{\partial v}{\partial t} = H(x) + Sv,$$
+$$\frac{\partial x}{\partial t} = v,$$</p>
+<p>where $H is a hyperelastic model and S is a viscosity operator of Laplacian type.</p>
+<p>One can run the following command line options to reproduce the DMD results
+summarized in the table below:</p>
+<ul>
+<li>mpirun -np 8 ./nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>DMD setup  time</th>
+<th>DMD query time</th>
+<th>DMD relative error, $x$</th>
+<th>$v$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.7 sec</td>
+<td>4.7e-1 sec</td>
+<td>6.9e-4 sec</td>
+<td>7.0e-5</td>
+<td>1.4e-3</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp">nonlinear_elasticity.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp">nonlinear_elasticity.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex10p.cpp">ex10p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="laghos">
+<h2 id="laghos-rom-miniapp">Laghos ROM Miniapp</h2>
+<p><strong>Laghos</strong> (LAGrangian High-Order Solver) is a miniapp that solves the
+time-dependent Euler equations of compressible gas dynamics in a moving
+Lagrangian frame using unstructured high-order finite element spatial
+discretization and explicit high-order time-stepping. <strong>LaghosROM</strong> introduces
+reduced order models of Laghos simulations.</p>
+<p>A list of example problems that you can solve with LaghosROM includes Sedov
+blast, Gresho vortex, Taylor-Green vortex, triple-point, and Rayleigh-Taylor
+instability problems. Below are command line options for each problems and some
+numerical results. For each problem, four different phases need to be taken,
+i.e., the offline, hyper-reduction preprocessing, online, and restore phase. The
+online phase runs necessary full order model (FOM) to generate simulation data.
+libROM dynamically collects the data as the FOM simulation marches in time
+domain. In the hyper-reduction preprocessing phase, the libROM builds a library
+of reduced basis as well as hyper-reduction operators. The online phase runs the
+ROM and the restore phase projects the ROM solutions to the full order model
+dimension.  </p>
+<!-- <a href="https://glvis.org/live/?stream=../data/laghos.saved" target="_blank"> -->
+<p><img class="floatright" src="../img/examples/sedov.gif" width="300"  ></p>
+<!-- </a> -->
+<h3 id="sedov-blast-problem">Sedov blast problem</h3>
+<p><strong>Sedov blast</strong> problem is a three-dimensional standard shock hydrodynamic
+benchmark test. An initial delta source of internal energy deposited at the
+origin of a three-dimensional cube is considered. The computational domain is
+the unit cube $\tilde{\Omega} = [0,1]^3$ with wall boundary conditions on all
+surfaces, i.e., $v\cdot n = 0$. The initial velocity is given by $v=0$. The
+initial density is given by $\rho = 1$. The initial energy is given by a delta
+function at the origin. The adiabatic index in the ideal gas equations of state
+is set $\gamma = 1.4$. The initial mesh is a uniform Catesian hexahedral mesh,
+which deforms over time. It can be seen that the radial symmetry is maintained
+in the shock wave propagation in both FOM and ROM simulations. One can reproduce
+the numerical result, following the command line options described below:</p>
+<ul>
+<li><strong>offline</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages</li>
+<li><strong>hyper-reduction preprocessing</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2</li>
+<li><strong>online</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2</li>
+<li><strong>restore</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>191 sec</td>
+<td>8.3 sec</td>
+<td>22.8</td>
+<td>2.2e-4</td>
+</tr>
+</tbody>
+</table>
+<p><img class="floatright" src="../img/examples/gresho.png" width="250"  ></p>
+<h3 id="gresho-vortex-problem">Gresho vortex problem</h3>
+<p><strong>Gresho vortex</strong> problem is a two-dimensional benchmark test for the
+incompressible inviscid Navier-Stokes equations. The computational domain is
+the unit square $\tilde\Omega = [-0.5,0.5]^2$ with wall boundary conditions on
+all surfaces, i.e., $v\dot n = 0$. Let $(r,\phi)$ denote the polar coordinates
+of a particle $\tilde{x} \in \tilde{\Omega}$. The initial angular velocity is
+given by</p>
+<p>$$v_\phi =<br />
+  \cases{
+  \displaystyle 5r   &amp; for 0 $\leq$ r &lt; 0.2 \cr
+  \displaystyle 2-5r &amp; for 0.2 $\leq$ r &lt; 0.4 \cr
+  \displaystyle 0 i  &amp; for r $\geq$ 0.4.                                           <br />
+  }$$</p>
+<p>The initial density if given by $\rho=1$. The initial thermodynamic pressure is
+given by</p>
+<p>$$p = \cases{
+5 + \frac{25}{2} r^2                             &amp; for 0 $\leq$ r &lt; 0.2 \cr
+9 - 4 \log(0.2) + \frac{25}{2} - 20r + 4 \log(r) &amp; for 0.2 $\leq$ r &lt; 0.4 \cr
+3 + 4\log(2)                                     &amp; for r $\geq$ 0.4 }$$</p>
+<ul>
+<li><strong>offline</strong>: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
+  -ok 3 -ot 2 -tf 0.62 -s 7 -visit -writesol -offline -ef 0.9999 -romsvds -romos
+  -rostype load -romsns -nwinsamp 21 -sample-stages</li>
+<li><strong>hyper-reduction preprocessing</strong>: ./laghos -o twp_gresho -p 4 -m
+  ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhrprep
+  -romsvds -romos -rostype load -romsns -romgs -nwin 152 -sfacv 2 -sface 2</li>
+<li><strong>online</strong>: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
+  -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhr -romsvds -romos -rostype load -romsns
+  -romgs -nwin 152 -sfacv 2 -sface 2</li>
+<li><strong>restore</strong>: ./laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
+  -ok 3 -ot 2 -tf 0.62 -s 7 -soldiff -restore -romsvds -romos -rostype load
+  -romsns -romgs -nwin 152</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>218 sec</td>
+<td>8.4 sec</td>
+<td>25.9</td>
+<td>2.1e-4</td>
+</tr>
+</tbody>
+</table>
+<p><img class="floatright" src="../img/examples/taylorGreen.png" width="250"  ></p>
+<h3 id="taylor-green-vortex">Taylor-Green vortex</h3>
+<p><strong>Taylor-Green vortex</strong> problem is a three-dimensional benchmark test for the
+incompressible Navier-Stokes equasions. A manufactured smooth solution is
+considered by extending the steady state Taylor-Green vortex solution to the
+compressible Euler equations. The computational domain is the unit cube
+$\tilde{\Omega}=[0,1]^3$ with wall boundary conditions on all surfaces,
+i.e., $v\cdot n = 0$. The initial velocity is given by</p>
+<p>$$ v = (\sin{(\pi x)} \cos{(\pi y)} \cos{(\pi z)}, -\cos{(\pi x)}\sin{(\pi y)}\cos{(\pi z)}, 0)  $$</p>
+<p>The initial density is given by $\rho =1$. The initial thermodynamic pressure
+is given by</p>
+<p>$$ p = 100 + \frac{(\cos{(2\pi x)} + \cos{(2\pi y))(\cos{(2\pi z)+2})-2}}{16} $$</p>
+<p>The initial energy is related to the pressure and the density by the equation
+of state for the ideal gas, $p=(\gamma-1)\rho e$, with $\gamma = 5/3$. The
+initial mesh is a uniform Cartesian hexahedral mesh, which deforms over time.
+The visualized solution is given on the right.  One can reproduce the
+numerical result, following the command line options described below:</p>
+<ul>
+<li><strong>offline</strong>: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
+  0.1 -tf 0.25 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos
+  -rostype load -romsns -nwinsamp 21 -sdim 1000 -sample-stages</li>
+<li><strong>hyper-reduction preprocessing</strong>: ./laghos -o twp_taylor -m
+  ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -online -romsvds
+  -romos -rostype load -romhrprep -romsns -romgs -nwin 82 -sfacv 2 -sface 2</li>
+<li><strong>online</strong>: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
+  0.1 -tf 0.25 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns
+  -romgs -nwin 82 -sfacv 2 -sface 2</li>
+<li><strong>restore</strong>: ./laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
+  0.1 -tf 0.25 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns
+  -romgs -nwin 82</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>170 sec</td>
+<td>5.4 sec</td>
+<td>31.2</td>
+<td>1.1e-6</td>
+</tr>
+</tbody>
+</table>
+<p><img class="floatright" src="../img/examples/triple.png" width="280"  ></p>
+<h3 id="triple-point-problem">Triple-point problem</h3>
+<p><strong>Triple-point</strong> problem is a three-dimensional shock test with two materials in
+three states. The computational domain is $\tilde{\Omega} = [0,7] \times [0,3
+] \times [0,1.5]$ with wall boundary conditions on all surfaces, i.e.,
+$v\cdot n = 0$. The initial velocity is given by $v=0$. The initial density is
+given by</p>
+<p>$$\rho =<br />
+  \cases{
+  \displaystyle 1   &amp; for x $\leq$ 1 or y $\leq$ 1.5, \cr
+  \displaystyle 1/8 &amp; for x $&gt;$ 1 and y $&gt;$ 1.5
+  }$$</p>
+<p>The initial thermodynamic pressure is given for</p>
+<p>$$p =<br />
+  \cases{
+  \displaystyle 1   &amp; for x $\leq$ 1, \cr
+  \displaystyle 0.1 &amp; for x $&gt;$ 1
+  }$$</p>
+<p>The initial energy is related to the pressure and the density by the equation
+of state for the ideal gas, $p=(\gamma-1)\rho e$, with</p>
+<p>$$\gamma =<br />
+  \cases{
+  \displaystyle 1.5   &amp; for x $\leq$ 1 or y $&gt;$ 1.5\cr
+  \displaystyle 1.4   &amp; for x $&gt;$ 1 and y $\leq$ 1.5
+  }$$</p>
+<p>The initial mesh is a uniform Cartesian hexahedral mesh, which deforms over
+time.  The visualized solution is given on the right.  One can reproduce the
+numerical result, following the command line options described below:</p>
+<ul>
+<li><strong>offline</strong>: ./laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
+  0.8 -s 7 -cfl 0.5 -pa -offline -writesol -visit -romsvds -romos -rostype load
+  -romsns -nwinsamp 21 -ef 0.9999 -sdim 200 -sample-stages</li>
+<li><strong>hyper-reduction preprocessing</strong>: ./laghos  -o twp_triple -p 3 -m
+  ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -online -romhrprep
+  -romsvds -romos -rostype load -romgs -romsns -nwin 18 -sfacv 2 -sface 2</li>
+<li><strong>online</strong>: ./laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
+  0.8 -s 7 -cfl 0.5 -pa -online -romhr -romsvds -romos -rostype load -romgs
+  -romsns -nwin 18 -sfacv 2 -sface 2</li>
+<li><strong>restore</strong>: ./laghos  -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
+  0.8 -s 7 -cfl 0.5 -pa -restore -soldiff -romsvds -romos -rostype load -romgs
+  -romsns -nwin 18</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>122 sec</td>
+<td>1.4  sec</td>
+<td>87.8</td>
+<td>8.1e-4</td>
+</tr>
+</tbody>
+</table>
+<p><img class="floatright" src="../img/examples/rt-2x1-q12.gif" width="60"  ></p>
+<h3 id="rayleigh-taylor-instability-problem">Rayleigh-Taylor instability problem</h3>
+<p><strong>Rayleigh-Taylor instability</strong> problem</p>
+<ul>
+<li><strong>offline</strong>: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
+  -o twp_rt -s 7 -writesol -offline -romsns -sdim 200000 -romsvds -romos -romgs
+  -nwinsamp 21 -ef 0.9999999999 -sample-stages</li>
+<li><strong>hyper-reduction preprocessing</strong>: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5
+  -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187
+  -sfacv 2 -sface 2 -romhrprep</li>
+<li><strong>online</strong>: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
+  -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187 -sfacv 2 -sface 2
+  -romhr</li>
+<li><strong>restore</strong>: ./laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
+  -o twp_rt -s 7 -restore -romsns -romos -romgs -soldiff -nwin 187</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>127 sec</td>
+<td>8.7  sec</td>
+<td>14.6</td>
+<td>7.8e-3</td>
+</tr>
+</tbody>
+</table>
+<p><em>This is an external miniapp, available at
+<a href="https://github.com/CEED/Laghos/tree/rom">https://github.com/CEED/Laghos/tree/rom</a>.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<!-- ------------------------------------------------------------------------- -->
+
+<div id="nomatch">
+<br/><br/><br/>
+<center>
+No examples or miniapps match your criteria.
+</center>
+<br/><br/><br/>
+<hr>
+</div>
+
+<div style="clear:both;"/>
+</div>
+<script type="text/javascript"><!--
+
+function showElement(id, show)
+{
+    //document.getElementById(id).style.display = show ? "block" : "none";
+
+    // workaround because Doxygen splits and duplicates the divs for some reason
+    var divs = document.getElementsByTagName("div");
+    for (i = 0; i < divs.length; i++)
+    {
+       if (divs.item(i).id == id) {
+          divs.item(i).style.display = show ? "block" : "none";
+       }
+    }
+    return show ? 1 : 0;
+}
+
+function getBooleans(comboId)
+{
+   combo = document.getElementById(comboId);
+
+   first_selected = false;
+   for (i = 0; i < combo.options.length; i++)
+   {
+      opt = combo.options[i];
+      selected = opt.selected || first_selected;
+      if (!i) { first_selected = selected; }
+
+      // create a boolean variable named after the option
+      this[opt.id] = selected;
+   }
+}
+
+function update()
+{
+   getBooleans("group1");
+   getBooleans("group2");
+   getBooleans("group3");
+   getBooleans("group4");
+
+   numShown = 0 // expression continued...
+
+   // example codes
+   + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr))
+   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr))
+   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr))
+   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr))
+   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr))
+   + showElement("laghos", (compressibleflow) && (prom) && (global) && (hr))
+
+   ; // ...end of expression
+
+   // show/hide the message "No examples match your criteria"
+   showElement("nomatch", numShown == 0);
+}
+
+function initCombos()
+{
+   var query = location.search.substr(1);
+   query.split("&").forEach(function(id)
+   {
+      if (id) {
+         opt = document.getElementById(id);
+         if (opt) { opt.selected = true; }
+      }
+   });
+}
+
+// make sure "no match" div is not visible after page is loaded
+window.onload = update;
+
+// force vertical scrollbar
+document.getElementsByTagName("body")[0].style = "overflow-y: scroll"
+
+// parse URL part after '?', e.g., http://.../index.html?elasticity&nurbs
+initCombos();
+
+//--></script></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>

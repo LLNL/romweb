@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="http://librom.org">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="examples.html">Examples</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="active">
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM/">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#about-librom">About libROM</a></li>
+        
+            <li><a href="#contributors">Contributors</a></li>
+        
+            <li><a href="#license">License</a></li>
+        
+            <li><a href="#disclaimer">Disclaimer</a></li>
+        
+    
+    </ul>
+</div></div> <!-- toc on top on mobile -->
+            <div class="col-md-9" role="main">
+
+<h1 id="about-librom">About libROM</h1>
+<p>Please cite with:</p>
+<pre><code class="language-c">@misc{ doecode_24508,
+title = {libROM},
+author = {Choi, Youngsoo and Arrighi, William J. and Copeland, Dylan M. and Anderson, Robert W. and Oxberry, Geoffrey M.},
+abstractNote = {libROM is a collection of C++ classes that compute reduced order models and hyperreduced order models for systems of ordinary differential equations. libROM includes parallel, adaptive methods for proper orthogonal decomposition, and parallel, non-adaptive methods for hyperreduction using the discrete empirical interpolation method.},
+doi = {10.11578/dc.20190408.3},
+url = {https://doi.org/10.11578/dc.20190408.3},
+howpublished = {[Computer Software] \url{https://doi.org/10.11578/dc.20190408.3}},
+year = {2019},
+month = {oct}
+}
+
+</code></pre>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li><a href="http://people.llnl.gov/anderson110">Bob Anderson</a></li>
+<li><a href="http://people.llnl.gov/cheung26">Siu Wun Cheung</a></li>
+<li><a href="http://people.llnl.gov/choi15">Youngsoo Choi</a></li>
+<li><a href="http://people.llnl.gov/copeland11">Dylan Copeland</a></li>
+<li><a href="http://people.llnl.gov/huynh24">Kevin Huynh</a></li>
+<li><a href="https://www.linkedin.com/in/jessielauzon/">Jessica Lauzon</a></li>
+<li><a href="https://www.linkedin.com/in/sean-mcbane-560511119/">Sean McBane</a></li>
+<li><a href="http://people.llnl.gov/oxberry1">Geoffrey Oxberry</a></li>
+</ul>
+<h2 id="license">License</h2>
+<ul>
+<li><a href="https://github.com/LLNL/libROM/blob/master/LICENSE-MIT">MIT license</a></li>
+<li><a href="https://github.com/LLNL/libROM/blob/master/LICENSE-APACHE">Apache license</a></li>
+</ul>
+<p><br></p>
+<p>This work performed under the auspices of the U.S. Department of Energy
+by Lawrence Livermore Laboratory under Contract DE-AC52-07NA27344.</p>
+<p>Software release number: LLNL-CODE-766763.</p>
+<p>DOI: <a href="https://www.osti.gov/doecode/biblio/24508">10.11578/dc.20190408.3</a>.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>This document was prepared as an account of work sponsored by an agency of the United States government. Neither the United States government nor Lawrence Livermore National Security, LLC, nor any of their employees makes any warranty, expressed or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States government or Lawrence Livermore National Security, LLC. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States government or Lawrence Livermore National Security, LLC, and shall not be used for advertising or product endorsement purposes.</p>
+<hr />
+<p>Website built with <a href="http://www.mkdocs.org/">MkDocs</a>, <a href="http://getbootstrap.com/">Bootstrap</a>
+and <a href="http://bootswatch.com/">Bootswatch</a>. Hosted on <a href="http://github.com/LLNL/librom/">GitHub</a>.</p></div>
+            <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#about-librom">About libROM</a></li>
+        
+            <li><a href="#contributors">Contributors</a></li>
+        
+            <li><a href="#license">License</a></li>
+        
+            <li><a href="#disclaimer">Disclaimer</a></li>
+        
+    
+    </ul>
+</div></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>
