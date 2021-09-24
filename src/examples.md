@@ -90,7 +90,7 @@ $$f =
   \displaystyle \sin(\kappa (x_0+x_1))     & for 2D  
   }$$
 
-The 2D solutoin contour plot for $\kappa=1$ is shown in the figure
+The 2D solution contour plot for $\kappa=1$ is shown in the figure
 on the right to show the effect of $\kappa$. For demonstration, we sample
 solutions at $\kappa=1$, $1.1$, and $1.2$. Then a ROM is build with basis size
 of 3, which is used to predict the solution for $\kappa = 1.15$.  The ROM is
@@ -132,7 +132,7 @@ For a given initial condition, i.e., $u_0(x) = u(0,x)$,
 
 $$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$
 
-where $v$ is a given advectopm velocity.
+where $v$ is a given advection velocity.
 
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
@@ -173,8 +173,8 @@ total specific energy, and $H = E + p/\rho$ is the total specific enthalpy. The
 pressure, $p$ is computed through a simple equation of state (EOS) call. The
 conservative hydrodynamic flux $\boldsymbol{F}$ in each direction $i$ is
 
-  $$\boldsymbo{F}_{i} = [\rho v_i, \rho v_0 v_i + p \delta_{i,0}, \rho v_1 v_{i,1} +
-p\delta_{i,1}, \rho v_i H]$$
+  $$\boldsymbol{F}_i = [\rho v_i, \rho v_0 v_i + p \delta\_{i,0}, \rho v_1 v\_{i,1} +
+p\delta\_{i,1}, \rho v_i H]$$
 
 
 One can run the following command line options to reproduce the DMD results
@@ -240,15 +240,14 @@ is based on
 <img class="floatright" src="../img/examples/mixed_nonlinear_diffusion.gif" width="350">
 </a>
 
-For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+For a given initial condition, i.e., $p_0(x) = p(0,x)$,
 **mixed nonlinear diffusion problem** solves a simple 2D/3D time dependent nonlinear problem:
 
-$$\frac{\partial p}{\partial t} + \nabla\cdot \boldsymbol{v} = f,$$
-$$\nabla p = -a(p)\boldsymbol{v},$$
+$$\frac{\partial p}{\partial t} + \nabla\cdot \boldsymbol{v} = f\,, \qquad \nabla p = -a(p)\boldsymbol{v},$$
 
-with a natural insulating boundary condition $\frac{dv}{dn}=0$. The
-Raviart-Thomas finite element basis functions are used for $\boldsymbol{v} \in
-H(div)$ space. $L2$ finite element space is used for pressure function, $p$.
+with a natural insulating boundary condition $\frac{\partial v}{\partial n}=0$. The
+$H(div)$-conforming Raviart-Thomas finite element space is used for the velocity function $\boldsymbol{v}$,
+and the $L^2$ finite element space is used for pressure function, $p$.
 This example introduces how the hyper-reduction is implemented and how the
 reduced bases for two field varibles, $p$ and $\boldsymbol{v}$.
 
@@ -281,22 +280,21 @@ is based on
 <img class="floatright" src="../img/examples/nonlinear_elasticity.gif" width="350">
 </a>
 
-For a given initial condition, i.e., $u_0(x) = u(0,x)$, **nonlinear
+For a given initial condition, i.e., $v_0(x) = v(0,x)$, **nonlinear
 elasticity** solves a time dependent nonlinear elasticity problem of the form
 
-$$\frac{\partial v}{\partial t} = H(x) + Sv,$$
-$$\frac{\partial x}{\partial t} = v,$$
+$$\frac{\partial v}{\partial t} = H(x) + Sv\,, \qquad \frac{\partial x}{\partial t} = v,$$
 
-where $H is a hyperelastic model and S is a viscosity operator of Laplacian type.
+where $H$ is a hyperelastic model and $S$ is a viscosity operator of Laplacian type.
 
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
 
 * mpirun -np 8 ./nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit
 
-   | FOM solution time | DMD setup  time | DMD query time | DMD relative error, $x$ |   $v$    |
-   | ----------------- | --------------- | -------------- | ----------------------- | -------- |
-   |  3.7 sec          |  4.7e-1 sec     |   6.9e-4 sec   |      7.0e-5             |  1.4e-3  |
+   | FOM solution time | DMD setup time  | DMD query time | Position relative error | Velocity relative error |
+   | ----------------- | --------------- | -------------- | ----------------------- | ----------------------- |
+   |  3.7 sec          |  4.7e-1 sec     |  6.9e-4 sec    |  7.0e-5                 |  1.4e-3                 |
 
 _The code that generates the numerical results above can be found in
 ([nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/nonlinear_elasticity.cpp)).
