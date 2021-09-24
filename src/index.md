@@ -22,11 +22,11 @@ work together for better data-driven technology!
 Many more features will be available soon. Stay tuned!
 
 libROM is used in many projects, including
-[MFEM](https://github.com/mfem/mfem),
 [BLAST](http://www.llnl.gov/casc/blast),
 [ARDRA](https://computing.llnl.gov/projects/ardra-scaling-up-sweep-transport-algorithms),
 [Laghos](https://github.com/CEED/Laghos/tree/rom),
-and [SU2](https://su2code.github.io/).
+and [SU2](https://su2code.github.io/). Many [MFEM](https://mfem.org)-based ROM
+examples can be found in [Examples](examples.md).
 
 See also our [Gallery](gallery.md), [Publications](publications.md) and
 [News](news.md) pages.
