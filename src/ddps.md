@@ -5,15 +5,16 @@
   src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-# DDPS Webinar (in California time)
+# DDPS Webinar (_in California time_)
 
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Sep. 30, 9 AM  | [Peter Benner](https://www.mpi-magdeburg.mpg.de/benner) | Max Planck | TBD | [link]()
+Sep. 30, 9 AM  | [Peter Benner](https://www.mpi-magdeburg.mpg.de/benner) | Max Planck | Identification of Nonlinear Dynamical Systems from Noisy Measurements | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mde5beb30577a49ab858d285c795fe5b1)
 Oct. 7, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | TBD | [link]()
 Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | TBD | [link]()
-TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]()
+Nov. 18th, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
+<!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube

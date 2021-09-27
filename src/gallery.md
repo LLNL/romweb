@@ -117,7 +117,7 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 
 ----
 
-[![](img/gallery/cylinder.gif)](img/gallery/cylinder.gif.png)
+[![](img/gallery/cylinder.gif)](img/gallery/cylinder.gif)
 
 *2D vortex shedding cylinder problem solved by [SU2](https://su2code.github.io/)
 and its reduced basis by [libROM](https://github.com/LLNL/libROM) below. Click
