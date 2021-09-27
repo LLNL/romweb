@@ -1,67 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://librom.org/index.html</loc>
+         <loc>http://librom.net/index.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/about.html</loc>
+         <loc>http://librom.net/about.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/building.html</loc>
+         <loc>http://librom.net/building.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/ddps.html</loc>
+         <loc>http://librom.net/ddps.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/download.html</loc>
+         <loc>http://librom.net/download.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/examples.html</loc>
+         <loc>http://librom.net/examples.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/features.html</loc>
+         <loc>http://librom.net/features.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/gallery.html</loc>
+         <loc>http://librom.net/gallery.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/news.html</loc>
+         <loc>http://librom.net/news.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/poisson.html</loc>
+         <loc>http://librom.net/poisson.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/poisson_greedy.html</loc>
+         <loc>http://librom.net/publications.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://librom.org/publications.html</loc>
-         <lastmod>2021-09-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://librom.org/rom.html</loc>
+         <loc>http://librom.net/rom.html</loc>
          <lastmod>2021-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
