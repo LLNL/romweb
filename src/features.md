@@ -76,16 +76,16 @@ explanation about the incremental SVD, we refer to the following journal papers:
 - M. Brand, [Incremental singular value decomposition of uncertain data with
      missing
      values](https://www.cse.wustl.edu/~zhang/teaching/cs517/Spring12/CourseProjects/incremental%20svd%20missing%20value.pdf),
-     In *European Conference on Computer Vision*, p707-720, Springer, **2002**
+     In *European Conference on Computer Vision*, p.707-720, **2002**
 - G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, [Limited-memory
      adaptive snapshot selection for proper orthogonal
      decomposition](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283),
-     *International Journal of Numerical Methods in Engineering*, 109(2),
-     p198-217, **2016**
+     *International Journal for Numerical Methods in Engineering*, 109(2),
+     p.198-217, **2016**
 - H. Fareed, J.R. Singler, [Error Analysis of an Incremental Proper
      Orthogonal Decomposition Algorithm for PDE Simulation
      Data](https://www.sciencedirect.com/science/article/pii/S0377042719305308),
-     *Journal of Computational and Applied Mathematics*, 368, **2020**
+     *Journal of Computational and Applied Mathematics*, 368, p.112525, **2020**
 
 
 ### Randomized SVD
@@ -99,7 +99,7 @@ implemented in libROM can be found in the following journal paper:
 - N. Halko, P.G. Martinsson, J.A. Tropp, [Finding structure with
       randomness: Probabilistic algorithms for constructing approximate matrix
       decompositions](https://epubs.siam.org/doi/abs/10.1137/090771806). *SIAM
-      review*, 53(2), p217-288, **2011**
+      review*, 53(2), p.217-288, **2011**
 
 ### Space-time SVD
 For time dependent problems, one can reduce not only the spatial degrees of
@@ -199,7 +199,7 @@ For the detailed explanation about the DMD, we refer to the following book:
 
 - J.N. Kutz, S.L. Brunton, B.W. Brunton, J.L. Proctor, [Dynamic mode
   decomposition: data-driven modeling of complex
-  systems](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974508.ch1).
+  systems](https://my.siam.org/Store/Product/viewproduct/?ProductId=28216652).
   *Society for Industrial and Applied Mathematics*, **2016**
 
 ## Projection-based reduced order model
@@ -263,8 +263,8 @@ paper:
 
 - Y. Choi, D. Coombs, R. Anderson, [SNS: a solution-based nonlinear subspace
   method for time-dependent model order
-  reduction](https://epubs.siam.org/doi/abs/10.1137/19M1242963).  *Society for
-  Industrial and Applied Mathematics*, **2020**
+  reduction](https://epubs.siam.org/doi/abs/10.1137/19M1242963). 
+  *SIAM Journal on Scientific Computing*, 42(2), A1116–A1146, **2020**
 
 Then, we introduce a sampling matrix (in order words, a collocation matrix),
 $\boldsymbol{Z}\in\mathbb{R}^{n\times z}$, which selects a subset of the
@@ -356,14 +356,14 @@ in a matrix manifold:
 - Y. Choi, G. Boncoraglio, S. Anderson, D. Amsallem, C. Farhat, [Gradient-based
   constrained optimization using a database of linear reduced order
   models](https://www.sciencedirect.com/science/article/pii/S0021999120305611).
-  *Journal of Computational Physics*, **2020**
+  *Journal of Computational Physics*, 423, p.109787, **2020**
 
 We recommend another excellent paper for the greedy algorithm:
 
 - A. Paul-Dubois-Taine, D. Amsallem, [An adaptive and efficient greedy
   procedure for the optimal training of parametric reduced-order
   models](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.4759).
-  *Numerical Methods in Engineering*, **2014**
+  *International Journal for Numerical Methods in Engineering*, 102, p.1262-1292, **2014**
 
 ## Open Source
 
