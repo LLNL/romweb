@@ -93,7 +93,7 @@
                     
                         
                             <li >
-                                 <a href="poisson_greedy.html">Greedy for Poisson</a>
+                                 <a href="poisson_greedy.md">Greedy for Poisson</a>
                             </li>
                         
                     
@@ -250,16 +250,16 @@ explanation about the incremental SVD, we refer to the following journal papers:
 <li>M. Brand, <a href="https://www.cse.wustl.edu/~zhang/teaching/cs517/Spring12/CourseProjects/incremental%20svd%20missing%20value.pdf">Incremental singular value decomposition of uncertain data with
      missing
      values</a>,
-     In <em>European Conference on Computer Vision</em>, p707-720, Springer, <strong>2002</strong></li>
+     In <em>European Conference on Computer Vision</em>, p.707-720, <strong>2002</strong></li>
 <li>G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283">Limited-memory
      adaptive snapshot selection for proper orthogonal
      decomposition</a>,
-     <em>International Journal of Numerical Methods in Engineering</em>, 109(2),
-     p198-217, <strong>2016</strong></li>
+     <em>International Journal for Numerical Methods in Engineering</em>, 109(2),
+     p.198-217, <strong>2016</strong></li>
 <li>H. Fareed, J.R. Singler, <a href="https://www.sciencedirect.com/science/article/pii/S0377042719305308">Error Analysis of an Incremental Proper
      Orthogonal Decomposition Algorithm for PDE Simulation
      Data</a>,
-     <em>Journal of Computational and Applied Mathematics</em>, 368, <strong>2020</strong></li>
+     <em>Journal of Computational and Applied Mathematics</em>, 368, p.112525, <strong>2020</strong></li>
 </ul>
 <h3 id="randomized-svd">Randomized SVD</h3>
 <p>Randomization can bring computational efficiency in computing SVDs. For
@@ -272,7 +272,7 @@ implemented in libROM can be found in the following journal paper:</p>
 <li>N. Halko, P.G. Martinsson, J.A. Tropp, <a href="https://epubs.siam.org/doi/abs/10.1137/090771806">Finding structure with
       randomness: Probabilistic algorithms for constructing approximate matrix
       decompositions</a>. <em>SIAM
-      review</em>, 53(2), p217-288, <strong>2011</strong></li>
+      review</em>, 53(2), p.217-288, <strong>2011</strong></li>
 </ul>
 <h3 id="space-time-svd">Space-time SVD</h3>
 <p>For time dependent problems, one can reduce not only the spatial degrees of
@@ -354,7 +354,7 @@ following procedure is taken to find the best $\boldsymbol{A}$.</p>
 </ol>
 <p>For the detailed explanation about the DMD, we refer to the following book:</p>
 <ul>
-<li>J.N. Kutz, S.L. Brunton, B.W. Brunton, J.L. Proctor, <a href="https://epubs.siam.org/doi/pdf/10.1137/1.9781611974508.ch1">Dynamic mode
+<li>J.N. Kutz, S.L. Brunton, B.W. Brunton, J.L. Proctor, <a href="https://my.siam.org/Store/Product/viewproduct/?ProductId=28216652">Dynamic mode
   decomposition: data-driven modeling of complex
   systems</a>.
   <em>Society for Industrial and Applied Mathematics</em>, <strong>2016</strong></li>
@@ -406,8 +406,8 @@ paper:</p>
 <ul>
 <li>Y. Choi, D. Coombs, R. Anderson, <a href="https://epubs.siam.org/doi/abs/10.1137/19M1242963">SNS: a solution-based nonlinear subspace
   method for time-dependent model order
-  reduction</a>.  <em>Society for
-  Industrial and Applied Mathematics</em>, <strong>2020</strong></li>
+  reduction</a>. 
+  <em>SIAM Journal on Scientific Computing</em>, 42(2), A1116–A1146, <strong>2020</strong></li>
 </ul>
 <p>Then, we introduce a sampling matrix (in order words, a collocation matrix),
 $\boldsymbol{Z}\in\mathbb{R}^{n\times z}$, which selects a subset of the
@@ -477,7 +477,7 @@ you to use for your physical simulations. </p>
 <p>The general framework of the greedy algorithm is implemented in libROM. The
 example of the libROM usage case can be found for the Poisson problem at
 <a href="https://github.com/LLNL/libROM/blob/master/examples/poisson_greedy.cpp">poisson_greedy.cpp</a>.
-The corresponding tutorial page can be found <a href="poisson_greedy.html">here</a>.</p>
+The corresponding tutorial page can be found <a href="poisson_greedy.md">here</a>.</p>
 <p>Several variants of the greedy procedure described above is possible.  For more
 detailed explanation about the greedy algorithm, we refer to the following
 jounral paper, where the greedy algorithm is described for the interpolated ROM
@@ -486,14 +486,14 @@ in a matrix manifold:</p>
 <li>Y. Choi, G. Boncoraglio, S. Anderson, D. Amsallem, C. Farhat, <a href="https://www.sciencedirect.com/science/article/pii/S0021999120305611">Gradient-based
   constrained optimization using a database of linear reduced order
   models</a>.
-  <em>Journal of Computational Physics</em>, <strong>2020</strong></li>
+  <em>Journal of Computational Physics</em>, 423, p.109787, <strong>2020</strong></li>
 </ul>
 <p>We recommend another excellent paper for the greedy algorithm:</p>
 <ul>
 <li>A. Paul-Dubois-Taine, D. Amsallem, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.4759">An adaptive and efficient greedy
   procedure for the optimal training of parametric reduced-order
   models</a>.
-  <em>Numerical Methods in Engineering</em>, <strong>2014</strong></li>
+  <em>International Journal for Numerical Methods in Engineering</em>, 102, p.1262-1292, <strong>2014</strong></li>
 </ul>
 <h2 id="open-source">Open Source</h2>
 <p>libROM is an open-source software, and can be freely used under the terms of the
