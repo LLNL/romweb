@@ -10,10 +10,12 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct. 7, 10 AM  | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4b4a257c11693fb16b747bbae103a96b)
+Oct. 7, 10 AM  | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | libROM: Library for physics-constrained data-driven models for physical simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4b4a257c11693fb16b747bbae103a96b)
 Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | TBD | [link]()
 Nov. 4, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | TBD | [link]()
-Nov. 18th, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
+Nov. 12, 10 AM | [WaiChing Sun](https://www.poromechanics.org/pi.html) | Columbia University | TBD | [link]()
+Nov. 18, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
+Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
