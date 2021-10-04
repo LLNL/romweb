@@ -2,10 +2,10 @@
 
 
 #### 2021
-  1. C. Hoang, Y. Choi, K. Carlberg, [Domain-decomposition least-squares Petrov-Galerkin (DD-LSPG) nonlinear model reduction](https://www.sciencedirect.com/science/article/pii/S0045782521003285), *Computer Methods in Applied Mechanics and Engineering*, Volume 384, **2021**
+  1. C. Hoang, Y. Choi, K. Carlberg, [Domain-decomposition least-squares Petrov-Galerkin (DD-LSPG) nonlinear model reduction](https://www.sciencedirect.com/science/article/pii/S0045782521003285), *Computer Methods in Applied Mechanics and Engineering*, Volume 384, 113997, **2021**
   1. S. McBane, Y. Choi, [Component-wise reduced order model lattice-type structure design](https://www.sciencedirect.com/science/article/pii/S0045782521001493), *Computer Methods in Applied Mechanics and Engineering*, 381, 113813, **2021**.
   1. D. Copeland, S.W. Cheung, K. Huynh, Y. Choi, [Reduced order models for Lagrangian hydrodynamics](https://arxiv.org/abs/2104.11404), *arXiv preprint*, arXiv:2104.11404, **2021**
-  1. Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, [Space-time reduced order model for large-scale linear dynamical systems with application to Boltzmann transport problems](https://www.sciencedirect.com/science/article/pii/S0021999120306197), *Journal of Computational Physics*, 424,109845, **2021**. Also available as [arXiv:1910.01260](https://arxiv.org/pdf/1910.01260.pdf).
+  1. Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, [Space-time reduced order model for large-scale linear dynamical systems with application to Boltzmann transport problems](https://www.sciencedirect.com/science/article/pii/S0021999120306197), *Journal of Computational Physics*, 424, 109845, **2021**. Also available as [arXiv:1910.01260](https://arxiv.org/pdf/1910.01260.pdf).
 
 ---
 

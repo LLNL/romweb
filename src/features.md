@@ -76,16 +76,16 @@ explanation about the incremental SVD, we refer to the following journal papers:
 - M. Brand, [Incremental singular value decomposition of uncertain data with
      missing
      values](https://www.cse.wustl.edu/~zhang/teaching/cs517/Spring12/CourseProjects/incremental%20svd%20missing%20value.pdf),
-     In *European Conference on Computer Vision*, p.707-720, **2002**
+     In *European Conference on Computer Vision*, p707-720, **2002**
 - G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, [Limited-memory
      adaptive snapshot selection for proper orthogonal
      decomposition](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283),
      *International Journal for Numerical Methods in Engineering*, 109(2),
-     p.198-217, **2016**
+     p198-217, **2016**
 - H. Fareed, J.R. Singler, [Error Analysis of an Incremental Proper
      Orthogonal Decomposition Algorithm for PDE Simulation
      Data](https://www.sciencedirect.com/science/article/pii/S0377042719305308),
-     *Journal of Computational and Applied Mathematics*, 368, p.112525, **2020**
+     *Journal of Computational and Applied Mathematics*, 368, 112525, **2020**
 
 
 ### Randomized SVD
@@ -99,7 +99,7 @@ implemented in libROM can be found in the following journal paper:
 - N. Halko, P.G. Martinsson, J.A. Tropp, [Finding structure with
       randomness: Probabilistic algorithms for constructing approximate matrix
       decompositions](https://epubs.siam.org/doi/abs/10.1137/090771806). *SIAM
-      review*, 53(2), p.217-288, **2011**
+      review*, 53(2), p217-288, **2011**
 
 ### Space-time SVD
 For time dependent problems, one can reduce not only the spatial degrees of
@@ -118,12 +118,12 @@ following three journal papers:
 - Y. Kim, K. Wang, Y. Choi, [Efficient space–time reduced order model for
   linear dynamical systems in Python using less than 120 lines of
   code](https://www.mdpi.com/2227-7390/9/14/1690). *Mathematics*, 9(14),
-  p.1690, **2021**
+  1690, **2021**
 - Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, [Space–time reduced
   order model for large-scale linear dynamical systems with application to
   boltzmann transport
   problems](https://www.sciencedirect.com/science/article/pii/S0021999120306197).
-  *Journal of Computational Physics*, 424, p.109845, **2021**
+  *Journal of Computational Physics*, 424, 109845, **2021**
 - Y. Choi, K. Carlberg, [Space-time least-squares Petrov-Galerkin projection
   for nonlinear model
           reduction](https://epubs.siam.org/doi/abs/10.1137/17M1120531), *SIAM
@@ -356,14 +356,14 @@ in a matrix manifold:
 - Y. Choi, G. Boncoraglio, S. Anderson, D. Amsallem, C. Farhat, [Gradient-based
   constrained optimization using a database of linear reduced order
   models](https://www.sciencedirect.com/science/article/pii/S0021999120305611).
-  *Journal of Computational Physics*, 423, p.109787, **2020**
+  *Journal of Computational Physics*, 423, 109787, **2020**
 
 We recommend another excellent paper for the greedy algorithm:
 
 - A. Paul-Dubois-Taine, D. Amsallem, [An adaptive and efficient greedy
   procedure for the optimal training of parametric reduced-order
   models](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.4759).
-  *International Journal for Numerical Methods in Engineering*, 102, p.1262-1292, **2014**
+  *International Journal for Numerical Methods in Engineering*, 102, p1262-1292, **2014**
 
 ## Open Source
 
