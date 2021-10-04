@@ -10,7 +10,7 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct. 7, 10 AM  | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | libROM: Library for physics-constrained data-driven models for physical simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4b4a257c11693fb16b747bbae103a96b)
+Oct. 7, 10 AM  | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4b4a257c11693fb16b747bbae103a96b)
 Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | TBD | [link]()
 Nov. 4, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | TBD | [link]()
 Nov. 12, 10 AM | [WaiChing Sun](https://www.poromechanics.org/pi.html) | Columbia University | TBD | [link]()
