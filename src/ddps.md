@@ -10,7 +10,7 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | TBD | [link]()
+Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | Towards reliable, efficient, and automated model reduction of parametrized nonlinear PDEs: error estimation, adaptivity, and application to aerodynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m40ef8f8762f613e44dee1ccce54a46b7)
 Nov. 4, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | TBD | [link]()
 Nov. 12, 10 AM | [WaiChing Sun](https://www.poromechanics.org/pi.html) | Columbia University | TBD | [link]()
 Nov. 18, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
@@ -20,7 +20,7 @@ Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TB
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Oct. 7th  | Youngsoo Choi | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link]()
+Oct. 7th  | Youngsoo Choi | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link](https://youtu.be/dNikDBqqKjU)
 Sep. 30th  | Peter Benner | Max Planck | Identification of Nonlinear Dynamical Systems from Noisy Measurements | [link](https://youtu.be/9sv4CrHeECY)
 Sep. 2nd | Ionut-Gabriel Farcas | Oden Institute | Learning hierarchies of reduced-dimension and context-aware low-fidelity models for multi-fidelity Monte Carlo sampling | [link](https://youtu.be/rzSpmPb1U-w)
 Aug. 26th | Jesse Capecelatro | U. of Michagan | Turbulent disperse two-phase flows: simulations and data-driven modeling | [link](https://youtu.be/OCEbm-BpB6o)
