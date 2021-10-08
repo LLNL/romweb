@@ -10,7 +10,6 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct. 7, 10 AM  | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4b4a257c11693fb16b747bbae103a96b)
 Oct. 28, 10 AM | [Masayuki Yano](http://arrow.utias.utoronto.ca/~myano/index.html) | U. of Toronto | TBD | [link]()
 Nov. 4, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | TBD | [link]()
 Nov. 18th, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
@@ -19,7 +18,8 @@ Nov. 18th, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) |
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Sep. 30th  | Peter Benner | Max Planck | Identification of Nonlinear Dynamical Systems from Noisy Measurements | [link]()
+Oct. 7th  | Youngsoo Choi | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link]()
+Sep. 30th  | Peter Benner | Max Planck | Identification of Nonlinear Dynamical Systems from Noisy Measurements | [link](https://youtu.be/9sv4CrHeECY)
 Sep. 2nd | Ionut-Gabriel Farcas | Oden Institute | Learning hierarchies of reduced-dimension and context-aware low-fidelity models for multi-fidelity Monte Carlo sampling | [link](https://youtu.be/rzSpmPb1U-w)
 Aug. 26th | Jesse Capecelatro | U. of Michagan | Turbulent disperse two-phase flows: simulations and data-driven modeling | [link](https://youtu.be/OCEbm-BpB6o)
 Aug. 19th | Christopher J. Earls | Cornell U. | Gaining mechanistic insight through learning Green's functions: Uncovering the solutions to hidden PDEs | [link](https://youtu.be/GVxDaaE51cw)
