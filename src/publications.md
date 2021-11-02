@@ -21,7 +21,7 @@
 #### 2019 and earlier
   1. Y. Choi, K. Carlberg, [Space-time least-squares Petrov-Galerkin projection for nonlinear model reduction](https://epubs.siam.org/doi/abs/10.1137/17M1120531), *SIAM Journal on Scientific Computing*, 41(1), A26-A58, **2019**
   1. Y. Choi, G. Oxberry, D. Whit, T. Kirchdoerfer, [Accelerating design optimization using reduced order models](https://arxiv.org/pdf/1909.11320.pdf), *arXiv preprint*, arXiv:1909.11320, **2019**
-  1. K. Carlberg, Y. Choi, S. Sargsyan, [Conservative model reduction for finite-volume models](https://www.sciencedirect.com/science/article/pii/S002199911830319X), 371, p280-314, **2018**
+  1. K. Carlberg, Y. Choi, S. Sargsyan, [Conservative model reduction for finite-volume models](https://www.sciencedirect.com/science/article/pii/S002199911830319X), *Journal of Computational Physics*, 371, p280-314, **2018**
   1. G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, [Limited-memory adaptive snapshot selection for proper orthogonal decomposition](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.5283), *International Journal of Numerical Methods in Engineering*, 109(2), p198-217, **2016**
   1. D. Amsallem, M. Zahr, Y. Choi, C. Farhat, [Design optimization using hyper-reduced-order models](https://link.springer.com/article/10.1007/s00158-014-1183-y), *Structural and Multidisciplinary Optimization*, 51, p919-940, **2015**
 
