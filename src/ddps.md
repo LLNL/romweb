@@ -18,7 +18,7 @@ Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TB
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Nov. 4th  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://youtu.be/AivBTldopJw)
+Nov. 4th  | Misha Khodak |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://youtu.be/AivBTldopJw)
 Oct. 28th | Masayuki Yano | U. of Toronto | Towards reliable, efficient, and automated model reduction of parametrized nonlinear PDEs: error estimation, adaptivity, and application to aerodynamics | [link](https://youtu.be/75UpQyMkrd0)
 Oct. 7th  | Youngsoo Choi | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link](https://youtu.be/dNikDBqqKjU)
 Sep. 30th  | Peter Benner | Max Planck | Identification of Nonlinear Dynamical Systems from Noisy Measurements | [link](https://youtu.be/9sv4CrHeECY)
