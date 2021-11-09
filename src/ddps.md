@@ -10,8 +10,7 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov. 4, 10 AM  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1a0cea9fb9bf3472af2cce004261ca47)
-Nov. 12, 10 AM | [WaiChing Sun](https://www.poromechanics.org/pi.html) | Columbia University | TBD | [link]()
+Nov. 12, 10 AM | [WaiChing Sun](https://www.poromechanics.org/pi.html) | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m32eefc646fbfac243beb758ae300ce34)
 Nov. 18, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
 Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
@@ -19,6 +18,7 @@ Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TB
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Nov. 4th  | [Misha Khodak](https://www.cs.cmu.edu/~mkhodak/) |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://youtu.be/AivBTldopJw)
 Oct. 28th | Masayuki Yano | U. of Toronto | Towards reliable, efficient, and automated model reduction of parametrized nonlinear PDEs: error estimation, adaptivity, and application to aerodynamics | [link](https://youtu.be/75UpQyMkrd0)
 Oct. 7th  | Youngsoo Choi | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link](https://youtu.be/dNikDBqqKjU)
 Sep. 30th  | Peter Benner | Max Planck | Identification of Nonlinear Dynamical Systems from Noisy Measurements | [link](https://youtu.be/9sv4CrHeECY)
