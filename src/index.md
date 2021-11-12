@@ -54,7 +54,7 @@ Sep. 23, 2021| [Physics-informed sampling procedure for reduced order models](ht
 ## Latest Release
 
 [Examples](examples.md)
-┊ [Code documentation](http://software.llnl.gov/libROM/html/index.html)
+┊ [Code documentation](https://software.llnl.gov/libROM/html/index.html)
 ┊ [Sources](https://github.com/LLNL/libROM)
 
 [<button type="button" class="btn btn-success">
