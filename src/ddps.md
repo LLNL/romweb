@@ -10,14 +10,14 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov. 12, 10 AM | [WaiChing Sun](https://www.poromechanics.org/pi.html) | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m32eefc646fbfac243beb758ae300ce34)
-Nov. 18, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | TBD | [link]()
+Nov. 18, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m596f029b7fbbbfabfbe6e7f63f6c6099)
 Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Nov. 12th | WaiChing Sun | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link]()
 Nov. 4th  | Misha Khodak |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://youtu.be/AivBTldopJw)
 Oct. 28th | Masayuki Yano | U. of Toronto | Towards reliable, efficient, and automated model reduction of parametrized nonlinear PDEs: error estimation, adaptivity, and application to aerodynamics | [link](https://youtu.be/75UpQyMkrd0)
 Oct. 7th  | Youngsoo Choi | LLNL | libROM: Library for physics-constrained data-driven physical simulations | [link](https://youtu.be/dNikDBqqKjU)
