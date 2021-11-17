@@ -12,6 +12,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Nov. 18, 10 AM | [Michael Mahoney](https://www.stat.berkeley.edu/~mmahoney/) | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m596f029b7fbbbfabfbe6e7f63f6c6099)
 Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TBD | [link]()
+Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
