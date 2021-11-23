@@ -12,7 +12,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | TBD | [link]()
 Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | TBD | [link]()
-Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.gqks2q) | Stanford University | TBD | [link]()  
+Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.gqks2q) | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m17143c5545dc4c957c4c2a969cf4a3f7)  
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
