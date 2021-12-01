@@ -14,6 +14,7 @@ Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | Ko
 Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | TBD | [link]()
 Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.gqks2q) | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m17143c5545dc4c957c4c2a969cf4a3f7)  
 Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | TBD | [link]()
+Feb. 4, 10 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
