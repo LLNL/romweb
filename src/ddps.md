@@ -10,7 +10,6 @@
 ## Scheduled Talks, 2021 
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Dec. 3, 10 AM | [Igor Mezic](https://mgroup.me.ucsb.edu) | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mdd401d44c48debd53afac68f4df03cd3)
 Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | TBD | [link]()
 Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.gqks2q) | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m17143c5545dc4c957c4c2a969cf4a3f7)  
 Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | TBD | [link]()
@@ -20,6 +19,7 @@ Feb. 4, 10 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech 
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link]()
 Nov. 18th | Michael Mahoney | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://youtu.be/dWz7hQxhtTA)
 Nov. 12th | WaiChing Sun | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link](https://youtu.be/92Lg-cESVwM)
 Nov. 4th  | Misha Khodak |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://youtu.be/AivBTldopJw)
