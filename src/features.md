@@ -188,7 +188,7 @@ following procedure is taken to find the best $\boldsymbol{A}$.
 
      $$\tilde{\boldsymbol{A}}_r \boldsymbol{X} = \boldsymbol{\Lambda}\boldsymbol{X}$$
 
-     and set $\boldsymbol{\Phi} = \boldsymbol{W}\boldsymbol{X}$, then the DMD
+     and set either $\boldsymbol{\Phi} = \boldsymbol{W}\boldsymbol{X}$ or $\boldsymbol{\Phi} = \boldsymbol{U}^+ \boldsymbol{V} \boldsymbol{\Omega}^{-1}\boldsymbol{X}$, then the DMD
      solution at time, $t$, can be found as
 
      $$\boldsymbol{u}(t) = \boldsymbol{\Phi}\boldsymbol{\Lambda}^{t/\Delta t} \boldsymbol{b}_0,$$
