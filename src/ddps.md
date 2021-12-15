@@ -19,7 +19,7 @@ Feb. 4, 10 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech 
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link]()
+Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link](https://youtu.be/UjHDnnop-LQ)
 Nov. 18th | Michael Mahoney | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://youtu.be/dWz7hQxhtTA)
 Nov. 12th | WaiChing Sun | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link](https://youtu.be/92Lg-cESVwM)
 Nov. 4th  | Misha Khodak |  CMU | Towards automatic architecture design for emerging machine learning tasks | [link](https://youtu.be/AivBTldopJw)
