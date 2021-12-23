@@ -7,7 +7,7 @@
 
 # DDPS Webinar (_in California time_)
 
-## Scheduled Talks, 2021 
+## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | TBD | [link]()
