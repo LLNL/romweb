@@ -6,6 +6,7 @@
 </script>
 
 # DDPS Webinar (_in California time_)
+DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk, please send an email to choi15@llnl.gov.
 
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
