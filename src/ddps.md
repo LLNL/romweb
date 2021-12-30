@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | TBD | [link]()
+Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f1c7a34baca4c74c0498a1004760e08)
 Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.gqks2q) | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m17143c5545dc4c957c4c2a969cf4a3f7)  
 Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | TBD | [link]()
 Feb. 4, 10 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
