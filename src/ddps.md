@@ -11,9 +11,9 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jan. 6, 10 AM | [Miles Cranmer](https://astroautomata.com) | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f1c7a34baca4c74c0498a1004760e08)
 Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.gqks2q) | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m17143c5545dc4c957c4c2a969cf4a3f7)  
 Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | TBD | [link]()
+Jan. 28, 10 AM | [Ashesh Chattopadhyay](https://sites.google.com/view/ashesh6810/home) | Rice University | TBD | [link]()
 Feb. 4, 10 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
 Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | TBD | [link]()
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | TBD | [link]()
@@ -24,6 +24,7 @@ Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York Universit
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Jan. 6, 10 AM | Miles Cranmer | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://youtu.be/iNzEF9W4L9o)
 Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link](https://youtu.be/UjHDnnop-LQ)
 Nov. 18th | Michael Mahoney | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://youtu.be/dWz7hQxhtTA)
 Nov. 12th | WaiChing Sun | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link](https://youtu.be/92Lg-cESVwM)
