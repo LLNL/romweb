@@ -22,6 +22,7 @@ Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
 Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
+Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
