@@ -15,6 +15,7 @@ Jan. 14, 10 AM | [Greg Beroza](https://earth.stanford.edu/people/greg-beroza#gs.
 Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | TBD | [link]()
 Jan. 28, 10 AM | [Ashesh Chattopadhyay](https://sites.google.com/view/ashesh6810/home) | Rice University | TBD | [link]()
 Feb. 4, 10 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
+Feb. 11, 10 AM | [Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | LANL | TBD | [link]()
 Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | TBD | [link]()
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | TBD | [link]()
 Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]()
