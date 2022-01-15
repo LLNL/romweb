@@ -19,6 +19,7 @@ Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech |
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | TBD | [link]()
 Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]()
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
+Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrekidis) | Princeton University | TBD | [link]()
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
 Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
