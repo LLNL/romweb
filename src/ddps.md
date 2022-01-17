@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma9e2b4dc2e5ee270cb6af913c630460b)
-Jan. 28, 10 AM | [Ashesh Chattopadhyay](https://sites.google.com/view/ashesh6810/home) | Rice University | TBD | [link]()
+Jan. 28, 10 AM | [Ashesh Chattopadhyay](https://sites.google.com/view/ashesh6810/home) | Rice University | Deep learning meets data assimilation: On physically-consistent architectures and hybrid ensemble Kalman filters for weather forecasting | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m040b98a603c4ab23d8be235e1554d199)
 Feb. 4, 9:30 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
 Feb. 11, 10 AM | [Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | LANL | TBD | [link]()
 Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | TBD | [link]()
