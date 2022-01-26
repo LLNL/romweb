@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jan. 20, 10 AM | [Pat Langley](http://www.isle.org/langley/) | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma9e2b4dc2e5ee270cb6af913c630460b)
 Jan. 28, 10 AM | [Ashesh Chattopadhyay](https://sites.google.com/view/ashesh6810/home) | Rice University | Deep learning meets data assimilation: On physically-consistent architectures and hybrid ensemble Kalman filters for weather forecasting | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m040b98a603c4ab23d8be235e1554d199)
 Feb. 4, 9:30 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
 Feb. 11, 10 AM | [Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | LANL | TBD | [link]()
@@ -23,11 +22,13 @@ Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrek
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
 Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
+July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Jan. 20 | Pat Langley | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://youtu.be/9_uT8iLiVu4)
 Jan. 14 | Greg Beroza | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link]()  
 Jan. 6 | Miles Cranmer | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://youtu.be/iNzEF9W4L9o)
 Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link](https://youtu.be/UjHDnnop-LQ)
