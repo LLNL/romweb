@@ -29,7 +29,7 @@ July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Jan. 20 | Pat Langley | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://youtu.be/9_uT8iLiVu4)
-Jan. 14 | Greg Beroza | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link]()  
+Jan. 14 | Greg Beroza | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://youtu.be/qP1w3JpQZGY)  
 Jan. 6 | Miles Cranmer | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://youtu.be/iNzEF9W4L9o)
 Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link](https://youtu.be/UjHDnnop-LQ)
 Nov. 18th | Michael Mahoney | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://youtu.be/dWz7hQxhtTA)
