@@ -11,9 +11,8 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jan. 28, 10 AM | [Ashesh Chattopadhyay](https://sites.google.com/view/ashesh6810/home) | Rice University | Deep learning meets data assimilation: On physically-consistent architectures and hybrid ensemble Kalman filters for weather forecasting | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m040b98a603c4ab23d8be235e1554d199)
-Feb. 4, 9:30 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | TBD | [link]()
-Feb. 11, 10 AM | [Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | LANL | TBD | [link]()
+Feb. 4, 9:30 AM | [Serkan Gugercin](https://gugercin.math.vt.edu) | Virginia Tech | Data-driven modeling of dynamical systems: A systems theoretic perspective | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3a78973043d9593367e124477d27c9f4)
+Feb. 11, 10 AM | [Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | LANL | Machine Learning for materials and chemical dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m5fc7d4467f9de9ec3468dc6662a539b0)
 Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | TBD | [link]()
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | TBD | [link]()
 Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]()
@@ -28,6 +27,7 @@ July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Jan. 28 | Ashesh Chattopadhyay | Rice University | Deep learning meets data assimilation: On physically-consistent architectures and hybrid ensemble Kalman filters for weather forecasting | [link]()
 Jan. 20 | Pat Langley | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://youtu.be/9_uT8iLiVu4)
 Jan. 14 | Greg Beroza | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://youtu.be/qP1w3JpQZGY)  
 Jan. 6 | Miles Cranmer | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://youtu.be/iNzEF9W4L9o)
