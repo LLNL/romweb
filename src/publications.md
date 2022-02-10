@@ -1,16 +1,16 @@
 # Publications
 
 #### 2022
-  1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://arxiv.org/pdf/2201.07335.pdf), *arXiv preprint*, arXiv:220107335, **2022**
+  1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://arxiv.org/pdf/2201.07335.pdf), *arXiv preprint*, arXiv:2201.07335, **2022**
   1. T. Kadeethum, F. Ballarin, Y. Choi, D. O'Malley, H. Yoon, N. Bouklas, [Non-intrusive reduced order modeling of natural convection in porous media using convolutional autoencoders: Comparison with linear subspace techniques](https://www.sciencedirect.com/science/article/pii/S0309170821002499), *Advances in Water Resources*, Volume 160, 104098, **2022**
+  1. Y. Kim, Y. Choi, D. Widemann, T. Zohdi, [A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder](https://www.sciencedirect.com/science/article/pii/S0021999121007361), *Journal of Computational Physics*, 451, 110841, **2022**. Also available as [arXiv:2009.11990](https://arxiv.org/pdf/2009.11990.pdf). 
 
 
 #### 2021
-  1. Y. Kim, Y. Choi, D. Widemann, T. Zohdi, [A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder](https://arxiv.org/pdf/2009.11990.pdf) accepted for publication at *Journal of Computational Physics*, arXiv:2009.11990, **2021**
   1. T. Kadeethum, D. O'Malley, J.N. Fuhg, Y. Choi, J. Lee, H.S. Viswanathan, N. Bouklas, [A framework for data-driven solution and parameter estimation of PDEs using conditional generative adversarial networks](https://www.nature.com/articles/s43588-021-00171-3), *Nature Computational Science*, 1, 819-829, **2021**
-  1. D. Copeland, S.W. Cheung, K. Huynh, Y. Choi, [Reduced order models for Lagrangian hydrodynamics](https://urldefense.us/v3/__https://authors.elsevier.com/c/1e3CuAQEIviQh__;!!G2kpM7uM-TzIFchu!lNscH11b6rqEkl8wLcLC-3yJIar4noKW-QYuT9Iq3BY-voRnakYgCxjWCYzDQE6Z$), *Computer Methods in Applied Mechanics and Engineering*, Volume 388, 114259, **2021**
+  1. D. Copeland, S.W. Cheung, K. Huynh, Y. Choi, [Reduced order models for Lagrangian hydrodynamics](https://www.sciencedirect.com/science/article/pii/S0045782521005739), *Computer Methods in Applied Mechanics and Engineering*, Volume 388, 114259, **2021**. Also available as [arXiv:2104.11404](https://arxiv.org/pdf/2104.11404.pdf).
   1. C. Hoang, Y. Choi, K. Carlberg, [Domain-decomposition least-squares Petrov-Galerkin (DD-LSPG) nonlinear model reduction](https://www.sciencedirect.com/science/article/pii/S0045782521003285), *Computer Methods in Applied Mechanics and Engineering*, Volume 384, 113997, **2021**
-  1. S. McBane, Y. Choi, [Component-wise reduced order model lattice-type structure design](https://www.sciencedirect.com/science/article/pii/S0045782521001493), *Computer Methods in Applied Mechanics and Engineering*, 381, 113813, **2021**.
+  1. S. McBane, Y. Choi, [Component-wise reduced order model lattice-type structure design](https://www.sciencedirect.com/science/article/pii/S0045782521001493), *Computer Methods in Applied Mechanics and Engineering*, 381, 113813, **2021**
   1. Y. Kim, K.M. Wang, Y. Choi, [Efficient space-time reduced order model for linear dynamical systems in Python using less than 120 lines of code](https://www.mdpi.com/2227-7390/9/14/1690), *Mathematics*, 9(14), 1690, **2021** 
   1. Y. Choi, P. Brown, W. Arrighi, R. Anderson, K. Huynh, [Space-time reduced order model for large-scale linear dynamical systems with application to Boltzmann transport problems](https://www.sciencedirect.com/science/article/pii/S0021999120306197), *Journal of Computational Physics*, 424, 109845, **2021**. Also available as [arXiv:1910.01260](https://arxiv.org/pdf/1910.01260.pdf).
 
