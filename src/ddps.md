@@ -20,6 +20,7 @@ Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrek
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
 Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
+Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) |  | TBD | [link]()
 July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
