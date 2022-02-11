@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Feb. 11, 10 AM | [Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | LANL | Machine Learning for materials and chemical dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m5fc7d4467f9de9ec3468dc6662a539b0)
-Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | TBD | [link]()
+Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | Multi-scale modeling and neural operators | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc03ce8158d8616a161e1b727ba689360)
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | TBD | [link]()
 Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]()
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
