@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Feb. 18, 10 AM | [Kaushik Bhattacharya](https://mechmat.caltech.edu) | Caltech | Multi-scale modeling and neural operators | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc03ce8158d8616a161e1b727ba689360)
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb58229afbdc25ed539ff2464c99f8477)
 Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]()
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
@@ -19,6 +18,7 @@ Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrek
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
 Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
+Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | TBD | [link]()
 Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
 July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
@@ -26,7 +26,8 @@ July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Feb. 11 | Sergei Tretiak | LANL | Machine Learning for materials and chemical dynamics | [link]()
+Feb. 18 | Kaushik Bhattacharya | Caltech | Multi-scale modeling and neural operators | [link]()
+Feb. 11 | Sergei Tretiak | LANL | Machine Learning for materials and chemical dynamics | [link](https://youtu.be/nejoVuwScYw)
 Feb. 4 | Serkan Gugercin | Virginia Tech | Data-driven modeling of dynamical systems: A systems theoretic perspective | [link](https://youtu.be/UuxJi-sIv9w)
 Jan. 28 | Ashesh Chattopadhyay | Rice University | Deep learning meets data assimilation: On physically-consistent architectures and hybrid ensemble Kalman filters for weather forecasting | [link](https://youtu.be/1ntAZoKc0Fo)
 Jan. 20 | Pat Langley | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://youtu.be/9_uT8iLiVu4)
