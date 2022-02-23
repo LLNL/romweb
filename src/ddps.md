@@ -26,7 +26,7 @@ July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/
 ## Past Talks in 2021
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Feb. 18 | Kaushik Bhattacharya | Caltech | Multi-scale modeling and neural operators | [link]()
+Feb. 18 | Kaushik Bhattacharya | Caltech | Multi-scale modeling and neural operators | [link](https://youtu.be/7AnW8b6hfFI)
 Feb. 11 | Sergei Tretiak | LANL | Machine Learning for materials and chemical dynamics | [link](https://youtu.be/nejoVuwScYw)
 Feb. 4 | Serkan Gugercin | Virginia Tech | Data-driven modeling of dynamical systems: A systems theoretic perspective | [link](https://youtu.be/UuxJi-sIv9w)
 Jan. 28 | Ashesh Chattopadhyay | Rice University | Deep learning meets data assimilation: On physically-consistent architectures and hybrid ensemble Kalman filters for weather forecasting | [link](https://youtu.be/1ntAZoKc0Fo)
