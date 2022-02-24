@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Feb. 25, 10 AM | [Lexing Ying](https://web.stanford.edu/~lexing/) | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb58229afbdc25ed539ff2464c99f8477)
-Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU |  | [link]()
+Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU | Machine Learning of Self Organization from Observation | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2cdecd956eaee4ca0c1d0a0e27035a85)
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
 Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrekidis) | Princeton University | TBD | [link]()
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
