@@ -15,15 +15,15 @@ Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU | Machine L
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
 Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrekidis) | Princeton University | TBD | [link]()
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
-Apr. 1, 10 AM | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
 Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | TBD | [link]()
 Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
 July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
+TBD | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
-## Past Talks in 2021
+## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Feb. 25 | Lexing Ying | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link]()
@@ -34,6 +34,10 @@ Jan. 28 | Ashesh Chattopadhyay | Rice University | Deep learning meets data assi
 Jan. 20 | Pat Langley | Stanford University | Computational Scientific Discovery: Heuristic Search for Communicable Laws and Models | [link](https://youtu.be/9_uT8iLiVu4)
 Jan. 14 | Greg Beroza | Stanford University | Towards Complete Machine-Learning-Based Earthquake Monitoring Workflows | [link](https://youtu.be/qP1w3JpQZGY)  
 Jan. 6 | Miles Cranmer | Princeton University | The Problem with Deep Learning in Physics (and how to fix it) | [link](https://youtu.be/iNzEF9W4L9o)
+
+## Past Talks in 2021
+Date      | Speaker        |  Institution      | Title                         | YouTube
+---------- | -------------- | ----------------- | ----------------------------- | ---------
 Dec. 3rd | Igor Mezic | UC Santa Barbara | Koopman operator theory for dynamical systems, control and data analytics | [link](https://youtu.be/UjHDnnop-LQ)
 Nov. 18th | Michael Mahoney | UC Berkeley | Toward combining principled scientific models and principled machine learning models | [link](https://youtu.be/dWz7hQxhtTA)
 Nov. 12th | WaiChing Sun | Columbia University | Data-driven constitutive updates: from model-free poroelasticity to level set plasticity trained by neural networks | [link](https://youtu.be/92Lg-cESVwM)
