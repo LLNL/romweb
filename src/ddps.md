@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Mar. 3, 10 AM | [Ming Zhong](https://mingzhong.engr.tamu.edu) | TAMU | Machine Learning of Self Organization from Observation | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2cdecd956eaee4ca0c1d0a0e27035a85)
 Mar. 11, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb699b643aa80f02bbe12dc1b3f2e849b)
 Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrekidis) | Princeton University | TBD | [link]()
 Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
@@ -21,12 +20,14 @@ Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New 
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
 July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
 TBD | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
+TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Feb. 25 | Lexing Ying | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link]()
+Mar. 3 | Ming Zhong | TAMU | Machine Learning of Self Organization from Observation | [link](https://youtu.be/vmfKFZoFt4s)
+Feb. 25 | Lexing Ying | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link](https://youtu.be/lVUi8GXP0k0)
 Feb. 18 | Kaushik Bhattacharya | Caltech | Multi-scale modeling and neural operators | [link](https://youtu.be/7AnW8b6hfFI)
 Feb. 11 | Sergei Tretiak | LANL | Machine Learning for materials and chemical dynamics | [link](https://youtu.be/nejoVuwScYw)
 Feb. 4 | Serkan Gugercin | Virginia Tech | Data-driven modeling of dynamical systems: A systems theoretic perspective | [link](https://youtu.be/UuxJi-sIv9w)
