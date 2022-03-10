@@ -19,7 +19,6 @@ Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petro
 Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
 July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
-TBD | [Laure Zanna](https://laurezanna.github.io) | New York University | TBD | [link]()
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
