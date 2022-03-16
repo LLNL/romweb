@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Mar. 17, 10 AM | [Yannis Kevrekidis](https://scholar.princeton.edu/yannis_kevrekidis) | Princeton University | No equations, no variables, no space, no time: Old and new results on data and the modeling of complex systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma2b35f80442bbdcf625e9b809a0add02)
-Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | TBD | [link]()
+Mar. 25, 4 PM | [Weinan E](https://web.math.princeton.edu/~weinan/) | Princeton University | Machine Learning and Multi-scale Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m58fbe84133bd028c3ab37bfa6c5c9cdc)
 Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
 Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | TBD | [link]()
 Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
