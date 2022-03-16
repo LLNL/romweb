@@ -24,7 +24,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Mar. 11 | Alice Cicirello | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link]()
+Mar. 11 | Alice Cicirello | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://youtu.be/bGsVCnHimUU)
 Mar. 3 | Ming Zhong | TAMU | Machine Learning of Self Organization from Observation | [link](https://youtu.be/vmfKFZoFt4s)
 Feb. 25 | Lexing Ying | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link](https://youtu.be/lVUi8GXP0k0)
 Feb. 18 | Kaushik Bhattacharya | Caltech | Multi-scale modeling and neural operators | [link](https://youtu.be/7AnW8b6hfFI)
