@@ -98,9 +98,9 @@ able to achieve a speedup of $7.5$ with a relative error of $6.4\times10^{-4}$.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:
 
-* **offline1**: poisson -offline -f 1.0 -id 0
-* **offline2**: poisson -offline -f 1.1 -id 1
-* **offline3**: poisson -offline -f 1.2 -id 2
+* **offline1**: poisson_global_rom -offline -f 1.0 -id 0
+* **offline2**: poisson_global_rom -offline -f 1.1 -id 1
+* **offline3**: poisson_global_rom -offline -f 1.2 -id 2
 * **merge**: poisson -merge -ns 3
 * **online**: poisson -online -f 1.15
 
@@ -110,7 +110,7 @@ summarized in the table below:
 
 
 _The code that generates the numerical results above can be found in
-([poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp))
+([poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp))
 and the explanation of codes is provided in
 [here](poisson.md#poisson-equation). 
 The
@@ -265,7 +265,7 @@ summarized in the table below:
    |  41.68 sec        |  1.7 sec          |   24.5         |      1.6e-3             |
 
 _The code that generates the numerical results above can be found in
-([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/prom/mixed_nonlinear_diffusion.cpp)).
+([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/mixed_nonlinear_diffusion.cpp)).
 The
 [mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/mixed_nonlinear_diffusion.cpp)
 is based on
@@ -311,7 +311,7 @@ is based on
 **Laghos** (LAGrangian High-Order Solver) is a miniapp that solves the
 time-dependent Euler equations of compressible gas dynamics in a moving
 Lagrangian frame using unstructured high-order finite element spatial
-discretization and explicit high-order time-stepping. **LaghosROM** introduces
+discretization and explicit high-order time-stepping. [**LaghosROM**](https://github.com/CEED/Laghos/tree/rom/rom) introduces
 reduced order models of Laghos simulations.
 
 A list of example problems that you can solve with LaghosROM includes Sedov
@@ -510,7 +510,7 @@ numerical result, following the command line options described below:
    | ----------------- | ----------------- | -------- | ----------------------- |
    |  127 sec          |  8.7  sec         |   14.6   |     7.8e-3              |
 
-_This is an external miniapp, available at
+_LaghosROM is an external miniapp, available at
 [https://github.com/CEED/Laghos/tree/rom/rom](https://github.com/CEED/Laghos/tree/rom/rom)._
 
 <div style="clear:both;"/></div>
