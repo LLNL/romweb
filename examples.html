@@ -258,9 +258,9 @@ able to achieve a speedup of $7.5$ with a relative error of $6.4\times10^{-4}$.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: poisson -offline -f 1.0 -id 0</li>
-<li><strong>offline2</strong>: poisson -offline -f 1.1 -id 1</li>
-<li><strong>offline3</strong>: poisson -offline -f 1.2 -id 2</li>
+<li><strong>offline1</strong>: poisson_global_rom -offline -f 1.0 -id 0</li>
+<li><strong>offline2</strong>: poisson_global_rom -offline -f 1.1 -id 1</li>
+<li><strong>offline3</strong>: poisson_global_rom -offline -f 1.2 -id 2</li>
 <li><strong>merge</strong>: poisson -merge -ns 3</li>
 <li><strong>online</strong>: poisson -online -f 1.15</li>
 </ul>
@@ -283,7 +283,7 @@ summarized in the table below:</p>
 </tbody>
 </table>
 <p><em>The code that generates the numerical results above can be found in
-(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp">poisson.cpp</a>)
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp">poisson_global_rom.cpp</a>)
 and the explanation of codes is provided in
 <a href="poisson.html#poisson-equation">here</a>. 
 The
@@ -483,7 +483,7 @@ summarized in the table below:</p>
 </tbody>
 </table>
 <p><em>The code that generates the numerical results above can be found in
-(<a href="https://github.com/LLNL/libROM/blob/nlmixeddiff/examples/prom/mixed_nonlinear_diffusion.cpp">mixed_nonlinear_diffusion.cpp</a>).
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/mixed_nonlinear_diffusion.cpp">mixed_nonlinear_diffusion.cpp</a>).
 The
 <a href="https://github.com/LLNL/libROM/blob/master/examples/prom/mixed_nonlinear_diffusion.cpp">mixed_nonlinear_diffusion.cpp</a>
 is based on
@@ -539,7 +539,7 @@ is based on
 <p><strong>Laghos</strong> (LAGrangian High-Order Solver) is a miniapp that solves the
 time-dependent Euler equations of compressible gas dynamics in a moving
 Lagrangian frame using unstructured high-order finite element spatial
-discretization and explicit high-order time-stepping. <strong>LaghosROM</strong> introduces
+discretization and explicit high-order time-stepping. <a href="https://github.com/CEED/Laghos/tree/rom/rom"><strong>LaghosROM</strong></a> introduces
 reduced order models of Laghos simulations.</p>
 <p>A list of example problems that you can solve with LaghosROM includes Sedov
 blast, Gresho vortex, Taylor-Green vortex, triple-point, and Rayleigh-Taylor
@@ -786,7 +786,7 @@ numerical result, following the command line options described below:</p>
 </tr>
 </tbody>
 </table>
-<p><em>This is an external miniapp, available at
+<p><em>LaghosROM is an external miniapp, available at
 <a href="https://github.com/CEED/Laghos/tree/rom/rom">https://github.com/CEED/Laghos/tree/rom/rom</a>.</em></p>
 <div style="clear:both;"/>
 </div>
