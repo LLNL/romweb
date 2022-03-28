@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | TBD | [link]()
+Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | Charting dynamics from data | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8ed5adad70f09c345ad2cb76dbb3e57c)
 Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | TBD | [link]()
 Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
