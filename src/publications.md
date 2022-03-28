@@ -1,6 +1,8 @@
 # Publications
 
 #### 2022
+  1. W. Fries, X. He, Y. Choi,  [LaSDI: Parametric latent space dynamics identification](https://arxiv.org/pdf/2203.02076.pdf), *arXiv preprint*, arXiv:2203.02076, **2022**
+  1. T. Kadeethum, F. Ballarin, D. O'Malley, Y. Choi, N. Bouklas, H. Yoon, [Reduced order modeling for flow and transport problems with Barlow Twins self-supervised learning](https://arxiv.org/pdf/2202.05460.pdf), *arXiv preprint*, arXiv:2202.05460, **2022**
   1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://arxiv.org/pdf/2201.07335.pdf), *arXiv preprint*, arXiv:2201.07335, **2022**
   1. T. Kadeethum, F. Ballarin, Y. Choi, D. O'Malley, H. Yoon, N. Bouklas, [Non-intrusive reduced order modeling of natural convection in porous media using convolutional autoencoders: Comparison with linear subspace techniques](https://www.sciencedirect.com/science/article/pii/S0309170821002499), *Advances in Water Resources*, Volume 160, 104098, **2022**
   1. Y. Kim, Y. Choi, D. Widemann, T. Zohdi, [A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder](https://www.sciencedirect.com/science/article/pii/S0021999121007361), *Journal of Computational Physics*, 451, 110841, **2022**. Also available as [arXiv:2009.11990](https://arxiv.org/pdf/2009.11990.pdf). 

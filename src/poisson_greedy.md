@@ -8,7 +8,7 @@
 # Greedy for Poisson equation
 
 The main code for this tutorial can be found at
-[poisson_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson_greedy.cpp),
+[poisson_local_rom_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp),
 which demonstrates how to use libROM to execute greedy procedure for the ROM of
 the Poisson problem introduced in the [Poisson equation tutorial](poisson.md).
 For the recap, the general procedure of the greedy algorithm follows:
@@ -33,7 +33,7 @@ tutorial](poisson.md). You can try the following command line options to run
 the greedy procedure:
 
 ```sh
-./poisson_greedy -build_database -greedy-param-min 0.5 -greedy-param-max 3 -greedy-param-size 40 -greedysubsize 10 -greedyconvsize 20 -greedyrelerrortol 0.01
+./poisson_local_rom_greedy -build_database -greedy-param-min 0.5 -greedy-param-max 3 -greedy-param-size 40 -greedysubsize 10 -greedyconvsize 20 -greedyrelerrortol 0.01
 ```
 
 The lower and upper bounds of the parameter are determined by the options,
@@ -50,29 +50,26 @@ the error indicator tests on the sub-sample points have been passed.  Finally,
 to achieve.
 
 The core class of the libROM for the greedy procedure is [
-GreedyParameterPointSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_parameter_point_sampler.html),
-which is defined
-[here](https://github.com/LLNL/libROM/blob/e25d04d7af2b834b48f5b0147585dcecd38a0f44/examples/poisson_greedy.cpp#L122)
-in
-[poisson_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/poisson_greedy.cpp).
-The GreedyParameterPointSampler generates sampling points within a given
+GreedySampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_sampler.html),
+which is defined on Line 126 of [poisson_local_rom_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp)
+The GreedySampler generates sampling points within a given
 parameter space. 
 The class has two sub-classes, i.e.,
-[GreedyParameterPointPreDefinedSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_parameter_point_pre_defined_sampler.html)
+[GreedyCustomSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_custom_sampler.html)
 and
-[GreedyParameterPointRandomSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_parameter_point_random_sampler.html).
-The GreedyParameterPointPreDefinedSampler generates *pre-defined* sampling
+[GreedyRandomSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_random_sampler.html).
+The GreedyCustomSampler generates *pre-defined* sampling
 points, e.g., a tensor product sampling points, while the
-GreedyParameterPointRandomSampler generates *random* sampling points, e.g.,
-Latin hyper-cube sampling points. The GreedyParameterPointSampler also does
+GreedyRandomSampler generates *random* sampling points, e.g.,
+Latin hyper-cube sampling points. The GreedySampler also does
 book-keeping job of at which sampling point to evaluate the error indicator,
 when to move onto the next greedy step, and which sampling point has the
 maximum error indicator value. 
 
 Just to be clear, the libROM does not do everything for you.  For example, the
 error indicator must be defined in the physics solver. For the Poisson example,
-the residual-based error indicator is defined at [Lines
-519-527](https://github.com/LLNL/libROM/blob/e25d04d7af2b834b48f5b0147585dcecd38a0f44/examples/poisson_greedy.cpp#L519). 
+the residual-based error indicator is defined at Lines
+529-535 of [poisson_loca_rom_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp). 
 
 Once the greedy procedure completes, the log file, called
 *poisson_greedy_algorithm_log.txt*, is generated to show the progress of the
@@ -100,7 +97,7 @@ parameter points. Let's first generate the full order model solution with the
 following command line option:
 
 ```sh
-./poisson_greedy -offline -f 2.2
+./poisson_local_rom_greedy -offline -f 2.2
 ```
 
 This full order model solution will be used to compute the relative error for
@@ -108,7 +105,7 @@ the ROM solution. The ROM solution can be obtained by the following command
 line option:
 
 ```sh
-./poisson_greedy -use_database -online -f 2.2
+./poisson_local_rom_greedy -use_database -online -f 2.2
 ```
 
 Indeed, the relative error of 0.00167671 is achieved 
