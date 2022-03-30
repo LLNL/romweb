@@ -101,8 +101,8 @@ summarized in the table below:
 * **offline1**: poisson_global_rom -offline -f 1.0 -id 0
 * **offline2**: poisson_global_rom -offline -f 1.1 -id 1
 * **offline3**: poisson_global_rom -offline -f 1.2 -id 2
-* **merge**: poisson -merge -ns 3
-* **online**: poisson -online -f 1.15
+* **merge**: poisson_global_rom -merge -ns 3
+* **online**: poisson_global_rom -online -f 1.15
 
    | FOM solution time | ROM solution time | Speed-up | Solution relative error |
    | ----------------- | ----------------- | -------- | ----------------------- |
@@ -114,7 +114,7 @@ _The code that generates the numerical results above can be found in
 and the explanation of codes is provided in
 [here](poisson.md#poisson-equation). 
 The
-[poisson.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+[poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 is based on
 [ex1p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex1p.cpp) from
 MFEM with a modification on the right hand side function._ 
