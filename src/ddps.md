@@ -11,8 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Apr. 8, 10 AM | [Daniel Floryan](https://dfloryan.github.io) | University of Houston | Charting dynamics from data | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8ed5adad70f09c345ad2cb76dbb3e57c)
-Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | TBD | [link]()
+Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | Artificial Intelligence and Scientific Computing for Fluid Mechanics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m803a99403948bf152db471b12e996302)
 Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
 June. 3, 10 AM | [Tailin Wu](https://tailin.org) | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m5571de964280d682ba73cd7a5f47fcd7)
@@ -24,8 +23,9 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Mar. 25 | Weinan E | Princeton University | Machine Learning and Multi-scale Modeling | [link]()
-Mar. 17 | Yannis Kevrekidis | Princeton University | No equations, no variables, no space, no time: Old and new results on data and the modeling of complex systems | [link]()
+Apr. 8  | Daniel Floryan | University of Houston | Charting dynamics from data | [link]()
+Mar. 25 | Weinan E | Princeton University | Machine Learning and Multi-scale Modeling | [link](https://youtu.be/UkX4NcrmRxs)
+Mar. 17 | Yannis Kevrekidis | Princeton University | No equations, no variables, no space, no time: Old and new results on data and the modeling of complex systems | [link](https://youtu.be/Xpo0cluOKW8)
 Mar. 11 | Alice Cicirello | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://youtu.be/bGsVCnHimUU)
 Mar. 3 | Ming Zhong | TAMU | Machine Learning of Self Organization from Observation | [link](https://youtu.be/vmfKFZoFt4s)
 Feb. 25 | Lexing Ying | Stanford | Prony's method, analytic continuation, and quantum signal processing | [link](https://youtu.be/lVUi8GXP0k0)
