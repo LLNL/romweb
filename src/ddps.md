@@ -23,7 +23,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Apr. 8  | Daniel Floryan | University of Houston | Charting dynamics from data | [link]()
+Apr. 8  | Daniel Floryan | University of Houston | Charting dynamics from data | [link](https://youtu.be/m6XEVTiQOxY)
 Mar. 25 | Weinan E | Princeton University | Machine Learning and Multi-scale Modeling | [link](https://youtu.be/UkX4NcrmRxs)
 Mar. 17 | Yannis Kevrekidis | Princeton University | No equations, no variables, no space, no time: Old and new results on data and the modeling of complex systems | [link](https://youtu.be/Xpo0cluOKW8)
 Mar. 11 | Alice Cicirello | TU Delft | Interpretable, explainable and non-intrusive uncertainty propagation through expensive-to-evaluate models via ML-optimization | [link](https://youtu.be/bGsVCnHimUU)
