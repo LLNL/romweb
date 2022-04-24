@@ -11,8 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks, 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Apr. 22, 10 AM | [Petros Koumoutsakos](https://www.seas.harvard.edu/person/petros-koumoutsakos) | Harvard University | Artificial Intelligence and Scientific Computing for Fluid Mechanics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m803a99403948bf152db471b12e996302)
-Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | TBD | [link]()
+Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | Neural Galerkin schemes with active learning for high-dimensional evolution equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3b3f6a83eb59d0939b40f26935b40640)
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
 June. 3, 10 AM | [Tailin Wu](https://tailin.org) | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m5571de964280d682ba73cd7a5f47fcd7)
 June. 23, 10 AM | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | TBD | [link]()
@@ -24,6 +23,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Apr. 22 | Petros Koumoutsakos | Harvard University | Artificial Intelligence and Scientific Computing for Fluid Mechanics | [link]()
 Apr. 8  | Daniel Floryan | University of Houston | Charting dynamics from data | [link](https://youtu.be/m6XEVTiQOxY)
 Mar. 25 | Weinan E | Princeton University | Machine Learning and Multi-scale Modeling | [link](https://youtu.be/UkX4NcrmRxs)
 Mar. 17 | Yannis Kevrekidis | Princeton University | No equations, no variables, no space, no time: Old and new results on data and the modeling of complex systems | [link](https://youtu.be/Xpo0cluOKW8)
