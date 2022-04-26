@@ -199,7 +199,6 @@ MFEM._
 <br></div>
 
 
-
 <div id="heat_conduction" markdown="1">
 ## Heat conduction problem
 <a target="_blank">
@@ -228,6 +227,55 @@ _The code that generates the numerical results above can be found in
 ([heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction.cpp)).
 The
 [heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction.cpp)
+is based on
+[ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM._
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="parametric_dmd_heat_conduction" markdown="1">
+## Parametric DMD heat conduction problem
+<a target="_blank">
+<img class="floatright" src="../img/examples/parametric_dmd_heat_conduction.gif" width="350">
+</a>
+
+This example demonstrates the **parametric DMD** on the [heat conduction
+problem](examples.md#heat_conduction). The initial condition, $u_0(x)$, is
+parameterized by the center of circle and the radius, i.e., 
+
+$$u_0(x) =  
+  \cases{
+  \displaystyle 2 & for \|x-c\| < r  \cr
+  \displaystyle 1 & for \|x-c\| >= r 
+  }$$
+
+One can run the following command line options to reproduce the parametric DMD results
+summarized in the table below:
+
+* rm -rf parameters.txt
+* mpirun -np 8 parametric_heat_conduction -r 0.1 -cx 0.1 -cy 0.1 -o 4 -visit -offline -rdim 16
+* mpirun -np 8 parametric_heat_conduction -r 0.1 -cx 0.1 -cy 0.5 -o 4 -visit -offline -rdim 16
+* mpirun -np 8 parametric_heat_conduction -r 0.1 -cx 0.5 -cy 0.1 -o 4 -visit -offline -rdim 16
+* mpirun -np 8 parametric_heat_conduction -r 0.1 -cx 0.5 -cy 0.5 -o 4 -visit -offline -rdim 16
+* mpirun -np 8 parametric_heat_conduction -r 0.5 -cx 0.1 -cy 0.1 -o 4 -visit -offline -rdim 16
+* mpirun -np 8 parametric_heat_conduction -r 0.25 -cx 0.2 -cy 0.4 -o 4 -visit -online -predict 
+* mpirun -np 8 parametric_heat_conduction -r 0.4 -cx 0.2 -cy 0.3 -o 4 -visit -online -predict 
+
+where r, cx, and cy specify the radius, the x and y coordinates of circular initial conditions. 
+
+   | r | cx | cy | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
+   | - | -- | -- | ----------------- | --------------- | -------------- | ------------------ |
+   | 0.25 | 0.2 | 0.4 | 13.3 sec     |  0.34 sec       |   1.2 sec     |      7.0e-3        |
+   | 0.2  | 0.4 | 0.2 | 13.8 sec     |  0.32 sec       |   1.2 sec     |      3.9e-3        |
+   | 0.3  | 0.3 | 0.3 | 13.6 sec     |  0.33 sec       |   1.1 sec     |      1.3e-2        |
+   | 0.3  | 0.4 | 0.2 | 14.1 sec     |  0.34 sec       |   1.3 sec     |      8.4e-3        |
+   | 0.2  | 0.3 | 0.4 | 14.2 sec     |  0.34 sec       |   1.3 sec     |      7.9e-3        |
+   | 0.4  | 0.2 | 0.3 | 13.9 sec     |  0.36 sec       |   1.5 sec     |      9.0e-3        |
+
+_The code that generates the numerical results above can be found in
+([parametric_heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/parametric_heat_conduction.cpp)).
+The
+[parametric_heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/parametric_heat_conduction.cpp)
 is based on
 [ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM._
 <div style="clear:both;"/></div>
@@ -575,6 +623,7 @@ function update()
    + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr))
    + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr))
    + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr))
+   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr))
    + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr))
    + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr))
    + showElement("laghos", (compressibleflow) && (prom) && (global) && (hr))
