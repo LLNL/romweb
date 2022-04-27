@@ -1,6 +1,9 @@
 # Publications
 
 #### 2022
+  1. Q.A. Huhn, M.E. Tano, J.C. Ragusa, Y. Choi [Parametric dynamic mode decomposition for reduced order modeling](https://arxiv.org/pdf/2204.12006.pdf), *arXiv preprint*, arXiv:2204.12006, **2022**
+  1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen [gLaSDI: Parametric physics-informed greedy latent space dynamics identification](https://arxiv.org/pdf/2204.12005.pdf), *arXiv preprint*, arXiv:2204.12005, **2022**
+  1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://arxiv.org/pdf/2203.16494.pdf), *arXiv preprint*, arXiv:2203.16494, **2022**
   1. W. Fries, X. He, Y. Choi,  [LaSDI: Parametric latent space dynamics identification](https://arxiv.org/pdf/2203.02076.pdf), *arXiv preprint*, arXiv:2203.02076, **2022**
   1. T. Kadeethum, F. Ballarin, D. O'Malley, Y. Choi, N. Bouklas, H. Yoon, [Reduced order modeling for flow and transport problems with Barlow Twins self-supervised learning](https://arxiv.org/pdf/2202.05460.pdf), *arXiv preprint*, arXiv:2202.05460, **2022**
   1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://arxiv.org/pdf/2201.07335.pdf), *arXiv preprint*, arXiv:2201.07335, **2022**
