@@ -2,6 +2,9 @@
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+Apr 26, 2022 | [gLaSDI](https://arxiv.org/pdf/2204.12005.pdf) preprint is available in arXiv.
+Apr 26, 2022 | [parametric DMD](https://arxiv.org/pdf/2204.12006.pdf) preprint is available in arXiv.
+Mar 29, 2022 | [S-OPT](https://arxiv.org/pdf/2203.16494.pdf) preprint is available in arXiv.
 Jan 18, 2022 | [Rayleigh-Taylor instability ROM](https://arxiv.org/pdf/2201.07335.pdf) preprint is available in arXiv.
 Nov 19, 2021 | [NM-ROM](https://www.sciencedirect.com/science/article/pii/S0021999121007361) paper is published in JCP.
 Nov 10, 2021 | [Laghos ROM](https://www.sciencedirect.com/science/article/pii/S0045782521005739) is published at CMAME. 
