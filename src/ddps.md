@@ -8,11 +8,11 @@
 # DDPS Webinar (_in California time_)
 DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk or would like to recommend a speaker, please send an email to choi15@llnl.gov. If you are interested in being included in DDPS email list, please also send an email to choi15@llnl.gov.
 
-## Scheduled Talks, 2022
+## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Apr. 28, 10 AM | [Benjamin Peherstorfer](https://cims.nyu.edu/~pehersto/) | New York University | Neural Galerkin schemes with active learning for high-dimensional evolution equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3b3f6a83eb59d0939b40f26935b40640)
 May. 13, 10 AM | [Ishan Khurjekar](https://ishankhurz.mystrikingly.com) | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0eda86975189d5a749debb868788bed3)
+May. 24, 8:30 AM | [Michael Gleaves](https://www.hartree.stfc.ac.uk/Pages/Meet-the-team-2.aspx) and [Vassil Alexandrov](https://www.icrea.cat/Web/ScientificStaff/vassil-alexandrov-527) | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m44cf6f88877c68cd54fd626a48e6439b)
 June. 3, 10 AM | [Tailin Wu](https://tailin.org) | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m5571de964280d682ba73cd7a5f47fcd7)
 June. 23, 10 AM | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | TBD | [link]()
 July. 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | TBD | [link]()
@@ -23,6 +23,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Apr. 28 | Benjamin Peherstorfer | New York University | Neural Galerkin schemes with active learning for high-dimensional evolution equations | [link](https://youtu.be/u_Fze0_QwgU)
 Apr. 22 | Petros Koumoutsakos | Harvard University | Artificial Intelligence and Scientific Computing for Fluid Mechanics | [link]()
 Apr. 8  | Daniel Floryan | University of Houston | Charting dynamics from data | [link](https://youtu.be/m6XEVTiQOxY)
 Mar. 25 | Weinan E | Princeton University | Machine Learning and Multi-scale Modeling | [link](https://youtu.be/UkX4NcrmRxs)
