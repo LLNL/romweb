@@ -342,7 +342,7 @@ summarized in the table below:
 
    | FOM solution time | DMD setup time  | DMD query time | Position relative error | Velocity relative error |
    | ----------------- | --------------- | -------------- | ----------------------- | ----------------------- |
-   |  3.7 sec          |  4.7e-1 sec     |  6.9e-4 sec    |  7.0e-5                 |  1.4e-3                 |
+   |  10.4 sec         |  2.9e-1 sec     |  1.1 sec       |  7.0e-5                 |  1.4e-3                 |
 
 _The code that generates the numerical results above can be found in
 ([nonlinear_elasticity.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/nonlinear_elasticity.cpp)).
