@@ -19,12 +19,20 @@ month = {oct}
 ## Contributors
 
 - [Bob Anderson](http://people.llnl.gov/anderson110)
+- [William Arrighi](https://people.llnl.gov/arrighi2)
+- [Kyle Chand](https://people.llnl.gov/chand1)
 - [Siu Wun Cheung](http://people.llnl.gov/cheung26)
+- [Eric Chin](https://scholar.google.com/citations?user=ix4Y2oMAAAAJ&hl=en)
 - [Youngsoo Choi](http://people.llnl.gov/choi15)
 - [Dylan Copeland](http://people.llnl.gov/copeland11)
+- [William Fries](https://sites.google.com/view/frieswd)
+- [Debojyoti Ghosh](https://people.llnl.gov/ghosh5)
+- [Xiaolong He](https://www.linkedin.com/in/xiaolong-he-5ba9117b/)
 - [Kevin Huynh](http://people.llnl.gov/huynh24)
+- [Tanya Kostova-Vassilevska](https://scholar.google.com/citations?user=oCuLEx4AAAAJ&hl=en)
 - [Jessica Lauzon](https://www.linkedin.com/in/jessielauzon/)
 - [Sean McBane](https://www.linkedin.com/in/sean-mcbane-560511119/)
+- [Yeonjong Shin](https://sites.google.com/site/shinmathematics/)
 - [Geoffrey Oxberry](http://people.llnl.gov/oxberry1)
 
 
