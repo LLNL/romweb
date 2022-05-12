@@ -27,7 +27,7 @@ libROM is used in many projects, including
 [Laghos](https://github.com/CEED/Laghos/tree/rom), 
 [SU2](https://su2code.github.io/),
 [ALE3D](https://wci.llnl.gov/simulation/computer-codes/ale3d)
-and [HyPar](http://hypar.github.io/index.html). Many [MFEM](https://mfem.org)-based ROM
+and [HyPar](http://hypar.github.io/a00126.html). Many [MFEM](https://mfem.org)-based ROM
 examples can be found in [Examples](examples.md).
 
 See also our [Gallery](gallery.md), [Publications](publications.md) and
