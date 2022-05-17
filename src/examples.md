@@ -490,7 +490,7 @@ the [HyPar](http://hypar.github.io/a00140.html) page.
 
 The 1D-1V Vlasov equatoin is solved with the initial condition given by
 
-$$ f(x,v) = \frac{4}{\pi T} \left ( 1+\frac{1}{10} cos(sk\pi\frac{x}{L}) \right ) \left ( \exp\left( -\frac{(v-2)^2}{2T} \right) + \exp\left( -\frac{(v+2)^2}{2T} \right ) \right ), k=1, T=1, L=2\pi. $$
+$$ f(x,v) = \frac{4}{\pi T} \left ( 1+\frac{1}{10} cos(2k\pi\frac{x}{L}) \right ) \left ( \exp\left( -\frac{(v-2)^2}{2T} \right) + \exp\left( -\frac{(v+2)^2}{2T} \right ) \right ), k=1, T=1, L=2\pi. $$
 
 The DMD is applied to accelerate the cavity flow simulation:
 
