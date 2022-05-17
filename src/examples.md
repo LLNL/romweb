@@ -28,18 +28,20 @@ or post [questions](https://github.com/LLNL/libROM/labels/question)
 or [comments](https://github.com/LLNL/libROM/labels/comments)_.
 
 <div class="row" markdown="1">
-<div class="col-sm-6 col-md-2 small" markdown="1">
+<div class="col-sm-7 col-md-2 small" markdown="1">
    <h5>**Application (PDE)**</h5>
    <select id="group1" onchange="update()">
       <option id="all1">All</option>
       <option id="diffusion">Diffusion</option>
       <option id="elasticity">Elasticity</option>
       <option id="euler">Euler</option>
+      <option id="navierstokes">Navier-Stokes</option>
       <option id="advection">Advection</option>
-      <option id="compressibleflow">Compressible flow</option>
+      <option id="hydro">Hydro-dynamics</option>
+      <option id="vlasov">Vlasov</option>
    </select>
 </div>
-<div class="col-sm-6 col-md-3 small" markdown="1">
+<div class="col-sm-7 col-md-3 small" markdown="1">
    <h5>**Reduced order models type**</h5>
    <select id="group2" onchange="update()">
       <option id="all2">All</option>
@@ -48,7 +50,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    </select>
 </div>
 <div class="clearfix hidden-md hidden-lg"></div>
-<div class="col-sm-6 col-md-3 small" markdown="1">
+<div class="col-sm-7 col-md-3 small" markdown="1">
    <h5>**Parameterization type**</h5>
    <select id="group3" onchange="update()">
       <option id="all3">All</option>
@@ -58,12 +60,21 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="reproductive">Reproductive</option>
    </select>
 </div>
-<div class="col-sm-6 col-md-4 small" markdown="1">
+<div class="col-sm-7 col-md-4 small" markdown="1">
    <h5>**hyper-reduction**</h5>
    <select id="group4" onchange="update()">
       <option id="all4">All</option>
       <option id="hr">Hyper-reduction</option>
       <option id="no_hr">No hyper-reduction</option>
+   </select>
+</div>
+<div class="col-sm-7 col-md-5 small" markdown="1">
+   <h5>**Physics code**</h5>
+   <select id="group5" onchange="update()">
+      <option id="all1">All</option>
+      <option id="mfem">MFEM</option>
+      <option id="laghos">Laghos</option>
+      <option id="hypar">HyPar</option>
    </select>
 </div>
 </div>
@@ -121,84 +132,6 @@ MFEM with a modification on the right hand side function._
 <div style="clear:both;"/></div>
 <br></div>
 
-<div id="dg_advection" markdown="1">
-## Advection
-<a target="_blank">
-<img class="floatright" src="../img/examples/dg_advection.gif" width="350">
-</a>
-
-For a given initial condition, i.e., $u_0(x) = u(0,x)$,
-**DG advection** solves the time-dependent advection problem:
-
-$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$
-
-where $v$ is a given advection velocity.
-
-One can run the following command line options to reproduce the DMD results
-summarized in the table below:
-
-* dg_advection -p 3 -rp 1 -dt 0.005 -tf 4 -visit
-
-   | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
-   | ----------------- | --------------- | -------------- | ------------------ |
-   |  5.2 sec          |  30.6 sec       |   1.9e-2 sec   |      1.9e-4        |
-
-
-_The code that generates the numerical results above can be found in
-([dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_advection.cpp)).
-The
-[dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_advection.cpp)
-is based on
-[ex9p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp) from MFEM._
-<div style="clear:both;"/></div>
-<br></div>
-
-
-
-<div id="dg_euler" markdown="1">
-## Euler equation
-<a target="_blank">
-<img class="floatright" src="../img/examples/dg_euler.gif" width="350">
-</a>
-
-For a given initial condition, i.e., $u_0(x) = u(0,x)$,
-**DG Euler** solves the compressible Euler system of equation, i.e., a model
-nonlinear hyperbolic PDE:
-
-$$\frac{\partial u}{\partial t} + \nabla\cdot \boldsymbol{F}(u) = 0,$$
-
-with a state vector $\boldsymbol{u} = [\rho,\rho v_0, \rho v_1, \rho E]$, where
-$\rho$ is the density, $v_i$ is the velocity in the $i$th direction, $E$ is the
-total specific energy, and $H = E + p/\rho$ is the total specific enthalpy. The
-pressure, $p$ is computed through a simple equation of state (EOS) call. The
-conservative hydrodynamic flux $\boldsymbol{F}$ in each direction $i$ is
-
-  $$\boldsymbol{F}_i = [\rho v_i, \rho v_0 v_i + p \delta\_{i,0}, \rho v_1 v\_{i,1} +
-p\delta\_{i,1}, \rho v_i H]$$
-
-
-One can run the following command line options to reproduce the DMD results
-summarized in the table below:
-
-* mpirun -n 8 ./dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit
-
-   |                   |                |                |                |  DMD rel.error |         |        |
-   | ----------------- | -------------- | -------------- | -------------- | ----------- | ---------- | ------ |
-   | FOM solution time | DMD setup time | DMD query time |    $\rho$      |  $\rho v_0$ | $\rho v_1$ | $E$    |
-   |  5.65 sec         |  38.9 sec      |   1.4e-3 sec   |      8.0e-7    |    1.2e-4   | 1.6e-3     | 2.6e-6 |
-
-
-_The code that generates the numerical results above can be found in
-([dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_euler.cpp)).
-The
-[dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_euler.cpp)
-is based on
-[ex18p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex18p.cpp) from
-MFEM._
-<div style="clear:both;"/></div>
-<br></div>
-
-
 <div id="heat_conduction" markdown="1">
 ## Heat conduction problem
 <a target="_blank">
@@ -246,7 +179,7 @@ parameterized by the center of circle and the radius, i.e.,
 $$u_0(x) =  
   \cases{
   \displaystyle 2 & for \|x-c\| < r  \cr
-  \displaystyle 1 & for \|x-c\| >= r 
+  \displaystyle 1 & for \|x-c\| $\ge$ r 
   }$$
 
 One can run the following command line options to reproduce the parametric DMD results
@@ -320,6 +253,256 @@ is based on
 [ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM and modified to support mixed finite element approach._
 <div style="clear:both;"/></div>
 <br></div>
+
+<div id="1DdiscontinuousPulse" markdown="1">
+## 1D linear advection - Discontinuous pulses
+<a target="_blank">
+<img class="floatright" src="../img/examples/1D_LinearAdvection_DiscontinuousWaves.gif" width="500">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$, **1D lienar advection**
+of the form
+
+$$\frac{\partial u}{\partial t} + c\frac{\partial x}{\partial t} = 0,$$
+
+where $c$ is advection velocity. 
+The initial condition, $u_0(x)$, is given by 
+
+$$u_0(x) =  
+  \cases{
+  \displaystyle exp\left (-log(2)\frac{(x+7)^2}{0.0009}\right ) & for -0.8 $\le$ x $\le$ -0.6 \cr
+  \displaystyle 1 & for -0.4 $\le$ x $\le$ -0.2 \cr
+  \displaystyle 1-|10(x-0.1)| & for 0 $\le$ x $\le$ 0.2 \cr
+  \displaystyle \sqrt{1-100(x-0.5)^2} & for 0.4 $\le$ x $\le$ 0.6 \cr
+  \displaystyle 0 & \text{otherwise}
+  }$$
+
+
+The DMD is applied to accelerate the advection simulation:
+
+   | FOM solution time | DMD setup time  | DMD query time | 
+   | ----------------- | --------------- | -------------- |
+   |  3.85 sec         |  0.18 sec       |  0.027 sec     |
+
+The instruction of running this simulation can be found at 
+the [HyPar](http://hypar.github.io/a00130.html) page.
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="dg_advection" markdown="1">
+## Advection
+<a target="_blank">
+<img class="floatright" src="../img/examples/dg_advection.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**DG advection** solves the time-dependent advection problem:
+
+$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$
+
+where $v$ is a given advection velocity.
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* dg_advection -p 3 -rp 1 -dt 0.005 -tf 4 -visit
+
+   | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
+   | ----------------- | --------------- | -------------- | ------------------ |
+   |  5.2 sec          |  30.6 sec       |   1.9e-2 sec   |      1.9e-4        |
+
+
+_The code that generates the numerical results above can be found in
+([dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_advection.cpp)).
+The
+[dg_advection.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_advection.cpp)
+is based on
+[ex9p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp) from MFEM._
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="1DSodShockTube" markdown="1">
+## 1D Euler Equation, Sod Shock Tube 
+<a target="_blank">
+<img class="floatright" src="../img/examples/1D_Euler_SodShockTube.gif" width="500">
+</a>
+
+**1D Euler equations** of the form
+
+$$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} = 0$$
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} = -\rho g$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} = -\rho u g$$
+
+is solved with the initial condition given by
+
+$$ \rho = 1, u = 0, p = 1 \text{ for } 0 \le x < 0.5$$
+$$ \rho = 0.125, u = 0, p = 0.1 \text{ for } 0.5 \le x \le 1$$.
+
+The DMD is applied to accelerate the 1D Sod shock tube simulation:
+
+
+   | FOM solution time | DMD setup time  | DMD query time | 
+   | ----------------- | --------------- | -------------- |
+   |  0.86 sec         |  0.13 sec       |  0.0027 sec    |
+
+The instruction of running this simulation can be found at 
+the [HyPar](http://hypar.github.io/a00132.html) page.
+<div style="clear:both;"/></div>
+<br></div>
+
+<div id="2DEulerVortexConvection" markdown="1">
+## 2D Euler Equation, Isentropic Vortex Convection
+<a target="_blank">
+<img class="floatright" src="../img/examples/2D_Euler_VortexConvection.gif" width="1300">
+</a>
+
+**2D Compressible Euler equations** of the form
+
+$$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} + \frac{\partial \rho v}{\partial y}= 0$$
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = -\rho g_x$$
+$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = -\rho g_y$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = -\rho u g_x - \rho v g_y$$
+
+is solved with the free-stream condition given by
+
+$$ \rho_\infty = 1, u_\infty = 0.1, v_\infty = 0, p_\infty = 1 $$
+
+and a vortex is introduced by
+
+$$ \rho = \left ( 1-\frac{(\gamma-1)b^2}{8\gamma \pi^2} e^{1-r^2} \right )^{\frac{1}{r-1}}, p = \rho^\gamma$$
+$$ u = u_\infty - \frac{b}{2\pi} e^{\frac{1}{2}(1-r^2)}(y-y_c)$$
+$$ v = v_\infty + \frac{b}{2\pi} e^{\frac{1}{2}(1-r^2)}(x-x_c),$$
+
+where $b=0.5$ is the vortex strength and $r = \left ( (x-x_c)^2 + (y-y_c)^2 \right )^{\frac{1}{2}}$ is the distance from the vortex center $(x_c,y_c) = (5,5)$.
+
+The DMD is applied to accelerate the vortex convection simulation:
+
+
+   | FOM solution time | DMD setup time  | DMD query time | 
+   | ----------------- | --------------- | -------------- |
+   |  5.85 sec         |  5.25 sec       |  0.28 sec      |
+
+The instruction of running this simulation can be found at 
+the [HyPar](http://hypar.github.io/a00134.html) page.
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="2DEulerRiemannProblem" markdown="1">
+## 2D Euler Equation, Riemann Problem 
+<a target="_blank">
+<img class="floatright" src="../img/examples/2D_Euler_RiemannCase4.gif" width="1300">
+</a>
+
+**2D Compressible Euler equations** of the form
+
+$$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} + \frac{\partial \rho v}{\partial y}= 0$$
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = -\rho g_x$$
+$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = -\rho g_y$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = -\rho u g_x - \rho v g_y$$
+
+is solved. The DMD is applied to accelerate the Riemann problem:
+
+   | FOM solution time | DMD setup time  | DMD query time | 
+   | ----------------- | --------------- | -------------- |
+   |  111.1 sec        |  17.6 sec       |  1.4 sec       |
+
+The instruction of running this simulation can be found at 
+the [HyPar](http://hypar.github.io/a00136.html) page.
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="dg_euler" markdown="1">
+## Euler equation
+<a target="_blank">
+<img class="floatright" src="../img/examples/dg_euler.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**DG Euler** solves the compressible Euler system of equation, i.e., a model
+nonlinear hyperbolic PDE:
+
+$$\frac{\partial u}{\partial t} + \nabla\cdot \boldsymbol{F}(u) = 0,$$
+
+with a state vector $\boldsymbol{u} = [\rho,\rho v_0, \rho v_1, \rho E]$, where
+$\rho$ is the density, $v_i$ is the velocity in the $i$th direction, $E$ is the
+total specific energy, and $H = E + p/\rho$ is the total specific enthalpy. The
+pressure, $p$ is computed through a simple equation of state (EOS) call. The
+conservative hydrodynamic flux $\boldsymbol{F}$ in each direction $i$ is
+
+  $$\boldsymbol{F}_i = [\rho v_i, \rho v_0 v_i + p \delta\_{i,0}, \rho v_1 v\_{i,1} +
+p\delta\_{i,1}, \rho v_i H]$$
+
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* mpirun -n 8 ./dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit
+
+   |                   |                |                |                |  DMD rel.error |         |        |
+   | ----------------- | -------------- | -------------- | -------------- | ----------- | ---------- | ------ |
+   | FOM solution time | DMD setup time | DMD query time |    $\rho$      |  $\rho v_0$ | $\rho v_1$ | $E$    |
+   |  5.65 sec         |  38.9 sec      |   1.4e-3 sec   |      8.0e-7    |    1.2e-4   | 1.6e-3     | 2.6e-6 |
+
+
+_The code that generates the numerical results above can be found in
+([dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_euler.cpp)).
+The
+[dg_euler.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_euler.cpp)
+is based on
+[ex18p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex18p.cpp) from
+MFEM._
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="2DNavierStokesProblem" markdown="1">
+## 2D Navier–Stokes Equations, Lid-driven square cavity problem 
+<a target="_blank">
+<img class="floatright" src="../img/examples/2D_NavierStokes_LidDrivenCavity_Re3200.png" width="1300">
+</a>
+
+A lid-driven square cavity problem is solved. The two references for this problem are
+
+- Erturk, E., Corke, T.C., and Gokcol, C., ``[Numerical Solutions of 2-D Steady Incompressible Driven Cavity Flow at High Reynolds Numbers](https://onlinelibrary.wiley.com/doi/10.1002/fld.953)", International Journal for Numerical Methods in Fluids, 48, 2005
+- Ghia, U., Ghia, K.N., Shin, C.T., ``[High-Re Solutions for Incompressible Flow using the Navier-Stokes Equations and a Multigrid Method](https://www.sciencedirect.com/science/article/pii/0021999182900584?via%3Dihub)", Journal of Computational Physics, 48, 1982
+
+The DMD is applied to accelerate the cavity flow simulation:
+
+   | FOM solution time | DMD setup time  | DMD query time | 
+   | ----------------- | --------------- | -------------- |
+   |  554.6 sec        |  58.6 sec       |  0.3 sec       |
+
+The instruction of running this simulation can be found at 
+the [HyPar](http://hypar.github.io/a00140.html) page.
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="1D1VVlasovEquation" markdown="1">
+## 1D-1V Vlasov Equation, Self-consistent E-field 
+<a target="_blank">
+<img class="floatright" src="../img/examples/1D1V_Vlasov_TwoStreamInstability.gif" width="1300">
+</a>
+
+The 1D-1V Vlasov equatoin is solved with the initial condition given by
+
+$$ f(x,v) = \frac{4}{\pi T} \left ( 1+\frac{1}{10} cos(sk\pi\frac{x}{L}) \right ) \left ( \exp\left( -\frac{(v-2)^2}{2T} \right) + \exp\left( -\frac{(v+2)^2}{2T} \right ) \right ), k=1, T=1, L=2\pi. $$
+
+The DMD is applied to accelerate the cavity flow simulation:
+
+   | FOM solution time | DMD setup time  | DMD query time | 
+   | ----------------- | --------------- | -------------- |
+   |  11.34 sec        |  2.30 sec       |  0.34 sec      |
+
+The instruction of running this simulation can be found at 
+the [HyPar](http://hypar.github.io/a00138.html) page.
+<div style="clear:both;"/></div>
+<br></div>
+
 
 
 <div id="nonlinear_elasticity" markdown="1">
@@ -615,19 +798,25 @@ function update()
    getBooleans("group2");
    getBooleans("group3");
    getBooleans("group4");
+   getBooleans("group5");
 
    numShown = 0 // expression continued...
 
    // example codes
-   + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr))
-   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr))
-   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr))
-   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr))
-   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr))
-   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr))
-   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr))
-   + showElement("laghos", (compressibleflow) && (prom) && (global) && (hr))
-
+   + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem))
+   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem))
+   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem))
+   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem))
+   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem))
+   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem))
+   + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos))
+   + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar))
+   + showElement("1DSodShockTube", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar))
+   + showElement("2DEulerVortexConvection", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar))
+   + showElement("2DEulerRiemannProblem", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar))
+   + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar))
+   + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar))
    ; // ...end of expression
 
    // show/hide the message "No examples match your criteria"
