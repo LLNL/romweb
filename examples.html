@@ -506,7 +506,7 @@ is based on
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/1D_LinearAdvection_DiscontinuousWaves.gif" width="500">
 </a></p>
-<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$, <strong>1D lienar advection</strong>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$, <strong>1D linear advection</strong>
 of the form</p>
 <p>$$\frac{\partial u}{\partial t} + c\frac{\partial x}{\partial t} = 0,$$</p>
 <p>where $c$ is advection velocity. 
@@ -537,7 +537,7 @@ The initial condition, $u_0(x)$, is given by </p>
 </tbody>
 </table>
 <p>The instruction of running this simulation can be found at 
-the <a href="http://hypar.github.io/a00130.html">HyPar</a> page.</p>
+the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt; libROM Examples -&gt; 1D Linear Advection-Discontinuous Waves.</p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
@@ -589,8 +589,8 @@ is based on
 </a></p>
 <p><strong>1D Euler equations</strong> of the form</p>
 <p>$$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} = 0$$
-$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} = -\rho g$$
-$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} = -\rho u g$$</p>
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} = 0$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} = 0$$</p>
 <p>is solved with the initial condition given by</p>
 <p>$$ \rho = 1, u = 0, p = 1 \text{ for } 0 \le x &lt; 0.5$$
 $$ \rho = 0.125, u = 0, p = 0.1 \text{ for } 0.5 \le x \le 1$$.</p>
@@ -612,7 +612,7 @@ $$ \rho = 0.125, u = 0, p = 0.1 \text{ for } 0.5 \le x \le 1$$.</p>
 </tbody>
 </table>
 <p>The instruction of running this simulation can be found at 
-the <a href="http://hypar.github.io/a00132.html">HyPar</a> page.</p>
+the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt; libROM Examples -&gt; 1D Sod Shock Tube.</p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
@@ -623,9 +623,9 @@ the <a href="http://hypar.github.io/a00132.html">HyPar</a> page.</p>
 </a></p>
 <p><strong>2D Compressible Euler equations</strong> of the form</p>
 <p>$$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} + \frac{\partial \rho v}{\partial y}= 0$$
-$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = -\rho g_x$$
-$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = -\rho g_y$$
-$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = -\rho u g_x - \rho v g_y$$</p>
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = 0$$
+$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = 0$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = 0$$</p>
 <p>is solved with the free-stream condition given by</p>
 <p>$$ \rho_\infty = 1, u_\infty = 0.1, v_\infty = 0, p_\infty = 1 $$</p>
 <p>and a vortex is introduced by</p>
@@ -651,7 +651,7 @@ $$ v = v_\infty + \frac{b}{2\pi} e^{\frac{1}{2}(1-r^2)}(x-x_c),$$</p>
 </tbody>
 </table>
 <p>The instruction of running this simulation can be found at 
-the <a href="http://hypar.github.io/a00134.html">HyPar</a> page.</p>
+the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt; libROM Examples -&gt; 2D Euler Equations - Isentropic Vortex Convection.</p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
@@ -662,9 +662,9 @@ the <a href="http://hypar.github.io/a00134.html">HyPar</a> page.</p>
 </a></p>
 <p><strong>2D Compressible Euler equations</strong> of the form</p>
 <p>$$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} + \frac{\partial \rho v}{\partial y}= 0$$
-$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = -\rho g_x$$
-$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = -\rho g_y$$
-$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = -\rho u g_x - \rho v g_y$$</p>
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = 0$$
+$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = 0$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = 0$$</p>
 <p>is solved. The DMD is applied to accelerate the Riemann problem:</p>
 <table>
 <thead>
@@ -683,7 +683,7 @@ $$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\p
 </tbody>
 </table>
 <p>The instruction of running this simulation can be found at 
-the <a href="http://hypar.github.io/a00136.html">HyPar</a> page.</p>
+the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt; libROM Examples -&gt; 2D Euler Equations - Riemann Problem Case 4</p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
@@ -779,12 +779,12 @@ MFEM.</em></p>
 </tbody>
 </table>
 <p>The instruction of running this simulation can be found at 
-the <a href="http://hypar.github.io/a00140.html">HyPar</a> page.</p>
+the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt; libROM Examples -&gt; 2D Navier-Stokes Equations - Lid-Driven Square Cavity </p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
 <div id="1D1VVlasovEquation">
-<h2 id="1d-1v-vlasov-equation-self-consistent-e-field">1D-1V Vlasov Equation, Self-consistent E-field</h2>
+<h2 id="1d-1v-vlasov-equation-two-stream-instability">1D-1V Vlasov Equation, Two-Stream Instability</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/1D1V_Vlasov_TwoStreamInstability.gif" width="1300">
 </a></p>
@@ -808,7 +808,7 @@ the <a href="http://hypar.github.io/a00140.html">HyPar</a> page.</p>
 </tbody>
 </table>
 <p>The instruction of running this simulation can be found at 
-the <a href="http://hypar.github.io/a00138.html">HyPar</a> page.</p>
+the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt; libROM Examples -&gt; 2D (1D-1V) Vlasov Equation.</p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
