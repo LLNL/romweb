@@ -260,7 +260,7 @@ is based on
 <img class="floatright" src="../img/examples/1D_LinearAdvection_DiscontinuousWaves.gif" width="500">
 </a>
 
-For a given initial condition, i.e., $u_0(x) = u(0,x)$, **1D lienar advection**
+For a given initial condition, i.e., $u_0(x) = u(0,x)$, **1D linear advection**
 of the form
 
 $$\frac{\partial u}{\partial t} + c\frac{\partial x}{\partial t} = 0,$$
@@ -285,7 +285,7 @@ The DMD is applied to accelerate the advection simulation:
    |  3.85 sec         |  0.18 sec       |  0.027 sec     |
 
 The instruction of running this simulation can be found at 
-the [HyPar](http://hypar.github.io/a00130.html) page.
+the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Examples -> 1D Linear Advection-Discontinuous Waves.
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -332,8 +332,8 @@ is based on
 **1D Euler equations** of the form
 
 $$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} = 0$$
-$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} = -\rho g$$
-$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} = -\rho u g$$
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} = 0$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} = 0$$
 
 is solved with the initial condition given by
 
@@ -348,7 +348,7 @@ The DMD is applied to accelerate the 1D Sod shock tube simulation:
    |  0.86 sec         |  0.13 sec       |  0.0027 sec    |
 
 The instruction of running this simulation can be found at 
-the [HyPar](http://hypar.github.io/a00132.html) page.
+the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Examples -> 1D Sod Shock Tube.
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -361,9 +361,9 @@ the [HyPar](http://hypar.github.io/a00132.html) page.
 **2D Compressible Euler equations** of the form
 
 $$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} + \frac{\partial \rho v}{\partial y}= 0$$
-$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = -\rho g_x$$
-$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = -\rho g_y$$
-$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = -\rho u g_x - \rho v g_y$$
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = 0$$
+$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = 0$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = 0$$
 
 is solved with the free-stream condition given by
 
@@ -385,7 +385,7 @@ The DMD is applied to accelerate the vortex convection simulation:
    |  5.85 sec         |  5.25 sec       |  0.28 sec      |
 
 The instruction of running this simulation can be found at 
-the [HyPar](http://hypar.github.io/a00134.html) page.
+the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Examples -> 2D Euler Equations - Isentropic Vortex Convection.
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -399,9 +399,9 @@ the [HyPar](http://hypar.github.io/a00134.html) page.
 **2D Compressible Euler equations** of the form
 
 $$ \frac{\partial \rho}{\partial t} + \frac{\partial \rho u}{\partial x} + \frac{\partial \rho v}{\partial y}= 0$$
-$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = -\rho g_x$$
-$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = -\rho g_y$$
-$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = -\rho u g_x - \rho v g_y$$
+$$ \frac{\partial \rho u}{\partial t} + \frac{\partial \rho u^2 + p}{\partial x} + \frac{\partial \rho uv}{\partial y} = 0$$
+$$ \frac{\partial \rho v}{\partial t} + \frac{\partial \rho uv}{\partial x} + \frac{\partial \rho v^2 + p}{\partial y} = 0$$
+$$ \frac{\partial e}{\partial t} + \frac{\partial (e+p)u}{\partial x} + \frac{\partial (e+v)p}{\partial y} = 0$$
 
 is solved. The DMD is applied to accelerate the Riemann problem:
 
@@ -410,7 +410,7 @@ is solved. The DMD is applied to accelerate the Riemann problem:
    |  111.1 sec        |  17.6 sec       |  1.4 sec       |
 
 The instruction of running this simulation can be found at 
-the [HyPar](http://hypar.github.io/a00136.html) page.
+the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Examples -> 2D Euler Equations - Riemann Problem Case 4
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -477,13 +477,13 @@ The DMD is applied to accelerate the cavity flow simulation:
    |  554.6 sec        |  58.6 sec       |  0.3 sec       |
 
 The instruction of running this simulation can be found at 
-the [HyPar](http://hypar.github.io/a00140.html) page.
+the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Examples -> 2D Navier-Stokes Equations - Lid-Driven Square Cavity 
 <div style="clear:both;"/></div>
 <br></div>
 
 
 <div id="1D1VVlasovEquation" markdown="1">
-## 1D-1V Vlasov Equation, Self-consistent E-field 
+## 1D-1V Vlasov Equation, Two-Stream Instability 
 <a target="_blank">
 <img class="floatright" src="../img/examples/1D1V_Vlasov_TwoStreamInstability.gif" width="1300">
 </a>
@@ -499,7 +499,7 @@ The DMD is applied to accelerate the cavity flow simulation:
    |  11.34 sec        |  2.30 sec       |  0.34 sec      |
 
 The instruction of running this simulation can be found at 
-the [HyPar](http://hypar.github.io/a00138.html) page.
+the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Examples -> 2D (1D-1V) Vlasov Equation.
 <div style="clear:both;"/></div>
 <br></div>
 
