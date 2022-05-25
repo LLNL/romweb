@@ -40,6 +40,7 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+May 19, 2022 | [CWROM stress lattice](https://arxiv.org/pdf/2205.09629.pdf) preprint is available in arXiv.
 Apr 26, 2022 | [gLaSDI](https://arxiv.org/pdf/2204.12005.pdf) preprint is available in arXiv.
 Apr 26, 2022 | [parametric DMD](https://arxiv.org/pdf/2204.12006.pdf) preprint is available in arXiv.
 Mar 29, 2022 | [S-OPT](https://arxiv.org/pdf/2203.16494.pdf) preprint is available in arXiv.

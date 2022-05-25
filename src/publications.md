@@ -1,6 +1,7 @@
 # Publications
 
 #### 2022
+  1. S. McBane, Y. Choi, K. Willcox, [Stress-constrained topology optimization of lattice-like structures using component-wise reduced order models](https://arxiv.org/pdf/2205.09629.pdf), *arXiv preprint*, arXiv:2205.09629, **2022**
   1. Q.A. Huhn, M.E. Tano, J.C. Ragusa, Y. Choi, [Parametric dynamic mode decomposition for reduced order modeling](https://arxiv.org/pdf/2204.12006.pdf), *arXiv preprint*, arXiv:2204.12006, **2022**
   1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen, [gLaSDI: Parametric physics-informed greedy latent space dynamics identification](https://arxiv.org/pdf/2204.12005.pdf), *arXiv preprint*, arXiv:2204.12005, **2022**
   1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh, [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://arxiv.org/pdf/2203.16494.pdf), *arXiv preprint*, arXiv:2203.16494, **2022**
