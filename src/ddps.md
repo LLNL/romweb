@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-June. 3, 10 AM | [Tailin Wu](https://tailin.org) | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m5571de964280d682ba73cd7a5f47fcd7)
 June. 23, 10 AM | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | TBD | [link]()
 July. 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | TBD | [link]()
 July. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
@@ -21,7 +20,8 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-May. 24 | Michael Gleaves and Vassil Alexandrov | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link]()
+June. 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link]()
+May. 24 | Michael Gleaves and Vassil Alexandrov | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link](https://youtu.be/su3nnyv4C98)
 May. 13 | Ishan Khurjekar | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://youtu.be/lNp41g0THws)
 Apr. 28 | Benjamin Peherstorfer | New York University | Neural Galerkin schemes with active learning for high-dimensional evolution equations | [link](https://youtu.be/u_Fze0_QwgU)
 Apr. 22 | Petros Koumoutsakos | Harvard University | Artificial Intelligence and Scientific Computing for Fluid Mechanics | [link](https://youtu.be/WN2AFzhxSow)
