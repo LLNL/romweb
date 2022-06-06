@@ -890,7 +890,7 @@ in the shock wave propagation in both FOM and ROM simulations. One can reproduce
 the numerical result, following the command line options described below:</p>
 <ul>
 <li><strong>offline</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages</li>
-<li><strong>hyper-reduction preprocessing</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2</li>
+<li><strong>hyper-reduction preprocessing</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2 (-sopt)</li>
 <li><strong>online</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2</li>
 <li><strong>restore</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66</li>
 </ul>
@@ -900,7 +900,8 @@ the numerical result, following the command line options described below:</p>
 <th>FOM solution time</th>
 <th>ROM solution time</th>
 <th>Speed-up</th>
-<th>Velocity relative error</th>
+<th>Velocity relative error (DEIM)</th>
+<th>Velocity relative error (SOPT)</th>
 </tr>
 </thead>
 <tbody>
@@ -909,6 +910,7 @@ the numerical result, following the command line options described below:</p>
 <td>8.3 sec</td>
 <td>22.8</td>
 <td>2.2e-4</td>
+<td>1.1e-4</td>
 </tr>
 </tbody>
 </table>
