@@ -575,13 +575,13 @@ in the shock wave propagation in both FOM and ROM simulations. One can reproduce
 the numerical result, following the command line options described below:
 
 * **offline**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages
-* **hyper-reduction preprocessing**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2
+* **hyper-reduction preprocessing**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2 (-sopt)
 * **online**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2
 * **restore**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66
 
-   | FOM solution time | ROM solution time | Speed-up | Velocity relative error |
-   | ----------------- | ----------------- | -------- | ----------------------- |
-   |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4          |
+   | FOM solution time | ROM solution time | Speed-up | Velocity relative error (DEIM)| Velocity relative error (SOPT) |
+   | ----------------- | ----------------- | -------- | ----------------------------- | ------------------------------ |
+   |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4                |              1.1e-4           |  
 
 <img class="floatright" src="../img/examples/gresho.png" width="250"  >
 
