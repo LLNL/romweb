@@ -22,7 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-June 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link]()
+June 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://youtu.be/UJw4aM5D5bo)
 May 24 | Michael Gleaves and Vassil Alexandrov | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link](https://youtu.be/su3nnyv4C98)
 May 13 | Ishan Khurjekar | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://youtu.be/lNp41g0THws)
 Apr. 28 | Benjamin Peherstorfer | New York University | Neural Galerkin schemes with active learning for high-dimensional evolution equations | [link](https://youtu.be/u_Fze0_QwgU)
