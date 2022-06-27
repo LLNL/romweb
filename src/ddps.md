@@ -11,17 +11,17 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-June 23, 10 AM | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8a7e65d606e4f617bcffe73591326cd2)
-July 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | TBD | [link]()
-July 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
+July 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m06fb46b1eb30dff678c07284d924ef94)
 Aug. 18th, 10 AM | [Santi Adavani](https://www.rocketml.net) | RocketML | TBD | [link]()
 Aug. 25 or 26, 10 AM | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | TBD | [link]()
+September 30, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+June 23 | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link]()
 June 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://youtu.be/UJw4aM5D5bo)
 May 24 | Michael Gleaves and Vassil Alexandrov | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link](https://youtu.be/su3nnyv4C98)
 May 13 | Ishan Khurjekar | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://youtu.be/lNp41g0THws)
