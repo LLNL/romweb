@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-July 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m06fb46b1eb30dff678c07284d924ef94)
+July 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m06fb46b1eb30dff678c07284d924ef94)
 Aug. 18th, 10 AM | [Santi Adavani](https://www.rocketml.net) | RocketML | TBD | [link]()
 Aug. 25 or 26, 10 AM | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | TBD | [link]()
 September 30, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
