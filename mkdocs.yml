@@ -26,6 +26,7 @@ nav:
 - Gallery: gallery.md
 - Download: download.md
 - DDPS: ddps.md
+- HLCS: hlcs.md
 
 theme:
   name: mkdocs  # required. Can be anything as long as custom_dir is set correctly below
