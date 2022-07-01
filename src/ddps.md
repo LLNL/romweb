@@ -11,18 +11,19 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-July 1, 10 AM | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m06fb46b1eb30dff678c07284d924ef94)
 July 21, 10 AM | [Ricardo Vinuesa](https://www.vinuesalab.com) | KTH | Modeling and controlling turbulent flows through deep learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1786df54d2049cd9b63817e742c39daf)
 Aug. 18, 10 AM | [Santi Adavani](https://www.rocketml.net) | RocketML | TBD | [link]()
 Aug. 25 or 26, 10 AM | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | TBD | [link]()
 Sept. 16, 10 AM | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | TBD | [link]()
 Sept. 30, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
+Oct. 7th, 10 AM | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | TBD | [link]()
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+July 1 | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link]()
 June 23 | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link]()
 June 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://youtu.be/UJw4aM5D5bo)
 May 24 | Michael Gleaves and Vassil Alexandrov | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link](https://youtu.be/su3nnyv4C98)
