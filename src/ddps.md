@@ -26,7 +26,6 @@ Date      | Speaker        |  Institution      | Title                         |
 July 1 | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link]()
 June 23 | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link](https://youtu.be/VbBXEpgPXQk)
 June 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://youtu.be/UJw4aM5D5bo)
-May 24 | Michael Gleaves and Vassil Alexandrov | Hartree Center | Industrial engagement and research highlights at the Hartree Center  | [link](https://youtu.be/su3nnyv4C98)
 May 13 | Ishan Khurjekar | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://youtu.be/lNp41g0THws)
 Apr. 28 | Benjamin Peherstorfer | New York University | Neural Galerkin schemes with active learning for high-dimensional evolution equations | [link](https://youtu.be/u_Fze0_QwgU)
 Apr. 22 | Petros Koumoutsakos | Harvard University | Artificial Intelligence and Scientific Computing for Fluid Mechanics | [link](https://youtu.be/WN2AFzhxSow)
