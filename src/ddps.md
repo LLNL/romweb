@@ -23,7 +23,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-July 1 | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link]()
+July 1 | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link](https://youtu.be/M_CmmZm0ncE)
 June 23 | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link](https://youtu.be/VbBXEpgPXQk)
 June 3 | Tailin Wu | Stanford University | Learning to accelerate large-scale physical simulations in fluid and plasma physics | [link](https://youtu.be/UJw4aM5D5bo)
 May 13 | Ishan Khurjekar | University of Florida | Uncertainty-aware guided wave structural health monitoring using ensemble learning | [link](https://youtu.be/lNp41g0THws)
