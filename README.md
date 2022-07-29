@@ -17,7 +17,6 @@ To make changes to the website:
 To run the website locally:
  
 - Clone the repo
-- Checkout the 'website-setup' branch.
 - In the parent directory of the repo, run 'python3 -m venv web'
 - 'source web/bin/activate' for bash or 'source web/bin/activate.csh' for tcsh. You must make sure you are in the 'web' virtual environment which you can see on the left side of your terminal as (web) to run the website locally.
 - pip install mkdocs
