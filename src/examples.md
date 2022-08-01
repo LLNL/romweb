@@ -71,10 +71,17 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
 <div class="col-sm-7 col-md-5 small" markdown="1">
    <h5>**Physics code**</h5>
    <select id="group5" onchange="update()">
-      <option id="all1">All</option>
+      <option id="all5">All</option>
       <option id="mfem">MFEM</option>
       <option id="laghos">Laghos</option>
       <option id="hypar">HyPar</option>
+   </select>
+</div>
+<div class="col-sm-7 col-md-6 small" markdown="1">
+   <h5>**Optimization solver**</h5>
+   <select id="group6" onchange="update()">
+      <option id="all6">All</option>
+      <option id="de">Differential evolution</option>
    </select>
 </div>
 </div>
