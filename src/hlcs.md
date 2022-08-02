@@ -17,7 +17,7 @@ high performance computing (HPC) and data science.
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx or Zoom
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Sept. 13th | TBD | Hartree Centre | TBD | [link]()
+Sept. 13th, 8:30 AM | [Jony Castagna](https://www.researchgate.net/profile/Jony-Castagna) and [Francesca Schiavello](https://www.linkedin.com/in/francesca-schiavello-298162b1/?originalSubdomain=uk) | Hartree Centre | Style Eddy Simulation | [link](https://ukri.zoom.us/j/93249724320)
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2022
