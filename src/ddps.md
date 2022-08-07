@@ -90,3 +90,4 @@ Dec. 10th | Jesse Chan | Rice U. | Entropy stable schemes for nonlinear conserva
 Nov. 18th | Paris Perdikaris | UPenn | When and why physics-informed neural networks fail to train: A neural tangent kernel perspective | [link](https://youtu.be/xvOsV106kuA)
 Nov. 12th | Donsub Rim | Courant Institute | Distilling nonlinear shock waves: Nonlinear model reduction for transport dominated problems using deep neural networks | [link](https://youtu.be/CMAGE3K7nTI)
 Oct. 29th | Byungsoo Kim | ETH Zurich | Data-Driven Methods for Fluid Simulations in Computer Graphics | [link](https://youtu.be/Zd3CP605CW8)
+Oct. 15th | Youngkyu Kim | UC Berkeley | A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder | [link]()
