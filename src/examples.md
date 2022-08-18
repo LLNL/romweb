@@ -81,6 +81,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
    <h5>**Optimization solver**</h5>
    <select id="group6" onchange="update()">
       <option id="all6">All</option>
+      <option id="no_optimizer">No optimizer</option>
       <option id="de">Differential evolution</option>
    </select>
 </div>
@@ -216,6 +217,80 @@ _The code that generates the numerical results above can be found in
 ([parametric_heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/parametric_heat_conduction.cpp)).
 The
 [parametric_heat_conduction.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/parametric_heat_conduction.cpp)
+is based on
+[ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM._
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="optimal_control_dmd_heat_conduction" markdown="1">
+## Optimal Control DMD heat conduction with Differential Evolution
+<a target="_blank">
+<img class="floatright" src="../img/examples/target_temperature.png" width="250">
+<img class="floatright" src="../img/examples/dmd_temperature.png" width="250">
+</a>
+
+This example demonstrates the **optimal control heat conduction problem** with
+greedy parametric DMD and differential evolution. The initial condition,
+$u_0(x)$, is parameterized by the center of circle and the radius, i.e., 
+
+$$u_0(x) =  
+  \cases{
+  \displaystyle 2 & for \|x-c\| < r  \cr
+  \displaystyle 1 & for \|x-c\| $\ge$ r 
+  }$$
+
+The goal of the optimal control problem is to find an initial condition that
+achieves the target last time step temperature distribution. If it does not
+achieve the target, then it should be closest, given the initial condition
+parameterization. It is formulated mathematically as an optimization problem:
+
+$$ \underset{c,r}{minimize} \ \|\| u_T(c,r) - u_{target} \|\|_2^2,$$
+
+where $u_T$ denotes the last time step temperature and $u_{target}$ denotes the
+target temperature. Note that $u_T$ depends on the initial condition
+parameters, i.e., $c$ and $r$. It means that we obtain $u_T$ by solving a
+forward heat conduction problem. As you can imagine, it needs to explore the
+parameter space and try to find $c$ and $r$ that produces $u_T$ that best
+matches $u_{target}$. If each solution process of heat conduction problem is
+computationally expensive, the search for the optimal parameter can take a
+while. Therefore, we use our parametric DMD to expedite the process and the
+  search algorithm is done by the [differential
+  evolution](https://en.wikipedia.org/wiki/Differential_evolution).
+
+Here are the steps to solve the optimal control problem. First, you must 
+delete any post-processed files from the previous differential evolution
+run. For example,
+
+* rm -rf parameters.txt
+* rm -rf de_parametric_heat_conduction_greedy_*
+
+Then create parametric DMD using a greedy approach with physics-informed error
+indicator:
+
+* de_parametric_heat_conduction_greedy -build_database -rdim 16 -greedy-param-size 5 -greedysubsize 2 -greedyconvsize 3 -greedyreldifftol 0.01 
+
+Then you can generate target temperature field with a specific $r$ and $c$
+values. Here we used $r=0.2$, $cx=0.2$, and $cy=0.2$ to generate a target
+temperature field. The target temperature field is shown in the picture above (the one on the left).
+
+Therefore, if DMD is good enough, the differential evolution
+should be able to find $c$ and $r$ values that are closed to these:
+
+* de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit (Compute target FOM)
+
+where r, cx, and cy specify the radius, the x and y coordinates of circular initial conditions. 
+Now you can run the differential evolution using the parametric DMD:
+
+* de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit -de -de_f 0.9 -de_cr 0.9 -de_ps 50 -de_min_iter 10 -de_max_iter 100 -de_ct 0.001 (Run interpolative differential evolution to see if target FOM can be matched)
+
+The differential evolution should be able to find the following optimal control parameters: $r=0.2006289125692826$, $cx=0.2077455594628246$, and $0.2025402158388952$, which are very close to the true parameters that were used to generate the targer temperature field. The DMD temperature field at the last time step on this control parameters is shown in the picture above (the one on the right).
+
+
+_The code that generates the numerical results above can be found in
+([de_parametric_heat_conduction_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/de_parametric_heat_conduction_greedy.cpp)).
+The
+[de_parametric_heat_conduction_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/de_parametric_heat_conduction_greedy.cpp)
 is based on
 [ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM._
 <div style="clear:both;"/></div>
@@ -806,24 +881,26 @@ function update()
    getBooleans("group3");
    getBooleans("group4");
    getBooleans("group5");
+   getBooleans("group6");
 
    numShown = 0 // expression continued...
 
    // example codes
-   + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem))
-   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem))
-   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem))
-   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem))
-   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem))
-   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem))
-   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem))
-   + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos))
-   + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar))
-   + showElement("1DSodShockTube", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar))
-   + showElement("2DEulerVortexConvection", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar))
-   + showElement("2DEulerRiemannProblem", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar))
-   + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar))
-   + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar))
+   + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer) )
+   + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de) )
+   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
+   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer) )
+   + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos) & (no_optimizer))
+   + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("1DSodShockTube", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("2DEulerVortexConvection", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("2DEulerRiemannProblem", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    ; // ...end of expression
 
    // show/hide the message "No examples match your criteria"
