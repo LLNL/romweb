@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Aug. 18, 10 AM | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8023c356cb041b4eabb6e9ce4ad91e04)
 Aug. 25, 10 AM | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | Continuous Networks for Sequential Predictions | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma889e5a42096f79f6d4aa959ccb8b290)
 Sept. 16, 10 AM | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | TBD | [link]()
 Sept. 30, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
@@ -23,6 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link]()
 July 21 | [Ricardo Vinuesa](https://www.vinuesalab.com) | KTH | Modeling and controlling turbulent flows through deep learning | [link](https://youtu.be/ASl3OokTcGo)
 July 1 | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link](https://youtu.be/M_CmmZm0ncE)
 June 23 | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link](https://youtu.be/VbBXEpgPXQk)
