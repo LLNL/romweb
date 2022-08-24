@@ -270,18 +270,20 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
 </a></p>
 <p>This example code demonstrates the use of libROM and MFEM to define a reduced
 order model for a simple isoparametric finite element discretization of the
-Poisson problem $$-\Delta u = f$$ with homogeneous Dirichlet boundary
-conditions. The example parameterizes the righthand side with frequency
-variable, $\kappa$:</p>
+Poisson problem 
+$$-\Delta u = f$$ with homogeneous Dirichlet boundary
+conditions.  The related tutorial YouTube video can be found
+<a href="https://youtu.be/YlFrBP31riA">here</a>.  The example parameterizes the righthand
+side with frequency variable, $\kappa$:</p>
 <p>$$f =<br />
   \cases{
   \displaystyle \sin(\kappa (x_0+x_1+x_2)) &amp; for 3D  \cr
   \displaystyle \sin(\kappa (x_0+x_1))     &amp; for 2D<br />
   }$$</p>
-<p>The 2D solution contour plot for $\kappa=1$ is shown in the figure
+<p>The 2D solution contour plot for $\kappa=\pi$ is shown in the figure
 on the right to show the effect of $\kappa$. For demonstration, we sample
-solutions at $\kappa=1$, $1.1$, and $1.2$. Then a ROM is build with basis size
-of 3, which is used to predict the solution for $\kappa = 1.15$.  The ROM is
+solutions at $\kappa=\pi$, $1.1\pi$, and $1.2\pi$. Then a ROM is build with basis size
+of 3, which is used to predict the solution for $\kappa = 1.15\pi$.  The ROM is
 able to achieve a speedup of $7.5$ with a relative error of $6.4\times10^{-4}$.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:</p>
@@ -292,6 +294,9 @@ summarized in the table below:</p>
 <li><strong>merge</strong>: poisson_global_rom -merge -ns 3</li>
 <li><strong>online</strong>: poisson_global_rom -online -f 1.15</li>
 </ul>
+<p>The command line option -f defines a frequency of the sinusoidal right hand
+side function. The relation between $kappa$ and f is defined as $\kappa = \pi
+f$.</p>
 <table>
 <thead>
 <tr>
@@ -316,6 +321,83 @@ and the explanation of codes is provided in
 <a href="poisson.html#poisson-equation">here</a>. 
 The
 <a href="https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp">poisson_global_rom.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex1p.cpp">ex1p.cpp</a> from
+MFEM with a modification on the right hand side function.</em> </p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="poisson_greedy_prom">
+<h2 id="greedy-prom-poisson-problem">Greedy PROM Poisson Problem</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/poisson_local_rom.png" width="250">
+</a></p>
+<p>This example code demonstrates physics-informed greedy sampling procedure of
+building local PROMs for the Poisson problem.  $$-\Delta u = f$$ with
+homogeneous Dirichlet boundary conditions.<br />
+The example parameterizes
+the righthand side with frequency variable, $\kappa$:</p>
+<p>$$f =<br />
+  \cases{
+  \displaystyle \sin(\kappa (x_0+x_1+x_2)) &amp; for 3D  \cr
+  \displaystyle \sin(\kappa (x_0+x_1))     &amp; for 2D<br />
+  }$$</p>
+<p>A set of local ROMs are built for chosen parameter sample points. The parameter
+sample points are chosen through physics-informed greedy procedure, which is
+explained in detail by the tutorial <a href="https://youtu.be/A5JlIXRHxrI">YouTube
+video</a>. Then the local ROMs are interpolated to
+build a tailored local ROM for a predictive case. Unlike the global ROM, the
+interpolated ROM has dimension that is the same as the individual local ROM. </p>
+<p>For example, one can follow the command line options below to reproduce the
+numerical results summarized in the table below:</p>
+<ul>
+<li><strong>greedy step</strong>: ./poisson_local_rom_greedy -build_database -greedy-param-min 0.5 -greedy-param-max 3.0 -greedy-param-size 15 -greedysubsize 4 -greedyconvsize 6 -greedyrelerrortol 0.01 --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh"</li>
+</ul>
+<p>This particular greedy step generates local PROMs at the following 8 parameter points, i.e., 0.521923, 0.743108, 1.322449, 1.754950, 2.011140, 2.281129, 2.587821, 2.950198. </p>
+<ul>
+<li><strong>reference FOM solution</strong>: ./poisson_local_rom_greedy -fom --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</li>
+<li><strong>online</strong>: ./poisson_local_rom_greedy -use_database -online --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</li>
+</ul>
+<p>You can replace X.XX with any value between 0.5 and 3.0. The table below shows
+the performance results for three different parameter points. </p>
+<table>
+<thead>
+<tr>
+<th>X.XX</th>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Solution relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>0.0135  sec</td>
+<td>2.38e-6 sec</td>
+<td>5.7e3</td>
+<td>9.99593e-5</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>0.0137  sec</td>
+<td>2.48e-6 sec</td>
+<td>5.5e3</td>
+<td>0.0001269</td>
+</tr>
+<tr>
+<td>2.8</td>
+<td>0.0159  sec</td>
+<td>2.92e-6 sec</td>
+<td>5.4e3</td>
+<td>0.00126</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp">poisson_local_rom_greedy.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp">poisson_local_rom_greedy.cpp</a>
 is based on
 <a href="https://github.com/mfem/mfem/blob/master/examples/ex1p.cpp">ex1p.cpp</a> from
 MFEM with a modification on the right hand side function.</em> </p>
@@ -630,7 +712,8 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 <p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
 <strong>DG advection</strong> solves the time-dependent advection problem:</p>
 <p>$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$</p>
-<p>where $v$ is a given advection velocity.</p>
+<p>where $v$ is a given advection velocity.
+We choose velocity function so that the dynamics form a spiral advection.</p>
 <p>One can run the following command line options to reproduce the DMD results
 summarized in the table below:</p>
 <ul>
@@ -658,6 +741,61 @@ summarized in the table below:</p>
 (<a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_advection.cpp">dg_advection.cpp</a>).
 The
 <a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/dg_advection.cpp">dg_advection.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp">ex9p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="local_prom_dg_advection">
+<h2 id="local-prom-advection">Local PROM Advection</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/local_prom_advection.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+<strong>DG advection</strong> solves the time-dependent advection problem:</p>
+<p>$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$</p>
+<p>where $v$ is a given advection velocity. 
+We choose velocity function so that the dynamics form a spiral advection.</p>
+<p>This example illustrates how a parametric PROM can be built through local ROM
+interpolation techniques. The following sequence of command lines will let you
+build such a parametric PROM, where the frequency of sinusoidal initial
+condition function is used as a parameter (its value is passed by a user through -ff command line option).</p>
+<p>Two local PROMs are constructed through -offline option with parameter values
+of 1.02 and 1.08, then the local PROM operators are interpolated to build a
+tailored local PROM at the frequency value of 1.05. Unlike the global ROM, the
+interpolated PROM has dimension that is the same as the individual PROM, i.e.,
+40 for this particular problem.</p>
+<ul>
+<li>rm -rf frequencies.txt</li>
+<li>./dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -offline -rs 4 -ff 1.02</li>
+<li>./dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -interp_prep -rs 4 -ff 1.02 -rdim 40</li>
+<li>./dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -offline -rs 4 -ff 1.08</li>
+<li>./dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -interp_prep -rs 4 -ff 1.08 -rdim 40</li>
+<li>./dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -fom -rs 4 -ff 1.05 -visit</li>
+<li>./dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -online_interp -rs 4 -ff 1.05 -rdim 40</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>PROM solution time</th>
+<th>PROM speed-up</th>
+<th>PROM relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>39.38 sec</td>
+<td>0.63 sec</td>
+<td>62.5</td>
+<td>1.19e-2</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/dg_advection_local_rom_matrix_interp.cpp">dg_advection_local_rom_matrix_interp.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/dg_advection_local_rom_matrix_interp.cpp">dg_advection_local_rom_matrix_interp.cpp</a>
 is based on
 <a href="https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp">ex9p.cpp</a> from MFEM.</em></p>
 <div style="clear:both;"/>
@@ -1254,7 +1392,9 @@ function update()
 
    // example codes
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("local_prom_dg_advection", (advection) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer) )
