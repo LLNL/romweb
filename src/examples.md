@@ -737,8 +737,9 @@ summarized in the table below:
 * **online phase**: ./linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -online -id 3 -nu 0.XX
 
 You can replace 0.XX with any value between 0.2 and 0.5. It must be strictly
-less than 0.5. The table below shows the performance results for three
-different parameter points. 
+less than 0.5. Note that the global ROM is able to predict the point outside of
+the training region with high accuracy, i.e., $\nu=0.45$.  The table below
+shows the performance results for three different parameter points. 
 
    | Poisson's ratio ($\nu$)    | FOM solution time |  ROM solving time | Position relative error | 
    | -------------------------- | ----------------- |  ---------------- | ----------------------- | 
