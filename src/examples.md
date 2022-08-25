@@ -9,9 +9,9 @@
 
 This page provides a list of libROM example applications.  For detailed
 documentation of the libROM sources, including the examples, see the [online
-Doxygen documentation](http://software.llnl.gov/libROM/html/index.html) or the `doc` directory in the distribution.  The goal of the example
-codes is to provide a step-by-step introduction to libROM in simple model
-settings.
+Doxygen documentation](http://software.llnl.gov/libROM/html/index.html) or the
+`doc` directory in the distribution.  The goal of the example codes is to
+provide a step-by-step introduction to libROM in simple model settings.
 
 Select from the categories below to display examples and miniapps that contain
 the respective feature. _All examples support (arbitrarily) high-order meshes
@@ -698,6 +698,63 @@ the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Exampl
 <div style="clear:both;"/></div>
 <br></div>
 
+<div id="linear_elasticity" markdown="1">
+## Linear elasticity
+<a target="_blank">
+<img class="floatright" src="../img/examples/linear_elasticity.png" width="350">
+</a>
+
+This example demonstrates how to apply projection-based ROM to a linear
+elasticity problem. The linear elasiticity problem describes a multi-material
+cantilever beam. Specifically, the following weak form is solved:
+
+$$-\text{div}(\sigma(\boldsymbol{u})) = 0$$
+
+where
+
+$$\sigma(\boldsymbol{u}) = \lambda \text{div}(\boldsymbol{u}) \boldsymbol{I} + \mu (\nabla \boldsymbol{u} + \nabla \boldsymbol{u}^T)$$
+
+is the stress tensor corresponding to displacement field $\boldsymbol{u}$, and
+$\lambda$ and $\mu$ are the material Lame constants. The Lame constants are
+related to Young's modulus ($E$) and Poisson's ratio ($\nu$) as
+
+$$\lambda = \frac{E\nu}{(1+\nu)(1-2\nu)}$$
+$$\mu = \frac{E}{2(1+\nu)}$$
+
+The boundary condition are $\boldsymbol{u}=\boldsymbol{0}$ on the fixed part of the boundary with attribute 1, and $\sigma(\boldsymbol{u})\cdot n = f$ on the remainder with f being a constant pull down vector on boundary elements with attribute 2, and zero otherwise. The geometry of the domain is assumed to be as follows:
+
+![](../img/examples/ex2-domain.png)
+
+Three distinct steps are required, i.e., offline, merge, and online steps, to build global ROM for the linear elasticity problem. The general description of building a global ROM is explained in this [YouTube tutorial video](https://youtu.be/YlFrBP31riA). We parameterized Poisson's ratio ($\nu$) from 0.2 to 0.4.
+
+One can run the following command line options to reproduce the DMD results
+summarized in the table below:
+
+* **offline phase**: ./linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 0 -nu 0.2 
+* **offline phase**: ./linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 1 -nu 0.4 
+* **merge phase**: ./linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -merge -ns 2
+* **fom phase**: ./linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 2 -nu 0.XX
+* **online phase**: ./linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -online -id 3 -nu 0.XX
+
+You can replace 0.XX with any value between 0.2 and 0.5. It must be strictly
+less than 0.5. The table below shows the performance results for three
+different parameter points. 
+
+   | Poisson's ratio ($\nu$)    | FOM solution time |  ROM solving time | Position relative error | 
+   | -------------------------- | ----------------- |  ---------------- | ----------------------- | 
+   |  0.25                      |  4.96e-2 sec      |  3.54e-6  sec     |  0.00081                | 
+   |  0.3                       |  4.93e-2 sec      |  4.37e-6  sec     |  0.00133                | 
+   |  0.35                      |  5.96e-2 sec      |  4.60e-6  sec     |  0.00121                | 
+   |  0.45                      |  5.22e-2 sec      |  4.36e-6  sec     |  0.00321                | 
+
+_The code that generates the numerical results above can be found in
+([linear_elasticity_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/linear_elasticity_global_rom.cpp)).
+The
+[linear_elasticity_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/linear_elasticity_global_rom.cpp)
+is based on
+[ex2p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex2p.cpp) from MFEM._
+<div style="clear:both;"/></div>
+<br></div>
 
 
 <div id="nonlinear_elasticity" markdown="1">
@@ -1008,6 +1065,7 @@ function update()
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer) )
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de) )
    + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
+   + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer) )
    + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer) )
    + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos) & (no_optimizer))
    + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))

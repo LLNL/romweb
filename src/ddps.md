@@ -22,7 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link]()
+Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link](https://youtu.be/hShH-CgKyws)
 July 21 | [Ricardo Vinuesa](https://www.vinuesalab.com) | KTH | Modeling and controlling turbulent flows through deep learning | [link](https://youtu.be/ASl3OokTcGo)
 July 1 | [Dirk Hartmann](https://www.linkedin.com/in/dirkhartmann/?originalSubdomain=de) | Siemens | Machine Learning and Physics-based Simulations – Yin and Yang of Industrial Digital Twins | [link](https://youtu.be/M_CmmZm0ncE)
 June 23 | [Molei Tao](https://people.math.gatech.edu/~mtao8/) | Georgia Institute of Technology | Trustworthy learning of mechanical systems, and Stiefel optimization with applications to transformer and optimal transport | [link](https://youtu.be/VbBXEpgPXQk)
