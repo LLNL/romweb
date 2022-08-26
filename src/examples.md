@@ -453,7 +453,7 @@ We choose velocity function so that the dynamics form a spiral advection.
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
 
-* dg_advection -p 3 -rp 1 -dt 0.005 -tf 4 -visit
+* dg_advection -p 3 -rp 1 -dt 0.005 -tf 4
 
    | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
    | ----------------- | --------------- | -------------- | ------------------ |
