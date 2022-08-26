@@ -13,6 +13,7 @@
   1. T. Kadeethum, F. Ballarin, Y. Choi, D. O'Malley, H. Yoon, N. Bouklas, [Non-intrusive reduced order modeling of natural convection in porous media using convolutional autoencoders: Comparison with linear subspace techniques](https://www.sciencedirect.com/science/article/pii/S0309170821002499), *Advances in Water Resources*, Volume 160, 104098, **2022**
   1. Y. Kim, Y. Choi, D. Widemann, T. Zohdi, [A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder](https://www.sciencedirect.com/science/article/pii/S0021999121007361), *Journal of Computational Physics*, 451, 110841, **2022**. Also available as [arXiv:2009.11990](https://arxiv.org/pdf/2009.11990.pdf). 
 
+---
 
 #### 2021
   1. T. Kadeethum, D. O'Malley, J.N. Fuhg, Y. Choi, J. Lee, H.S. Viswanathan, N. Bouklas, [A framework for data-driven solution and parameter estimation of PDEs using conditional generative adversarial networks](https://www.nature.com/articles/s43588-021-00171-3), *Nature Computational Science*, 1, 819-829, **2021**
