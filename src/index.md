@@ -54,6 +54,7 @@ Date         | Title
 July 22, 2021| [Poisson equation & its finite element discretization](https://youtu.be/YaZPtlbGay4)
 Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFrBP31riA)
 Sep. 23, 2021| [Physics-informed sampling procedure for reduced order models](https://youtu.be/A5JlIXRHxrI)
+Sep. 11, 2022| [Local reduced order models and interpolation-based parameterization](https://youtu.be/KLyWZQRZ4hU)
 
 ## Latest Release
 
