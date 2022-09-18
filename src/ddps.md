@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Sept. 16, 10 AM | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m575c21d9f3b5dc17406189f011f9a7e4)
 Sept. 28, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
 Oct. 7th, 10 AM | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m918aa02e8bddf4d95123950693439fab)
 Oct. 21st, 10 AM | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | TBD | [link]() 
@@ -23,6 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Sept. 16 | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link]()
 Aug. 25 | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | Continuous Networks for Sequential Predictions | [link](https://youtu.be/P-q83Y_K4Pc)
 Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link](https://youtu.be/hShH-CgKyws)
 July 21 | [Ricardo Vinuesa](https://www.vinuesalab.com) | KTH | Modeling and controlling turbulent flows through deep learning | [link](https://youtu.be/ASl3OokTcGo)
