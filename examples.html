@@ -1108,8 +1108,57 @@ is based on
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
-<div id="nonlinear_elasticity">
-<h2 id="nonlinear-elasticity">Nonlinear elasticity</h2>
+<div id="nonlinear_elasticity_prom">
+<h2 id="nonlinear-elasticity-prom">Nonlinear elasticity, PROM</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/nlstructure.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $v_0(x) = v(0,x)$, <strong>nonlinear
+elasticity</strong> solves a time dependent nonlinear elasticity problem of the form</p>
+<p>$$\frac{\partial v}{\partial t} = H(x) + Sv\,, \qquad \frac{\partial x}{\partial t} = v,$$</p>
+<p>where $H$ is a hyperelastic model and $S$ is a viscosity operator of Laplacian type.</p>
+<p>One can run the following command line options to build global ROM and
+reproduce the results summarizedin the table below:</p>
+<ul>
+<li><strong>offline phase</strong>: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 3.9 -id 0  </li>
+<li><strong>offline phase</strong>: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 4.1 -id 1  </li>
+<li><strong>merge phase</strong>: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --merge -ns 2 -dt 0.01 -tf 5.0</li>
+<li><strong>fom phase</strong>: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 5 -sc 4.0 -id 2</li>
+<li><strong>online phase</strong>: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --online -dt 0.01 -tf 5.0 -s 14 -vs 5 -hyp -rvdim 40 -rxdim 10 -hdim 71 -nsr 1170 -sc 4.0</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>PROM merge time</th>
+<th>PROM online time</th>
+<th>Speed-up</th>
+<th>Position relative error</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>148 sec</td>
+<td>192.04 sec</td>
+<td>54.11 sec</td>
+<td>2.74</td>
+<td>0.030</td>
+<td>0.14</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/nonlinear_elasticity_global_rom.cpp">nonlinear_elasticity_global_rom.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/nonlinear_elasticity_global_rom.cpp">nonlinear_elasticity_global_rom.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex10p.cpp">ex10p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="nonlinear_elasticity_dmd">
+<h2 id="nonlinear-elasticity-dmd">Nonlinear elasticity, DMD</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/nonlinear_elasticity.gif" width="350">
 </a></p>
@@ -1478,7 +1527,8 @@ function update()
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de) )
    + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
    + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("nonlinear_elasticity", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer) )
+   + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
+   + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer) )
    + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos) & (no_optimizer))
    + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1DSodShockTube", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
