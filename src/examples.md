@@ -769,21 +769,34 @@ elasticity** solves a time dependent nonlinear elasticity problem of the form
 
 $$\frac{\partial v}{\partial t} = H(x) + Sv\,, \qquad \frac{\partial x}{\partial t} = v,$$
 
-where $H$ is a hyperelastic model and $S$ is a viscosity operator of Laplacian type.
+where $H$ is a hyperelastic model and $S$ is a viscosity operator of Laplacian
+type. The initial displacement is set zero and the initial velocity is set as
+zero except the third component which is defined:
+
+$$v_3(0,x) = -\frac{\mu}{80}\sin(\mu x_1)$$
 
 One can run the following command line options to build global ROM and
-reproduce the results summarizedin the table below:
+reproduce the results summarizedin the table below. You can replace XXX in the
+fom and online phase to take any $\mu$ value between 3.9 and 4.1:
 
 * **offline phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 3.9 -id 0  
 * **offline phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 4.1 -id 1  
 * **merge phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --merge -ns 2 -dt 0.01 -tf 5.0
-* **fom phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 5 -sc 4.0 -id 2
-* **online phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --online -dt 0.01 -tf 5.0 -s 14 -vs 5 -hyp -rvdim 40 -rxdim 10 -hdim 71 -nsr 1170 -sc 4.0
+* **fom phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 5 -sc XXX -id 2
+* **online phase**: ./nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --online -dt 0.01 -tf 5.0 -s 14 -vs 5 -hyp -rvdim 40 -rxdim 10 -hdim 71 -nsr 200 -sc XXX
 
 
-   | FOM solution time | PROM merge time  | PROM online time | Speed-up | Position relative error | Velocity relative error |
-   | ----------------- | ---------------- | ---------------- | -------- | ----------------------- | ----------------------- |
-   |      148 sec      |  192.04 sec      |  54.11 sec       |   2.74   |  0.030                  |     0.14               |
+   | $\mu$  | FOM solution time |  PROM online time | Speed-up | Position relative error | 
+   | ------ | ----------------- |  ---------------- | -------- | ----------------------- |
+   |  3.92  |     164.9 sec     |  20.5   sec       |   8.0   |    0.0053                | 
+   |  3.94  |     169.2 sec     |  20.8   sec       |   8.1   |    0.0053                | 
+   |  3.96  |     167.8 sec     |  20.9   sec       |   8.0   |    0.0057                | 
+   |  3.98  |     162.7 sec     |  22.1   sec       |   7.4   |    0.0062                | 
+   |  4.0   |     169.4 sec     |  21.1   sec       |   8.0   |    0.0067                | 
+   |  4.02  |     168.4 sec     |  20.8   sec       |   8.1   |    0.0071                | 
+   |  4.04  |     160.6 sec     |  22.8   sec       |   7.0   |    0.0073                | 
+   |  4.06  |     173.4 sec     |  22.7   sec       |   7.6   |    0.0071                | 
+   |  4.08  |     169.2 sec     |  20.0   sec       |   8.5   |    0.0066                | 
 
 _The code that generates the numerical results above can be found in
 ([nonlinear_elasticity_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/nonlinear_elasticity_global_rom.cpp)).
