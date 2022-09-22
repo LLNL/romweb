@@ -22,7 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Sept. 16 | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link]()
+Sept. 16 | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link](https://youtu.be/EUKkWs8o_CE)
 Aug. 25 | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | Continuous Networks for Sequential Predictions | [link](https://youtu.be/P-q83Y_K4Pc)
 Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link](https://youtu.be/hShH-CgKyws)
 July 21 | [Ricardo Vinuesa](https://www.vinuesalab.com) | KTH | Modeling and controlling turbulent flows through deep learning | [link](https://youtu.be/ASl3OokTcGo)
