@@ -2,6 +2,10 @@
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+Sep 30, 2022 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present ``Efficient Nonlinear Manifold Reduced Order Models with Shallow Sparse Neural Network" at [SIAM MD22](https://meetings.siam.org/sess/dsp_talk.cfm?p=122105)
+Sep 28, 2022 | [Dylan Copeland](https://people.llnl.gov/copeland11) will present ``Reduced Order Models for Multi-Material ALE Hydrodynamics" at [SIAM MD22](https://meetings.siam.org/sess/dsp_talk.cfm?p=122871)
+Sep 27, 2022 | [Siu Wun Cheung](https://tonycsw2905.github.io) will present ``Accelerating Hydrodyanmics Simulation with Reduced Order Models" at [SIAM MD22](https://meetings.siam.org/sess/dsp_talk.cfm?p=122518)
+May 19, 2022 | [CWROM stress lattice](https://arxiv.org/pdf/2205.09629.pdf) preprint is available in arXiv.
 Apr 26, 2022 | [gLaSDI](https://arxiv.org/pdf/2204.12005.pdf) preprint is available in arXiv.
 Apr 26, 2022 | [parametric DMD](https://arxiv.org/pdf/2204.12006.pdf) preprint is available in arXiv.
 Mar 29, 2022 | [S-OPT](https://arxiv.org/pdf/2203.16494.pdf) preprint is available in arXiv.
