@@ -13,7 +13,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Oct. 7th, 10 AM | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m918aa02e8bddf4d95123950693439fab)
 Oct. 21st, 10 AM | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | TBD | [link]() 
-Nov. 4th, 10 AM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | TBD | [link]() 
+Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | TBD | [link]() 
 Nov. 11th, 10 AM | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | TBD | [link]() 
 Nov. 17th, 10 AM | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | TBD | [link]() 
 Dec. 2nd, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
