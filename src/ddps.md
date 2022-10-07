@@ -11,9 +11,8 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct. 7th, 10 AM | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m918aa02e8bddf4d95123950693439fab)
 Oct. 21st, 10 AM | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | TBD | [link]() 
-Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | TBD | [link]() 
+Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m7c7d96c894b590779a5aa55371a9cec5) 
 Nov. 11th, 10 AM | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | TBD | [link]() 
 Nov. 17th, 10 AM | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | TBD | [link]() 
 Dec. 2nd, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
@@ -25,6 +24,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Oct. 7th | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link]()
 Sept. 16 | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link](https://youtu.be/EUKkWs8o_CE)
 Aug. 25 | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | Continuous Networks for Sequential Predictions | [link](https://youtu.be/P-q83Y_K4Pc)
 Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link](https://youtu.be/hShH-CgKyws)
