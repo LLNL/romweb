@@ -15,9 +15,9 @@ Oct. 21st, 10 AM | [Eric de Sturler](https://math.vt.edu/people/faculty/desturle
 Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m7c7d96c894b590779a5aa55371a9cec5) 
 Nov. 11th, 10 AM | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | TBD | [link]() 
 Nov. 17th, 10 AM | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | TBD | [link]() 
-Dec. 2nd, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
 Dec. 16th, 10 AM | [Ralph Smith](https://scholar.google.com/citations?user=7MCKOC8AAAAJ&hl=en) | North Carolina State University | TBD | [link]() 
 Jan. 20th, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
+Feb. 17th, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
