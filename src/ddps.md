@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct. 21st, 10 AM | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | TBD | [link]() 
+Oct. 21st, 10 AM | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | Cheap and robust adaptive reduced order models for nonlinear inversion and design | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1d27eff7514e52e6ee0396a5966e02d7) 
 Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m7c7d96c894b590779a5aa55371a9cec5) 
 Nov. 11th, 10 AM | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | TBD | [link]() 
 Nov. 17th, 10 AM | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | TBD | [link]() 
