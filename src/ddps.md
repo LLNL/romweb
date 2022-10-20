@@ -24,7 +24,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Oct. 7th | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link]()
+Oct. 7th | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link](https://youtu.be/_iN2cggDY7E)
 Sept. 16 | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link](https://youtu.be/EUKkWs8o_CE)
 Aug. 25 | [Benjamin Erichson](https://www.benerichson.com) | University of Pittsburgh | Continuous Networks for Sequential Predictions | [link](https://youtu.be/P-q83Y_K4Pc)
 Aug. 18 | [Santi Adavani](https://www.rocketml.net) | RocketML | Industrial Grade Scientific Machine Learning: Challenges and Opportunities | [link](https://youtu.be/hShH-CgKyws)
