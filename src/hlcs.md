@@ -17,7 +17,7 @@ high performance computing (HPC) and data science.
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx or Zoom
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov. 8th 8:30 AM | [Erik Draeger](https://people.llnl.gov/draeger1) and [David Beckingsale](https://people.llnl.gov/beckingsale1) | LLNL | RADIUSS and the HPCIC:  Outreach through open-source software | [link]()
+Nov. 8th 8:30 AM | [Erik Draeger](https://people.llnl.gov/draeger1) and [David Beckingsale](https://people.llnl.gov/beckingsale1) | LLNL | RADIUSS and the HPCIC:  Outreach through open-source software | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m21208d3be6423243b887d8ac0b77bda5)
 
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
