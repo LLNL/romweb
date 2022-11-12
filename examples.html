@@ -1289,8 +1289,9 @@ initial density is given by $\rho = 1$. The initial energy is given by a delta
 function at the origin. The adiabatic index in the ideal gas equations of state
 is set $\gamma = 1.4$. The initial mesh is a uniform Catesian hexahedral mesh,
 which deforms over time. It can be seen that the radial symmetry is maintained
-in the shock wave propagation in both FOM and ROM simulations. One can reproduce
-the numerical result, following the command line options described below:</p>
+in the shock wave propagation in both FOM and PROM simulations. One can
+reproduce the PROM numerical result, following the command line options
+described below:</p>
 <ul>
 <li><strong>offline</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages</li>
 <li><strong>hyper-reduction preprocessing</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2 (-sopt)</li>
@@ -1314,6 +1315,33 @@ the numerical result, following the command line options described below:</p>
 <td>22.8</td>
 <td>2.2e-4</td>
 <td>1.1e-4</td>
+</tr>
+</tbody>
+</table>
+<p>One can also easily apply time-windowing DMD to Sedov blast problem easily. First, prepare tw_sedov3.csv file, which contains a sequence of time steps, ${$0.01, 0.02, $\ldots$, 0.79, 0.8 $}$ in a column. Then you can follow the command line options described below:</p>
+<ul>
+<li>
+<p><strong>offline</strong>: mpirun -np 8 ./laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -nwin 80 -tw tw_sedov3.csv -dmd -dmdnuf -met -no-romoffset</p>
+</li>
+<li>
+<p><strong>online</strong>: mpirun -np 8 ./laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -dmd -dmdnuf -no-romoffset</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>DMD restoration time</th>
+<th>Speed-up</th>
+<th>Velocity relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30.4 sec</td>
+<td>15.0. sec</td>
+<td>2.0</td>
+<td>0.0382461</td>
 </tr>
 </tbody>
 </table>
