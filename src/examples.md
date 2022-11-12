@@ -874,8 +874,9 @@ initial density is given by $\rho = 1$. The initial energy is given by a delta
 function at the origin. The adiabatic index in the ideal gas equations of state
 is set $\gamma = 1.4$. The initial mesh is a uniform Catesian hexahedral mesh,
 which deforms over time. It can be seen that the radial symmetry is maintained
-in the shock wave propagation in both FOM and ROM simulations. One can reproduce
-the numerical result, following the command line options described below:
+in the shock wave propagation in both FOM and PROM simulations. One can
+reproduce the PROM numerical result, following the command line options
+described below:
 
 * **offline**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages
 * **hyper-reduction preprocessing**: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2 (-sopt)
@@ -885,6 +886,18 @@ the numerical result, following the command line options described below:
    | FOM solution time | ROM solution time | Speed-up | Velocity relative error (DEIM)| Velocity relative error (SOPT) |
    | ----------------- | ----------------- | -------- | ----------------------------- | ------------------------------ |
    |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4                |              1.1e-4           |  
+
+One can also easily apply time-windowing DMD to Sedov blast problem easily. First, prepare tw_sedov3.csv file, which contains a sequence of time steps, $\{$0.01, 0.02, $\ldots$, 0.79, 0.8 $\}$ in a column. Then you can follow the command line options described below:
+
+* **offline**: mpirun -np 8 ./laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -nwin 80 -tw tw_sedov3.csv -dmd -dmdnuf -met -no-romoffset
+ 
+* **online**: mpirun -np 8 ./laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -dmd -dmdnuf -no-romoffset
+
+   | FOM solution time | DMD restoration time | Speed-up | Velocity relative error | 
+   | ----------------- | -------------------- | -------- | ----------------------- | 
+   |  30.4 sec         |  15.0. sec           |   2.0    |       0.0382461         | 
+
+
 
 <img class="floatright" src="../img/examples/gresho.png" width="250"  >
 
