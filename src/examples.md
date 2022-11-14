@@ -887,7 +887,7 @@ described below:
    | ----------------- | ----------------- | -------- | ----------------------------- | ------------------------------ |
    |  191 sec          |  8.3 sec          |   22.8   |         2.2e-4                |              1.1e-4           |  
 
-One can also easily apply time-windowing DMD to Sedov blast problem easily. First, prepare tw_sedov3.csv file, which contains a sequence of time steps, $\{$0.01, 0.02, $\ldots$, 0.79, 0.8 $\}$ in a column. Then you can follow the command line options described below:
+One can also easily apply time-windowing DMD to Sedov blast problem easily. First, prepare tw_sedov3.csv file, which contains a sequence of time steps, \{0.01, 0.02, $\ldots$, 0.79, 0.8 \} in a column. Then you can follow the command line options described below:
 
 * **offline**: mpirun -np 8 ./laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -nwin 80 -tw tw_sedov3.csv -dmd -dmdnuf -met -no-romoffset
  

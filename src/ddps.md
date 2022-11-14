@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov. 11th, 11 AM | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | Scientific Uses of Automatic Differentiation | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m423b83d6bf831e79e87742e92470be42) 
 Nov. 17th, 10 AM | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | TBD | [link]() 
 Dec. 16th, 10 AM | [Ralph Smith](https://scholar.google.com/citations?user=7MCKOC8AAAAJ&hl=en) | North Carolina State University | TBD | [link]() 
 Jan. 20th, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
@@ -22,7 +21,8 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link]() 
+Nov. 11th | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | Scientific Uses of Automatic Differentiation | [link]() 
+Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link](https://youtu.be/gkpomUiH5hM) 
 Oct. 21st | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | Cheap and robust adaptive reduced order models for nonlinear inversion and design | [link](https://youtu.be/PDrTKiyMwGg) 
 Oct. 7th | [Jan Drgona](https://www.pnnl.gov/people/jan-drgona) | PNNL | Differentiable Programming for Modeling and Control of Dynamical Systems | [link](https://youtu.be/_iN2cggDY7E)
 Sept. 16 | [Benjamin Sanderse](https://www.thinkingslow.nl/wordpress/) | CWI Amsterdam | Structure-preserving learning of embedded, discrete closure models | [link](https://youtu.be/EUKkWs8o_CE)
