@@ -15,7 +15,8 @@ Dec. 16th, 10 AM | [Ralph Smith](https://scholar.google.com/citations?user=7MCKO
 Jan. 20th, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
 Jan. 27th, 10 AM | [Spencer H. Bryngelson](https://comp-physics.group) | GeorgiaTech | Competitive Physics Informed Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcd9406e8fd784d3fe7a84f4837daf67b)
 Feb. 17th, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
-Feb. 24th, 10 AM | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | TBD | [link]() 
+Feb. 24th, 10 AM | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m54759e0ee15d98a307ddc969ff0505d0 ) 
+Mar. 10th, 10 AM | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | TBD | [link]() 
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
