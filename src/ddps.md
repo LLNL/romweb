@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022 and 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Dec. 16th, 10 AM | [Ralph Smith](https://scholar.google.com/citations?user=7MCKOC8AAAAJ&hl=en) | North Carolina State University | Parameter Subset Selection and Active Subspace Techniques for Engineering and Biological Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md83e2bd0fde4a3b76a17541a5869405e) 
 Jan. 20th, 10 AM | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc99fc5cb13b59f5cb8bda5ddc75ab395)
 Jan. 27th, 10 AM | [Spencer H. Bryngelson](https://comp-physics.group) | GeorgiaTech | Competitive Physics Informed Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcd9406e8fd784d3fe7a84f4837daf67b)
 Feb. 17th, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
@@ -23,6 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Dec. 16th | [Ralph Smith](https://scholar.google.com/citations?user=7MCKOC8AAAAJ&hl=en) | North Carolina State University | Parameter Subset Selection and Active Subspace Techniques for Engineering and Biological Models | [link](https://youtu.be/v1a7ETROk-g) 
 Nov. 17th | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | Deep learning for reduced order modeling | [link]() 
 Nov. 11th | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | Scientific Uses of Automatic Differentiation | [link](https://youtu.be/smMz1AtcZFM) 
 Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link](https://youtu.be/gkpomUiH5hM) 
