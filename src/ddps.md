@@ -23,7 +23,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Dec. 16th | [Ralph Smith](https://scholar.google.com/citations?user=7MCKOC8AAAAJ&hl=en) | North Carolina State University | Parameter Subset Selection and Active Subspace Techniques for Engineering and Biological Models | [link](https://youtu.be/v1a7ETROk-g) 
-Nov. 17th | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | Deep learning for reduced order modeling | [link]() 
+Nov. 17th | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | Deep learning for reduced order modeling | [link](https://youtu.be/bL47RhgKxNE) 
 Nov. 11th | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | Scientific Uses of Automatic Differentiation | [link](https://youtu.be/smMz1AtcZFM) 
 Nov. 4th, 12 PM | [Sorin Mitran](http://mitran-lab.amath.unc.edu/#!index.md) | University of North Carolina | Data-driven information geometry approach to stochastic model reduction | [link](https://youtu.be/gkpomUiH5hM) 
 Oct. 21st | [Eric de Sturler](https://math.vt.edu/people/faculty/desturler-eric.html) | Virginia Tech | Cheap and robust adaptive reduced order models for nonlinear inversion and design | [link](https://youtu.be/PDrTKiyMwGg) 
