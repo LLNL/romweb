@@ -18,6 +18,7 @@ Feb. 24th, 10 AM | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | Univ
 Mar. 10th, 10 AM | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | TBD | [link]() 
 Mar. 16th, 10 AM | [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/) | CalTech | TBD | [link]() 
 Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | TBD | [link]() 
+May. 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | TBD | [link]() 
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
