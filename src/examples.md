@@ -123,6 +123,7 @@ summarized in the table below:
 * **offline2**: poisson_global_rom -offline -f 1.1 -id 1
 * **offline3**: poisson_global_rom -offline -f 1.2 -id 2
 * **merge**: poisson_global_rom -merge -ns 3
+* **reference FOM solution**: poisson_global_rom -fom -f 1.15
 * **online**: poisson_global_rom -online -f 1.15
 
 The command line option -f defines a frequency of the sinusoidal right hand
