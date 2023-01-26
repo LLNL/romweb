@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Jan. 27th, 10 AM | [Spencer H. Bryngelson](https://comp-physics.group) | GeorgiaTech | Competitive Physics Informed Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcd9406e8fd784d3fe7a84f4837daf67b)
-Feb. 17th, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link]() 
+Feb. 10th, 10 AM | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md558e4cbfc2e1f895f0adb62fdfaa1ce) 
 Feb. 24th, 10 AM | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m54759e0ee15d98a307ddc969ff0505d0 ) 
 Mar. 10th, 10 AM | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | TBD | [link]() 
 Mar. 16th, 10 AM | [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/) | CalTech | TBD | [link]() 
