@@ -50,14 +50,14 @@ the error indicator tests on the sub-sample points have been passed.  Finally,
 to achieve.
 
 The core class of the libROM for the greedy procedure is [
-GreedySampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_sampler.html),
+GreedySampler](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_greedy_sampler.html),
 which is defined on Line 126 of [poisson_local_rom_greedy.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp)
 The GreedySampler generates sampling points within a given
 parameter space. 
 The class has two sub-classes, i.e.,
-[GreedyCustomSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_custom_sampler.html)
+[GreedyCustomSampler](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_greedy_custom_sampler.html)
 and
-[GreedyRandomSampler](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_random_sampler.html).
+[GreedyRandomSampler](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_greedy_random_sampler.html).
 The GreedyCustomSampler generates *pre-defined* sampling
 points, e.g., a tensor product sampling points, while the
 GreedyRandomSampler generates *random* sampling points, e.g.,

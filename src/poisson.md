@@ -46,9 +46,9 @@ build it with -m option to build MFEM library together.
 
 This tutorial demonstrates how to collect simulation data with libROM. The
 important object is
-[BasisGenerator](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_basis_generator.html),
+[BasisGenerator](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_basis_generator.html),
 which collects simulation data and computes reduced basis, using various
-singular value decomposition ([SVD](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_s_v_d.html)) algorithms, e.g., [incremental SVD](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_incremental_s_v_d.html) and [static SVD](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_incremental_s_v_d.html).
+singular value decomposition ([SVD](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_s_v_d.html)) algorithms, e.g., [incremental SVD](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_incremental_s_v_d.html) and [static SVD](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_static_s_v_d.html).
 The incremental SVD is useful for time-dependent problems. Because the Poisson
 problem is a time-independent problem, we will focus on the usage of the static
 SVD. The definition of BasisGenerator class can be found in
@@ -163,7 +163,7 @@ Lines
 implements the step of reading a basis file. The
 [BasisReader](https://github.com/LLNL/libROM/blob/master/lib/linalg/BasisReader.h) object
 reads the basis file, using member function, *getSpatialBasis*, which returns a
-[Matrix](http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_matrix.html)
+[Matrix](https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_matrix.html)
 object in libROM. The number of rows and columns of the reduced basis can be
 obtained through the member functions of the Matrix class, i.e., *numRows* and
 *numColumns*, respectively. 
