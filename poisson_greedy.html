@@ -228,15 +228,15 @@ determined if the error indicators are below the convergence threshold after
 the error indicator tests on the sub-sample points have been passed.  Finally,
 <em>-greedyrelerrortol</em> sets the desirable relative error for the greedy algorithm
 to achieve.</p>
-<p>The core class of the libROM for the greedy procedure is <a href="http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_sampler.html">
+<p>The core class of the libROM for the greedy procedure is <a href="https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_greedy_sampler.html">
 GreedySampler</a>,
 which is defined on Line 126 of <a href="https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_local_rom_greedy.cpp">poisson_local_rom_greedy.cpp</a>
 The GreedySampler generates sampling points within a given
 parameter space. 
 The class has two sub-classes, i.e.,
-<a href="http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_custom_sampler.html">GreedyCustomSampler</a>
+<a href="https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_greedy_custom_sampler.html">GreedyCustomSampler</a>
 and
-<a href="http://software.llnl.gov/libROM/html/class_c_a_r_o_m_1_1_greedy_random_sampler.html">GreedyRandomSampler</a>.
+<a href="https://librom.readthedocs.io/en/latest/class_c_a_r_o_m_1_1_greedy_random_sampler.html">GreedyRandomSampler</a>.
 The GreedyCustomSampler generates <em>pre-defined</em> sampling
 points, e.g., a tensor product sampling points, while the
 GreedyRandomSampler generates <em>random</em> sampling points, e.g.,
