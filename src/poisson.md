@@ -66,9 +66,9 @@ of poisson_global_rom.cpp for [Poisson Problem](examples.md#poisson-problem).
 #include "BasisGenerator.h"
 ```
 
-A BasisGenerator pointer is defined in Line 216 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp) 
+A BasisGenerator pointer is defined in Line 234 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp) 
 and the pointer is initiated in Line
-231 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+243 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 The BasisGenerator requires four inputs to initialize, i.e.,
 [Options](https://github.com/LLNL/libROM/blob/master/lib/linalg/Options.h), boolean
 variable, string, and Database::formats. The object, Options, sets various
@@ -83,16 +83,16 @@ BasisGenerator can be found in
 [BasisGenerator.h](https://github.com/LLNL/libROM/blob/master/lib/linalg/BasisGenerator.h).
 The specific inputs used for the [Poisson problem](examples.md#poisson-problem)
 can be found in Lines
-209--218 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp). 
+227--232 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp). 
 
 Now, the instantiated BasisGenerator, i.e., *generator*, collects the simulation
 data once it is available. The Poisson problem generates the solution, $X$, in
 Line
-316 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+338 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 and it is collected in the generator in Line
-323 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+345 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 The member function,
-*writeSnapshot* on Line 324 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp) 
+*writeSnapshot* on Line 346 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp) 
 simply writes the solution data in the specified HDF5 file. 
 Make sure that the pointers, *generator* and *options*, are
 deleted after done with sampling. This completes the libROM data collection
@@ -126,17 +126,17 @@ whose solution contour corresponds, respectively, to:
 Once the simulation data are collected within libROM basis files, they can be
 merged to form a reduced basis. This process is called the *merge phase*. It is
 implemented in Lines
-230--248 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp). 
+249--270 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp). 
 As in [Tutorial 1](#tutorial-1), the objects,
 [Options](https://github.com/LLNL/libROM/blob/master/lib/linalg/Options.h) and
 [BasisGenerator](https://github.com/LLNL/libROM/blob/master/lib/linalg/BasisGenerator.h)
 must be defined (see Lines
-223--224 of poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+251--253 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 The generator iterates over the individual HDF5 snapshot file and loads them all
 (see Lines
-235--238 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+254--259 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 The member function *endSamples* in Line
-239 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+260 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 computes the reduced basis. Again make sure to delete the pointers, i.e.,
 *generator* and *options*. 
 
@@ -159,7 +159,7 @@ full order states for a new parameter value. This tutorial demonstrates these
 three different actions for the frequency value, $\kappa = 1.15$.
 
 Lines
-334--335 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+356--357 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 implements the step of reading a basis file. The
 [BasisReader](https://github.com/LLNL/libROM/blob/master/lib/linalg/BasisReader.h) object
 reads the basis file, using member function, *getSpatialBasis*, which returns a
@@ -168,24 +168,24 @@ object in libROM. The number of rows and columns of the reduced basis can be
 obtained through the member functions of the Matrix class, i.e., *numRows* and
 *numColumns*, respectively. 
 
-Line 341 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+Line 364 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 defines a MFEM DenseMatrix that holds the transpose of the reduced basis matrix.
 This must be understood as the transpose because libROM stores the matrix
 row-wise. The MFEM matrix is defined to form a reduced system operator, whose
 process is implemented in Lines
-344--355 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+368--375 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 Then the reduced system operator is inverted at Line
-356 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+370 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 
 The reduced right-hand-side is formed by multiplying the reduced basis
 transpose to the full order model right-hand-side vector, $B$ at Line
-350 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
+374 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp).
 
 Line
-361 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+380 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 solves the reduced system of equation.
 
-Line 365 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
+Line 384 of [poisson_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/poisson_global_rom.cpp)
 restores the corresponding full order state by multipling the reduced solution
 by the reduced basis.
 
