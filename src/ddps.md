@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2022 and 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Mar. 10th, 10 AM | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | TBD | [link]() 
 Mar. 16th, 10 AM | [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/) | CalTech | TBD | [link]() 
 Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | TBD | [link]() 
 Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | TBD | [link]() 
@@ -23,6 +22,7 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2022
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Mar. 10th | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | CUR Matrix Decomposition for Scalable Reduced-Order Modeling of Nonlinear Partial Differential Equations using Time-Dependent Bases | [link]() 
 Feb. 24th | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link]() 
 Feb. 10th | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | The Passive Symmetries of Machine Learning | [link](https://youtu.be/XuakmuyE41o) 
 Jan. 27th | [Spencer H. Bryngelson](https://comp-physics.group) | GeorgiaTech | Competitive Physics Informed Networks | [link](https://youtu.be/zm-iF1FtkLE)
