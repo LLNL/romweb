@@ -15,7 +15,7 @@ Mar. 16th, 10 AM | [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/ani
 Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | TBD | [link]() 
 Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | TBD | [link]() 
 May. 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
-May. 12th, 10 AM | [Ying Liang](liang402@purdue.edu) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
+May. 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
