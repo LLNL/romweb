@@ -2,7 +2,7 @@
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
-Oct 17, 2022 | [Rayleigh-Taylor instability ROM](https://doi.org/10.1016/j.jcp.2022.111655) preprint is published in JCP.
+Oct 17, 2022 | [Rayleigh-Taylor instability ROM](https://doi.org/10.1016/j.jcp.2022.111655) paper is published in JCP.
 Sep 30, 2022 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present ``Efficient Nonlinear Manifold Reduced Order Models with Shallow Sparse Neural Network" at [SIAM MDS22](https://meetings.siam.org/sess/dsp_talk.cfm?p=122105)
 Sep 28, 2022 | [Dylan Copeland](https://people.llnl.gov/copeland11) will present ``Reduced Order Models for Multi-Material ALE Hydrodynamics" at [SIAM MDS22](https://meetings.siam.org/sess/dsp_talk.cfm?p=122871)
 Sep 27, 2022 | [Siu Wun Cheung](https://people.llnl.gov/cheung26) will present ``Accelerating Hydrodyanmics Simulation with Reduced Order Models" at [SIAM MDS22](https://meetings.siam.org/sess/dsp_talk.cfm?p=122518)
