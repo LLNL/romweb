@@ -75,7 +75,7 @@ explanation about the incremental SVD, we refer to the following journal papers:
 
 - M. Brand, [Incremental singular value decomposition of uncertain data with
      missing
-     values](https://www.cse.wustl.edu/~zhang/teaching/cs517/Spring12/CourseProjects/incremental%20svd%20missing%20value.pdf),
+     values](https://dl.acm.org/doi/10.5555/645315.649157),
      In *European Conference on Computer Vision*, p707-720, **2002**
 - G. Oxberry, T. Kostova-Vassilevska, W. Arrighi, K. Chand, [Limited-memory
      adaptive snapshot selection for proper orthogonal
