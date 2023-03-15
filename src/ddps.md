@@ -22,8 +22,8 @@ TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Mar. 10th | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | CUR Matrix Decomposition for Scalable Reduced-Order Modeling of Nonlinear Partial Differential Equations using Time-Dependent Bases | [link]() 
-Feb. 24th | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link]() 
+Mar. 10th | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | CUR Matrix Decomposition for Scalable Reduced-Order Modeling of Nonlinear Partial Differential Equations using Time-Dependent Bases | [link](https://youtu.be/LONJnUO0Ypc) 
+Feb. 24th | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link](https://youtu.be/k8uB56ngNSI) 
 Feb. 10th | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | The Passive Symmetries of Machine Learning | [link](https://youtu.be/XuakmuyE41o) 
 Jan. 27th | [Spencer H. Bryngelson](https://comp-physics.group) | GeorgiaTech | Competitive Physics Informed Networks | [link](https://youtu.be/zm-iF1FtkLE)
 Jan. 20th | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://youtu.be/DwxQPz8Fffc)
