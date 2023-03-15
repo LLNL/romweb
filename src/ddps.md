@@ -8,18 +8,18 @@
 # DDPS Webinar (_in California time_)
 DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk or would like to recommend a speaker, please send an email to choi15@llnl.gov. If you are interested in being included in DDPS email list, please also send an email to choi15@llnl.gov.
 
-## Scheduled Talks in 2022 and 2023
+## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | TBD | [link]() 
 Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | TBD | [link]() 
 Apr. 27th, 10 AM | [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/) | CalTech | TBD | [link]() 
 May. 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
-May. 12th, 10 AM | [Ying Liang](liang402@purdue.edu) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
+May. 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
-## Past Talks in 2022
+## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Mar. 10th | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | CUR Matrix Decomposition for Scalable Reduced-Order Modeling of Nonlinear Partial Differential Equations using Time-Dependent Bases | [link]() 
@@ -27,6 +27,10 @@ Feb. 24th | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University 
 Feb. 10th | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | The Passive Symmetries of Machine Learning | [link](https://youtu.be/XuakmuyE41o) 
 Jan. 27th | [Spencer H. Bryngelson](https://comp-physics.group) | GeorgiaTech | Competitive Physics Informed Networks | [link](https://youtu.be/zm-iF1FtkLE)
 Jan. 20th | [Ajay B. Harish](https://www.research.manchester.ac.uk/portal/ajaybangalore.harish.html) | University of Manchester | Uncertainty quantification and deep learning for storm-surge prediction | [link](https://youtu.be/DwxQPz8Fffc)
+
+## Past Talks in 2022
+Date      | Speaker        |  Institution      | Title                         | YouTube
+---------- | -------------- | ----------------- | ----------------------------- | ---------
 Dec. 16th | [Ralph Smith](https://scholar.google.com/citations?user=7MCKOC8AAAAJ&hl=en) | North Carolina State University | Parameter Subset Selection and Active Subspace Techniques for Engineering and Biological Models | [link](https://youtu.be/v1a7ETROk-g) 
 Nov. 17th | [Andrea Manzoni](https://scholar.google.it/citations?user=CZKB5sEAAAAJ&hl=it) | Politecnico di Milano | Deep learning for reduced order modeling | [link](https://youtu.be/bL47RhgKxNE) 
 Nov. 11th | [Michael Brenner](https://brennergroup.seas.harvard.edu/?_gl=1*lcotlu*_ga*MTA0NTU3NDAyOS4xNjYzOTUwMzQ1*_ga_FNNHYP076Y*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..*_ga_Q97GE6JKJ9*MTY2Mzk1NTE4MS4yLjEuMTY2Mzk1NTE4My4wLjAuMA..) | Harvard University | Scientific Uses of Automatic Differentiation | [link](https://youtu.be/smMz1AtcZFM) 
