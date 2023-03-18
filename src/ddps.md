@@ -13,7 +13,8 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | TBD | [link]() 
 Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | TBD | [link]() 
-Apr. 27th, 10 AM | [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/) | CalTech | TBD | [link]() 
+Apr. 21st, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() 
+Apr. 27th, 10 AM | [Anima Anandkumar](https://tensorlab.cms.caltech.edu/users/anima/) | CalTech | TBD | [link]() 
 May. 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
 May. 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
 May. 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | TBD | [link]()
