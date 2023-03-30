@@ -11,12 +11,13 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | Physics-based AI-assisted Design and Control in Flexible Manufacturing | [link]() 
+Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | Physics-based AI-assisted Design and Control in Flexible Manufacturing | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md80b5bdc484cf742494ac407e3cbb951) 
 Apr. 7th, 10 AM | [Matthias Chung](https://www.math.emory.edu/~mchun45) | Emory University | Big Data Inverse Problems — Promoting Sparsity and Learning to Regularize | [link]() 
 Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | TBD | [link]() 
-May. 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
-May. 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
-May. 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | TBD | [link]()
+May 4th, 10 AM | [Anima Anandkumar](https://www.eas.caltech.edu/people/anima) | CalTech | TBD | [link]()
+May 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
+May 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
+May 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | TBD | [link]()
 TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
 TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() 
 <!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
