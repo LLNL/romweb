@@ -18,9 +18,10 @@ May 4th, 10 AM | [Anima Anandkumar](https://www.eas.caltech.edu/people/anima) | 
 May 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
 May 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
 May 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | TBD | [link]()
-TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]()
-TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() 
-<!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
+May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | TBD | [link]()
+<!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() --->
+<!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() --->
+<!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() --->
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
