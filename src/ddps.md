@@ -11,9 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Mar. 31st, 10 AM | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | Physics-based AI-assisted Design and Control in Flexible Manufacturing | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md80b5bdc484cf742494ac407e3cbb951) 
-Apr. 7th, 10 AM | [Matthias Chung](https://www.math.emory.edu/~mchun45) | Emory University | Big Data Inverse Problems — Promoting Sparsity and Learning to Regularize | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbe3a0ea8acb7eefb39261ad1e3b08be3) 
-Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | TBD | [link]() 
+Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | Scientific Machine Learning through the Lens of Physics-Informed Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m07256e7683b473f98ebb6b5673fb5e62) 
 May 4th, 10 AM | [Anima Anandkumar](https://www.eas.caltech.edu/people/anima) | CalTech | TBD | [link]()
 May 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
 May 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
@@ -26,6 +24,8 @@ May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdu
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Apr. 7th | [Matthias Chung](https://www.math.emory.edu/~mchun45) | Emory University | Big Data Inverse Problems — Promoting Sparsity and Learning to Regularize | [link]() 
+Mar. 31st | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | Physics-based AI-assisted Design and Control in Flexible Manufacturing | [link]() 
 Mar. 10th | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | CUR Matrix Decomposition for Scalable Reduced-Order Modeling of Nonlinear Partial Differential Equations using Time-Dependent Bases | [link](https://youtu.be/LONJnUO0Ypc) 
 Feb. 24th | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link](https://youtu.be/k8uB56ngNSI) 
 Feb. 10th | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | The Passive Symmetries of Machine Learning | [link](https://youtu.be/XuakmuyE41o) 
