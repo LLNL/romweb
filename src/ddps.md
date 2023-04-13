@@ -25,7 +25,7 @@ May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdu
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Apr. 7th | [Matthias Chung](https://www.math.emory.edu/~mchun45) | Emory University | Big Data Inverse Problems — Promoting Sparsity and Learning to Regularize | [link]() 
-Mar. 31st | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | Physics-based AI-assisted Design and Control in Flexible Manufacturing | [link]() 
+Mar. 31st | [Jian Cao](https://www.cao.mech.northwestern.edu) | Northwestern University | Physics-based AI-assisted Design and Control in Flexible Manufacturing | [link](https://youtu.be/Dj4QAoYscLo) 
 Mar. 10th | [Hessam Babaee](https://www.babaeelab.com) | University of Pittsburgh | CUR Matrix Decomposition for Scalable Reduced-Order Modeling of Nonlinear Partial Differential Equations using Time-Dependent Bases | [link](https://youtu.be/LONJnUO0Ypc) 
 Feb. 24th | [Victor M. Zavala](https://zavalab.engr.wisc.edu/home) | University of Wisconsin-Madison | Bayesian Optimization: Exploiting Machine Learning Models, Physics, and High-Throughput Experiments | [link](https://youtu.be/k8uB56ngNSI) 
 Feb. 10th | [Soledad Villar](https://www.ams.jhu.edu/villar/) | Johns Hopkins University | The Passive Symmetries of Machine Learning | [link](https://youtu.be/XuakmuyE41o) 
