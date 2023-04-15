@@ -12,6 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Apr. 14th, 10 AM | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | Scientific Machine Learning through the Lens of Physics-Informed Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m07256e7683b473f98ebb6b5673fb5e62) 
+Apr. 27th, 10 AM | [Paul Atzberger](http://web.math.ucsb.edu/~atzberg/pmwiki_intranet/index.php?n=AtzbergerHomePage.Homepage?setskin=atzbergerHomepage4) | UC Santa Barbara | TBD | [link]()
 May 4th, 10 AM | [Anima Anandkumar](https://www.eas.caltech.edu/people/anima) | CalTech | TBD | [link]()
 May 5th, 10 AM | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf91e9f39574a2be5bbab9860dc64cb7e) 
 May 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Deep generative models for Inverse Random Source Scattering Problems | [link]()
