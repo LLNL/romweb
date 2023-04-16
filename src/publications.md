@@ -1,17 +1,22 @@
 # Publications
 
+#### 2023
+  1. Q.A. Huhn, M.E. Tano, J.C. Ragusa, Y. Choi, [Parametric dynamic mode decomposition for reduced order modeling](https://www.sciencedirect.com/science/article/pii/S0021999122009159), *Journal of Computational Physics*, 475, 111852, **2023**
+  1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://www.sciencedirect.com/science/article/pii/S0021999122007185), *Journal of Computational Physics*, 472, 111655, **2023**
+
 #### 2022
-  1. S. McBane, Y. Choi, K. Willcox, [Stress-constrained topology optimization of lattice-like structures using component-wise reduced order models](https://arxiv.org/pdf/2205.09629.pdf), *arXiv preprint*, arXiv:2205.09629, **2022**
-  1. C.F. Jekel, D.M. Sterbentz, S. Aubry, Y. Choi, D.A. White, J.L. Belof, [Using Conservation Laws to Infer Deep Learning Model Accuracy of Richtmyer-Meshkov Instabilities](https://arxiv.org/pdf/2208.11477.pdf) *arXiv preprint*, arXiv:2208.11477, **2022** 
-  1. Q.A. Huhn, M.E. Tano, J.C. Ragusa, Y. Choi, [Parametric dynamic mode decomposition for reduced order modeling](https://arxiv.org/pdf/2204.12006.pdf), *arXiv preprint*, arXiv:2204.12006, **2022**
-  1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen, [gLaSDI: Parametric physics-informed greedy latent space dynamics identification](https://arxiv.org/pdf/2204.12005.pdf), *arXiv preprint*, arXiv:2204.12005, **2022**
-  1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh, [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://arxiv.org/pdf/2203.16494.pdf), *arXiv preprint*, arXiv:2203.16494, **2022**
+  1. T. Kadeethum, F. Ballarin, D. O'Malley, Y. Choi, N. Bouklas, H. Yoon, [Reduced order modeling for flow and transport problems with Barlow Twins self-supervised learning](https://www.nature.com/articles/s41598-022-24545-3), *Scientific Reports*, 12(1), **2022**
+  1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen, [Certified data-driven physics-informed greedy auto-encoder simulator](https://arxiv.org/pdf/2211.13698.pdf), *arXiv preprint*, arXiv:2211.13698, **2022**
+  1. C. G. Petra, M. Salazar De Troya, N. Petra, Y. Choi, G. M. Oxberry, D. Tortorelli, [On the implementation of a quasi-Newton interior-point method for PDE-constrained optimization using finite element discretizations](https://www.tandfonline.com/doi/abs/10.1080/10556788.2022.2117354), *Optimization Methods and Software*, 1-32, **2022**
+  1. S. McBane, Y. Choi, K. Willcox, [Stress-constrained topology optimization of lattice-like structures using component-wise reduced order models](https://www.sciencedirect.com/science/article/abs/pii/S0045782522005266), *Computer Methods in Applied Mechanics and Engineering*, 400, 115525, **2022**
   1. T. Kadeethum, D. O'Malley, Y. Choi, H.S.  Viswanathan, N. Bouklas, and H. Yoon, [Continuous conditional generative adversarial networks for data-driven solutions of poroelasticity with heterogeneous material properties](https://www.sciencedirect.com/science/article/pii/S0098300422001613?via%3Dihub), *Computers & Geosciences*, Volume 167, 105212, **2022** 
   1. W. Fries, X. He, Y. Choi,  [LaSDI: Parametric latent space dynamics identification](https://www.sciencedirect.com/science/article/pii/S0045782522004807), *Computer Methods in Applied Mechanics and Engineering*, volume 399, 115436, **2022**, Also available as [arXiv:2203.02076](https://arxiv.org/abs/2203.02076).
-  1. T. Kadeethum, F. Ballarin, D. O'Malley, Y. Choi, N. Bouklas, H. Yoon, [Reduced order modeling for flow and transport problems with Barlow Twins self-supervised learning](https://arxiv.org/pdf/2202.05460.pdf), *arXiv preprint*, arXiv:2202.05460, **2022**
-  1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://arxiv.org/pdf/2201.07335.pdf), *arXiv preprint*, arXiv:2201.07335, **2022**
-  1. T. Kadeethum, F. Ballarin, Y. Choi, D. O'Malley, H. Yoon, N. Bouklas, [Non-intrusive reduced order modeling of natural convection in porous media using convolutional autoencoders: Comparison with linear subspace techniques](https://www.sciencedirect.com/science/article/pii/S0309170821002499), *Advances in Water Resources*, Volume 160, 104098, **2022**
+  1. C.F. Jekel, D.M. Sterbentz, S. Aubry, Y. Choi, D.A. White, J.L. Belof, [Using Conservation Laws to Infer Deep Learning Model Accuracy of Richtmyer-Meshkov Instabilities](https://arxiv.org/pdf/2208.11477.pdf) *arXiv preprint*, arXiv:2208.11477, **2022** 
+  1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen, [gLaSDI: Parametric physics-informed greedy latent space dynamics identification](https://arxiv.org/pdf/2204.12005.pdf), *arXiv preprint*, arXiv:2204.12005, **2022**
+  1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh, [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://arxiv.org/pdf/2203.16494.pdf), *arXiv preprint*, arXiv:2203.16494, **2022**
   1. Y. Kim, Y. Choi, D. Widemann, T. Zohdi, [A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder](https://www.sciencedirect.com/science/article/pii/S0021999121007361), *Journal of Computational Physics*, 451, 110841, **2022**. Also available as [arXiv:2009.11990](https://arxiv.org/pdf/2009.11990.pdf). 
+  1. T. Kadeethum, F. Ballarin, D. O'Malley, Y. Choi, N. Bouklas, H. Yoon, [Reduced order modeling with Barlow Twins self-supervised learning: Navigating the space between linear and nonlinear solution manifolds](https://arxiv.org/pdf/2202.05460v1.pdf), *arXiv preprint*, arXiv:2202.05460, **2022**
+  1. T. Kadeethum, F. Ballarin, Y. Choi, D. O'Malley, H. Yoon, N. Bouklas, [Non-intrusive reduced order modeling of natural convection in porous media using convolutional autoencoders: Comparison with linear subspace techniques](https://www.sciencedirect.com/science/article/pii/S0309170821002499), *Advances in Water Resources*, Volume 160, 104098, **2022**
 
 ---
 
