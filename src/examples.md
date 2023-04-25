@@ -333,7 +333,7 @@ run. For example,
 Then create parametric DMD using a greedy approach with physics-informed error
 indicator:
 
-* de_parametric_heat_conduction_greedy -build_database -rdim 16 -greedy-param-size 5 -greedysubsize 2 -greedyconvsize 3 -greedyreldifftol 0.01 
+* de_parametric_heat_conduction_greedy -build_database -rdim 16 -greedy-param-size 20 -greedysubsize 10 -greedyconvsize 15 -greedyreldifftol 0.0001 
 
 Then you can generate target temperature field with a specific $r$ and $c$
 values. Here we used $r=0.2$, $cx=0.2$, and $cy=0.2$ to generate a target
@@ -349,7 +349,7 @@ Now you can run the differential evolution using the parametric DMD:
 
 * de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit -de -de_f 0.9 -de_cr 0.9 -de_ps 50 -de_min_iter 10 -de_max_iter 100 -de_ct 0.001 (Run interpolative differential evolution to see if target FOM can be matched)
 
-The differential evolution should be able to find the following optimal control parameters: $r=0.2006289125692826$, $cx=0.2077455594628246$, and $0.2025402158388952$, which are very close to the true parameters that were used to generate the targer temperature field. The DMD temperature field at the last time step on this control parameters is shown in the picture above (the one on the right).
+The differential evolution should be able to find the following optimal control parameters, e.g., in Quartz: $r=0.2002090156652667$, $cx=0.2000936529076073$, and $cy=0.2316380936755735$, which are close to the true parameters that were used to generate the targer temperature field. The DMD temperature field at the last time step on this control parameters is shown in the picture above (the one on the right).
 
 
 _The code that generates the numerical results above can be found in
