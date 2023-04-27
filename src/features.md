@@ -163,7 +163,7 @@ following procedure is taken to find the best $\boldsymbol{A}$.
 
      where $*$ denotes the conjugate transpose,
      $\boldsymbol{W}\in\mathbb{C}^{n\times r}$,
-     $\boldsymbol{\Sigma}\in\mathbb{C}^{r\times r}$,
+     $\boldsymbol{\Omega}\in\mathbb{C}^{r\times r}$,
      $\boldsymbol{V}\in\mathbb{C}^{m\times r}$, and $r \leq m$.
 
   2. Because $\boldsymbol{U}^+ = \boldsymbol{A}\boldsymbol{U}^-$, using the
