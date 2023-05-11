@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 May 12th, 10 AM | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Data-assisted Algorithms for Inverse Random Source Scattering Problems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma727ee1da010b33a33687a00053940e4)
-May 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | TBD | [link]()
+May 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | Guided Deep Learning Manifold Linearization of Porous Media Flow Equations for Digital Twins Operations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb4d084fc6b15c374aefcf287b001b22f)
 May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
@@ -21,8 +21,8 @@ May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdu
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-May 5th | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link]() 
-May 4th | [Anima Anandkumar](https://www.eas.caltech.edu/people/anima) | CalTech | ML for Solving PDEs: Neural Operators on Function Spaces | [link]()
+May 5th | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://youtu.be/kEOl3WjS61A) 
+May 4th | [Anima Anandkumar](https://www.eas.caltech.edu/people/anima) | CalTech | ML for Solving PDEs: Neural Operators on Function Spaces | [link](https://youtu.be/y5EJr4ofGOc)
 Apr. 27th | [Paul Atzberger](http://web.math.ucsb.edu/~atzberg/pmwiki_intranet/index.php?n=AtzbergerHomePage.Homepage?setskin=atzbergerHomepage4) | UC Santa Barbara | Generative Machine Learning Approaches for Data-Driven Modeling and Reductions of Non-Linear Dynamics in Scientific Simulation | [link]()
 Apr. 14th | [Ameya Jagtap](https://sites.google.com/view/ameyadjagtap) | Brown University | Scientific Machine Learning through the Lens of Physics-Informed Neural Networks | [link](https://youtu.be/Dg7PiOppOoE) 
 Apr. 7th | [Matthias Chung](https://www.math.emory.edu/~mchun45) | Emory University | Big Data Inverse Problems — Promoting Sparsity and Learning to Regularize | [link](https://youtu.be/6h0TyY2Dubw) 
