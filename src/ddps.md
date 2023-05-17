@@ -13,11 +13,10 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 May 19th, 10 AM | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | Guided Deep Learning Manifold Linearization of Porous Media Flow Equations for Digital Twins Operations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb4d084fc6b15c374aefcf287b001b22f)
 May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | TBD | [link]()
-June 9th, 10 AM | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | Ohio State University | TBD | [link]()
+June 9th, 10 AM | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc4c57ba85b443c96ffb714139c6c1293)
 June 23rd, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
-<!--- TBD   | [Suparno Bhattacharyya](https://sites.psu.edu/suparnob/) | Penn State U. | TBD | [link]() -->
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
