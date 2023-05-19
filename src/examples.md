@@ -20,7 +20,7 @@ be visualized using the GLVis or VisIt visualization tools. See the [GLVis
 ](http://glvis.org) and [VisIt](https://visit-dav.github.io/visit-website/)
 websites for more details.
 
-Users are encouraged to submit any example codes and miniapps that they have
+Users are encouraged to submit any example codes and miniapps that they have 
 created and would like to share. <br>
 _Contact a member of the libROM team to report
 [bugs](https://github.com/LLNL/libROM/labels/bug)
