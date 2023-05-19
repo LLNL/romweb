@@ -34,10 +34,9 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="all1">All</option>
       <option id="diffusion">Diffusion</option>
       <option id="elasticity">Elasticity</option>
-      <option id="euler">Euler</option>
       <option id="navierstokes">Navier-Stokes</option>
       <option id="advection">Advection</option>
-      <option id="hydro">Hydro-dynamics</option>
+      <option id="euler">Euler</option>
       <option id="vlasov">Vlasov</option>
    </select>
 </div>
@@ -1123,17 +1122,17 @@ function update()
    // example codes
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
+   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
+   + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
+   + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("local_prom_dg_advection", (advection) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de) )
-   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
-   + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
-   + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos) & (no_optimizer))
+   + showElement("laghos", (euler) && (prom) && (global) && (hr) && (laghos) && (no_optimizer))
    + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1DSodShockTube", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("2DEulerVortexConvection", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
