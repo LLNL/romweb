@@ -206,10 +206,9 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
       <option id="all1">All</option>
       <option id="diffusion">Diffusion</option>
       <option id="elasticity">Elasticity</option>
-      <option id="euler">Euler</option>
       <option id="navierstokes">Navier-Stokes</option>
       <option id="advection">Advection</option>
-      <option id="hydro">Hydro-dynamics</option>
+      <option id="euler">Euler</option>
       <option id="vlasov">Vlasov</option>
    </select></p>
 </div>
@@ -264,7 +263,7 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
 <!-- ------------------------------------------------------------------------- -->
 
 <div id="poisson">
-<h2 id="poisson-problem">Poisson Problem</h2>
+<h2 id="global-prom-for-poisson-problem">Global pROM for Poisson problem</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/poisson.png" width="250">
 </a></p>
@@ -329,12 +328,12 @@ MFEM with a modification on the right hand side function.</em> </p>
 </div>
 <p><br></div></p>
 <div id="poisson_greedy_prom">
-<h2 id="greedy-prom-poisson-problem">Greedy PROM Poisson Problem</h2>
+<h2 id="greedy-prom-for-poisson-problem">Greedy pROM for Poisson problem</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/poisson_local_rom.png" width="250">
 </a></p>
 <p>This example code demonstrates physics-informed greedy sampling procedure of
-building local PROMs for the Poisson problem.  $$-\Delta u = f$$ with
+building local pROMs for the Poisson problem.  $$-\Delta u = f$$ with
 homogeneous Dirichlet boundary conditions.<br />
 The example parameterizes
 the righthand side with frequency variable, $\kappa$:</p>
@@ -354,7 +353,7 @@ numerical results summarized in the table below:</p>
 <ul>
 <li><strong>greedy step</strong>: ./poisson_local_rom_greedy -build_database -greedy-param-min 0.5 -greedy-param-max 3.0 -greedy-param-size 15 -greedysubsize 4 -greedyconvsize 6 -greedyrelerrortol 0.01 --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh"</li>
 </ul>
-<p>This particular greedy step generates local PROMs at the following 8 parameter points, i.e., 0.521923, 0.743108, 1.322449, 1.754950, 2.011140, 2.281129, 2.587821, 2.950198. </p>
+<p>This particular greedy step generates local pROMs at the following 8 parameter points, i.e., 0.521923, 0.743108, 1.322449, 1.754950, 2.011140, 2.281129, 2.587821, 2.950198. </p>
 <ul>
 <li><strong>reference FOM solution</strong>: ./poisson_local_rom_greedy -fom --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</li>
 <li><strong>online</strong>: ./poisson_local_rom_greedy -use_database -online --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</li>
@@ -406,7 +405,7 @@ MFEM with a modification on the right hand side function.</em> </p>
 </div>
 <p><br></div></p>
 <div id="heat_conduction">
-<h2 id="heat-conduction-problem">Heat conduction problem</h2>
+<h2 id="dmd-for-heat-conduction">DMD for heat conduction</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/heat_conduction.gif" width="350">
 </a></p>
@@ -449,7 +448,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="parametric_dmd_heat_conduction">
-<h2 id="parametric-dmd-heat-conduction-problem">Parametric DMD heat conduction problem</h2>
+<h2 id="parametric-dmd-for-heat-conduction">Parametric DMD for heat conduction</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/parametric_dmd_heat_conduction.gif" width="350">
 </a></p>
@@ -553,7 +552,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="optimal_control_dmd_heat_conduction">
-<h2 id="optimal-control-dmd-heat-conduction-with-differential-evolution">Optimal Control DMD heat conduction with Differential Evolution</h2>
+<h2 id="optimal-control-for-heat-conduction-with-dmd-and-differential-evolution">Optimal control for heat conduction with DMD and differential evolution</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/target_temperature.png" width="250">
 <img class="floatright" src="../img/examples/dmd_temperature.png" width="250">
@@ -617,7 +616,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="mixed_nonlinear_diffusion">
-<h2 id="mixed-nonlinear-diffusion">Mixed nonlinear diffusion</h2>
+<h2 id="prom-for-mixed-nonlinear-diffusion">pROM for mixed nonlinear diffusion</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/mixed_nonlinear_diffusion.gif" width="350">
 </a></p>
@@ -666,7 +665,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="1DdiscontinuousPulse">
-<h2 id="1d-linear-advection-discontinuous-pulses">1D linear advection - Discontinuous pulses</h2>
+<h2 id="dmd-for-linear-advection-with-discontinuous-pulses">DMD for linear advection with discontinuous pulses</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/1D_LinearAdvection_DiscontinuousWaves.gif" width="500">
 </a></p>
@@ -706,7 +705,7 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 </div>
 <p><br></div></p>
 <div id="dg_advection">
-<h2 id="advection">Advection</h2>
+<h2 id="dmd-for-advection">DMD for advection</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/dg_advection.gif" width="350">
 </a></p>
@@ -748,7 +747,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="local_prom_dg_advection">
-<h2 id="local-prom-advection">Local PROM Advection</h2>
+<h2 id="local-prom-for-advection">Local pROM for advection</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/local_prom_advection.gif" width="350">
 </a></p>
@@ -757,14 +756,14 @@ is based on
 <p>$$\frac{\partial u}{\partial t} + v\cdot\nabla u = 0,$$</p>
 <p>where $v$ is a given advection velocity. 
 We choose velocity function so that the dynamics form a spiral advection.</p>
-<p>This example illustrates how a parametric PROM can be built through local ROM
+<p>This example illustrates how a parametric pROM can be built through local ROM
 interpolation techniques. The following sequence of command lines will let you
-build such a parametric PROM, where the frequency of sinusoidal initial
+build such a parametric pROM, where the frequency of sinusoidal initial
 condition function is used as a parameter (its value is passed by a user through -ff command line option).</p>
-<p>Two local PROMs are constructed through -offline option with parameter values
-of 1.02 and 1.08, then the local PROM operators are interpolated to build a
-tailored local PROM at the frequency value of 1.05. Unlike the global ROM, the
-interpolated PROM has dimension that is the same as the individual PROM, i.e.,
+<p>Two local pROMs are constructed through -offline option with parameter values
+of 1.02 and 1.08, then the local pROM operators are interpolated to build a
+tailored local pROM at the frequency value of 1.05. Unlike the global ROM, the
+interpolated pROM has dimension that is the same as the individual pROM, i.e.,
 40 for this particular problem.</p>
 <ul>
 <li>rm -rf frequencies.txt</li>
@@ -779,9 +778,9 @@ interpolated PROM has dimension that is the same as the individual PROM, i.e.,
 <thead>
 <tr>
 <th>FOM solution time</th>
-<th>PROM solution time</th>
-<th>PROM speed-up</th>
-<th>PROM relative error</th>
+<th>pROM solution time</th>
+<th>pROM speed-up</th>
+<th>pROM relative error</th>
 </tr>
 </thead>
 <tbody>
@@ -803,7 +802,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="1DSodShockTube">
-<h2 id="1d-euler-equation-sod-shock-tube">1D Euler Equation, Sod Shock Tube</h2>
+<h2 id="dmd-for-sod-shock-tube">DMD for sod shock tube</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/1D_Euler_SodShockTube.gif" width="500">
 </a></p>
@@ -837,7 +836,7 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 </div>
 <p><br></div></p>
 <div id="2DEulerVortexConvection">
-<h2 id="2d-euler-equation-isentropic-vortex-convection">2D Euler Equation, Isentropic Vortex Convection</h2>
+<h2 id="dmd-for-isentropic-vortex-convection">DMD for isentropic vortex convection</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/2D_Euler_VortexConvection.gif" width="1300">
 </a></p>
@@ -876,7 +875,7 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 </div>
 <p><br></div></p>
 <div id="2DEulerRiemannProblem">
-<h2 id="2d-euler-equation-riemann-problem">2D Euler Equation, Riemann Problem</h2>
+<h2 id="dmd-for-riemann-problem">DMD for Riemann problem</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/2D_Euler_RiemannCase4.gif" width="1300">
 </a></p>
@@ -908,7 +907,7 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 </div>
 <p><br></div></p>
 <div id="dg_euler">
-<h2 id="euler-equation">Euler equation</h2>
+<h2 id="dmd-for-euler-equation">DMD for Euler equation</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/dg_euler.gif" width="350">
 </a></p>
@@ -972,7 +971,7 @@ MFEM.</em></p>
 </div>
 <p><br></div></p>
 <div id="2DNavierStokesProblem">
-<h2 id="2d-navierstokes-equations-lid-driven-square-cavity-problem">2D Navier–Stokes Equations, Lid-driven square cavity problem</h2>
+<h2 id="dmd-for-lid-driven-square-cavity">DMD for lid-driven square cavity</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/2D_NavierStokes_LidDrivenCavity_Re3200.png" width="1300">
 </a></p>
@@ -1004,11 +1003,11 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 </div>
 <p><br></div></p>
 <div id="1D1VVlasovEquation">
-<h2 id="1d-1v-vlasov-equation-two-stream-instability">1D-1V Vlasov Equation, Two-Stream Instability</h2>
+<h2 id="dmd-for-two-stream-instability">DMD for two-stream instability</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/1D1V_Vlasov_TwoStreamInstability.gif" width="1300">
 </a></p>
-<p>The 1D-1V Vlasov equatoin is solved with the initial condition given by</p>
+<p>The 1D-1V Vlasov equation is solved with the initial condition given by</p>
 <p>$$ f(x,v) = \frac{4}{\pi T} \left ( 1+\frac{1}{10} cos(2k\pi\frac{x}{L}) \right ) \left ( \exp\left( -\frac{(v-2)^2}{2T} \right) + \exp\left( -\frac{(v+2)^2}{2T} \right ) \right ), k=1, T=1, L=2\pi. $$</p>
 <p>The DMD is applied to accelerate the cavity flow simulation:</p>
 <table>
@@ -1033,12 +1032,12 @@ the <a href="http://hypar.github.io/">HyPar</a> page, e.g., go to Examples -&gt;
 </div>
 <p><br></div></p>
 <div id="linear_elasticity">
-<h2 id="linear-elasticity">Linear elasticity</h2>
+<h2 id="global-prom-for-linear-elasticity">Global pROM for linear elasticity</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/linear_elasticity.png" width="350">
 </a></p>
 <p>This example demonstrates how to apply projection-based ROM to a linear
-elasticity problem. The linear elasiticity problem describes a multi-material
+elasticity problem. The linear elasticity problem describes a multi-material
 cantilever beam. Specifically, the following weak form is solved:</p>
 <p>$$-\text{div}(\sigma(\boldsymbol{u})) = 0$$</p>
 <p>where</p>
@@ -1110,7 +1109,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="nonlinear_elasticity_prom">
-<h2 id="nonlinear-elasticity-prom">Nonlinear elasticity, PROM</h2>
+<h2 id="global-prom-for-nonlinear-elasticity">Global pROM for nonlinear elasticity</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/nlstructure.gif" width="350">
 </a></p>
@@ -1136,7 +1135,7 @@ fom and online phase to take any $\mu$ value between 3.9 and 4.1:</p>
 <tr>
 <th>$\mu$</th>
 <th>FOM solution time</th>
-<th>PROM online time</th>
+<th>pROM online time</th>
 <th>Speed-up</th>
 <th>Position relative error</th>
 </tr>
@@ -1217,7 +1216,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="nonlinear_elasticity_dmd">
-<h2 id="nonlinear-elasticity-dmd">Nonlinear elasticity, DMD</h2>
+<h2 id="dmd-for-nonlinear-elasticity">DMD for nonlinear elasticity</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/nonlinear_elasticity.gif" width="350">
 </a></p>
@@ -1260,7 +1259,7 @@ is based on
 </div>
 <p><br></div></p>
 <div id="laghos">
-<h2 id="laghos-rom-miniapp">Laghos ROM Miniapp</h2>
+<h2 id="global-prom-for-lagrangian-hydrodynamics">Global pROM for Lagrangian hydrodynamics</h2>
 <p><strong>Laghos</strong> (LAGrangian High-Order Solver) is a miniapp that solves the
 time-dependent Euler equations of compressible gas dynamics in a moving
 Lagrangian frame using unstructured high-order finite element spatial
@@ -1290,8 +1289,8 @@ initial density is given by $\rho = 1$. The initial energy is given by a delta
 function at the origin. The adiabatic index in the ideal gas equations of state
 is set $\gamma = 1.4$. The initial mesh is a uniform Catesian hexahedral mesh,
 which deforms over time. It can be seen that the radial symmetry is maintained
-in the shock wave propagation in both FOM and PROM simulations. One can
-reproduce the PROM numerical result, following the command line options
+in the shock wave propagation in both FOM and pROM simulations. One can
+reproduce the pROM numerical result, following the command line options
 described below:</p>
 <ul>
 <li><strong>offline</strong>: ./laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages</li>
@@ -1605,18 +1604,18 @@ function update()
 
    // example codes
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("poisson_greedy_prom", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
+   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
+   + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
+   + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("local_prom_dg_advection", (advection) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de) )
-   + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
-   + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer) )
-   + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer) )
-   + showElement("laghos", (hydro) && (prom) && (global) && (hr) && (laghos) & (no_optimizer))
+   + showElement("laghos", (euler) && (prom) && (global) && (hr) && (laghos) && (no_optimizer))
    + showElement("1DdiscontinuousPulse", (advection) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1DSodShockTube", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("2DEulerVortexConvection", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
