@@ -34,6 +34,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="all1">All</option>
       <option id="diffusion">Diffusion</option>
       <option id="elasticity">Elasticity</option>
+      <option id="wave">Wave</option>
       <option id="navierstokes">Navier-Stokes</option>
       <option id="advection">Advection</option>
       <option id="euler">Euler</option>
