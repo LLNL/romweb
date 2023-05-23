@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | TBD | [link]()
+May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4e74bfe98006568e554b43c4c594fceb)
 June 9th, 10 AM | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc4c57ba85b443c96ffb714139c6c1293)
 June 23rd, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
