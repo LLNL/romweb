@@ -382,15 +382,18 @@ reduced bases for two field varibles, $p$ and $\boldsymbol{v}$.
 One can run the following command line options to reproduce the DMD results
 summarized in the table below:
 
-* **offline1**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 0 -sh 0.25
-* **offline2**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 1 -sh 0.15
-* **merge**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -merge -ns 2
-* **offline3**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 2 -sh 0.2
-* **online**: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2
+* **offline1**: ./mixed_nonlinear_diffusion -p 1 -offline -id 0 -sh 0.25
+* **offline2**: ./mixed_nonlinear_diffusion -p 1 -offline -id 1 -sh 0.15
+* **merge**: ./mixed_nonlinear_diffusion -p 1 -merge -ns 2
+* **offline3**: ./mixed_nonlinear_diffusion -p 1 -offline -id 2 -sh 0.2
+* **online (DEIM)**: ./mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2
+* **online (S-OPT)**: ./mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2 -sopt
+* **online (EQP)**: ./mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -ns 2 -sh 0.2 -id 2 -eqp -maxnnls 30
 
-   | FOM solution time | ROM solution time | Speed-up       | Solution relative error |
-   | ----------------- | ----------------- | -------------- | ----------------------- |
-   |  41.68 sec        |  1.7 sec          |   24.5         |      1.6e-3             |
+   | FOM solution time | Hyper-reduction | ROM solution time | Speed-up       | Solution relative error |
+   | ----------------- | ----------------- | ----------------- | -------------- | ----------------------- |
+   |  68.59 sec        |  DEIM/S-OPT        | 3.6 sec          |   19.1        |      1.6e-3             |
+   |          |  EQP        | 0.38 sec          |   180.5         |      1.8e-3             |
 
 _The code that generates the numerical results above can be found in
 ([mixed_nonlinear_diffusion.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/mixed_nonlinear_diffusion.cpp)).
