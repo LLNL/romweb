@@ -251,8 +251,8 @@ parameterized by the center of circle and the radius, i.e.,
 
 $$u_0(x) =  
   \cases{
-  \displaystyle 2 & for \|x-c\| < r  \cr
-  \displaystyle 1 & for \|x-c\| $\ge$ r 
+  \displaystyle 2 & for $\|x-c\| < r$  \cr
+  \displaystyle 1 & for $\|x-c\| \ge r$ 
   }$$
 
 One can run the following command line options to reproduce the parametric DMD results
@@ -301,8 +301,8 @@ $u_0(x)$, is parameterized by the center of circle and the radius, i.e.,
 
 $$u_0(x) =  
   \cases{
-  \displaystyle 2 & for \|x-c\| < r  \cr
-  \displaystyle 1 & for \|x-c\| $\ge$ r 
+  \displaystyle 2 & for $\|x-c\| < r$  \cr
+  \displaystyle 1 & for $\|x-c\| \ge r$ 
   }$$
 
 The goal of the optimal control problem is to find an initial condition that
@@ -420,10 +420,10 @@ The initial condition, $u_0(x)$, is given by
 
 $$u_0(x) =  
   \cases{
-  \displaystyle exp\left (-log(2)\frac{(x+7)^2}{0.0009}\right ) & for -0.8 $\le$ x $\le$ -0.6 \cr
-  \displaystyle 1 & for -0.4 $\le$ x $\le$ -0.2 \cr
-  \displaystyle 1-|10(x-0.1)| & for 0 $\le$ x $\le$ 0.2 \cr
-  \displaystyle \sqrt{1-100(x-0.5)^2} & for 0.4 $\le$ x $\le$ 0.6 \cr
+  \displaystyle \exp\left (-\log(2)\frac{(x+7)^2}{0.0009}\right ) & for $-0.8 \le x \le -0.6$ \cr
+  \displaystyle 1 & for $-0.4 \le x \le -0.2$ \cr
+  \displaystyle 1-|10(x-0.1)| & for $0 \le x \le -0.2$ \cr
+  \displaystyle \sqrt{1-100(x-0.5)^2} & for $0.4 \le x \le 0.6$ \cr
   \displaystyle 0 & \text{otherwise}
   }$$
 
@@ -727,7 +727,9 @@ $$\mu = \frac{E}{2(1+\nu)}$$
 
 The boundary condition are $\boldsymbol{u}=\boldsymbol{0}$ on the fixed part of the boundary with attribute 1, and $\sigma(\boldsymbol{u})\cdot n = f$ on the remainder with f being a constant pull down vector on boundary elements with attribute 2, and zero otherwise. The geometry of the domain is assumed to be as follows:
 
-![](../img/examples/ex2-domain.png)
+<a target="_blank">
+<img class="floatnone" src="../img/examples/ex2-domain.png">
+</a>
 
 Three distinct steps are required, i.e., offline, merge, and online steps, to build global ROM for the linear elasticity problem. The general description of building a global ROM is explained in this [YouTube tutorial video](https://youtu.be/YlFrBP31riA). We parameterized Poisson's ratio ($\nu$) from 0.2 to 0.4.
 
