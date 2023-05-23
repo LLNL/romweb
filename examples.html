@@ -206,6 +206,7 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
       <option id="all1">All</option>
       <option id="diffusion">Diffusion</option>
       <option id="elasticity">Elasticity</option>
+      <option id="wave">Wave</option>
       <option id="navierstokes">Navier-Stokes</option>
       <option id="advection">Advection</option>
       <option id="euler">Euler</option>
@@ -631,16 +632,19 @@ reduced bases for two field varibles, $p$ and $\boldsymbol{v}$.</p>
 <p>One can run the following command line options to reproduce the DMD results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 0 -sh 0.25</li>
-<li><strong>offline2</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 1 -sh 0.15</li>
-<li><strong>merge</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -merge -ns 2</li>
-<li><strong>offline3</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -offline -id 2 -sh 0.2</li>
-<li><strong>online</strong>: ./mixed_nonlinear_diffusion -m ../dependencies/mfem/data/inline-quad.mesh -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2</li>
+<li><strong>offline1</strong>: ./mixed_nonlinear_diffusion -p 1 -offline -id 0 -sh 0.25</li>
+<li><strong>offline2</strong>: ./mixed_nonlinear_diffusion -p 1 -offline -id 1 -sh 0.15</li>
+<li><strong>merge</strong>: ./mixed_nonlinear_diffusion -p 1 -merge -ns 2</li>
+<li><strong>offline3</strong>: ./mixed_nonlinear_diffusion -p 1 -offline -id 2 -sh 0.2</li>
+<li><strong>online (DEIM)</strong>: ./mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2</li>
+<li><strong>online (S-OPT)</strong>: ./mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2 -sopt</li>
+<li><strong>online (EQP)</strong>: ./mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -ns 2 -sh 0.2 -id 2 -eqp -maxnnls 30</li>
 </ul>
 <table>
 <thead>
 <tr>
 <th>FOM solution time</th>
+<th>Hyper-reduction</th>
 <th>ROM solution time</th>
 <th>Speed-up</th>
 <th>Solution relative error</th>
@@ -648,10 +652,18 @@ summarized in the table below:</p>
 </thead>
 <tbody>
 <tr>
-<td>41.68 sec</td>
-<td>1.7 sec</td>
-<td>24.5</td>
+<td>68.59 sec</td>
+<td>DEIM/S-OPT</td>
+<td>3.6 sec</td>
+<td>19.1</td>
 <td>1.6e-3</td>
+</tr>
+<tr>
+<td></td>
+<td>EQP</td>
+<td>0.38 sec</td>
+<td>180.5</td>
+<td>1.8e-3</td>
 </tr>
 </tbody>
 </table>
