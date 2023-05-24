@@ -532,7 +532,7 @@ summarized in the table below:
 
    | FOM solution time | pROM solution time | pROM speed-up | pROM relative error |  
    | ----------------- | ------------------ | -------------- | ------------------ |
-   |  1.73 sec        |  1.53e-2 sec          |    113.1        |       4.33e-4      |
+   |  1.49 sec        |  3.75e-3 sec          |    397.3        |       4.33e-4      |
 
 
 _The code that generates the numerical results above can be found in
