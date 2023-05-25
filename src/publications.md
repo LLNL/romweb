@@ -3,6 +3,7 @@
 #### 2023
   1. Q.A. Huhn, M.E. Tano, J.C. Ragusa, Y. Choi, [Parametric dynamic mode decomposition for reduced order modeling](https://www.sciencedirect.com/science/article/pii/S0021999122009159), *Journal of Computational Physics*, 475, 111852, **2023**
   1. S.W Cheung, Y. Choi, D. Copeland, K. Huynh, [Local Lagrangian reduced-order modeling for Rayleigh-Taylor instability by solution manifold decomposition](https://www.sciencedirect.com/science/article/pii/S0021999122007185), *Journal of Computational Physics*, 472, 111655, **2023**
+  1. A.N. Diaz, Y. Choi, M. Heinkenschloss, [A fast and accurate domain-decomposition nonlinear manifold reduced order model](https://arxiv.org/pdf/2305.15163.pdf), *arXiv preprint*, arXiv:2305.15163, **2023**
 
 #### 2022
   1. T. Kadeethum, F. Ballarin, D. O'Malley, Y. Choi, N. Bouklas, H. Yoon, [Reduced order modeling for flow and transport problems with Barlow Twins self-supervised learning](https://www.nature.com/articles/s41598-022-24545-3), *Scientific Reports*, 12(1), **2022**

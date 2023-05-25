@@ -41,15 +41,16 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 Date         | Message
 ------------ | -----------------------------------------------------------------
 June 3, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present at [SIAM OP23](https://meetings.siam.org/sess/dsp_talk.cfm?p=127228) 
+May 25, 2023 | [DD-NMROM](https://arxiv.org/pdf/2305.15163.pdf) preprint is available in arXiv
 Mar 29, 2023 | [AAAI Spring Symposium](http://cogsys.org/symposium/discovery-2022/) was organized
-Mar 10, 2023 | [gLaSDI](https://github.com/LLNL/gLaSDI) open source code is available in gitHub.
-Mar 6, 2023 | [LaSDI](https://github.com/LLNL/LaSDI) open source code is available in gitHub.
-Feb 15, 2023 | [parametric DMD](https://www.sciencedirect.com/science/article/pii/S0021999122009159) paper is published in JCP.
-Oct 17, 2022 | [Rayleigh-Taylor instability ROM](https://doi.org/10.1016/j.jcp.2022.111655) paper is published in JCP.
-Oct 1, 2022 | [CWROM stress lattice](https://www.sciencedirect.com/science/article/abs/pii/S0045782522005266) paper is published in CMAME.
-Mar 29, 2022 | [S-OPT](https://arxiv.org/pdf/2203.16494.pdf) preprint is available in arXiv.
-Nov 19, 2021 | [NM-ROM](https://www.sciencedirect.com/science/article/pii/S0021999121007361) paper is published in JCP.
-Nov 10, 2021 | [Laghos ROM](https://www.sciencedirect.com/science/article/pii/S0045782521005739) is published at CMAME. 
+Mar 10, 2023 | [gLaSDI](https://github.com/LLNL/gLaSDI) open source code is available in gitHub
+Mar 6, 2023 | [LaSDI](https://github.com/LLNL/LaSDI) open source code is available in gitHub
+Feb 15, 2023 | [parametric DMD](https://www.sciencedirect.com/science/article/pii/S0021999122009159) paper is published in JCP
+Oct 17, 2022 | [Rayleigh-Taylor instability ROM](https://doi.org/10.1016/j.jcp.2022.111655) paper is published in JCP
+Oct 1, 2022 | [CWROM stress lattice](https://www.sciencedirect.com/science/article/abs/pii/S0045782522005266) paper is published in CMAME
+Mar 29, 2022 | [S-OPT](https://arxiv.org/pdf/2203.16494.pdf) preprint is available in arXiv
+Nov 19, 2021 | [NM-ROM](https://www.sciencedirect.com/science/article/pii/S0021999121007361) paper is published in JCP
+Nov 10, 2021 | [Laghos ROM](https://www.sciencedirect.com/science/article/pii/S0045782521005739) is published at CMAME
 
 ## libROM tutorials in YouTube
 Date         | Title
