@@ -14,6 +14,7 @@ When           | Speaker        |  Institution      | Title                     
 May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4e74bfe98006568e554b43c4c594fceb)
 June 9th, 10 AM | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc4c57ba85b443c96ffb714139c6c1293)
 June 23rd, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | TBD | [link]()
+July 7th, 10 AM | [Alvaro Coutinho](http://www.nacad.ufrj.br/en) | Federal University of Rio de Janeiro | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
