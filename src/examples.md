@@ -442,7 +442,7 @@ the [HyPar](http://hypar.github.io/) page, e.g., go to Examples -> libROM Exampl
 <div id="dmd_wave" markdown="1">
 ## DMD for wave equation
 <a target="_blank">
-<img class="floatright" src="../img/examples/ex23.png" width="350">
+<img class="floatright" src="../img/examples/wave.gif" width="350">
 </a>
 
 For a given initial condition, i.e., $u(0,x) = u_0(x)$, 
