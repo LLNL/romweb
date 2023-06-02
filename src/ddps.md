@@ -14,7 +14,7 @@ When           | Speaker        |  Institution      | Title                     
 May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | Scaling Up AI-driven Scientific Discovery via Embedding Physics Modeling into End-to-end Learning and Harnessing Random Projection | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4e74bfe98006568e554b43c4c594fceb)
 June 9th, 10 AM | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc4c57ba85b443c96ffb714139c6c1293)
 June 23rd, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | TBD | [link]()
-July 7th, 10 AM | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | TBD | [link]()
+July 7th, 10 AM | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m9c873b218bf8946787570073f4b8ffe2)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
