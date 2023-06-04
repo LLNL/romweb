@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-May 26th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | Scaling Up AI-driven Scientific Discovery via Embedding Physics Modeling into End-to-end Learning and Harnessing Random Projection | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4e74bfe98006568e554b43c4c594fceb)
 June 9th, 10 AM | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc4c57ba85b443c96ffb714139c6c1293)
 June 23rd, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | TBD | [link]()
 July 7th, 10 AM | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m9c873b218bf8946787570073f4b8ffe2)
@@ -21,6 +20,7 @@ July 7th, 10 AM | [Alvaro Coutinho](https://scholar.google.com/citations?user=cc
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+May 26th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | Scaling Up AI-driven Scientific Discovery via Embedding Physics Modeling into End-to-end Learning and Harnessing Random Projection | [link](https://youtu.be/kLy8zc7TWvM)
 May 19th | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | Guided Deep Learning Manifold Linearization of Porous Media Flow Equations for Digital Twins Operations | [link]()
 May 12th | [Ying Liang](https://www.math.purdue.edu/~liang402/) | Purdue University | Data-assisted Algorithms for Inverse Random Source Scattering Problems | [link](https://youtu.be/dJzmoGL2Vcc)
 May 5th | [Lori Brady](https://www.ce.jhu.edu/lori/) | Johns Hopkins University | ML-driven Models for Material Microstructure and Mechanical Behavior | [link](https://youtu.be/kEOl3WjS61A) 
