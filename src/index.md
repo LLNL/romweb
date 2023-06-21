@@ -40,6 +40,7 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+June 21, 2023 | [gLaSDI](https://authors.elsevier.com/c/1hHaB508HwNZf) paper is published in JCP
 June 3, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present at [SIAM OP23](https://meetings.siam.org/sess/dsp_talk.cfm?p=127228) 
 May 25, 2023 | [DD-NMROM](https://arxiv.org/pdf/2305.15163.pdf) preprint is available in arXiv
 Mar 29, 2023 | [AAAI Spring Symposium](http://cogsys.org/symposium/discovery-2022/) was organized
