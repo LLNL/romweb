@@ -11,6 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
+June 30th, 10 AM | [Peng Chen](https://www.cc.gatech.edu/people/peng-chen) | Georgia Institute of Technology | Derivative-informed neural operators | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9218a7ff33b8d30a1b90773be92c27b)
 July 7th, 10 AM | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m9c873b218bf8946787570073f4b8ffe2)
 July 14th, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | Data-driven multi-scale simulations for materials-by-design of energetic materials | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9736bd42cc53601d51d3fbd2f533324)
 July 21st, 10 AM | [Thomas Beckers](https://www.tbeckers.com) | Vanderbilt University | Physics-enhanced Gaussian Processes for Learning of Electromechanical Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcdcc9e338376645248776b2e0e70a231)
