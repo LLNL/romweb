@@ -11,16 +11,18 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-June 30th, 10 AM | [Peng Chen](https://www.cc.gatech.edu/people/peng-chen) | Georgia Institute of Technology | Derivative-informed neural operators | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9218a7ff33b8d30a1b90773be92c27b)
-July 7th, 10 AM | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m9c873b218bf8946787570073f4b8ffe2)
 July 14th, 10 AM | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | Data-driven multi-scale simulations for materials-by-design of energetic materials | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9736bd42cc53601d51d3fbd2f533324)
 July 21st, 10 AM | [Thomas Beckers](https://www.tbeckers.com) | Vanderbilt University | Physics-enhanced Gaussian Processes for Learning of Electromechanical Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcdcc9e338376645248776b2e0e70a231)
+Sep 1st, 10 AM | [Eleni Chatzi](https://www.chatzi.ibk.ethz.ch/) | ETH Zürich | TBD | [link]()
+Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+July 7th | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link]()
+June 30th | [Peng Chen](https://www.cc.gatech.edu/people/peng-chen) | Georgia Institute of Technology | Derivative-informed neural operators | [link](https://youtu.be/7-44GcFtaiI)
 June 9th | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://youtu.be/w3bddwbyQUs)
 May 26th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | Scaling Up AI-driven Scientific Discovery via Embedding Physics Modeling into End-to-end Learning and Harnessing Random Projection | [link](https://youtu.be/kLy8zc7TWvM)
 May 19th | [Eduardo Gildin](https://engineering.tamu.edu/petroleum/profiles/egildin.html) | TAMU | Guided Deep Learning Manifold Linearization of Porous Media Flow Equations for Digital Twins Operations | [link](https://youtu.be/-EGl-kmvuao)
