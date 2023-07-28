@@ -12,6 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Sep 1st, 10 AM | [Eleni Chatzi](https://www.chatzi.ibk.ethz.ch/) | ETH Zürich | TBD | [link]()
+Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | TBD | [link]()
 Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
@@ -21,7 +22,7 @@ Date      | Speaker        |  Institution      | Title                         |
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 July 21st | [Thomas Beckers](https://www.tbeckers.com) | Vanderbilt University | Physics-enhanced Gaussian Processes for Learning of Electromechanical Systems | [link](https://youtu.be/xtbEXQzq26c)
 July 14th | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | Data-driven multi-scale simulations for materials-by-design of energetic materials | [link]()
-July 7th | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link]()
+July 7th | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link](https://youtu.be/lskliU62i7E)
 June 30th | [Peng Chen](https://www.cc.gatech.edu/people/peng-chen) | Georgia Institute of Technology | Derivative-informed neural operators | [link](https://youtu.be/7-44GcFtaiI)
 June 9th | [Dongbin Xiu](https://people.math.osu.edu/xiu.16/) | The Ohio State University | Data-driven Modeling of Unknown Systems with Deep Neural Networks | [link](https://youtu.be/w3bddwbyQUs)
 May 26th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang) | Purdue University | Scaling Up AI-driven Scientific Discovery via Embedding Physics Modeling into End-to-end Learning and Harnessing Random Projection | [link](https://youtu.be/kLy8zc7TWvM)
