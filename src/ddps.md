@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Sep 1st, 10 AM | [Eleni Chatzi](https://www.chatzi.ibk.ethz.ch/) | ETH Zürich | TBD | [link]()
-Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | TBD | [link]()
+Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link]()
 Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
