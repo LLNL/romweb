@@ -11,10 +11,12 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-August 18th, 10 AM | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbf88c7cb05e83c41fe90cabc48bc244b)
+Aug 18th, 10 AM | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbf88c7cb05e83c41fe90cabc48bc244b)
+Aug 25th, 10 AM | [Khalid Jawed](https://structures.computer/research-menu) | UCLA | TBD | [link]()
 Sep 1st, 10 AM | [Eleni Chatzi](https://www.chatzi.ibk.ethz.ch/) | ETH Zürich | TBD | [link]()
 Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link]()
 Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m81d3bc8ef88f06260c87f6e9eea8c6a3)
+Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | TBD |[link]()
 Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
