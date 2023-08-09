@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-August 18th, 10 AM | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | TBD | [link]()
+August 18th, 10 AM | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbf88c7cb05e83c41fe90cabc48bc244b)
 Sep 1st, 10 AM | [Eleni Chatzi](https://www.chatzi.ibk.ethz.ch/) | ETH Zürich | TBD | [link]()
 Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link]()
 Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m81d3bc8ef88f06260c87f6e9eea8c6a3)
