@@ -13,7 +13,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Aug 18th, 10 AM | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbf88c7cb05e83c41fe90cabc48bc244b)
 Aug 25th, 10 AM | [Khalid Jawed](https://structures.computer/research-menu) | UCLA | Reduced Order Modeling and Inverse Design of Flexible Structures by Machine Learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8803badac3187cbfb45dca7e0d7211f4)
-Sep 1st, 10 AM | [Eleni Chatzi](https://www.chatzi.ibk.ethz.ch/) | ETH Zürich | TBD | [link]()
+Sep 1st, 10 AM | [Eleni Chatzi](https://scholar.google.com/citations?user=2n9Mwt8AAAAJ&hl=en) | ETH Zürich | TBD | [link]()
 Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link]()
 Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m81d3bc8ef88f06260c87f6e9eea8c6a3)
 Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | TBD |[link]()
