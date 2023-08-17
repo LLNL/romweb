@@ -1,6 +1,7 @@
 # Publications
 
 #### 2023
+  1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof, [GPLaSDI: Gaussian Process-based Interpretable Latent Space Dynamics Identification through Deep Autoencoder](https://arxiv.org/pdf/2308.05882.pdf), *arXiv preprint*, arXiv:2308.05882, **2023**
   1. T. Kadeethum, J.D. Jakeman, Y. Choi, N. Bouklas, H. Yoon, [Epistemic uncertainty-aware Barlow twins reduced order modeling for nonlinear contact problems](https://ieeexplore.ieee.org/abstract/document/10159524), *IEEE Access*, **2023**
   1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen, [gLaSDI: Parametric physics-informed greedy latent space dynamics identification](https://www.sciencedirect.com/science/article/abs/pii/S0021999123003625), *Journal of Computational Physics*, 489, 112267, **2023**
   1. S.W. Cheung, Y. Choi, H.K. Springer, T. Kadeethum, [Data-scarce surrogate modeling of shock-induced pore collapse process](https://arxiv.org/pdf/2306.00184.pdf), *arXiv preprint*, arXiv:2306.00184, **2023**

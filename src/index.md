@@ -42,6 +42,7 @@ Date         | Message
 ------------ | -----------------------------------------------------------------
 Aug 26, 2023 | [Siu Wun Cheung](https://tonycsw2905.github.io) will present at [ICIAM2023](https://iciam2023.org) 
 Aug 26, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present at [ICIAM2023](https://iciam2023.org) 
+Aug 10, 2023 | [GPLaSDI](https://arxiv.org/pdf/2308.05882.pdf) arXiv paper is available
 Aug 8, 2023 | [pylibROM](https://github.com/LLNL/pylibROM) open source code is available in gitHub
 July 30, 2023 | [GPLaSDI](https://github.com/LLNL/GPLaSDI) open source code is available in gitHub
 June 22, 2023 | [Uncertainty-aware Barlow twins ROM](https://ieeexplore.ieee.org/abstract/document/10159524) paper is published in IEEE Access
