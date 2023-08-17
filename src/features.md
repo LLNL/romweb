@@ -186,7 +186,7 @@ following procedure is taken to find the best $\boldsymbol{A}$.
 
   4. Let the eigen-decomposition of $\tilde{\boldsymbol{A}}_r$ to be
 
-     $$\tilde{\boldsymbol{A}}_r \boldsymbol{X} = \boldsymbol{\Lambda}\boldsymbol{X}$$
+     $$\tilde{\boldsymbol{A}}_r \boldsymbol{X} = \boldsymbol{X}\boldsymbol{\Lambda}$$
 
      and set either $\boldsymbol{\Phi} = \boldsymbol{W}\boldsymbol{X}$ or $\boldsymbol{\Phi} = \boldsymbol{U}^+ \boldsymbol{V} \boldsymbol{\Omega}^{-1}\boldsymbol{X}$, then the DMD
      solution at time, $t$, can be found as
