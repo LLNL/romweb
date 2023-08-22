@@ -19,6 +19,7 @@ Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishn
 Oct 6th, 10 AM | [Thomas Chuna](https://murillogroupmsu.com/thomas-chuna/) | Michigan State University | TBD | [link]()
 Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | TBD | [link]()
 Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
+Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
