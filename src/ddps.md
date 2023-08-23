@@ -26,7 +26,7 @@ Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twe
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Aug 18th | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link]()
+Aug 18th | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link](https://youtu.be/SskAf9JBykg)
 July 21st | [Thomas Beckers](https://www.tbeckers.com) | Vanderbilt University | Physics-enhanced Gaussian Processes for Learning of Electromechanical Systems | [link](https://youtu.be/xtbEXQzq26c)
 July 14th | [H.S. Udaykumar](https://engineering.uiowa.edu/people/hs-udaykumar) | University of Iowa | Data-driven multi-scale simulations for materials-by-design of energetic materials | [link](https://youtu.be/pk6KhM1drdc)
 July 7th | [Alvaro Coutinho](https://scholar.google.com/citations?user=ccdLG5AAAAAJ&hl=en) | Federal University of Rio de Janeiro | Enhancing data-driven workflows for complex simulations | [link](https://youtu.be/lskliU62i7E)
