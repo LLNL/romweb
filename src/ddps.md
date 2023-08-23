@@ -17,6 +17,7 @@ Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operat
 Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m81d3bc8ef88f06260c87f6e9eea8c6a3)
 Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | TBD |[link]()
 Oct 6th, 10 AM | [Thomas Chuna](https://murillogroupmsu.com/thomas-chuna/) | Michigan State University | TBD | [link]()
+Oct 13th, 10 AM | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | TBD | [link]()
 Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | TBD | [link]()
 Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
 Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | TBD | [link]()
