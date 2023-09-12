@@ -11,8 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Sep 1st, 10 AM | [Eleni Chatzi](https://scholar.google.com/citations?user=2n9Mwt8AAAAJ&hl=en) | ETH Zürich | Twinning and Model Discovery for Engineered Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf9c34950005b34df4e504ce4624a8a04)
-Sep 8th, 10 AM | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link]()
 Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m81d3bc8ef88f06260c87f6e9eea8c6a3)
 Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | TBD |[link]()
 Oct 6th, 10 AM | [Thomas Chuna](https://murillogroupmsu.com/thomas-chuna/) | Michigan State University | Data driven observations of system equilibration  | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me8b553ea7c316355e23cc5e0d014e9ca)
@@ -27,6 +25,8 @@ Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twe
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Sep 8th | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link]()
+Sep 1st | [Eleni Chatzi](https://scholar.google.com/citations?user=2n9Mwt8AAAAJ&hl=en) | ETH Zürich | Twinning and Model Discovery for Engineered Systems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf9c34950005b34df4e504ce4624a8a04)
 Aug 25th | [Khalid Jawed](https://structures.computer/research-menu) | UCLA | Reduced Order Modeling and Inverse Design of Flexible Structures by Machine Learning | [link](https://youtu.be/cHmd7SsYO2U?si=sXaAb08QCbsbBwMR)
 Aug 18th | [Amir Arzani](https://bio.mech.utah.edu) | University of Utah | A flexible and generalizable XAI framework for scientific deep learning | [link](https://youtu.be/SskAf9JBykg)
 July 21st | [Thomas Beckers](https://www.tbeckers.com) | Vanderbilt University | Physics-enhanced Gaussian Processes for Learning of Electromechanical Systems | [link](https://youtu.be/xtbEXQzq26c)
