@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m81d3bc8ef88f06260c87f6e9eea8c6a3)
-Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | TBD |[link]()
+Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics |[link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md42aec3c4f3b3899b6c49261f495c6e6)
 Oct 6th, 10 AM | [Thomas Chuna](https://murillogroupmsu.com/thomas-chuna/) | Michigan State University | Data driven observations of system equilibration  | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me8b553ea7c316355e23cc5e0d014e9ca)
 Oct 13th, 10 AM | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | TBD | [link]()
 Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mce7bdbdfa76ad4b2bc24e40aa7b538b2)
