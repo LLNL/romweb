@@ -15,7 +15,7 @@ Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/peopl
 Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | TBD |[link]()
 Oct 6th, 10 AM | [Thomas Chuna](https://murillogroupmsu.com/thomas-chuna/) | Michigan State University | Data driven observations of system equilibration  | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me8b553ea7c316355e23cc5e0d014e9ca)
 Oct 13th, 10 AM | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | TBD | [link]()
-Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | TBD | [link]()
+Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mce7bdbdfa76ad4b2bc24e40aa7b538b2)
 Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]()
 Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | TBD | [link]()
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | TBD | [link]()
