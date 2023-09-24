@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Sep 22nd, 10 AM | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb18c3beb0fc98475ee2692f31f317740)
 Sep 29th, 10 AM | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics |[link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md42aec3c4f3b3899b6c49261f495c6e6)
 Oct 6th, 10 AM | [Thomas Chuna](https://murillogroupmsu.com/thomas-chuna/) | Michigan State University | Data driven observations of system equilibration  | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me8b553ea7c316355e23cc5e0d014e9ca)
 Oct 13th, 10 AM | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | TBD | [link]()
@@ -20,7 +19,7 @@ Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | Universi
 Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | TBD | [link]()
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | TBD | [link]()
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | TBD | [link]()
-Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | TBD | [link]()
+Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficientwebexx | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
@@ -28,6 +27,7 @@ Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCS
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Sep 22nd | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link]()
 Sep 8th | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link](https://www.youtube.com/watch?v=g4PC1H_hBeU)
 Sep 1st | [Eleni Chatzi](https://scholar.google.com/citations?user=2n9Mwt8AAAAJ&hl=en) | ETH Zürich | Twinning and Model Discovery for Engineered Systems | [link](https://youtu.be/7Izl65CIHBg?si=rNVDNMSYJFD6hdlj)
 Aug 25th | [Khalid Jawed](https://structures.computer/research-menu) | UCLA | Reduced Order Modeling and Inverse Design of Flexible Structures by Machine Learning | [link](https://youtu.be/cHmd7SsYO2U?si=sXaAb08QCbsbBwMR)
