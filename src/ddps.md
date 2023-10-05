@@ -18,7 +18,7 @@ Oct 27th, 10 AM | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | Universi
 Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | TBD | [link]()
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | TBD | [link]()
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | TBD | [link]()
-Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficientwebexx | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
+Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
