@@ -11,8 +11,8 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct 13th, 10 AM | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | TBD | [link]()
-Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mce7bdbdfa76ad4b2bc24e40aa7b538b2)
+Oct 13th, 10 AM | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf9fc935b2ecfdf58802bc5d8045fed61)
+Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3711d64198107736d3c2b171027ab160)
 Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m422fddd2245fe3cfb3ce7bbe6d9593c1)
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m6389215a73f372930dc564748421102b)
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | TBD | [link]()
