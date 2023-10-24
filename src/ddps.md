@@ -15,6 +15,7 @@ Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHU
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m6389215a73f372930dc564748421102b)
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | TBD | [link]()
 Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
+Dec 15th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | TBD | [link]()
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
