@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct 20th, 10 AM | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3711d64198107736d3c2b171027ab160)
 Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m422fddd2245fe3cfb3ce7bbe6d9593c1)
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m6389215a73f372930dc564748421102b)
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | TBD | [link]()
@@ -24,7 +23,8 @@ Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link](
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Oct 13th | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | Data-Driven Closure Modeling Using Derivative-free Kalman Methods | [link]()
+Oct 20th | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link]()
+Oct 13th | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | Data-Driven Closure Modeling Using Derivative-free Kalman Methods | [link](https://youtu.be/h4of8jhclSQ?si=acl34zKTglu2AsRT)
 Sep 29th | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics |[link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md42aec3c4f3b3899b6c49261f495c6e6)
 Sep 22nd | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://youtu.be/1OI4XD9qYgM?si=2ps0kzABoUcgrj-U)
 Sep 8th | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link](https://www.youtube.com/watch?v=g4PC1H_hBeU)
