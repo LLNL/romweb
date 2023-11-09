@@ -11,11 +11,11 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2023
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov 3rd, 10 AM | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m422fddd2245fe3cfb3ce7bbe6d9593c1)
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m6389215a73f372930dc564748421102b)
-Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | TBD | [link]()
+Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link]()
 Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
-Dec 15th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | TBD | [link]()
+Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | TBD | [link]()
+Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link]()
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
@@ -24,9 +24,10 @@ Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link](
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Nov 3rd | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link]()
 Oct 20th | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link]()
 Oct 13th | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | Data-Driven Closure Modeling Using Derivative-free Kalman Methods | [link](https://youtu.be/h4of8jhclSQ?si=acl34zKTglu2AsRT)
-Sep 29th | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics |[link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md42aec3c4f3b3899b6c49261f495c6e6)
+Sep 29th | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics | [link](https://youtu.be/u_4gyb9Tesk?si=akf-qgzX3jeJ36tn)
 Sep 22nd | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://youtu.be/1OI4XD9qYgM?si=2ps0kzABoUcgrj-U)
 Sep 8th | [Lu Lu](https://lu.seas.upenn.edu/) | Yale | Deep neural operators with reliable extrapolation for multiphysics, multiscale & multifidelity problems | [link](https://www.youtube.com/watch?v=g4PC1H_hBeU)
 Sep 1st | [Eleni Chatzi](https://scholar.google.com/citations?user=2n9Mwt8AAAAJ&hl=en) | ETH Zürich | Twinning and Model Discovery for Engineered Systems | [link](https://youtu.be/7Izl65CIHBg?si=rNVDNMSYJFD6hdlj)
