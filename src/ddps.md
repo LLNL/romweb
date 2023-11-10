@@ -14,7 +14,7 @@ When           | Speaker        |  Institution      | Title                     
 Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m6389215a73f372930dc564748421102b)
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link]()
 Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
-Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | TBD | [link]()
+Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m57c437fe97f46f0be35a317d23d7e5da)
 Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8fe87aefdb029fb6c6a4aa0a5234c050)
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
@@ -24,7 +24,8 @@ Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link](
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Nov 3rd | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link]()
+Nov 3rd | [Michael E. Glinsky](http://qitech.biz) | BNZ Energy Inc. | A physics-based Reduced Order Model capturing the topology of dynamical manifolds | [link](https://youtu.be/cWlt6m6dPRk?si=jjn5ivK-mOz7lFrO)
+Nov 3rd | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link](https://youtu.be/7gCVhw_3Gko?si=TBqFFajOqfvpIo6b)
 Oct 20th | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://youtu.be/16jtJDiJIuU?si=1g-lLzAMw93UleG4)
 Oct 13th | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | Data-Driven Closure Modeling Using Derivative-free Kalman Methods | [link](https://youtu.be/h4of8jhclSQ?si=acl34zKTglu2AsRT)
 Sep 29th | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics | [link](https://youtu.be/u_4gyb9Tesk?si=akf-qgzX3jeJ36tn)
