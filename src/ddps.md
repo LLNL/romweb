@@ -15,7 +15,7 @@ Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twe
 Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link]()
 Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
 Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | TBD | [link]()
-Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link]()
+Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8fe87aefdb029fb6c6a4aa0a5234c050)
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
@@ -25,7 +25,7 @@ Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link](
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Nov 3rd | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link]()
-Oct 20th | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link]()
+Oct 20th | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://youtu.be/16jtJDiJIuU?si=1g-lLzAMw93UleG4)
 Oct 13th | [Jinlong Wu](https://www.jinlongwu.org) | University of Wisconsin-Madison | Data-Driven Closure Modeling Using Derivative-free Kalman Methods | [link](https://youtu.be/h4of8jhclSQ?si=acl34zKTglu2AsRT)
 Sep 29th | [Krishna Garikipati](https://sites.google.com/umich.edu/krishna/) | University of Michigan | Fokker-Planck-Inverse Reinforcement Learning: A physics-constrained approach to Markov Decision Process models with applications to cancer cell dynamics | [link](https://youtu.be/u_4gyb9Tesk?si=akf-qgzX3jeJ36tn)
 Sep 22nd | [Alice Cicirello](https://sites.google.com/view/dvugroup/people/dr-alice-cicirello) | University of Cambridge | Challenges and opportunities for integrating physics-knowledge in machine learning strategies: friction identification case study | [link](https://youtu.be/1OI4XD9qYgM?si=2ps0kzABoUcgrj-U)
