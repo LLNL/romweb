@@ -390,7 +390,7 @@ summarized in the table below:
 
    | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
    | ----------------- | --------------- | -------------- | ------------------ |
-   |  2.9 sec          |  40.4 sec       |   1.8e-3 sec   |      2.8e-4        |
+   |  16.8 sec          |  5.2e-1 sec       |   1.2e-2 sec   |      2.4e-4        |
 
 _The code that generates the numerical results above can be found in
 ([heat_conduction_dmdc.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction_dmdc.cpp)).
