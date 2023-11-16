@@ -157,7 +157,7 @@
                 
                 
                 <li>
-                    <a href="https://github.com/LLNL/libROM/">
+                    <a href="https://github.com/LLNL/libROM">
                         
                             <i class="fa fa-github-square"></i>
                         
@@ -611,6 +611,52 @@ Now you can run the differential evolution using the parametric DMD:</p>
 (<a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/de_parametric_heat_conduction_greedy.cpp">de_parametric_heat_conduction_greedy.cpp</a>).
 The
 <a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/de_parametric_heat_conduction_greedy.cpp">de_parametric_heat_conduction_greedy.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp">ex16p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="dmdc_heat_conduction">
+<h2 id="dmdc-for-heat-conduction">DMDc for heat conduction</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/heat_conduction_dmdc.gif" width="350">
+</a></p>
+<p>For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+<strong>heat conduction_dmdc</strong> solves a simple 2D time dependent nonlinear heat conduction problem</p>
+<p>$$\frac{\partial u}{\partial t} = \nabla\cdot (\kappa + \alpha u)\nabla u + f,$$</p>
+<p>with a natural insulating boundary condition $\frac{du}{dn}=0$ and an external inlet-outlet source </p>
+<p>$$ f(x,t) = A_{+}(t) \exp\left(\dfrac{-| x - x_{+} |^2}{2}\right) - A_{-}(t) \exp\left(\dfrac{-| x - x_{-} |^2}{2}\right)), $$</p>
+<p>where the source locations are $x_+ = (0, 0)$ and $x_- = (0.5, 0.5)$. 
+The amplitude $A_+$ and $A_-$ are regarded as control variables. 
+We linearize the problem by using the temperature field $u$ from the previous time step to
+compute the conductivity coefficient.</p>
+<p>One can run the following command line options to reproduce the DMDc results
+summarized in the table below:</p>
+<ul>
+<li>heat_conduction_dmdc -s 1 -a 0.0 -k 1.0 -rs 4</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>DMD setup  time</th>
+<th>DMD query time</th>
+<th>DMD relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.9 sec</td>
+<td>40.4 sec</td>
+<td>1.8e-3 sec</td>
+<td>2.8e-4</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction_dmdc.cpp">heat_conduction_dmdc.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction_dmdc.cpp">heat_conduction_dmdc.cpp</a>
 is based on
 <a href="https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp">ex16p.cpp</a> from MFEM.</em></p>
 <div style="clear:both;"/>
@@ -1712,6 +1758,7 @@ function update()
    + showElement("dmd_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
+   + showElement("dmdc_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
    + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
