@@ -362,6 +362,46 @@ is based on
 <br></div>
 
 
+<div id="dmdc_heat_conduction" markdown="1">
+## DMDc for heat conduction
+<a target="_blank">
+<img class="floatright" src="../img/examples/heat_conduction_dmdc.gif" width="350">
+</a>
+
+For a given initial condition, i.e., $u_0(x) = u(0,x)$,
+**heat conduction_dmdc** solves a simple 2D time dependent nonlinear heat conduction problem
+
+$$\frac{\partial u}{\partial t} = \nabla\cdot (\kappa + \alpha u)\nabla u + f,$$
+
+with a natural insulating boundary condition $\frac{du}{dn}=0$ and an external inlet-outlet source 
+
+$$ f(x,t) = A_{+}(t) \exp\left(\dfrac{-\| x - x_{+} \|^2}{2}\right) - A_{-}(t) \exp\left(\dfrac{-\| x - x_{-} \|^2}{2}\right)), $$
+
+where the source locations are $x_+ = (0, 0)$ and $x_- = (0.5, 0.5)$. 
+The amplitude $A_+$ and $A_-$ are regarded as control variables. 
+We linearize the problem by using the temperature field $u$ from the previous time step to
+compute the conductivity coefficient.
+
+One can run the following command line options to reproduce the DMDc results
+summarized in the table below:
+
+* heat_conduction_dmdc -s 1 -a 0.0 -k 1.0 -rs 4
+
+   | FOM solution time | DMD setup  time | DMD query time | DMD relative error |
+   | ----------------- | --------------- | -------------- | ------------------ |
+   |  2.9 sec          |  40.4 sec       |   1.8e-3 sec   |      2.8e-4        |
+
+_The code that generates the numerical results above can be found in
+([heat_conduction_dmdc.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction_dmdc.cpp)).
+The
+[heat_conduction_dmdc.cpp](https://github.com/LLNL/libROM/blob/master/examples/dmd/heat_conduction_dmdc.cpp)
+is based on
+[ex16p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex16p.cpp) from MFEM._
+<div style="clear:both;"/></div>
+<br></div>
+
+
+
 <div id="mixed_nonlinear_diffusion" markdown="1">
 ## pROM for mixed nonlinear diffusion
 <a target="_blank">
@@ -1201,6 +1241,7 @@ function update()
    + showElement("dmd_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
+   + showElement("dmdc_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("mixed_nonlinear_diffusion", (diffusion) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
    + showElement("linear_elasticity", (elasticity) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("nonlinear_elasticity_prom", (elasticity) && (prom) && (global) && (hr) && (mfem) && (no_optimizer))
