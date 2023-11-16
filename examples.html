@@ -211,6 +211,7 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
       <option id="advection">Advection</option>
       <option id="euler">Euler</option>
       <option id="vlasov">Vlasov</option>
+      <option id="maxwell">Maxwell</option>
    </select></p>
 </div>
 <div class="col-sm-7 col-md-3 small">
@@ -646,10 +647,10 @@ summarized in the table below:</p>
 </thead>
 <tbody>
 <tr>
-<td>2.9 sec</td>
-<td>40.4 sec</td>
-<td>1.8e-3 sec</td>
-<td>2.8e-4</td>
+<td>16.8 sec</td>
+<td>5.2e-1 sec</td>
+<td>1.2e-2 sec</td>
+<td>2.4e-4</td>
 </tr>
 </tbody>
 </table>
@@ -1695,6 +1696,56 @@ numerical result, following the command line options described below:</p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
+<div id="maxwell_global_prom">
+<h2 id="global-prom-for-maxwell-equation">Global pROM for Maxwell equation</h2>
+<p><img class="floatright" src="../img/examples/maxwell_pcolor.png" width="250">
+</a></p>
+<p>This example builds a projection-based reduced-order model for an electromagnetic diffusion problem corresponding to the second order definite <strong>Maxwell equation</strong>
+$$ \nabla \times \nabla \times \mathbf{E} + \mathbf{E} = \mathbf{f}.$$
+ The right-hand side function $\mathbf{f}$ is first calculated from a given exact vector field $\mathbf{E}$. We then try to reconstruct the true solution $\mathbf{E}$, assuming that we only know the right-hand side function $\mathbf{f}$.</p>
+<p>In 2D, we define $\mathbf{E}$ as 
+$$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_1 )  )^\top, $$
+  and in 3D we define 
+  $$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_3 ), \sin ( \kappa x_1 )   )^\top. $$
+  Here, $\kappa$ is a parameter which controls the frequency of the sine wave.</p>
+<p>The 2D solution contour plot for $\kappa= 1.15$ is shown in the figure on the right. For demonstration, we sample solutions at $\kappa=1\pi$, $1.1\pi$, and $1.2\pi$. We then build the ROM with a basis size of 3, which we use to predict the solution for $\kappa = 1.15$. The ROM is nearly $4856$ faster than the full-order model, with a relative error of $4.42\times10^{-4}$. One can follow the command line options to reproduce the numerical results summarized in the table below:</p>
+<ul>
+<li><strong>offline1</strong>: maxwell_global_rom -offline -f 1.0 -id 0</li>
+<li><strong>offline2</strong>: maxwell_global_rom -offline -f 1.1 -id 1</li>
+<li><strong>offline3</strong>: maxwell_global_rom -offline -f 1.2 -id 2</li>
+<li><strong>merge</strong>: maxwell_global_rom -merge -ns 3</li>
+<li><strong>reference FOM solution</strong>: maxwell_global_rom -fom -f 1.15</li>
+<li><strong>online</strong>: maxwell_global_rom -online -f 1.15</li>
+</ul>
+<p>The command line option -f defines the value of $\kappa$ which controls the frequency of the sinusoidal right hand side function.</p>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Solution relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.91e-1 sec</td>
+<td>1.01e-4 sec</td>
+<td>4855.93</td>
+<td>4.42e-4</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/maxwell_global_rom.cpp">maxwell_global_rom.cpp</a>
+. 
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/maxwell_global_rom.cpp">maxwell_global_rom.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex3p.cpp">ex3p.cpp</a> from MFEM.</em> </p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
 <!-- ------------------------------------------------------------------------- -->
 
 <div id="nomatch">
@@ -1775,6 +1826,7 @@ function update()
    + showElement("2DEulerRiemannProblem", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("maxwell_global_prom", (maxwell) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    ; // ...end of expression
 
    // show/hide the message "No examples match your criteria"
