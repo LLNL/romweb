@@ -39,6 +39,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="advection">Advection</option>
       <option id="euler">Euler</option>
       <option id="vlasov">Vlasov</option>
+      <option id="maxwell">Maxwell</option>
    </select>
 </div>
 <div class="col-sm-7 col-md-3 small" markdown="1">
@@ -1179,6 +1180,48 @@ _LaghosROM is an external miniapp, available at
 <div style="clear:both;"/></div>
 <br></div>
 
+<div id="maxwell_global_prom" markdown="1">
+## Global pROM for Maxwell equation
+<img class="floatright" src="../img/examples/maxwell_pcolor.png" width="250">
+</a>
+
+This example builds a projection-based reduced-order model for an electromagnetic diffusion problem corresponding to the second order definite **Maxwell equation**
+$$ \nabla \times \nabla \times \mathbf{E} + \mathbf{E} = \mathbf{f}.$$
+ The right-hand side function $\mathbf{f}$ is first calculated from a given exact vector field $\mathbf{E}$. We then try to reconstruct the true solution $\mathbf{E}$, assuming that we only know the right-hand side function $\mathbf{f}$.
+
+In 2D, we define $\mathbf{E}$ as 
+$$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_1 )  )^\top, $$
+  and in 3D we define 
+  $$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_3 ), \sin ( \kappa x_1 )   )^\top. $$
+  Here, $\kappa$ is a parameter which controls the frequency of the sine wave.
+
+The 2D solution contour plot for $\kappa= 1.15$ is shown in the figure on the right. For demonstration, we sample solutions at $\kappa=1\pi$, $1.1\pi$, and $1.2\pi$. We then build the ROM with a basis size of 3, which we use to predict the solution for $\kappa = 1.15$. The ROM is nearly $4856$ faster than the full-order model, with a relative error of $4.42\times10^{-4}$. One can follow the command line options to reproduce the numerical results summarized in the table below:
+
+* **offline1**: maxwell_global_rom -offline -f 1.0 -id 0
+* **offline2**: maxwell_global_rom -offline -f 1.1 -id 1
+* **offline3**: maxwell_global_rom -offline -f 1.2 -id 2
+* **merge**: maxwell_global_rom -merge -ns 3
+* **reference FOM solution**: maxwell_global_rom -fom -f 1.15
+* **online**: maxwell_global_rom -online -f 1.15
+
+The command line option -f defines the value of $\kappa$ which controls the frequency of the sinusoidal right hand side function.
+
+   | FOM solution time | ROM solution time | Speed-up | Solution relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  4.91e-1 sec      |  1.01e-4 sec      | 4855.93  |           4.42e-4       |
+
+
+_The code that generates the numerical results above can be found in
+[maxwell_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/maxwell_global_rom.cpp)
+. 
+The
+[maxwell_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/maxwell_global_rom.cpp)
+is based on
+[ex3p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex3p.cpp) from MFEM._ 
+
+<div style="clear:both;"/></div>
+<br></div>
+
 <!-- ------------------------------------------------------------------------- -->
 
 <div id="nomatch">
@@ -1258,6 +1301,7 @@ function update()
    + showElement("2DEulerRiemannProblem", (euler) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
+   + showElement("maxwell_global_prom", (maxwell) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    ; // ...end of expression
 
    // show/hide the message "No examples match your criteria"
