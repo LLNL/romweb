@@ -1155,7 +1155,7 @@ $$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_1 )  )^\top, $$
   $$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_3 ), \sin ( \kappa x_1 )   )^\top. $$
   Here, $\kappa$ is a parameter which controls the frequency of the sine wave.
 
-The 2D solution contour plot for $\kappa= 1.15$ is shown in the figure on the right. For demonstration, we sample solutions at $\kappa=1\pi$, $1.1\pi$, and $1.2\pi$. We then build the ROM with a basis size of 3, which we use to predict the solution for $\kappa = 1.15$. The ROM is nearly $4856$ faster than the full-order model, with a relative error of $4.42\times10^{-4}$. One can follow the command line options to reproduce the numerical results summarized in the table below:
+The 2D solution contour plot for $\kappa= 1.15\pi$ is shown in the figure on the right. For demonstration, we sample solutions at $\kappa=1\pi$, $1.1\pi$, and $1.2\pi$. We then build the ROM with a basis size of 3, which we use to predict the solution for $\kappa = 1.15\pi$. The ROM is nearly $4856$ faster than the full-order model, with a relative error of $4.42\times10^{-4}$. One can follow the command line options to reproduce the numerical results summarized in the table below:
 
 * **offline1**: maxwell_global_rom -offline -f 1.0 -id 0
 * **offline2**: maxwell_global_rom -offline -f 1.1 -id 1
