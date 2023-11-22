@@ -547,6 +547,56 @@ is based on
 <div style="clear:both;"/></div>
 <br></div>
 
+<div id="de_dg_advection_greedy" markdown="1">
+## Optimal control for advection with DMD and differential evolution
+<a target="_blank">
+<img class="floatright" src="../img/examples/de_dg_advection_final_ff_1-6.png" width="250">
+<img class="floatright" src="../img/examples/de_dg_advection_final_ff_1-5976_DMD.png" width="250">
+</a>
+This example demonstrates optimal control for advection with the greedy 
+parametric DMD and differential evolution.  The initial condition, $u_0(x)$, 
+is parameterized by the wavenumber $f$, so that
+
+$$ u_0(x,y) = \sin(f \cdot x) sin(f \cdot y). $$
+
+The goal of the optimal control problem is to find an initial condition that achieves the target 
+last time step solution.  If it does not achieve the target, then it should be closest, given 
+the initial condition parameterization. It is formulated mathematically as an optimization problem:
+
+$$ \underset{f}{minimize} \ \|\| u_T(f) - u_{target} \|\|_2^2,$$
+
+where $u_T$ denotes the last time step solution and $u_{target}$ denotes the
+target solution. Note that $u_T$ depends on the initial condition
+parameter, $f$. It means that we obtain $u_T$ by solving a
+forward advection problem. In order to do so, it must explore the
+parameter space and try to find the $f$ that produces a $u_T$ that best
+matches $u_{target}$. If each advection simulation is
+computationally expensive, the search for the optimal parameter can take a
+very long time. Therefore, we use our parametric DMD to expedite the process and the
+search algorithm is done by [differential 
+evolution](https://en.wikipedia.org/wiki/Differential_evolution).
+
+Here are the steps to solve the optimal control problem. First, create a directory within which you 
+will run the example, as
+
+* mkdir de_advection_greedy && cd de_advection_greedy
+
+Then create the parametric DMD using a greedy approach with a physics-informed error indicator:
+
+* mpirun -n 8 ../de_dg_advection_greedy -p 3 -rp 1 -dt 0.005 -tf 1.0 -build_database -rdim 16 -greedyreldifftol 0.00000001 -greedy-param-f-factor-max 2. -greedy-param-f-factor-min 1. -greedy-param-size 20 -greedysubsize 5 -greedyconvsize 8
+
+Now, generate the target solution with a specific $f$.  Here we use $f = 1.6$.
+
+* mpirun -n 8 ../de_dg_advection_greedy -p 3 -rp 1 -dt 0.005 -tf 1.0 -run_dmd -ff 1.6 -visit
+
+Finally, run the differential evolution using the parametric DMD as:
+
+* srun -n8 -ppdebug greedy_advection -p 3 -rp 1 -dt 0.005 -tf 1.0 -de -ff 1.6 -de_min_ff 1.0 -de_max_ff 2.0 -de_f 0.9 -de_cr 0.9 -de_ps 50 -de_min_iter 1 -de_max_iter 100 -de_ct 0.001
+
+The differential evolution should be able to find the following optimal control parameters, e.g., in Quartz: $f = 1.597618121565086$, which is very close to the true parameter that was used to generate the targer solution.  The images above show the the target solution on the left, and the DMD solution at the differential evolution optimal parameter on the right.
+<div style="clear:both;"/></div>
+<br></div>
+
 <div id="global_prom_dg_advection" markdown="1">
 ## Global pROM for advection
 <a target="_blank">
@@ -1291,6 +1341,7 @@ function update()
    + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_wave", (wave) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("de_dg_advection_greedy", (advection) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
    + showElement("global_prom_dg_advection", (advection) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("local_prom_dg_advection", (advection) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
