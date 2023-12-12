@@ -8,16 +8,20 @@
 # DDPS Webinar (_in California time_)
 DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk or would like to recommend a speaker, please send an email to choi15@llnl.gov. If you are interested in being included in DDPS email list, please also send an email to choi15@llnl.gov.
 
-## Scheduled Talks in 2023
+## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m57c437fe97f46f0be35a317d23d7e5da)
 Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8fe87aefdb029fb6c6a4aa0a5234c050)
 Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
 Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
 Feb 1st, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
+
+## Scheduled Talks in 2023
+When           | Speaker        |  Institution      | Title                         | WebEx
+-------------- | -------------- | ----------------- | ----------------------------- | -----
+Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m57c437fe97f46f0be35a317d23d7e5da)
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
