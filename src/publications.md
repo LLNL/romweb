@@ -1,7 +1,20 @@
 # Publications
 
+#### 2024
+  1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof, [GPLaSDI: Gaussian Process-based Interpretable Latent Space Dynamics Identification through Deep Autoencoder](https://doi.org/10.1016/j.cma.2023.116535), *Computer Methods in Applied Mechanics and Engineering*, 418, 116535, **2024**
+
+
 #### 2023
-  1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof, [GPLaSDI: Gaussian Process-based Interpretable Latent Space Dynamics Identification through Deep Autoencoder](https://arxiv.org/pdf/2308.05882.pdf), *arXiv preprint*, arXiv:2308.05882, **2023**
+  1. Y. Kim, Y. Choi, B. Yoo, [Gappy data reconstruction using unsupervised learning for digital twin](https://arxiv.org/pdf/2312.07902), *arXiv preprint*, arXiv:2312.07902 **2023**
+  1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof [Data-driven autoencoder numerical solver with uncertainty quantification for fast physical simulations](https://debog.github.io/Files/2023_Bonneville_EtAl_NeurIPS.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
+  1. A.N. Diaz, Y. Choi, M. Heinkenschloss [Nonlinear-manifold reduced order models with domain decomposition](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_30.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
+  1. S.W. Suh, S.W. Chung, P.T. Bremer, Y. Choi [Accelerating flow simulations using online dynamic mode decomposition](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_191.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
+  1. A.L. Brown, E.B. Chin, Y. Choi, S.A. Khairallah, J.T. McKeown [A data-driven, non-linear, parameterized reduced order model of metal 3D printing](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_38.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
+  1. T. Wen, K. Lee, Y. Choi [Reduced-order modeling for parameterized PDEs via implicit neural representations](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_148.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
+  1. A. Tran, X. He, D.A. Messenger, Y. Choi, D.M. Bortz [Weak-form latent space dynamics identification](https://arxiv.org/pdf/2311.12880.pdf), *arXiv preprint*, arXiv:2311.12880 **2023**
+  1. P.H. Tsai, S.W. Chung, D. Ghosh, J. Loffeld, Y. Choi, J.L. Belof [Accelerating kinetic simulations of electrostatic plasmas with reduced-order modeling](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_171.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
+  1. T. Kadeethum, D. O'Malley, Y. Choi, H.S. Viswanathan, H. Yoon [Progressive reduced order modeling: empowering data-driven modeling with selective knowledge transfer](https://arxiv.org/pdf/2310.03770.pdf), *arXiv preprint*, arXiv:2310.03770 **2023**
+  1. C. Vales, Y. Choi, D.M. Copeland, S.W. Cheung [Energy conserving quadrature based dimensionality reduction for nonlinear hydrodynamics problems](https://www.osti.gov/servlets/purl/1995059), *Technical Report*, LLNL-TR-853055 **2023**
   1. T. Kadeethum, J.D. Jakeman, Y. Choi, N. Bouklas, H. Yoon, [Epistemic uncertainty-aware Barlow twins reduced order modeling for nonlinear contact problems](https://ieeexplore.ieee.org/abstract/document/10159524), *IEEE Access*, **2023**
   1. X. He, Y. Choi, W. Fries, J. Belof, J.S. Chen, [gLaSDI: Parametric physics-informed greedy latent space dynamics identification](https://www.sciencedirect.com/science/article/abs/pii/S0021999123003625), *Journal of Computational Physics*, 489, 112267, **2023**
   1. S.W. Cheung, Y. Choi, H.K. Springer, T. Kadeethum, [Data-scarce surrogate modeling of shock-induced pore collapse process](https://arxiv.org/pdf/2306.00184.pdf), *arXiv preprint*, arXiv:2306.00184, **2023**
