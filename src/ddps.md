@@ -19,9 +19,9 @@ Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/p
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
-## Scheduled Talks in 2023
-When           | Speaker        |  Institution      | Title                         | WebEx
--------------- | -------------- | ----------------- | ----------------------------- | -----
+## Past Talks in 2024
+Date      | Speaker        |  Institution      | Title                         | YouTube
+---------- | -------------- | ----------------- | ----------------------------- | ---------
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
