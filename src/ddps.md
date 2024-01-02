@@ -27,7 +27,7 @@ Date      | Speaker        |  Institution      | Title                         |
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Dec 15th | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link]()
-Dec 8th | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link]()
+Dec 8th | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://youtu.be/FhqY4pGTIQk?si=ECSxE5kbwJH__O4K)
 Nov 17th | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://youtu.be/9mgFPJVcj0E?si=I7xKB8RbvdhdKm2F)
 Nov 3rd | [Michael E. Glinsky](http://qitech.biz) | BNZ Energy Inc. | A physics-based Reduced Order Model capturing the topology of dynamical manifolds | [link](https://youtu.be/cWlt6m6dPRk?si=jjn5ivK-mOz7lFrO)
 Nov 3rd | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link](https://youtu.be/7gCVhw_3Gko?si=TBqFFajOqfvpIo6b)
