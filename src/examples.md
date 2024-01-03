@@ -40,6 +40,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="euler">Euler</option>
       <option id="vlasov">Vlasov</option>
       <option id="maxwell">Maxwell</option>
+      <option id="graddiv">Grad-div</option>
    </select>
 </div>
 <div class="col-sm-7 col-md-3 small" markdown="1">
@@ -679,6 +680,68 @@ The
 [dg_advection_local_rom_matrix_interp.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/dg_advection_local_rom_matrix_interp.cpp)
 is based on
 [ex9p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp) from MFEM._
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="grad_div" markdown="1">
+## Global pROM for Grad-div Problem
+<a target="_blank">
+<img class="floatright" src="../img/examples/grad_div_rom_f1_15.png" width="250">
+</a>
+
+This example code demonstrates the use of libROM and MFEM to define a reduced
+order model for a simple 2D/3D $H (\text{div})$ diffusion problem corresponding
+to the second order definite equation
+
+$$- {\rm grad} (\alpha\ {\rm div} (F)) + \beta F = f$$
+
+with boundary condition $F \cdot n = $ "given normal field."
+The right-hand side $f$ is first calculated from the given exact solution $F$.
+We then try to reconstruct the true solution $F$ assuming only the right-hand side function $f$ is known.
+
+In 2D, the exact solution $F$ is defined as
+
+$$ F(x,y) = (\cos(\kappa x) \sin(\kappa y), \cos(\kappa y) \sin(\kappa x)) $$
+
+where $\kappa$ is a parameter controlling the frequency.
+
+The 2D solution contour plot for $\kappa=1.15 \pi$ is shown in the figure
+on the right to show the effect of $\kappa$. For demonstration, we sample
+solutions at $\kappa=\pi$, $1.05\pi$, $1.1 \pi$, $1.2 \pi$, $1.25\pi$ and $1.3\pi$.
+Then a ROM is built with basis size of 6, which is used to predict the solution
+for $\kappa = 1.15\pi$.  The ROM is able to achieve a speedup of $2.95\times10^5$ with a
+relative error of $4.98\times10^{-8}$.
+
+One can follow the command line options below to reproduce the numerical results
+summarized in the table below:
+
+* **offline1**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.0 -id 0
+* **offline2**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.05 -id 1
+* **offline3**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.1 -id 2
+* **offline4**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.2 -id 3
+* **offline5**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.25 -id 4
+* **offline6**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.30 -id 5
+* **merge**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -merge -ns 6
+* **reference FOM solution**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -fom -f 1.15
+* **online**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -online -f 1.15 -visit
+
+The command line option -f defines the frequency of the sinusoidal right hand
+side function. The relation between $\kappa$ and f is defined as $\kappa = \pi
+f$.
+
+   | FOM solution time | ROM solution time | Speed-up | Solution relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- |
+   |  2.57e-1 sec      |  8.75e-7 sec      |  2.94e5  |        4.98426e-8       |
+
+
+_The code that generates the numerical results above can be found in
+([grad_div_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/grad_div_global_rom.cpp)).
+The
+[grad_div_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/grad_div_global_rom.cpp)
+is based on
+[ex4p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex4p.cpp) from
+MFEM._
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -1353,6 +1416,7 @@ function update()
    + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("maxwell_global_prom", (maxwell) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("grad_div", (graddiv) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    ; // ...end of expression
 
    // show/hide the message "No examples match your criteria"
