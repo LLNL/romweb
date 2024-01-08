@@ -716,15 +716,15 @@ relative error of $4.98\times10^{-8}$.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:
 
-* **offline1**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.0 -id 0
-* **offline2**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.05 -id 1
-* **offline3**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.1 -id 2
-* **offline4**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.2 -id 3
-* **offline5**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.25 -id 4
-* **offline6**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.30 -id 5
-* **merge**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -merge -ns 6
-* **reference FOM solution**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -fom -f 1.15
-* **online**: grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -online -f 1.15 -visit
+* **offline1**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.0 -id 0`
+* **offline2**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.05 -id 1`
+* **offline3**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.1 -id 2`
+* **offline4**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.2 -id 3`
+* **offline5**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.25 -id 4`
+* **offline6**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.30 -id 5`
+* **merge**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -merge -ns 6`
+* **reference FOM solution**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -fom -f 1.15`
+* **online**: `grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -online -f 1.15 -visit`
 
 The command line option -f defines the frequency of the sinusoidal right hand
 side function. The relation between $\kappa$ and f is defined as $\kappa = \pi
