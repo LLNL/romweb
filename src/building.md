@@ -39,3 +39,10 @@ Compilation options:
 - -m: Compile with MFEM (required to run the libROM examples)
 - -t: Use your own cmake/toolchain
 - -u: Update all of libROM's dependencies.
+
+
+## Compiling on LC Machines
+
+libROM provides several CMake toolchains which can be used to compile on LLNL LC machines.
+For more information on installing and using libROM on specific LC machines,
+refer to [the libROM wiki page](https://github.com/LLNL/libROM/wiki/Compiling-on-LC-Machines).
