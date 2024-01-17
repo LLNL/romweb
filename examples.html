@@ -212,6 +212,7 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
       <option id="euler">Euler</option>
       <option id="vlasov">Vlasov</option>
       <option id="maxwell">Maxwell</option>
+      <option id="graddiv">Grad-div</option>
    </select></p>
 </div>
 <div class="col-sm-7 col-md-3 small">
@@ -289,12 +290,12 @@ able to achieve a speedup of $7.5$ with a relative error of $6.4\times10^{-4}$.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: poisson_global_rom -offline -f 1.0 -id 0</li>
-<li><strong>offline2</strong>: poisson_global_rom -offline -f 1.1 -id 1</li>
-<li><strong>offline3</strong>: poisson_global_rom -offline -f 1.2 -id 2</li>
-<li><strong>merge</strong>: poisson_global_rom -merge -ns 3</li>
-<li><strong>reference FOM solution</strong>: poisson_global_rom -fom -f 1.15</li>
-<li><strong>online</strong>: poisson_global_rom -online -f 1.15</li>
+<li><strong>offline1</strong>: <code>poisson_global_rom -offline -f 1.0 -id 0</code></li>
+<li><strong>offline2</strong>: <code>poisson_global_rom -offline -f 1.1 -id 1</code></li>
+<li><strong>offline3</strong>: <code>poisson_global_rom -offline -f 1.2 -id 2</code></li>
+<li><strong>merge</strong>: <code>poisson_global_rom -merge -ns 3</code></li>
+<li><strong>reference FOM solution</strong>: <code>poisson_global_rom -fom -f 1.15</code></li>
+<li><strong>online</strong>: <code>poisson_global_rom -online -f 1.15</code></li>
 </ul>
 <p>The command line option -f defines a frequency of the sinusoidal right hand
 side function. The relation between $kappa$ and f is defined as $\kappa = \pi
@@ -353,12 +354,12 @@ interpolated ROM has dimension that is the same as the individual local ROM. </p
 <p>For example, one can follow the command line options below to reproduce the
 numerical results summarized in the table below:</p>
 <ul>
-<li><strong>greedy step</strong>: poisson_local_rom_greedy -build_database -greedy-param-min 0.5 -greedy-param-max 3.0 -greedy-param-size 15 -greedysubsize 4 -greedyconvsize 6 -greedyrelerrortol 0.01 --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh"</li>
+<li><strong>greedy step</strong>: <code>poisson_local_rom_greedy -build_database -greedy-param-min 0.5 -greedy-param-max 3.0 -greedy-param-size 15 -greedysubsize 4 -greedyconvsize 6 -greedyrelerrortol 0.01 --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh"</code></li>
 </ul>
 <p>This particular greedy step generates local pROMs at the following 8 parameter points, i.e., 0.521923, 0.743108, 1.322449, 1.754950, 2.011140, 2.281129, 2.587821, 2.950198. </p>
 <ul>
-<li><strong>reference FOM solution</strong>: poisson_local_rom_greedy -fom --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</li>
-<li><strong>online</strong>: poisson_local_rom_greedy -use_database -online --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</li>
+<li><strong>reference FOM solution</strong>: <code>poisson_local_rom_greedy -fom --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</code></li>
+<li><strong>online</strong>: <code>poisson_local_rom_greedy -use_database -online --mesh "../../../dependencies/mfem/data/square-disc-nurbs.mesh" -f X.XX</code></li>
 </ul>
 <p>You can replace X.XX with any value between 0.5 and 3.0. The table below shows
 the performance results for three different parameter points. </p>
@@ -420,7 +421,7 @@ compute the conductivity coefficient.</p>
 <p>One can run the following command line options to reproduce the DMD results
 summarized in the table below:</p>
 <ul>
-<li>heat_conduction -s 3 -a 0.5 -k 0.5 -o 4 -tf 0.7 -vs 1 -visit</li>
+<li><code>heat_conduction -s 3 -a 0.5 -k 0.5 -o 4 -tf 0.7 -vs 1 -visit</code></li>
 </ul>
 <table>
 <thead>
@@ -465,14 +466,14 @@ parameterized by the center of circle and the radius, i.e., </p>
 <p>One can run the following command line options to reproduce the parametric DMD results
 summarized in the table below:</p>
 <ul>
-<li>rm -rf parameters.txt</li>
-<li>parametric_heat_conduction -r 0.1 -cx 0.1 -cy 0.1 -o 4 -visit -offline -rdim 16</li>
-<li>parametric_heat_conduction -r 0.1 -cx 0.1 -cy 0.5 -o 4 -visit -offline -rdim 16</li>
-<li>parametric_heat_conduction -r 0.1 -cx 0.5 -cy 0.1 -o 4 -visit -offline -rdim 16</li>
-<li>parametric_heat_conduction -r 0.1 -cx 0.5 -cy 0.5 -o 4 -visit -offline -rdim 16</li>
-<li>parametric_heat_conduction -r 0.5 -cx 0.1 -cy 0.1 -o 4 -visit -offline -rdim 16</li>
-<li>parametric_heat_conduction -r 0.25 -cx 0.2 -cy 0.4 -o 4 -visit -online -predict </li>
-<li>parametric_heat_conduction -r 0.4 -cx 0.2 -cy 0.3 -o 4 -visit -online -predict </li>
+<li><code>rm -rf parameters.txt</code></li>
+<li><code>parametric_heat_conduction -r 0.1 -cx 0.1 -cy 0.1 -o 4 -visit -offline -rdim 16</code></li>
+<li><code>parametric_heat_conduction -r 0.1 -cx 0.1 -cy 0.5 -o 4 -visit -offline -rdim 16</code></li>
+<li><code>parametric_heat_conduction -r 0.1 -cx 0.5 -cy 0.1 -o 4 -visit -offline -rdim 16</code></li>
+<li><code>parametric_heat_conduction -r 0.1 -cx 0.5 -cy 0.5 -o 4 -visit -offline -rdim 16</code></li>
+<li><code>parametric_heat_conduction -r 0.5 -cx 0.1 -cy 0.1 -o 4 -visit -offline -rdim 16</code></li>
+<li><code>parametric_heat_conduction -r 0.25 -cx 0.2 -cy 0.4 -o 4 -visit -online -predict</code></li>
+<li><code>parametric_heat_conduction -r 0.4 -cx 0.2 -cy 0.3 -o 4 -visit -online -predict</code> </li>
 </ul>
 <p>where r, cx, and cy specify the radius, the x and y coordinates of circular initial conditions. </p>
 <table>
@@ -586,13 +587,13 @@ while. Therefore, we use our parametric DMD to expedite the process and the
 delete any post-processed files from the previous differential evolution
 run. For example,</p>
 <ul>
-<li>rm -rf parameters.txt</li>
-<li>rm -rf de_parametric_heat_conduction_greedy_*</li>
+<li><code>rm -rf parameters.txt</code></li>
+<li><code>rm -rf de_parametric_heat_conduction_greedy_*</code></li>
 </ul>
 <p>Then create parametric DMD using a greedy approach with physics-informed error
 indicator:</p>
 <ul>
-<li>de_parametric_heat_conduction_greedy -build_database -rdim 16 -greedy-param-size 20 -greedysubsize 10 -greedyconvsize 15 -greedyreldifftol 0.0001 </li>
+<li><code>de_parametric_heat_conduction_greedy -build_database -rdim 16 -greedy-param-size 20 -greedysubsize 10 -greedyconvsize 15 -greedyreldifftol 0.0001</code></li>
 </ul>
 <p>Then you can generate target temperature field with a specific $r$ and $c$
 values. Here we used $r=0.2$, $cx=0.2$, and $cy=0.2$ to generate a target
@@ -600,12 +601,12 @@ temperature field. The target temperature field is shown in the picture above (t
 <p>Therefore, if DMD is good enough, the differential evolution
 should be able to find $c$ and $r$ values that are closed to these:</p>
 <ul>
-<li>de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit (Compute target FOM)</li>
+<li><code>de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit</code> (Compute target FOM)</li>
 </ul>
 <p>where r, cx, and cy specify the radius, the x and y coordinates of circular initial conditions. 
 Now you can run the differential evolution using the parametric DMD:</p>
 <ul>
-<li>de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit -de -de_f 0.9 -de_cr 0.9 -de_ps 50 -de_min_iter 10 -de_max_iter 100 -de_ct 0.001 (Run interpolative differential evolution to see if target FOM can be matched)</li>
+<li><code>de_parametric_heat_conduction_greedy -r 0.2 -cx 0.2 -cy 0.2 -visit -de -de_f 0.9 -de_cr 0.9 -de_ps 50 -de_min_iter 10 -de_max_iter 100 -de_ct 0.001</code> (Run interpolative differential evolution to see if target FOM can be matched)</li>
 </ul>
 <p>The differential evolution should be able to find the following optimal control parameters, e.g., in Quartz: $r=0.2002090156652667$, $cx=0.2000936529076073$, and $cy=0.2316380936755735$, which are close to the true parameters that were used to generate the targer temperature field. The DMD temperature field at the last time step on this control parameters is shown in the picture above (the one on the right).</p>
 <p><em>The code that generates the numerical results above can be found in
@@ -634,7 +635,7 @@ compute the conductivity coefficient.</p>
 <p>One can run the following command line options to reproduce the DMDc results
 summarized in the table below:</p>
 <ul>
-<li>heat_conduction_dmdc -s 1 -a 0.0 -k 1.0 -rs 4</li>
+<li><code>heat_conduction_dmdc -s 1 -a 0.0 -k 1.0 -rs 4</code></li>
 </ul>
 <table>
 <thead>
@@ -679,13 +680,13 @@ reduced bases for two field varibles, $p$ and $\boldsymbol{v}$.</p>
 <p>One can run the following command line options to reproduce the pROM results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: mixed_nonlinear_diffusion -p 1 -offline -id 0 -sh 0.25</li>
-<li><strong>offline2</strong>: mixed_nonlinear_diffusion -p 1 -offline -id 1 -sh 0.15</li>
-<li><strong>merge</strong>: mixed_nonlinear_diffusion -p 1 -merge -ns 2</li>
-<li><strong>reference FOM solution</strong>: mixed_nonlinear_diffusion -p 1 -offline -id 2 -sh 0.2</li>
-<li><strong>online (DEIM)</strong>: mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2</li>
-<li><strong>online (S-OPT)</strong>: mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2 -sopt</li>
-<li><strong>online (EQP)</strong>: mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -ns 2 -sh 0.2 -id 2 -eqp -maxnnls 30</li>
+<li><strong>offline1</strong>: <code>mixed_nonlinear_diffusion -p 1 -offline -id 0 -sh 0.25</code></li>
+<li><strong>offline2</strong>: <code>mixed_nonlinear_diffusion -p 1 -offline -id 1 -sh 0.15</code></li>
+<li><strong>merge</strong>: <code>mixed_nonlinear_diffusion -p 1 -merge -ns 2</code></li>
+<li><strong>reference FOM solution</strong>: <code>mixed_nonlinear_diffusion -p 1 -offline -id 2 -sh 0.2</code></li>
+<li><strong>online (DEIM)</strong>: <code>mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2</code></li>
+<li><strong>online (S-OPT)</strong>: <code>mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -sh 0.2 -id 2 -sopt</code></li>
+<li><strong>online (EQP)</strong>: <code>mixed_nonlinear_diffusion -p 1 -online -rrdim 8 -rwdim 8 -ns 2 -sh 0.2 -id 2 -eqp -maxnnls 30</code></li>
 </ul>
 <table>
 <thead>
@@ -819,7 +820,7 @@ We choose velocity function so that the dynamics form a spiral advection.</p>
 <p>One can run the following command line options to reproduce the DMD results
 summarized in the table below:</p>
 <ul>
-<li>dg_advection -p 3 -rp 1 -dt 0.005 -tf 4</li>
+<li><code>dg_advection -p 3 -rp 1 -dt 0.005 -tf 4</code></li>
 </ul>
 <table>
 <thead>
@@ -848,6 +849,57 @@ is based on
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
+<div id="de_dg_advection_greedy">
+<h2 id="optimal-control-for-advection-with-dmd-and-differential-evolution">Optimal control for advection with DMD and differential evolution</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/de_dg_advection_final_ff_1-6.png" width="250">
+<img class="floatright" src="../img/examples/de_dg_advection_final_ff_1-5976_DMD.png" width="250">
+</a>
+This example demonstrates optimal control for advection with the greedy 
+parametric DMD and differential evolution.  The initial condition, $u_0(x)$, 
+is parameterized by the wavenumber $f$, so that</p>
+<p>$$ u_0(x,y) = \sin(f \cdot x) sin(f \cdot y). $$</p>
+<p>The goal of the optimal control problem is to find an initial condition that achieves the target 
+last time step solution.  If it does not achieve the target, then it should be closest, given 
+the initial condition parameterization. It is formulated mathematically as an optimization problem:</p>
+<p>$$ \underset{f}{minimize} \ || u_T(f) - u_{target} ||_2^2,$$</p>
+<p>where $u_T$ denotes the last time step solution and $u_{target}$ denotes the
+target solution. Note that $u_T$ depends on the initial condition
+parameter, $f$. It means that we obtain $u_T$ by solving a
+forward advection problem. In order to do so, it must explore the
+parameter space and try to find the $f$ that produces a $u_T$ that best
+matches $u_{target}$. If each advection simulation is
+computationally expensive, the search for the optimal parameter can take a
+very long time. Therefore, we use our parametric DMD to expedite the process and the
+search algorithm is done by <a href="https://en.wikipedia.org/wiki/Differential_evolution">differential 
+evolution</a>.</p>
+<p>Here are the steps to solve the optimal control problem. First, create a directory within which you 
+will run the example, such as</p>
+<ul>
+<li><code>mkdir de_advection_greedy &amp;&amp; cd de_advection_greedy</code></li>
+</ul>
+<p>Then create the parametric DMD using a greedy approach with a physics-informed error indicator:</p>
+<ul>
+<li><code>mpirun -n 8 ../de_dg_advection_greedy -p 3 -rp 1 -dt 0.005 -tf 1.0 -build_database -rdim 16 -greedyreldifftol 0.00000001 -greedy-param-f-factor-max 2. -greedy-param-f-factor-min 1. -greedy-param-size 20 -greedysubsize 5 -greedyconvsize 8</code></li>
+</ul>
+<p>Now, generate the target solution with a specific $f$.  Here we use $f = 1.6$.</p>
+<ul>
+<li><code>mpirun -n 8 ../de_dg_advection_greedy -p 3 -rp 1 -dt 0.005 -tf 1.0 -run_dmd -ff 1.6 -visit</code></li>
+</ul>
+<p>Finally, run the differential evolution using the parametric DMD as:</p>
+<ul>
+<li><code>srun -n8 -ppdebug greedy_advection -p 3 -rp 1 -dt 0.005 -tf 1.0 -de -ff 1.6 -de_min_ff 1.0 -de_max_ff 2.0 -de_f 0.9 -de_cr 0.9 -de_ps 50 -de_min_iter 1 -de_max_iter 100 -de_ct 0.001</code></li>
+</ul>
+<p>The differential evolution should be able to find the following optimal control parameters, e.g., in Quartz: $f = 1.597618121565086$, which is very close to the true parameter that was used to generate the targer solution.  The images above show the the target solution on the left, and the DMD solution at the differential evolution optimal parameter on the right.</p>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/de_dg_advection_greedy.cpp">de_dg_advection_greedy.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/dmd/de_dg_advection_greedy.cpp">de_dg_advection_greedy.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp">ex9p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
 <div id="global_prom_dg_advection">
 <h2 id="global-prom-for-advection">Global pROM for advection</h2>
 <p><a target="_blank">
@@ -861,12 +913,12 @@ We choose velocity function so that the dynamics form a spiral advection.</p>
 <p>One can run the following command line options to reproduce the pROM results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: dg_advection_global_rom -offline -ff 1.0 -id 0</li>
-<li><strong>offline2</strong>: dg_advection_global_rom -offline -ff 1.1 -id 1</li>
-<li><strong>offline3</strong>: dg_advection_global_rom -offline -ff 1.2 -id 2</li>
-<li><strong>merge</strong>: dg_advection_global_rom -merge -ns 3</li>
-<li><strong>reference FOM solution</strong>: dg_advection_global_rom -fom -ff 1.15</li>
-<li><strong>online</strong>: dg_advection_global_rom -online -ff 1.15</li>
+<li><strong>offline1</strong>: <code>dg_advection_global_rom -offline -ff 1.0 -id 0</code></li>
+<li><strong>offline2</strong>: <code>dg_advection_global_rom -offline -ff 1.1 -id 1</code></li>
+<li><strong>offline3</strong>: <code>dg_advection_global_rom -offline -ff 1.2 -id 2</code></li>
+<li><strong>merge</strong>: <code>dg_advection_global_rom -merge -ns 3</code></li>
+<li><strong>reference FOM solution</strong>: <code>dg_advection_global_rom -fom -ff 1.15</code></li>
+<li><strong>online</strong>: <code>dg_advection_global_rom -online -ff 1.15</code></li>
 </ul>
 <table>
 <thead>
@@ -915,13 +967,13 @@ tailored local pROM at the frequency value of 1.05. Unlike the global ROM, the
 interpolated pROM has dimension that is the same as the individual pROM, i.e.,
 40 for this particular problem.</p>
 <ul>
-<li>rm -rf frequencies.txt</li>
-<li>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -offline -rs 4 -ff 1.02</li>
-<li>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -interp_prep -rs 4 -ff 1.02 -rdim 40</li>
-<li>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -offline -rs 4 -ff 1.08</li>
-<li>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -interp_prep -rs 4 -ff 1.08 -rdim 40</li>
-<li>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -fom -rs 4 -ff 1.05 -visit</li>
-<li>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -online_interp -rs 4 -ff 1.05 -rdim 40</li>
+<li><code>rm -rf frequencies.txt</code></li>
+<li><code>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -offline -rs 4 -ff 1.02</code></li>
+<li><code>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -interp_prep -rs 4 -ff 1.02 -rdim 40</code></li>
+<li><code>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -offline -rs 4 -ff 1.08</code></li>
+<li><code>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -interp_prep -rs 4 -ff 1.08 -rdim 40</code></li>
+<li><code>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -fom -rs 4 -ff 1.05 -visit</code></li>
+<li><code>dg_advection_local_rom_matrix_interp --mesh "../data/periodic-square.mesh" -online_interp -rs 4 -ff 1.05 -rdim 40</code></li>
 </ul>
 <table>
 <thead>
@@ -947,6 +999,71 @@ The
 <a href="https://github.com/LLNL/libROM/blob/master/examples/prom/dg_advection_local_rom_matrix_interp.cpp">dg_advection_local_rom_matrix_interp.cpp</a>
 is based on
 <a href="https://github.com/mfem/mfem/blob/master/examples/ex9p.cpp">ex9p.cpp</a> from MFEM.</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<div id="grad_div">
+<h2 id="global-prom-for-grad-div-problem">Global pROM for Grad-div Problem</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/grad_div_rom_f1_15.png" width="250">
+</a></p>
+<p>This example code demonstrates the use of libROM and MFEM to define a reduced
+order model for a simple 2D/3D $H (\text{div})$ diffusion problem corresponding
+to the second order definite equation</p>
+<p>$$- {\rm grad} (\alpha\ {\rm div} (F)) + \beta F = f$$</p>
+<p>with boundary condition $F \cdot n = $ "given normal field."
+The right-hand side $f$ is first calculated from the given exact solution $F$.
+We then try to reconstruct the true solution $F$ assuming only the right-hand side function $f$ is known.</p>
+<p>In 2D, the exact solution $F$ is defined as</p>
+<p>$$ F(x,y) = (\cos(\kappa x) \sin(\kappa y), \cos(\kappa y) \sin(\kappa x)) $$</p>
+<p>where $\kappa$ is a parameter controlling the frequency.</p>
+<p>The 2D solution contour plot for $\kappa=1.15 \pi$ is shown in the figure
+on the right to show the effect of $\kappa$. For demonstration, we sample
+solutions at $\kappa=\pi$, $1.05\pi$, $1.1 \pi$, $1.2 \pi$, $1.25\pi$ and $1.3\pi$.
+Then a ROM is built with basis size of 6, which is used to predict the solution
+for $\kappa = 1.15\pi$.  The ROM is able to achieve a speedup of $2.95\times10^5$ with a
+relative error of $4.98\times10^{-8}$.</p>
+<p>One can follow the command line options below to reproduce the numerical results
+summarized in the table below:</p>
+<ul>
+<li><strong>offline1</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.0 -id 0</code></li>
+<li><strong>offline2</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.05 -id 1</code></li>
+<li><strong>offline3</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.1 -id 2</code></li>
+<li><strong>offline4</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.2 -id 3</code></li>
+<li><strong>offline5</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.25 -id 4</code></li>
+<li><strong>offline6</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -offline -f 1.30 -id 5</code></li>
+<li><strong>merge</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -merge -ns 6</code></li>
+<li><strong>reference FOM solution</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -fom -f 1.15</code></li>
+<li><strong>online</strong>: <code>grad_div_global_rom --mesh "../../../dependencies/mfem/data/square-disc.mesh" -online -f 1.15 -visit</code></li>
+</ul>
+<p>The command line option -f defines the frequency of the sinusoidal right hand
+side function. The relation between $\kappa$ and f is defined as $\kappa = \pi
+f$.</p>
+<table>
+<thead>
+<tr>
+<th>FOM solution time</th>
+<th>ROM solution time</th>
+<th>Speed-up</th>
+<th>Solution relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.57e-1 sec</td>
+<td>8.75e-7 sec</td>
+<td>2.94e5</td>
+<td>4.98426e-8</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/grad_div_global_rom.cpp">grad_div_global_rom.cpp</a>).
+The
+<a href="https://github.com/LLNL/libROM/blob/master/examples/prom/grad_div_global_rom.cpp">grad_div_global_rom.cpp</a>
+is based on
+<a href="https://github.com/mfem/mfem/blob/master/examples/ex4p.cpp">ex4p.cpp</a> from
+MFEM.</em></p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
@@ -1074,7 +1191,7 @@ p\delta_{i,1}, \rho v_i H]$$</p>
 <p>One can run the following command line options to reproduce the DMD results
 summarized in the table below:</p>
 <ul>
-<li>dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit</li>
+<li><code>dg_euler -p 2 -rs 2 -rp 1 -o 1 -s 3 -visit</code></li>
 </ul>
 <table>
 <thead>
@@ -1204,11 +1321,11 @@ $$\mu = \frac{E}{2(1+\nu)}$$</p>
 <p>One can run the following command line options to reproduce the pROM results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 0 -nu 0.2 </li>
-<li><strong>offline2</strong>: linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 1 -nu 0.4 </li>
-<li><strong>merge</strong>: linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -merge -ns 2</li>
-<li><strong>reference FOM solution</strong>: linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 2 -nu 0.XX</li>
-<li><strong>online</strong>: linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -online -id 3 -nu 0.XX</li>
+<li><strong>offline1</strong>: <code>linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 0 -nu 0.2</code></li>
+<li><strong>offline2</strong>: <code>linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 1 -nu 0.4</code></li>
+<li><strong>merge</strong>: <code>linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -merge -ns 2</code></li>
+<li><strong>reference FOM solution</strong>: <code>linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -offline -id 2 -nu 0.XX</code></li>
+<li><strong>online</strong>: <code>linear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" -online -id 3 -nu 0.XX</code></li>
 </ul>
 <p>You can replace 0.XX with any value between 0.2 and 0.5. It must be strictly
 less than 0.5. Note that the global ROM is able to predict the point outside of
@@ -1275,11 +1392,11 @@ zero except the third component which is defined:</p>
 reproduce the results summarizedin the table below. You can replace XXX in the
 fom and online phase to take any $\mu$ value between 3.9 and 4.1:</p>
 <ul>
-<li><strong>offline1</strong>: nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 3.9 -id 0  </li>
-<li><strong>offline2</strong>: nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 4.1 -id 1  </li>
-<li><strong>merge</strong>: nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --merge -ns 2 -dt 0.01 -tf 5.0</li>
-<li><strong>reference FOM solution</strong>: nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 5 -sc XXX -id 2</li>
-<li><strong>online</strong>: nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --online -dt 0.01 -tf 5.0 -s 14 -vs 5 -hyp -rvdim 40 -rxdim 10 -hdim 71 -nsr 200 -sc XXX</li>
+<li><strong>offline1</strong>: <code>nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 3.9 -id 0</code></li>
+<li><strong>offline2</strong>: <code>nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 10 -sc 4.1 -id 1</code></li>
+<li><strong>merge</strong>: <code>nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --merge -ns 2 -dt 0.01 -tf 5.0</code></li>
+<li><strong>reference FOM solution</strong>: <code>nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --offline -dt 0.01 -tf 5.0 -s 14 -vs 5 -sc XXX -id 2</code></li>
+<li><strong>online</strong>: <code>nonlinear_elasticity_global_rom --mesh "../../../dependencies/mfem/data/beam-hex-nurbs.mesh" --online -dt 0.01 -tf 5.0 -s 14 -vs 5 -hyp -rvdim 40 -rxdim 10 -hdim 71 -nsr 200 -sc XXX</code></li>
 </ul>
 <table>
 <thead>
@@ -1378,7 +1495,7 @@ elasticity</strong> solves a time dependent nonlinear elasticity problem of the 
 <p>One can run the following command line options to reproduce the DMD results
 summarized in the table below:</p>
 <ul>
-<li>nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit</li>
+<li><code>nonlinear_elasticity -s 2 -rs 1 -dt 0.01 -tf 5 -visit</code></li>
 </ul>
 <table>
 <thead>
@@ -1444,10 +1561,10 @@ in the shock wave propagation in both FOM and pROM simulations. One can
 reproduce the pROM numerical result, following the command line options
 described below:</p>
 <ul>
-<li><strong>offline</strong>: laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages</li>
-<li><strong>hyper-reduction preprocessing</strong>: laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2 (-sopt)</li>
-<li><strong>online</strong>: laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2</li>
-<li><strong>restore</strong>: laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66</li>
+<li><strong>offline</strong>: <code>laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sample-stages</code></li>
+<li><strong>hyper-reduction preprocessing</strong>: <code>laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 66 -sfacv 2 -sface 2 (-sopt)</code></li>
+<li><strong>online</strong>: <code>laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 66 -sfacv 2 -sface 2</code></li>
+<li><strong>restore</strong>: <code>laghos -o twp_sedov -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 66</code></li>
 </ul>
 <table>
 <thead>
@@ -1472,10 +1589,10 @@ described below:</p>
 <p>One can also easily apply time-windowing DMD to Sedov blast problem easily. First, prepare tw_sedov3.csv file, which contains a sequence of time steps, {0.01, 0.02, $\ldots$, 0.79, 0.8 } in a column. Then you can follow the command line options described below:</p>
 <ul>
 <li>
-<p><strong>offline</strong>: laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -nwin 80 -tw tw_sedov3.csv -dmd -dmdnuf -met -no-romoffset</p>
+<p><strong>offline</strong>: <code>laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -nwin 80 -tw tw_sedov3.csv -dmd -dmdnuf -met -no-romoffset</code></p>
 </li>
 <li>
-<p><strong>online</strong>: laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -dmd -dmdnuf -no-romoffset</p>
+<p><strong>online</strong>: <code>laghos -o dmd_sedov -p 4 -m ../data/cube01_hex.mesh -pt 211 -tf 0.8 -s 7 -pa -restore -soldiff -romsvds -dmd -dmdnuf -no-romoffset</code></p>
 </li>
 </ul>
 <table>
@@ -1517,18 +1634,10 @@ given by</p>
 9 - 4 \log(0.2) + \frac{25}{2} - 20r + 4 \log(r) &amp; for 0.2 $\leq$ r &lt; 0.4 \cr
 3 + 4\log(2)                                     &amp; for r $\geq$ 0.4 }$$</p>
 <ul>
-<li><strong>offline</strong>: laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
-  -ok 3 -ot 2 -tf 0.62 -s 7 -visit -writesol -offline -ef 0.9999 -romsvds -romos
-  -rostype load -romsns -nwinsamp 21 -sample-stages</li>
-<li><strong>hyper-reduction preprocessing</strong>: laghos -o twp_gresho -p 4 -m
-  ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhrprep
-  -romsvds -romos -rostype load -romsns -romgs -nwin 152 -sfacv 2 -sface 2</li>
-<li><strong>online</strong>: laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
-  -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhr -romsvds -romos -rostype load -romsns
-  -romgs -nwin 152 -sfacv 2 -sface 2</li>
-<li><strong>restore</strong>: laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4
-  -ok 3 -ot 2 -tf 0.62 -s 7 -soldiff -restore -romsvds -romos -rostype load
-  -romsns -romgs -nwin 152</li>
+<li><strong>offline</strong>: <code>laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -visit -writesol -offline -ef 0.9999 -romsvds -romos -rostype load -romsns -nwinsamp 21 -sample-stages</code></li>
+<li><strong>hyper-reduction preprocessing</strong>: <code>laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhrprep -romsvds -romos -rostype load -romsns -romgs -nwin 152 -sfacv 2 -sface 2</code></li>
+<li><strong>online</strong>: <code>laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -online -romhr -romsvds -romos -rostype load -romsns -romgs -nwin 152 -sfacv 2 -sface 2</code></li>
+<li><strong>restore</strong>: <code>laghos -o twp_gresho -p 4 -m ../data/square_gresho.mesh -rs 4 -ok 3 -ot 2 -tf 0.62 -s 7 -soldiff -restore -romsvds -romos -rostype load -romsns -romgs -nwin 152</code></li>
 </ul>
 <table>
 <thead>
@@ -1566,18 +1675,10 @@ initial mesh is a uniform Cartesian hexahedral mesh, which deforms over time.
 The visualized solution is given on the right.  One can reproduce the
 numerical result, following the command line options described below:</p>
 <ul>
-<li><strong>offline</strong>: laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
-  0.1 -tf 0.25 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos
-  -rostype load -romsns -nwinsamp 21 -sdim 1000 -sample-stages</li>
-<li><strong>hyper-reduction preprocessing</strong>: laghos -o twp_taylor -m
-  ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -online -romsvds
-  -romos -rostype load -romhrprep -romsns -romgs -nwin 82 -sfacv 2 -sface 2</li>
-<li><strong>online</strong>: laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
-  0.1 -tf 0.25 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns
-  -romgs -nwin 82 -sfacv 2 -sface 2</li>
-<li><strong>restore</strong>: laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl
-  0.1 -tf 0.25 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns
-  -romgs -nwin 82</li>
+<li><strong>offline</strong>: <code>laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -offline -visit -romsvds -ef 0.9999 -writesol -romos -rostype load -romsns -nwinsamp 21 -sdim 1000 -sample-stages</code></li>
+<li><strong>hyper-reduction preprocessing</strong>: <code>laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -online -romsvds -romos -rostype load -romhrprep -romsns -romgs -nwin 82 -sfacv 2 -sface 2</code></li>
+<li><strong>online</strong>: <code>laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -online -romsvds -romos -rostype load -romhr -romsns -romgs -nwin 82 -sfacv 2 -sface 2</code></li>
+<li><strong>restore</strong>: <code>laghos -o twp_taylor -m ../data/cube01_hex.mesh -p 0 -rs 2 -cfl 0.1 -tf 0.25 -s 7 -pa -restore -soldiff -romsvds -romos -rostype load -romsns -romgs -nwin 82</code></li>
 </ul>
 <table>
 <thead>
@@ -1626,18 +1727,10 @@ of state for the ideal gas, $p=(\gamma-1)\rho e$, with</p>
 time.  The visualized solution is given on the right.  One can reproduce the
 numerical result, following the command line options described below:</p>
 <ul>
-<li><strong>offline</strong>: laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
-  0.8 -s 7 -cfl 0.5 -pa -offline -writesol -visit -romsvds -romos -rostype load
-  -romsns -nwinsamp 21 -ef 0.9999 -sdim 200 -sample-stages</li>
-<li><strong>hyper-reduction preprocessing</strong>: laghos  -o twp_triple -p 3 -m
-  ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -online -romhrprep
-  -romsvds -romos -rostype load -romgs -romsns -nwin 18 -sfacv 2 -sface 2</li>
-<li><strong>online</strong>: laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
-  0.8 -s 7 -cfl 0.5 -pa -online -romhr -romsvds -romos -rostype load -romgs
-  -romsns -nwin 18 -sfacv 2 -sface 2</li>
-<li><strong>restore</strong>: laghos  -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf
-  0.8 -s 7 -cfl 0.5 -pa -restore -soldiff -romsvds -romos -rostype load -romgs
-  -romsns -nwin 18</li>
+<li><strong>offline</strong>: <code>laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -offline -writesol -visit -romsvds -romos -rostype load -romsns -nwinsamp 21 -ef 0.9999 -sdim 200 -sample-stages</code></li>
+<li><strong>hyper-reduction preprocessing</strong>: <code>laghos  -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -online -romhrprep -romsvds -romos -rostype load -romgs -romsns -nwin 18 -sfacv 2 -sface 2</code></li>
+<li><strong>online</strong>: <code>laghos -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -online -romhr -romsvds -romos -rostype load -romgs -romsns -nwin 18 -sfacv 2 -sface 2</code></li>
+<li><strong>restore</strong>: <code>laghos  -o twp_triple -p 3 -m ../data/box01_hex.mesh -rs 2 -tf 0.8 -s 7 -cfl 0.5 -pa -restore -soldiff -romsvds -romos -rostype load -romgs -romsns -nwin 18</code></li>
 </ul>
 <table>
 <thead>
@@ -1661,17 +1754,10 @@ numerical result, following the command line options described below:</p>
 <h3 id="rayleigh-taylor-instability-problem">Rayleigh-Taylor instability problem</h3>
 <p><strong>Rayleigh-Taylor instability</strong> problem</p>
 <ul>
-<li><strong>offline</strong>: laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
-  -o twp_rt -s 7 -writesol -offline -romsns -sdim 200000 -romsvds -romos -romgs
-  -nwinsamp 21 -ef 0.9999999999 -sample-stages</li>
-<li><strong>hyper-reduction preprocessing</strong>: laghos -p 7 -m ../data/rt2D.mesh -tf 1.5
-  -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187
-  -sfacv 2 -sface 2 -romhrprep</li>
-<li><strong>online</strong>: laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
-  -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187 -sfacv 2 -sface 2
-  -romhr</li>
-<li><strong>restore</strong>: laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa
-  -o twp_rt -s 7 -restore -romsns -romos -romgs -soldiff -nwin 187</li>
+<li><strong>offline</strong>: <code>laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -writesol -offline -romsns -sdim 200000 -romsvds -romos -romgs -nwinsamp 21 -ef 0.9999999999 -sample-stages</code></li>
+<li><strong>hyper-reduction preprocessing</strong>: <code>laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187 -sfacv 2 -sface 2 -romhrprep</code></li>
+<li><strong>online</strong>: <code>laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -online -romsns -romos -romgs -nwin 187 -sfacv 2 -sface 2 -romhr</code></li>
+<li><strong>restore</strong>: <code>laghos -p 7 -m ../data/rt2D.mesh -tf 1.5 -rs 4 -ok 2 -ot 1 -pa -o twp_rt -s 7 -restore -romsns -romos -romgs -soldiff -nwin 187</code></li>
 </ul>
 <table>
 <thead>
@@ -1710,12 +1796,12 @@ $$\mathbf{E} = (\sin ( \kappa x_2 ), \sin ( \kappa x_1 )  )^\top, $$
   Here, $\kappa$ is a parameter which controls the frequency of the sine wave.</p>
 <p>The 2D solution contour plot for $\kappa= 1.15$ is shown in the figure on the right. For demonstration, we sample solutions at $\kappa=1\pi$, $1.1\pi$, and $1.2\pi$. We then build the ROM with a basis size of 3, which we use to predict the solution for $\kappa = 1.15$. The ROM is nearly $4856$ faster than the full-order model, with a relative error of $4.42\times10^{-4}$. One can follow the command line options to reproduce the numerical results summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: maxwell_global_rom -offline -f 1.0 -id 0</li>
-<li><strong>offline2</strong>: maxwell_global_rom -offline -f 1.1 -id 1</li>
-<li><strong>offline3</strong>: maxwell_global_rom -offline -f 1.2 -id 2</li>
-<li><strong>merge</strong>: maxwell_global_rom -merge -ns 3</li>
-<li><strong>reference FOM solution</strong>: maxwell_global_rom -fom -f 1.15</li>
-<li><strong>online</strong>: maxwell_global_rom -online -f 1.15</li>
+<li><strong>offline1</strong>: <code>maxwell_global_rom -offline -f 1.0 -id 0</code></li>
+<li><strong>offline2</strong>: <code>maxwell_global_rom -offline -f 1.1 -id 1</code></li>
+<li><strong>offline3</strong>: <code>maxwell_global_rom -offline -f 1.2 -id 2</code></li>
+<li><strong>merge</strong>: <code>maxwell_global_rom -merge -ns 3</code></li>
+<li><strong>reference FOM solution</strong>: <code>maxwell_global_rom -fom -f 1.15</code></li>
+<li><strong>online</strong>: <code>maxwell_global_rom -online -f 1.15</code></li>
 </ul>
 <p>The command line option -f defines the value of $\kappa$ which controls the frequency of the sinusoidal right hand side function.</p>
 <table>
@@ -1816,6 +1902,7 @@ function update()
    + showElement("nonlinear_elasticity_dmd", (elasticity) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_wave", (wave) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_dg_advection", (advection) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("de_dg_advection_greedy", (advection) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
    + showElement("global_prom_dg_advection", (advection) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("local_prom_dg_advection", (advection) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dg_euler", (euler) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
@@ -1827,6 +1914,7 @@ function update()
    + showElement("2DNavierStokesProblem", (navierstokes) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("1D1VVlasovEquation", (vlasov) && (dmd) && (reproductive) && (no_hr) && (hypar) && (no_optimizer))
    + showElement("maxwell_global_prom", (maxwell) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("grad_div", (graddiv) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    ; // ...end of expression
 
    // show/hide the message "No examples match your criteria"
