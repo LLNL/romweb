@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8fe87aefdb029fb6c6a4aa0a5234c050)
-Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
+Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | Predicting Heart Rhythm Disorders from Spatio-Temporal Imaging Data using Artificial Intelligence | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2525eedc08ca4e3793d73145e1a19af6)
 Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
 Feb 8th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m343db5cf9164b9bec2c0be724b8ecd57)
 Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m97172a6f9b1ff51b4e2be3b60f8dd0c8)
