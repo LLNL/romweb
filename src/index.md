@@ -63,6 +63,7 @@ Sep. 23, 2022| [Projection-based reduced order model for nonlinear system](https
 ┊ [libROM Sources](https://github.com/LLNL/libROM)
 ┊ [LaSDI Sources](https://github.com/LLNL/LaSDI)
 ┊ [gLaSDI Sources](https://github.com/LLNL/gLaSDI)
+┊ [GPLaSDI Sources](https://github.com/LLNL/GPLaSDI)
 
 [<button type="button" class="btn btn-success">
 **Download libROM-master.zip**
