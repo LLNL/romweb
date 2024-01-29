@@ -40,7 +40,10 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+Jan 22, 2024 | [DDFEM](https://arxiv.org/pdf/2401.10245.pdf) preprint is available
 Jan 1, 2024 | [GPLaSDI](https://doi.org/10.1016/j.cma.2023.116535) paper is published in CMAME
+Dec 13, 2023 | [gappyAE](https://arxiv.org/pdf/2312.07902.pdf) preprint is available
+Dec 5, 2023 | [ScaleupROM](https://github.com/LLNL/scaleupROM) open source code is available in gitHub 
 Aug 8, 2023 | [pylibROM](https://github.com/LLNL/pylibROM) open source code is available in gitHub
 July 30, 2023 | [GPLaSDI](https://github.com/LLNL/GPLaSDI) open source code is available in gitHub
 June 21, 2023 | [gLaSDI](https://authors.elsevier.com/c/1hHaB508HwNZf) paper is published in JCP
@@ -61,6 +64,9 @@ Sep. 23, 2022| [Projection-based reduced order model for nonlinear system](https
 [Examples](examples.md)
 ┊ [Code documentation](https://librom.readthedocs.io/en/latest/index.html)
 ┊ [libROM Sources](https://github.com/LLNL/libROM)
+┊ [pylibROM Sources](https://github.com/LLNL/pylibROM)
+┊ [LaghosROM Sources](https://github.com/CEED/Laghos/tree/rom/rom)
+┊ [ScaleupROM](https://github.com/LLNL/scaleupROM)
 ┊ [LaSDI Sources](https://github.com/LLNL/LaSDI)
 ┊ [gLaSDI Sources](https://github.com/LLNL/gLaSDI)
 ┊ [GPLaSDI Sources](https://github.com/LLNL/GPLaSDI)

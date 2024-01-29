@@ -11,8 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | Predicting Heart Rhythm Disorders from Spatio-Temporal Imaging Data using Artificial Intelligence | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2525eedc08ca4e3793d73145e1a19af6)
-Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m198e5f133e368a8ae545638cfb79e6fe)
 Feb 8th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m343db5cf9164b9bec2c0be724b8ecd57)
 Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m97172a6f9b1ff51b4e2be3b60f8dd0c8)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
@@ -21,12 +19,14 @@ Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/p
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Jan 26th | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | Structure-Preserving Learning of High-Dimensional Lagrangian and Hamiltonian Systems   | [link]()
+Jan 19th | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | Predicting Heart Rhythm Disorders from Spatio-Temporal Imaging Data using Artificial Intelligence | [link](https://www.youtube.com/watch?v=hzBgLNQNOxk)
 Jan 12th | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link]()
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Dec 15th | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link]()
+Dec 15th | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link](https://youtu.be/JFXKIiOEXrU?si=_fdw-rVMnJWPe1dK)
 Dec 8th | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://youtu.be/FhqY4pGTIQk?si=ECSxE5kbwJH__O4K)
 Nov 17th | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://youtu.be/9mgFPJVcj0E?si=I7xKB8RbvdhdKm2F)
 Nov 3rd | [Michael E. Glinsky](http://qitech.biz) | BNZ Energy Inc. | A physics-based Reduced Order Model capturing the topology of dynamical manifolds | [link](https://youtu.be/cWlt6m6dPRk?si=jjn5ivK-mOz7lFrO)

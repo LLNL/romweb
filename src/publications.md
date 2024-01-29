@@ -6,6 +6,7 @@
 
 #### 2023
   1. Y. Kim, Y. Choi, B. Yoo, [Gappy data reconstruction using unsupervised learning for digital twin](https://arxiv.org/pdf/2312.07902), *arXiv preprint*, arXiv:2312.07902 **2023**
+  1. S.W. Chung, Y. Choi, P. Roy, T. Moore, T. Roy, T.Y. Lin, D.T. Nguyen, C. Hahn, E.B. Duoss, S.E., Baker, [Train small, model big: Scalable physics simulations via reduced order modeling and domain decomposition](https://arxiv.org/pdf/2401.10245.pdf), *arXiv preprint*, arXiv:2401.10245 **2023**
   1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof [Data-driven autoencoder numerical solver with uncertainty quantification for fast physical simulations](https://debog.github.io/Files/2023_Bonneville_EtAl_NeurIPS.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
   1. A.N. Diaz, Y. Choi, M. Heinkenschloss [Nonlinear-manifold reduced order models with domain decomposition](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_30.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
   1. S.W. Suh, S.W. Chung, P.T. Bremer, Y. Choi [Accelerating flow simulations using online dynamic mode decomposition](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_191.pdf), Machine Learning and the Physical Sciences Workshop, *NeurIPS*, **2023**
