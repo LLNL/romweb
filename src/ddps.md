@@ -11,8 +11,9 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m97172a6f9b1ff51b4e2be3b60f8dd0c8)
+Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | Physics Informed Machine Learning through Symbolic Regression | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m97172a6f9b1ff51b4e2be3b60f8dd0c8)
 Feb 22nd, 10 AM | [Francesco Ballarin](https://www.francescoballarin.it/) | Università Cattolica del Sacro Cuore | Regularized reduced order models for control of Navier--Stokes equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4ab58d418ff77a348981f92ce721f147)
+Feb 22nd, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
@@ -20,7 +21,7 @@ Feb 22nd, 10 AM | [Francesco Ballarin](https://www.francescoballarin.it/) | Univ
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Feb 8th | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link]()
-Jan 26th | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | Structure-Preserving Learning of High-Dimensional Lagrangian and Hamiltonian Systems   | [link]()
+Jan 26th | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | Structure-Preserving Learning of High-Dimensional Lagrangian and Hamiltonian Systems   | [link](https://youtu.be/Aorvf5P0Pec?si=6sCC16eSSY93_XEZ)
 Jan 19th | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | Predicting Heart Rhythm Disorders from Spatio-Temporal Imaging Data using Artificial Intelligence | [link](https://www.youtube.com/watch?v=hzBgLNQNOxk)
 Jan 12th | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link]()
 
