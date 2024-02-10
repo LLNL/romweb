@@ -13,7 +13,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Feb 16th, 10 AM | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | Physics Informed Machine Learning through Symbolic Regression | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m97172a6f9b1ff51b4e2be3b60f8dd0c8)
 Feb 22nd, 10 AM | [Francesco Ballarin](https://www.francescoballarin.it/) | Università Cattolica del Sacro Cuore | Regularized reduced order models for control of Navier--Stokes equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4ab58d418ff77a348981f92ce721f147)
-Feb 22nd, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | TBD | [link]()
+Apr 5th, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
