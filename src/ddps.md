@@ -12,7 +12,8 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Feb 22nd, 10 AM | [Francesco Ballarin](https://www.francescoballarin.it/) | Università Cattolica del Sacro Cuore | Regularized reduced order models for control of Navier--Stokes equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m4ab58d418ff77a348981f92ce721f147)
-Apr 5th, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | TBD | [link]()
+Apr 5th, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfd6158f2fd2f87c202f74cd21abc1293)
+Apr 12th, 10 AM | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfac4481274704438d9e20c7f41e8f644)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
