@@ -19,6 +19,7 @@ month = {oct}
 ## Contributors
 
 - [Bob Anderson](https://people.llnl.gov/anderson110)
+- [William Michael Anderson](https://people.llnl.gov/anderson316)
 - [William Arrighi](https://people.llnl.gov/arrighi2)
 - [Kyle Chand](https://people.llnl.gov/chand1)
 - [Siu Wun Cheung](https://people.llnl.gov/cheung26)
@@ -30,11 +31,16 @@ month = {oct}
 - [Debojyoti Ghosh](https://people.llnl.gov/ghosh5)
 - [Xiaolong He](https://www.linkedin.com/in/xiaolong-he-5ba9117b/)
 - [Kevin Huynh](https://people.llnl.gov/huynh24)
+- [Coleman James Kendrick](https://www.linkedin.com/in/coleman-kendrick-2692631ab)
 - [Tanya Kostova-Vassilevska](https://scholar.google.com/citations?user=oCuLEx4AAAAJ&hl=en)
+- [Axel Larsson](http://formfindinglab.princeton.edu/people/axel-larsson/)
 - [Jessica Lauzon](https://www.linkedin.com/in/jessielauzon/)
 - [Sean McBane](https://www.linkedin.com/in/sean-mcbane-560511119/)
-- [Yeonjong Shin](https://sites.google.com/site/shinmathematics/)
 - [Geoffrey Oxberry](https://people.llnl.gov/oxberry1)
+- [Pratanu Roy](https://people.llnl.gov/roy23)
+- [Yeonjong Shin](https://sites.google.com/site/shinmathematics/)
+- [Jian Tao](https://taugroup.github.io/)
+- [Paul Jeffrey Tranquilli](https://people.llnl.gov/tranquilli1)
 
 
 ## License
