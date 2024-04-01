@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Apr 5th, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | GPT-PINN: Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfd6158f2fd2f87c202f74cd21abc1293)
-Apr 12th, 10 AM | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfac4481274704438d9e20c7f41e8f644)
+Apr 12th, 10 AM | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | A Data-Driven Process Systems Engineering Approach for Supply Chain Management and Enterprise-Wide Optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfac4481274704438d9e20c7f41e8f644)
 Apr 26th, 10 AM | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb02f6f260bb801e392ea1d9cbed1f0bc)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
