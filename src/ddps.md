@@ -11,15 +11,16 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Apr 5th, 10 AM | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | GPT-PINN: Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfd6158f2fd2f87c202f74cd21abc1293)
 Apr 12th, 10 AM | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | A Data-Driven Process Systems Engineering Approach for Supply Chain Management and Enterprise-Wide Optimization | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfac4481274704438d9e20c7f41e8f644)
 Apr 26th, 10 AM | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb02f6f260bb801e392ea1d9cbed1f0bc)
+May 10th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1eed7b19c03b406c085c5551fb29db98)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Apr 5th | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | GPT-PINN and TGPT-PINN: Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs | [link]()
 Feb 22nd | [Francesco Ballarin](https://www.francescoballarin.it/) | Università Cattolica del Sacro Cuore | Regularized reduced order models for control of Navier--Stokes equations | [link](https://youtu.be/aSb9D8CXxEo?si=aJNy0b-7Rkw7v4PZ)
 Feb 16th | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | Physics Informed Machine Learning through Symbolic Regression | [link](https://youtu.be/ZFhclrBBhrQ?si=maskD2KG0nRP1BKB)
 Feb 8th | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link](https://youtu.be/bSRjZ2B-D3U?si=X9GxqLYS5psYblFf)
