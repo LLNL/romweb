@@ -41,6 +41,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="vlasov">Vlasov</option>
       <option id="maxwell">Maxwell</option>
       <option id="graddiv">Grad-div</option>
+      <option id="eigenproblem">Eigenproblem</option>
    </select>
 </div>
 <div class="col-sm-7 col-md-3 small" markdown="1">
@@ -206,7 +207,7 @@ MFEM with a modification on the right hand side function._
 <br></div>
 
 
-<div id="" markdown="1">
+<div id="elliptic_eigenproblem" markdown="1">
 ## Global pROM for elliptic eigenproblem
 <a target="_blank">
 <img class="floatright" src="../img/examples/diffusion-eigenvector.png" width="250">
@@ -1422,7 +1423,7 @@ function update()
    // example codes
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("elliptic_eigenproblem", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("elliptic_eigenproblem", (diffusion || eigenproblem) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
