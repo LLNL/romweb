@@ -408,7 +408,7 @@ MFEM with a modification on the right hand side function.</em> </p>
 <div style="clear:both;"/>
 </div>
 <p><br></div></p>
-<div id="">
+<div id="elliptic_eigenproblem">
 <h2 id="global-prom-for-elliptic-eigenproblem">Global pROM for elliptic eigenproblem</h2>
 <p><a target="_blank">
 <img class="floatright" src="../img/examples/diffusion-eigenvector.png" width="250">
@@ -1956,8 +1956,7 @@ function update()
    // example codes
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("elliptic_eigenproblem", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
-   + showElement("elliptic_eigenproblem", (eigenproblem) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("elliptic_eigenproblem", (diffusion || eigenproblem) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
