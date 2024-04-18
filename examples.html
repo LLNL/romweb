@@ -213,6 +213,7 @@ or <a href="https://github.com/LLNL/libROM/labels/comments">comments</a></em>.</
       <option id="vlasov">Vlasov</option>
       <option id="maxwell">Maxwell</option>
       <option id="graddiv">Grad-div</option>
+      <option id="eigenproblem">Eigenproblem</option>
    </select></p>
 </div>
 <div class="col-sm-7 col-md-3 small">
@@ -1956,6 +1957,7 @@ function update()
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("elliptic_eigenproblem", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("elliptic_eigenproblem", (eigenproblem) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
