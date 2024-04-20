@@ -41,6 +41,7 @@ or [comments](https://github.com/LLNL/libROM/labels/comments)_.
       <option id="vlasov">Vlasov</option>
       <option id="maxwell">Maxwell</option>
       <option id="graddiv">Grad-div</option>
+      <option id="eigenproblem">Eigenproblem</option>
    </select>
 </div>
 <div class="col-sm-7 col-md-3 small" markdown="1">
@@ -128,9 +129,9 @@ summarized in the table below:
 * **reference FOM solution**: `poisson_global_rom -fom -f 1.15`
 * **online**: `poisson_global_rom -online -f 1.15`
 
-The command line option -f defines a frequency of the sinusoidal right hand
-side function. The relation between $kappa$ and f is defined as $\kappa = \pi
-f$.
+The command line option `-f` defines a frequency $\nu$ of the sinusoidal right hand
+side function. The relation between $\kappa$ and the value $\nu$ specified by `-f` is defined as $\kappa = \pi
+\nu$. The table below shows the performance result for the testing case `-f 1.15`. 
 
    | FOM solution time | ROM solution time | Speed-up | Solution relative error |
    | ----------------- | ----------------- | -------- | ----------------------- |
@@ -202,6 +203,58 @@ The
 is based on
 [ex1p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex1p.cpp) from
 MFEM with a modification on the right hand side function._ 
+<div style="clear:both;"/></div>
+<br></div>
+
+
+<div id="elliptic_eigenproblem" markdown="1">
+## Global pROM for elliptic eigenproblem
+<a target="_blank">
+<img class="floatright" src="../img/examples/diffusion-eigenvector.png" width="250">
+</a>
+
+This example code demonstrates the use of libROM and MFEM to define a reduced
+order model for a finite element discretization of the eigenvalue problem
+$$-\text{div}(\kappa u) = \lambda u$$ with homogeneous Dirichlet boundary
+conditions. The example parameterizes the diffusion operator on the left hand side
+with frequency variable, $\alpha$:
+
+$$\kappa(x) =  
+1 + \cos(\alpha \pi x_1) \cos(\alpha \pi x_2).
+$$
+
+The 2D solution contour plot for $\alpha=0.5$ is shown in the figure
+on the right to show the effect of $\alpha$. For demonstration, we sample
+solutions at $\alpha=0.4$, $0.45$, $0.55$ and $0.6$. Then a ROM is build with basis size
+of 20, which is used to predict the solution for $\alpha = 0.5$.  The ROM is
+able to achieve a speedup of $1.9$ with a relative error of $6.8\times10^{-2}$ in the first 
+eigenvalue and $7.0 \times 10^{-2}$ in the first eigenvector.
+One can follow the command line options below to reproduce the numerical results
+summarized in the table below:
+
+* **offline1**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 0 -a 0.40`
+* **offline2**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 1 -a 0.45`
+* **offline3**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 2 -a 0.55`
+* **offline4**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 3 -a 0.60`
+* **merge**: `elliptic_eigenproblem_global_rom -merge -p 2 -ns 4`
+* **reference FOM solution**: `elliptic_eigenproblem_global_rom -fom -p 2 -a 0.50`
+* **online**: `elliptic_eigenproblem_global_rom -online -p 2 -a 0.50`
+
+The command line option `-a` defines the frequency variable $\alpha$ 
+of the diffusion operator on left hand side. 
+The table below shows the performance result for the testing case `-a 0.50`. 
+
+   | FOM solution time | ROM solution time | Speed-up | First eigenvalue relative error | First eigenvector relative error |
+   | ----------------- | ----------------- | -------- | ----------------------- | ----------------------- |
+   |  1.5e-3 sec         |  7.8e-4 sec        |   1.9    |           6.8e-2        |           7.0e-2        |
+
+_The code that generates the numerical results above can be found in
+([elliptic_eigenproblem_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/elliptic_eigenproblem_global_rom.cpp)). 
+The
+[elliptic_eigenproblem_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/elliptic_eigenproblem_global_rom.cpp)
+is based on
+[ex11p.cpp](https://github.com/mfem/mfem/blob/master/examples/ex11p.cpp) from
+MFEM with a modification on the differential operator on the left hand side._ 
 <div style="clear:both;"/></div>
 <br></div>
 
@@ -1370,6 +1423,7 @@ function update()
    // example codes
    + showElement("poisson", (diffusion) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("poisson_greedy_prom", (diffusion) && (prom) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
+   + showElement("elliptic_eigenproblem", (diffusion || eigenproblem) && (prom) && (global) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("dmd_heat_conduction", (diffusion) && (dmd) && (reproductive) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("parametric_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (no_optimizer))
    + showElement("optimal_control_dmd_heat_conduction", (diffusion) && (dmd) && (interpolation) && (no_hr) && (mfem) && (de))
