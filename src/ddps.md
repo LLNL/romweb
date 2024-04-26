@@ -12,8 +12,8 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 May 10th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1eed7b19c03b406c085c5551fb29db98)
+Jun 14th, 10 AM | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb02f6f260bb801e392ea1d9cbed1f0bc)
 Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbba06447ba8e702ebafca00d1407d0e5)
-<!--- TBD | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb02f6f260bb801e392ea1d9cbed1f0bc)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
