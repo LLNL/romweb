@@ -1,6 +1,10 @@
 # Publications
 
 #### 2024
+  1. S. Chung, Y. Choi, P. Roy, T. Moore, T. Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker [Train small, model big: Scalable physics simulators via reduced order modeling and domain decomposition](https://doi.org/10.1016/j.cma.2024.117041), *Computer Methods in Applied Mechanics and Engineering*, 427, 117041, **2024**
+  1. A. Tran, X. He, D. A. Messenger, Y. Choi, D. M. Bortz, [Weak-form latent space dynamics identification](https://doi.org/10.1016/j.cma.2024.116998), *Computer Methods in Applied Mechanics and Engineering*, 427, 116998, **2024**
+  1. Y. Kim, Y. Choi, B. Yoo, [Gappy AE: A nonlinear approach for Gappy data reconstruction using auto-encoder](https://doi.org/10.1016/j.cma.2024.116978), *Computer Methods in Applied Mechanics and Engineering*, 426, 116978, **2024**
+  1. A. N. Diaz, Y. Choi, M. Heinkenschloss [A fast and accurate domain decomposition nonlinear manifold reduced order model](https://doi.org/10.1016/j.cma.2024.116943), *Computer Methods in Applied Mechanics and Engineering*, 425, 116943, **2024**
   1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof, [GPLaSDI: Gaussian Process-based Interpretable Latent Space Dynamics Identification through Deep Autoencoder](https://doi.org/10.1016/j.cma.2023.116535), *Computer Methods in Applied Mechanics and Engineering*, 418, 116535, **2024**
 
 
