@@ -4,7 +4,7 @@
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
-May 17, 2024 | [DD-NM-ROM](https://github.com/LLNL/scaleupROM) open source code is available in gitHub
+May 17, 2024 | [DD-NM-ROM](https://github.com/LLNL/DD-NM-ROM) open source code is available in gitHub
 May 15, 2024 | [DDFEM](https://doi.org/10.1016/j.cma.2024.117041) paper is published in CMAME
 Apr 29, 2024 | [wLaSDI](https://doi.org/10.1016/j.cma.2024.116998) paper is published in CMAME
 Apr 10, 2024 | [Gappy AE](https://doi.org/10.1016/j.cma.2024.116978) paper is published in CMAME
