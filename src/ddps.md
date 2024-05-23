@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-May 10th, 10 AM | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1eed7b19c03b406c085c5551fb29db98)
 Jun 14th, 10 AM | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb02f6f260bb801e392ea1d9cbed1f0bc)
 Jun 21st, 10 AM | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine/gianluca-iaccarino-dont-be-afraid-non-linear-career-path) | Stanford | AutoEncoders for Aerodynamic Predictions | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma29874e686e004e35ebfaa6cd77fb4c3)
 Jun 28th, 10 AM | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9e230035f28879356990d2e9824014d)
@@ -23,6 +22,7 @@ Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+May 10th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://youtu.be/rRi6Asx7SA8?si=P8vkuEmEcbHjn8_A)
 Apr 12th | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | A Data-Driven Process Systems Engineering Approach for Supply Chain Management and Enterprise-Wide Optimization | [link](https://youtu.be/NOM1GMEbbas?si=o-tt639KiSNuWcD3)
 Apr 5th | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | GPT-PINN and TGPT-PINN: Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs | [link](https://youtu.be/ODA9Po4FVWA?si=Z1RqncUtG5UlsL4g)
 Feb 22nd | [Francesco Ballarin](https://www.francescoballarin.it/) | Università Cattolica del Sacro Cuore | Regularized reduced order models for control of Navier--Stokes equations | [link](https://youtu.be/aSb9D8CXxEo?si=aJNy0b-7Rkw7v4PZ)

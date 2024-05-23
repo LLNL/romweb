@@ -5,6 +5,8 @@
   1. A. Tran, X. He, D. A. Messenger, Y. Choi, D. M. Bortz, [Weak-form latent space dynamics identification](https://doi.org/10.1016/j.cma.2024.116998), *Computer Methods in Applied Mechanics and Engineering*, 427, 116998, **2024**
   1. Y. Kim, Y. Choi, B. Yoo, [Gappy AE: A nonlinear approach for Gappy data reconstruction using auto-encoder](https://doi.org/10.1016/j.cma.2024.116978), *Computer Methods in Applied Mechanics and Engineering*, 426, 116978, **2024**
   1. A. N. Diaz, Y. Choi, M. Heinkenschloss [A fast and accurate domain decomposition nonlinear manifold reduced order model](https://doi.org/10.1016/j.cma.2024.116943), *Computer Methods in Applied Mechanics and Engineering*, 425, 116943, **2024**
+  1. C. Bonneville, X. He, A. Tran, J. S. Park, W. Fries, D. A. Messenger, S. W. Cheung, D. M. Bortz, D. Ghosh, J. S. Chen, [A Comprehensive Review of Latent Space Dynamics Identification Algorithms for Intrusive and Non-Intrusive Reduced-Order-Modeling](https://arxiv.org/pdf/2403.10748), *arXiv preprint* arXiv:2403.10748 **2024**
+  1. J. S. R. Park, S. W. Cheung, Y. Choi, and Y. Shin, [tLaSDI: Thermodynamics-informed latent space dynamics identification](https://arxiv.org/pdf/2403.05848), *arXiv preprint* arXiv:2403.05848 **2024**
   1. C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof, [GPLaSDI: Gaussian Process-based Interpretable Latent Space Dynamics Identification through Deep Autoencoder](https://doi.org/10.1016/j.cma.2023.116535), *Computer Methods in Applied Mechanics and Engineering*, 418, 116535, **2024**
 
 
