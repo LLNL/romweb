@@ -16,6 +16,7 @@ Jun 21st, 10 AM | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine
 Jun 28th, 10 AM | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9e230035f28879356990d2e9824014d)
 July 12th, 10 AM | [Francesco Romor](https://www.wias-berlin.de/contact/staff/index.jsp?lang=1&uname=romor) | Weierstrass Instititute | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mdd01a084a92bae70831aefbe8912fe03)
 Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbba06447ba8e702ebafca00d1407d0e5)
+Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
