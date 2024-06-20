@@ -1,0 +1,7 @@
+name: romweb
+channels:
+  - conda-forge
+dependencies:
+  - mkdocs
+  - markdown
+  - pyyaml

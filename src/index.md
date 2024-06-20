@@ -40,17 +40,16 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
-Aug 26, 2023 | [Siu Wun Cheung](https://tonycsw2905.github.io) will present at [ICIAM2023](https://iciam2023.org) 
-Aug 26, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present at [ICIAM2023](https://iciam2023.org) 
-Aug 10, 2023 | [GPLaSDI](https://arxiv.org/pdf/2308.05882.pdf) arXiv paper is available
+May 17, 2024 | [DD-NM-ROM](https://github.com/LLNL/DD-NM-ROM) open source code is available in gitHub
+May 15, 2024 | [DDFEM](https://doi.org/10.1016/j.cma.2024.117041) paper is published in CMAME
+Apr 29, 2024 | [wLaSDI](https://doi.org/10.1016/j.cma.2024.116998) paper is published in CMAME
+Apr 10, 2024 | [Gappy AE](https://doi.org/10.1016/j.cma.2024.116978) paper is published in CMAME
+Mar 25, 2024 | [DD-NM-ROM](https://doi.org/10.1016/j.cma.2024.116943) paper is published in CMAME
+Mar 22, 2024 | [tLaSDI](https://arxiv.org/pdf/2403.05848) arXiv paper is available 
+Mar 16, 2024 | [LaSDI book chapter](https://arxiv.org/pdf/2403.10748) arXiv paper is available
+Jan 1, 2024 | [GPLaSDI](https://doi.org/10.1016/j.cma.2023.116535) paper is published in CMAME
+Dec 5, 2023 | [ScaleupROM](https://github.com/LLNL/scaleupROM) open source code is available in gitHub 
 Aug 8, 2023 | [pylibROM](https://github.com/LLNL/pylibROM) open source code is available in gitHub
-July 30, 2023 | [GPLaSDI](https://github.com/LLNL/GPLaSDI) open source code is available in gitHub
-June 22, 2023 | [Uncertainty-aware Barlow twins ROM](https://ieeexplore.ieee.org/abstract/document/10159524) paper is published in IEEE Access
-June 21, 2023 | [gLaSDI](https://authors.elsevier.com/c/1hHaB508HwNZf) paper is published in JCP
-June 2, 2023 | [Time Windowing DMD](https://arxiv.org/pdf/2306.00184.pdf) preprint is available in arXiv
-May 24, 2023 | [DD-NMROM](https://arxiv.org/pdf/2305.15163.pdf) preprint is available in arXiv
-Mar 10, 2023 | [gLaSDI](https://github.com/LLNL/gLaSDI) open source code is available in gitHub
-Mar 6, 2023 | [LaSDI](https://github.com/LLNL/LaSDI) open source code is available in gitHub
 
 ## libROM tutorials in YouTube
 Date         | Title
@@ -66,8 +65,13 @@ Sep. 23, 2022| [Projection-based reduced order model for nonlinear system](https
 [Examples](examples.md)
 ┊ [Code documentation](https://librom.readthedocs.io/en/latest/index.html)
 ┊ [libROM Sources](https://github.com/LLNL/libROM)
+┊ [pylibROM Sources](https://github.com/LLNL/pylibROM)
+┊ [LaghosROM Sources](https://github.com/CEED/Laghos/tree/rom/rom)
+┊ [ScaleupROM](https://github.com/LLNL/scaleupROM)
 ┊ [LaSDI Sources](https://github.com/LLNL/LaSDI)
 ┊ [gLaSDI Sources](https://github.com/LLNL/gLaSDI)
+┊ [GPLaSDI Sources](https://github.com/LLNL/GPLaSDI)
+┊ [DD-NM-ROM Sources](https://github.com/LLNL/DD-NM-ROM)
 
 [<button type="button" class="btn btn-success">
 **Download libROM-master.zip**

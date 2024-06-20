@@ -1,14 +1,45 @@
 # All News Updates
 
+## News in 2024
+
+Date         | Message
+------------ | -----------------------------------------------------------------
+May 17, 2024 | [DD-NM-ROM](https://github.com/LLNL/DD-NM-ROM) open source code is available in gitHub
+May 15, 2024 | [DDFEM](https://doi.org/10.1016/j.cma.2024.117041) paper is published in CMAME
+Apr 29, 2024 | [wLaSDI](https://doi.org/10.1016/j.cma.2024.116998) paper is published in CMAME
+Apr 10, 2024 | [Gappy AE](https://doi.org/10.1016/j.cma.2024.116978) paper is published in CMAME
+Mar 25, 2024 | [DD-NM-ROM](https://doi.org/10.1016/j.cma.2024.116943) paper is published in CMAME
+Mar 22, 2024 | [tLaSDI](https://arxiv.org/pdf/2403.05848) arXiv paper is available 
+Mar 16, 2024 | [LaSDI book chapter](https://arxiv.org/pdf/2403.10748) arXiv paper is available
+Jan 1, 2024  | [GPLaSDI](https://doi.org/10.1016/j.cma.2023.116535) paper is published in CMAME
 
 ## News in 2023
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
-Aug 26, 2023 | [Siu Wun Cheung](https://tonycsw2905.github.io) will present at [ICIAM2023](https://iciam2023.org) 
-Aug 26, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) will present at [ICIAM2023](https://iciam2023.org) 
+Dec 15, 2023 | [Alejandro Diaz](https://alejandro-n-diaz.github.io) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_30.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76101.png); [Video](https://youtu.be/OtdHFigtU68?si=4WX7hOxCaXBfKdJi) 
+Dec 15, 2023 | [Aaron Brown](https://profiles.stanford.edu/aaron-brown) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_38.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76106.png); [Video](https://youtu.be/jgSVLCiRKBc?si=JT0-uquy3pn7Wi9O) 
+Dec 15, 2023 | [Christophe Bonneville](https://www.linkedin.com/in/christophe-bonneville/) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_43.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76111.png)
+Dec 15, 2023 | [Seung Whan Chung](https://www.linkedin.com/in/kevin-seung-whan-chung/) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_66.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76127.png)
+Dec 15, 2023 | [Tianshu Wen](https://scholar.google.com/citations?user=K21VORoAAAAJ&hl=zh-CN) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_148.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76189.png); [Video](https://youtu.be/Nxvgk_Fvh4I?si=rbgX4baUYML1_Va2) 
+Dec 15, 2023 | [Ping-Hsuan Tsai](https://www.linkedin.com/in/ping-hsuan-tsai-8a19701b9/) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_171.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76207.png); [Video](https://youtu.be/I5X8kSwY1AI?si=7gwiram24sq7bAqt) 
+Dec 15, 2023 | [Seung Won Suh](https://www.linkedin.com/in/seung-won-suh-5a9257176/) presented at Machine Learning and the Physical Sciences Workshop, [NeurIPS 2023](https://ml4physicalsciences.github.io/2023/). [Paper](https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_191.pdf); [Poster](https://nips.cc/media/PosterPDFs/NeurIPS%202023/76227.png); [Video](https://www.youtube.com/watch?v=kt1Faaskaw0) 
+Dec 13, 2023 | [Gappy auto-encoder](https://arxiv.org/pdf/2312.07902.pdf) arXiv paper is available 
+Dec 6, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave a talk at [CHaRMNET](https://charmnet-mmicc.github.io) annual meeting
+Nov 20, 2023 | [WLaSDI](https://arxiv.org/pdf/2311.12880.pdf) arXiv paper is available
+Nov 20, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave a [keynote talk](https://iop.eventsair.com/asm2023/speakers) at [Second Workshop on Physics Enhancing Machine Learning in Applied Mechanics](https://iop.eventsair.com/asm2023/)
+Nov 16, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave an invited talk at [Committee on Solid Earth Geophysics Fall 2023 meeting](https://vimeo.com/870809172), Note Youngsoo's talk starts at 2:50:00
+Nov 7, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave [FEM@LLNL Seminar Talk](https://www.youtube.com/watch?v=nWOC_BR3x-8) 
+Oct 6, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave [CRLC Seminar Talk](https://shinstitute.org/computing-research-leadership-council-crlc-seminar-series/) 
+Oct 4, 2023  | [ProgressiveROM](https://arxiv.org/pdf/2310.03770.pdf) arXiv paper is available
+Sep 18, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave [Applied and Computational Mathematics Seminar](https://math.gatech.edu/seminars-colloquia/series/applied-and-computational-mathematics-seminar/youngsoo-choi-20230918) talk
+Sep 13, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave Numerial Analysis Seminar talk at the University of Hong Kong 
+Aug 26, 2023 | [Siu Wun Cheung](https://tonycsw2905.github.io) presented at [ICIAM2023](https://iciam2023.org) 
+Aug 26, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented at [ICIAM2023](https://iciam2023.org) 
+Aug 15, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) gave DarkStar seminar talk 
+Aug 11, 2023 | [Energy-Conservation-ROM](https://www.osti.gov/servlets/purl/1995059/) technical report is available
 Aug 10, 2023 | [GPLaSDI](https://arxiv.org/pdf/2308.05882.pdf) arXiv paper is available
-Aug 8, 2023 | [pylibROM](https://github.com/LLNL/pylibROM) open source code is available in gitHub
+Aug 8, 2023  | [pylibROM](https://github.com/LLNL/pylibROM) open source code is available in gitHub
 Jul 30, 2023 | [GPLaSDI](https://github.com/LLNL/GPLaSDI) open source code is available in gitHub
 Jul 26, 2023 | [Siu Wun Cheung](https://tonycsw2905.github.io) presented at [USNCCM17](https://17.usnccm.org) 
 Jul 25, 2023 | [Saad Khairallah](https://people.llnl.gov/khairallah1) presented at [USNCCM17](https://17.usnccm.org) 
@@ -20,10 +51,13 @@ Jun 21, 2023 | [gLaSDI](https://authors.elsevier.com/c/1hHaB508HwNZf) paper is p
 Jun 3, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented at [SIAM OP23](https://meetings.siam.org/sess/dsp_talk.cfm?p=127228) 
 Jun 2, 2023 | [Time Windowing DMD](https://arxiv.org/pdf/2306.00184.pdf) preprint is available in arXiv
 May 24, 2023 | [DD-NMROM](https://arxiv.org/pdf/2305.15163.pdf) preprint is available in arXiv
+Apr 7, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented at [TAMIDS DTL/SciML Lab Seminar](https://youtu.be/jbHoYIIpAQo?si=ZdONr-pfJjbrNg92)
 Mar 29, 2023 | [AAAI Spring Symposium](http://cogsys.org/symposium/discovery-2022/) was organized
 Mar 10, 2023 | [gLaSDI](https://github.com/LLNL/gLaSDI) open source code is available in gitHub.
+Mar 10, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented at [Applied Math Seminar](https://sites.google.com/site/ucsbpdeappliedmathseminar/winter-2023), at UC Santa Barbara
 Mar 6, 2023 | [LaSDI](https://github.com/LLNL/LaSDI) open source code is available in gitHub.
 Feb 15, 2023 | [parametric DMD](https://www.sciencedirect.com/science/article/pii/S0021999122009159) paper is published in JCP.
+Feb 3, 2023 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented at [CRLC Seminar](https://shinstitute.org/computing-research-leadership-council-crlc-seminar-series/), at UC San Diego
 Jan 1, 2023 | [Rayleigh-Taylor instability ROM](https://doi.org/10.1016/j.jcp.2022.111655) paper is published in JCP.
 
 

@@ -8,22 +8,37 @@
 # DDPS Webinar (_in California time_)
 DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk or would like to recommend a speaker, please send an email to choi15@llnl.gov. If you are interested in being included in DDPS email list, please also send an email to choi15@llnl.gov.
 
-## Scheduled Talks in 2023
+## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov 17th, 10 AM | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m6389215a73f372930dc564748421102b)
-Nov 30th, 4 PM | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link]()
-Dec 8th, 10 AM | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8eba8a5bfddbc604395586a80fcbdb70)
-Dec 15th, 10 AM | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m57c437fe97f46f0be35a317d23d7e5da)
-Jan 12th, 10 AM | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m8fe87aefdb029fb6c6a4aa0a5234c050)
-Jan 19th, 10 AM | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | TBD | [link]()
-Jan 26th, 10 AM | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | TBD | [link]()
+Jun 14th, 10 AM | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb02f6f260bb801e392ea1d9cbed1f0bc)
+Jun 21st, 10 AM | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine/gianluca-iaccarino-dont-be-afraid-non-linear-career-path) | Stanford | AutoEncoders for Aerodynamic Predictions | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma29874e686e004e35ebfaa6cd77fb4c3)
+Jun 28th, 10 AM | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9e230035f28879356990d2e9824014d)
+July 12th, 10 AM | [Francesco Romor](https://www.wias-berlin.de/contact/staff/index.jsp?lang=1&uname=romor) | Weierstrass Instititute | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mdd01a084a92bae70831aefbe8912fe03)
+Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbba06447ba8e702ebafca00d1407d0e5)
+Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
+
+## Past Talks in 2024
+Date      | Speaker        |  Institution      | Title                         | YouTube
+---------- | -------------- | ----------------- | ----------------------------- | ---------
+May 10th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://youtu.be/rRi6Asx7SA8?si=P8vkuEmEcbHjn8_A)
+Apr 12th | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | A Data-Driven Process Systems Engineering Approach for Supply Chain Management and Enterprise-Wide Optimization | [link](https://youtu.be/NOM1GMEbbas?si=o-tt639KiSNuWcD3)
+Apr 5th | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | GPT-PINN and TGPT-PINN: Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs | [link](https://youtu.be/ODA9Po4FVWA?si=Z1RqncUtG5UlsL4g)
+Feb 22nd | [Francesco Ballarin](https://www.francescoballarin.it/) | Università Cattolica del Sacro Cuore | Regularized reduced order models for control of Navier--Stokes equations | [link](https://youtu.be/aSb9D8CXxEo?si=aJNy0b-7Rkw7v4PZ)
+Feb 16th | [George Bollas](https://chemical-biomolecular.engr.uconn.edu/people/faculty/bollas-george/) | The University of Connecticut | Physics Informed Machine Learning through Symbolic Regression | [link](https://youtu.be/ZFhclrBBhrQ?si=maskD2KG0nRP1BKB)
+Feb 8th | [Zhiwen Zhang](https://hkumath.hku.hk/~zhangzw/) | The University of Hong Kong | DeepParticle: learning invariant measure by a deep neural network minimizing Wasserstein distance on data generated from an interacting particle method | [link](https://youtu.be/bSRjZ2B-D3U?si=X9GxqLYS5psYblFf)
+Jan 26th | [Boris Kramer](https://kramer.ucsd.edu) | UCSD | Structure-Preserving Learning of High-Dimensional Lagrangian and Hamiltonian Systems   | [link](https://youtu.be/Aorvf5P0Pec?si=6sCC16eSSY93_XEZ)
+Jan 19th | [Jan Christoph](https://cardiacvision.ucsf.edu/research) | UCSF | Predicting Heart Rhythm Disorders from Spatio-Temporal Imaging Data using Artificial Intelligence | [link](https://www.youtube.com/watch?v=hzBgLNQNOxk)
+Jan 12th | [Guang Lin](https://www.math.purdue.edu/~lin491/) | Purdue University | Towards Third Wave AI: Interpretable, Robust Trustworthy Machine Learning for Diverse Applications in Science and Engineering | [link](https://youtu.be/BOiACupIp94?si=BvIYbYkusoYTNvrV)
 
 ## Past Talks in 2023
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Dec 15th | [Dimitrios Giannakis](https://giannakis.host.dartmouth.edu) | Dartmouth College | Quantum information and data science for modeling classical dynamics | [link](https://youtu.be/JFXKIiOEXrU?si=_fdw-rVMnJWPe1dK)
+Dec 8th | [Nicolas Boulle](https://nboulle.github.io) | The University of Cambridge | Elliptic PDE learning is provably data-efficient | [link](https://youtu.be/FhqY4pGTIQk?si=ECSxE5kbwJH__O4K)
+Nov 17th | [Mengwu Guo](https://mengwuguo.weebly.com) | University of Twente | Probabilistic Methods for Data-Driven Reduced-Order Modeling | [link](https://youtu.be/9mgFPJVcj0E?si=I7xKB8RbvdhdKm2F)
 Nov 3rd | [Michael E. Glinsky](http://qitech.biz) | BNZ Energy Inc. | A physics-based Reduced Order Model capturing the topology of dynamical manifolds | [link](https://youtu.be/cWlt6m6dPRk?si=jjn5ivK-mOz7lFrO)
 Nov 3rd | [Elnaz Rezaian](https://scholar.google.com/citations?user=seAHUk4AAAAJ&hl=en) | University of Michigan | Data-driven balancing transformation for predictive model order reduction | [link](https://youtu.be/7gCVhw_3Gko?si=TBqFFajOqfvpIo6b)
 Oct 20th | [Christopher Rackauckas](https://chrisrackauckas.com) | MIT | Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models | [link](https://youtu.be/16jtJDiJIuU?si=1g-lLzAMw93UleG4)
