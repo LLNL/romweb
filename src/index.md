@@ -59,6 +59,7 @@ Sep. 1, 2021| [Poisson equation & its reduced order model](https://youtu.be/YlFr
 Sep. 23, 2021| [Physics-informed sampling procedure for reduced order models](https://youtu.be/A5JlIXRHxrI)
 Sep. 11, 2022| [Local reduced order models and interpolation-based parameterization](https://youtu.be/KLyWZQRZ4hU)
 Sep. 23, 2022| [Projection-based reduced order model for nonlinear system](https://youtu.be/EfoeOltd9Fo)
+Aug. 23, 2023| [Complete derivation of dynamic mode decomposition](https://youtu.be/YmxFkQAHSLM?si=03kdOe99j00IdUuM)
 
 ## Latest Release
 
