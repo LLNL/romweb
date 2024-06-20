@@ -365,6 +365,36 @@ We recommend another excellent paper for the greedy algorithm:
   models](https://onlinelibrary.wiley.com/doi/full/10.1002/nme.4759).
   *International Journal for Numerical Methods in Engineering*, 102, p1262-1292, **2014**
 
+## Latent Space Dynamics Identification
+Latent space dynamics identification (LaSDI) is a reduced order model framework
+that follows three distict steps, i.e., **compression**, **identification**,
+and **prediction**. For compression, LaSDI utilizes both linear and nonlinear
+compressions. For identification, LaSDI utilizes sparse-regression techniques,
+such as SINDy and weak-form SINDy, or a fixed form, such as neural network
+version of GENERIC formalism (i.e., GFINN). 
+
+We recommend the followin excellent papers for LaSDI framework:
+
+- W.D. Fries, X. He, and Y. Choi, [Lasdi: Parametric latent space dynamics
+  identification](https://doi.org/10.1016/j.cma.2022.115436). *Computer Methods
+  in Applied Mechanics and Engineering*, 399, p.115436, **2022**
+- X. He, Y. Choi, W.D. Fries, J.L. Belof, J.S. Chen, [gLaSDI: Parametric
+  physics-informed greedy latent space dynamics
+  identification](https://doi.org/10.1016/j.jcp.2023.112267). *Journal of
+  Computational Physics*, 489, p.112267. **2023**
+- C. Bonneville, Y. Choi, D. Ghosh, J.L. Belof, [GPLaSDI: Gaussian
+  process-based interpretable latent space dynamics identification through deep
+  autoencoder](https://doi.org/10.1016/j.cma.2023.116535). *Computer Methods in
+  Applied Mechanics and Engineering*, 418, p.116535, **2024**
+- A. Tran, X. He, D.A. Messenger, Y. Choi, D.M. Bortz, [Weak-form latent space
+  dynamics identification](https://doi.org/10.1016/j.cma.2024.116998).
+  *Computer Methods in Applied Mechanics and Engineering*, 427, p.116998,
+  **2024**
+- J.S.R. Park, S.W. Cheung, Y. Choi, Y. Shin, [tLaSDI: Thermodynamics-informed
+  latent space dynamics identification](https://arxiv.org/pdf/2403.05848).
+  *arXiv preprint* arXiv:2403.05848, **2024**
+
+
 ## Open Source
 
 libROM is an open-source software, and can be freely used under the terms of the

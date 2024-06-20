@@ -13,11 +13,12 @@ work together for better data-driven technology!
 
 ## Features
 
-* [Proper Orthogonal Decomposition](features.md#proper-orthogonal-decomposition)
-* [Dynamic mode decomposition](features.md#dynamic-mode-decomposition)
-* [Projection-based reduced order models](features.md#projection-based-reduced-order-model)
-* [Hyper-reduction](features.md#hyper-reduction)
-* [Greedy algorithm](features.md#greedy-sampling-algorithm)
+* [Proper Orthogonal Decomposition](features.md#proper-orthogonal-decomposition) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM))
+* [Dynamic mode decomposition](features.md#dynamic-mode-decomposition) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM))
+* [Projection-based reduced order models](features.md#projection-based-reduced-order-model) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM))
+* [Hyper-reduction](features.md#hyper-reduction) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM)) 
+* [Greedy algorithm](features.md#greedy-sampling-algorithm) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM)) 
+* [Latent space dynamics identification](features.md#latent-space-dynamics-identification) ([LaSDI](https://github.com/LLNL/LaSDI), [gLaSDI](https://github.com/LLNL/gLaSDI), [GPLaSDI](https://github.com/LLNL/gpLaSDI))
 
 Many more features will be available soon. Stay tuned!
 
