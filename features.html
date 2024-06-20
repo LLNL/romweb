@@ -191,6 +191,8 @@
         
             <li><a href="#latent-space-dynamics-identification">Latent Space Dynamics Identification</a></li>
         
+            <li><a href="#domain-decomposition-nonlinear-manifold-reduced-order-model">Domain Decomposition Nonlinear Manifold Reduced Order Model</a></li>
+        
             <li><a href="#open-source">Open Source</a></li>
         
     
@@ -507,12 +509,12 @@ in a matrix manifold:</p>
   <em>International Journal for Numerical Methods in Engineering</em>, 102, p1262-1292, <strong>2014</strong></li>
 </ul>
 <h2 id="latent-space-dynamics-identification">Latent Space Dynamics Identification</h2>
-<p>Latent space dynamics identification (LaSDI) is a reduced order model framework
-that follows three distict steps, i.e., <strong>compression</strong>, <strong>identification</strong>,
-and <strong>prediction</strong>. For compression, LaSDI utilizes both linear and nonlinear
-compressions. For identification, LaSDI utilizes sparse-regression techniques,
-such as SINDy and weak-form SINDy, or a fixed form, such as neural network
-version of GENERIC formalism (i.e., GFINN). </p>
+<p>Latent Space Dynamics Identification (LaSDI) is a reduced order model framework
+that follows three distinct steps: <strong>compression</strong>, <strong>identification</strong>, and
+<strong>prediction</strong>.  For compression, LaSDI employs both linear and nonlinear
+techniques. For identification, it uses sparse regression methods, such as
+SINDy and weak-form SINDy, or adopts a fixed form, like the neural network
+version of GENERIC formalism (i.e., GFINN).</p>
 <p>We recommend the followin excellent papers for LaSDI framework:</p>
 <ul>
 <li>W.D. Fries, X. He, and Y. Choi, <a href="https://doi.org/10.1016/j.cma.2022.115436">Lasdi: Parametric latent space dynamics
@@ -533,6 +535,24 @@ version of GENERIC formalism (i.e., GFINN). </p>
 <li>J.S.R. Park, S.W. Cheung, Y. Choi, Y. Shin, <a href="https://arxiv.org/pdf/2403.05848">tLaSDI: Thermodynamics-informed
   latent space dynamics identification</a>.
   <em>arXiv preprint</em> arXiv:2403.05848, <strong>2024</strong></li>
+<li>C. Bonneville, X. He, A. Tran, J.S. Park, W. Fries, D.A. Messenger, S.W.
+  Cheung, Y. Shin, D.M. Bortz, D. Ghosh, J.S. Chen, <a href="https://arxiv.org/pdf/2403.10748">A Comprehensive Review of
+  Latent Space Dynamics Identification Algorithms for Intrusive and
+  Non-Intrusive Reduced-Order-Modeling</a>.
+  <em>arXiv preprint</em> arXiv:2403.10748, <strong>2024</strong></li>
+</ul>
+<h2 id="domain-decomposition-nonlinear-manifold-reduced-order-model">Domain Decomposition Nonlinear Manifold Reduced Order Model</h2>
+<p>Domain Decomposition Nonlinear Manifold Reduced Order Model (DD-NM-ROM)
+constructs local nonlinear manifold reduced order models in space to mitigate
+the high computational cost of neural network training caused by large-scale
+data as the full order model size increases. This approach maintains the
+expressive power offered by nonlinear manifold solution representation.</p>
+<p>We recommend the followin excellent paper for DD-NM-ROM:</p>
+<ul>
+<li>A.N. Diaz, Y. Choi, M. Heinkenschloss, <a href="https://doi.org/10.1016/j.cma.2024.116943">A fast and accurate domain
+  decomposition nonlinear manifold reduced order
+  model</a>. <em>Computer Methods in
+  Applied Mechanics and Engineering</em>, 425, p.116943, <strong>2024</strong></li>
 </ul>
 <h2 id="open-source">Open Source</h2>
 <p>libROM is an open-source software, and can be freely used under the terms of the
@@ -556,6 +576,8 @@ version of GENERIC formalism (i.e., GFINN). </p>
             <li><a href="#greedy-sampling-algorithm">Greedy sampling algorithm</a></li>
         
             <li><a href="#latent-space-dynamics-identification">Latent Space Dynamics Identification</a></li>
+        
+            <li><a href="#domain-decomposition-nonlinear-manifold-reduced-order-model">Domain Decomposition Nonlinear Manifold Reduced Order Model</a></li>
         
             <li><a href="#open-source">Open Source</a></li>
         
