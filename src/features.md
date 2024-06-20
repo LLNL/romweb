@@ -366,12 +366,12 @@ We recommend another excellent paper for the greedy algorithm:
   *International Journal for Numerical Methods in Engineering*, 102, p1262-1292, **2014**
 
 ## Latent Space Dynamics Identification
-Latent space dynamics identification (LaSDI) is a reduced order model framework
-that follows three distict steps, i.e., **compression**, **identification**,
-and **prediction**. For compression, LaSDI utilizes both linear and nonlinear
-compressions. For identification, LaSDI utilizes sparse-regression techniques,
-such as SINDy and weak-form SINDy, or a fixed form, such as neural network
-version of GENERIC formalism (i.e., GFINN). 
+Latent Space Dynamics Identification (LaSDI) is a reduced order model framework
+that follows three distinct steps: **compression**, **identification**, and
+**prediction**.  For compression, LaSDI employs both linear and nonlinear
+techniques. For identification, it uses sparse regression methods, such as
+SINDy and weak-form SINDy, or adopts a fixed form, like the neural network
+version of GENERIC formalism (i.e., GFINN).
 
 We recommend the followin excellent papers for LaSDI framework:
 
@@ -393,7 +393,25 @@ We recommend the followin excellent papers for LaSDI framework:
 - J.S.R. Park, S.W. Cheung, Y. Choi, Y. Shin, [tLaSDI: Thermodynamics-informed
   latent space dynamics identification](https://arxiv.org/pdf/2403.05848).
   *arXiv preprint* arXiv:2403.05848, **2024**
+- C. Bonneville, X. He, A. Tran, J.S. Park, W. Fries, D.A. Messenger, S.W.
+  Cheung, Y. Shin, D.M. Bortz, D. Ghosh, J.S. Chen, [A Comprehensive Review of
+  Latent Space Dynamics Identification Algorithms for Intrusive and
+  Non-Intrusive Reduced-Order-Modeling](https://arxiv.org/pdf/2403.10748).
+  *arXiv preprint* arXiv:2403.10748, **2024**
 
+## Domain Decomposition Nonlinear Manifold Reduced Order Model
+Domain Decomposition Nonlinear Manifold Reduced Order Model (DD-NM-ROM)
+constructs local nonlinear manifold reduced order models in space to mitigate
+the high computational cost of neural network training caused by large-scale
+data as the full order model size increases. This approach maintains the
+expressive power offered by nonlinear manifold solution representation.
+
+We recommend the followin excellent paper for DD-NM-ROM:
+
+- A.N. Diaz, Y. Choi, M. Heinkenschloss, [A fast and accurate domain
+  decomposition nonlinear manifold reduced order
+  model](https://doi.org/10.1016/j.cma.2024.116943). *Computer Methods in
+  Applied Mechanics and Engineering*, 425, p.116943, **2024**
 
 ## Open Source
 

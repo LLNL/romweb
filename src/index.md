@@ -19,6 +19,7 @@ work together for better data-driven technology!
 * [Hyper-reduction](features.md#hyper-reduction) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM)) 
 * [Greedy algorithm](features.md#greedy-sampling-algorithm) ([libROM](https://github.com/LLNL/libROM), [pylibROM](https://github.com/LLNL/pylibROM)) 
 * [Latent space dynamics identification](features.md#latent-space-dynamics-identification) ([LaSDI](https://github.com/LLNL/LaSDI), [gLaSDI](https://github.com/LLNL/gLaSDI), [GPLaSDI](https://github.com/LLNL/gpLaSDI))
+* [Domain decomposition nonlinear manifold reduced order model](features.md#domain-decomposition-nonlinear-manifold-reduced-order-model) ([DD-NM-ROM](https://github.com/LLNL/DD-NM-ROM))
 
 Many more features will be available soon. Stay tuned!
 
