@@ -62,6 +62,15 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 
 ----
 
+[![](img/gallery/pore_collapse.gif)](img/gallery/pore_collapse.gif)
+
+*Pore collapse solved with
+[ALE3D](https://ale3d4i.llnl.gov/)
+and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
+[VisIt](https://visit-dav.github.io/visit-website/).*
+
+----
+
 [![](img/gallery/OptBlade_ROM_b4.png)](img/gallery/OptBlade_ROM_b4.png)
 
 *An optimal design for the wind turbine blade solved with
