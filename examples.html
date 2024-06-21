@@ -417,30 +417,30 @@ MFEM with a modification on the right hand side function.</em> </p>
 order model for a finite element discretization of the eigenvalue problem
 $$-\text{div}(\kappa u) = \lambda u$$ with homogeneous Dirichlet boundary
 conditions. The example parameterizes the diffusion operator on the left hand side
-with frequency variable, $\alpha$:</p>
-<p>$$\kappa(x) =<br />
-1 + \cos(\alpha \pi x_1) \cos(\alpha \pi x_2).
-$$</p>
+with the amplitude, $\alpha$:</p>
+<p>$$\kappa(x) = 
+  \cases{
+  \displaystyle 1 + \alpha &amp; for $\vert x_1 \vert &lt; 0.25$ and $\vert x_2 \vert &lt; 0.25$  \cr
+  \displaystyle 1 &amp; otherwise
+  }$$</p>
 <p>The 2D solution contour plot for $\alpha=0.5$ is shown in the figure
 on the right to show the effect of $\alpha$. For demonstration, we sample
-solutions at $\alpha=0.4$, $0.45$, $0.55$ and $0.6$. Then a ROM is build with basis size
+solutions at $\alpha=0$ and $1$. Then a ROM is build with basis size
 of 20, which is used to predict the solution for $\alpha = 0.5$.  The ROM is
-able to achieve a speedup of $1.9$ with a relative error of $6.8\times10^{-2}$ in the first 
-eigenvalue and $7.0 \times 10^{-2}$ in the first eigenvector.
+able to achieve a speedup of $375$ with a relative error of $6.7\times10^{-5}$ in the first 
+eigenvalue and $2.4 \times 10^{-3}$ in the first eigenvector.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:</p>
 <ul>
-<li><strong>offline1</strong>: <code>elliptic_eigenproblem_global_rom -offline -p 2 -id 0 -a 0.40</code></li>
-<li><strong>offline2</strong>: <code>elliptic_eigenproblem_global_rom -offline -p 2 -id 1 -a 0.45</code></li>
-<li><strong>offline3</strong>: <code>elliptic_eigenproblem_global_rom -offline -p 2 -id 2 -a 0.55</code></li>
-<li><strong>offline4</strong>: <code>elliptic_eigenproblem_global_rom -offline -p 2 -id 3 -a 0.60</code></li>
-<li><strong>merge</strong>: <code>elliptic_eigenproblem_global_rom -merge -p 2 -ns 4</code></li>
-<li><strong>reference FOM solution</strong>: <code>elliptic_eigenproblem_global_rom -fom -p 2 -a 0.50</code></li>
-<li><strong>online</strong>: <code>elliptic_eigenproblem_global_rom -online -p 2 -a 0.50</code></li>
+<li><strong>offline1</strong>: <code>elliptic_eigenproblem_global_rom -offline -p 2 -rs 2 -id 0 -a 0 -n 4</code></li>
+<li><strong>offline2</strong>: <code>elliptic_eigenproblem_global_rom -offline -p 2 -rs 2 -id 1 -a 1 -n 4</code></li>
+<li><strong>merge</strong>: <code>elliptic_eigenproblem_global_rom -p 2 -rs 2 -ns 2 -n 4</code></li>
+<li><strong>reference FOM solution</strong>: <code>elliptic_eigenproblem_global_rom -fom -p 2 -rs 2 -a 0.5 -n 4</code></li>
+<li><strong>online</strong>: <code>elliptic_eigenproblem_global_rom -online -p 2 -rs 2 -a 0.5 -ef 1.0 -n 4</code></li>
 </ul>
-<p>The command line option <code>-a</code> defines the frequency variable $\alpha$ 
-of the diffusion operator on left hand side. 
-The table below shows the performance result for the testing case <code>-a 0.50</code>. </p>
+<p>The command line option <code>-a</code> defines the amplitude of the conductivity $\alpha$ 
+in the contrast region of the diffusion operator on left hand side. 
+The table below shows the performance result for the testing case <code>-a 0.5</code>. </p>
 <table>
 <thead>
 <tr>
@@ -453,11 +453,11 @@ The table below shows the performance result for the testing case <code>-a 0.50<
 </thead>
 <tbody>
 <tr>
-<td>1.5e-3 sec</td>
-<td>7.8e-4 sec</td>
-<td>1.9</td>
-<td>6.8e-2</td>
-<td>7.0e-2</td>
+<td>1.2e-1 sec</td>
+<td>3.2e-4 sec</td>
+<td>375</td>
+<td>6.7e-5</td>
+<td>2.4e-3</td>
 </tr>
 </tbody>
 </table>
