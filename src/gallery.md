@@ -87,6 +87,14 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
+----
+
+[![](img/gallery/pore_collapse.gif)](img/gallery/pore_collapse.gif)
+
+*Pore collapse simulated with
+[ALE3D](https://ale3d4i.llnl.gov/)
+and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
+[VisIt](https://visit-dav.github.io/visit-website/).*
 
 </div><div class="col-md-4"  markdown="1">
 

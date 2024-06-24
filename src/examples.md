@@ -217,36 +217,36 @@ This example code demonstrates the use of libROM and MFEM to define a reduced
 order model for a finite element discretization of the eigenvalue problem
 $$-\text{div}(\kappa u) = \lambda u$$ with homogeneous Dirichlet boundary
 conditions. The example parameterizes the diffusion operator on the left hand side
-with frequency variable, $\alpha$:
+with the amplitude, $\alpha$:
 
-$$\kappa(x) =  
-1 + \cos(\alpha \pi x_1) \cos(\alpha \pi x_2).
-$$
+$$\kappa(x) = 
+  \cases{
+  \displaystyle 1 + \alpha & for $\vert x_1 \vert < 0.25$ and $\vert x_2 \vert < 0.25$  \cr
+  \displaystyle 1 & otherwise
+  }$$
 
 The 2D solution contour plot for $\alpha=0.5$ is shown in the figure
 on the right to show the effect of $\alpha$. For demonstration, we sample
-solutions at $\alpha=0.4$, $0.45$, $0.55$ and $0.6$. Then a ROM is build with basis size
+solutions at $\alpha=0$ and $1$. Then a ROM is build with basis size
 of 20, which is used to predict the solution for $\alpha = 0.5$.  The ROM is
-able to achieve a speedup of $1.9$ with a relative error of $6.8\times10^{-2}$ in the first 
-eigenvalue and $7.0 \times 10^{-2}$ in the first eigenvector.
+able to achieve a speedup of $375$ with a relative error of $6.7\times10^{-5}$ in the first 
+eigenvalue and $2.4 \times 10^{-3}$ in the first eigenvector.
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:
 
-* **offline1**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 0 -a 0.40`
-* **offline2**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 1 -a 0.45`
-* **offline3**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 2 -a 0.55`
-* **offline4**: `elliptic_eigenproblem_global_rom -offline -p 2 -id 3 -a 0.60`
-* **merge**: `elliptic_eigenproblem_global_rom -merge -p 2 -ns 4`
-* **reference FOM solution**: `elliptic_eigenproblem_global_rom -fom -p 2 -a 0.50`
-* **online**: `elliptic_eigenproblem_global_rom -online -p 2 -a 0.50`
+* **offline1**: `elliptic_eigenproblem_global_rom -offline -p 2 -rs 2 -id 0 -a 0 -n 4`
+* **offline2**: `elliptic_eigenproblem_global_rom -offline -p 2 -rs 2 -id 1 -a 1 -n 4`
+* **merge**: `elliptic_eigenproblem_global_rom -p 2 -rs 2 -ns 2 -n 4`
+* **reference FOM solution**: `elliptic_eigenproblem_global_rom -fom -p 2 -rs 2 -a 0.5 -n 4`
+* **online**: `elliptic_eigenproblem_global_rom -online -p 2 -rs 2 -a 0.5 -ef 1.0 -n 4`
 
-The command line option `-a` defines the frequency variable $\alpha$ 
-of the diffusion operator on left hand side. 
-The table below shows the performance result for the testing case `-a 0.50`. 
+The command line option `-a` defines the amplitude of the conductivity $\alpha$ 
+in the contrast region of the diffusion operator on left hand side. 
+The table below shows the performance result for the testing case `-a 0.5`. 
 
    | FOM solution time | ROM solution time | Speed-up | First eigenvalue relative error | First eigenvector relative error |
    | ----------------- | ----------------- | -------- | ----------------------- | ----------------------- |
-   |  1.5e-3 sec         |  7.8e-4 sec        |   1.9    |           6.8e-2        |           7.0e-2        |
+   |  1.2e-1 sec         |  3.2e-4 sec        |   375    |           6.7e-5        |           2.4e-3        |
 
 _The code that generates the numerical results above can be found in
 ([elliptic_eigenproblem_global_rom.cpp](https://github.com/LLNL/libROM/blob/master/examples/prom/elliptic_eigenproblem_global_rom.cpp)). 
