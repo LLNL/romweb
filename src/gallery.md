@@ -52,11 +52,12 @@ and accelerated by [libROM](https://github.com/LLNL/libROM).  Visualization with
 
 ----
 
-<img src="../img/examples/1D1V_Vlasov_TwoStreamInstability.gif">
+<img src="../img/examples/1D1V_Vlasov_TwoStreamInstability.png">
 
 *1D1V two stream instability problem simulated with
 [HyPar](http://hypar.github.io/) and accelerated by
-[libROM](https://github.com/LLNL/libROM).  Visualization with
+[libROM](https://github.com/LLNL/libROM) DMD and
+[GPLaSDI](https://github.com/LLNL/GPLaSDI).  Visualization with
 [VisIt](https://visit-dav.github.io/visit-website/).*
 
 </div><div class="col-md-4"  markdown="1">
