@@ -177,11 +177,15 @@
     
         <li class="main active"><a href="#building-librom">Building libROM</a></li>
         
-            <li><a href="#instructions">Instructions</a></li>
+            <li><a href="#clone-librom">Clone libROM</a></li>
         
-            <li><a href="#installation">Installation</a></li>
+            <li><a href="#general-installation">General Installation</a></li>
+        
+            <li><a href="#using-docker-container">Using Docker container</a></li>
         
             <li><a href="#compiling-on-lc-machines">Compiling on LC Machines</a></li>
+        
+            <li><a href="#spack">Spack</a></li>
         
     
     </ul>
@@ -191,17 +195,11 @@
 <h1 id="building-librom">Building libROM</h1>
 <p>A simple tutorial on how to build and run libROM. For more details, see the
 <a href="https://github.com/LLNL/libROM/blob/master/README.md">README</a> file.</p>
-<p>In addition to the native build system described below, libROM packages are
-also available in Spack:</p>
-<ul>
-<li><a href="https://github.com/spack/spack">Spack</a></li>
-</ul>
-<h2 id="instructions">Instructions</h2>
-<p>Clone libROM  </p>
+<h2 id="clone-librom">Clone libROM</h2>
 <ul>
 <li><a href="https://github.com/LLNL/libROM">https://github.com/LLNL/libROM</a></li>
 </ul>
-<h2 id="installation">Installation</h2>
+<h2 id="general-installation">General Installation</h2>
 <p>To compile libROM with default build settings (Mac and LLNL LC Machines):</p>
 <pre><code class="language-sh"> ./scripts/compile.sh
 </code></pre>
@@ -220,20 +218,37 @@ also available in Spack:</p>
 <li>-t: Use your own cmake/toolchain</li>
 <li>-u: Update all of libROM's dependencies.</li>
 </ul>
+<h2 id="using-docker-container">Using Docker container</h2>
+<p>Probably the most reliable way is to use docker container. You can find the
+instruction on how to use docker container to install libROM in your machine is
+described at <a href="https://github.com/LLNL/libROM/wiki/Using-Docker-container">Using Docker
+container</a> wiki
+page.</p>
 <h2 id="compiling-on-lc-machines">Compiling on LC Machines</h2>
-<p>libROM provides several CMake toolchains which can be used to compile on LLNL LC machines.
-For more information on installing and using libROM on specific LC machines,
-refer to <a href="https://github.com/LLNL/libROM/wiki/Compiling-on-LC-Machines">the libROM wiki page</a>.</p></div>
+<p>libROM provides several CMake toolchains which can be used to compile on LLNL
+LC machines.  For more information on installing and using libROM on specific
+LC machines, refer to <a href="https://github.com/LLNL/libROM/wiki/Compiling-on-LC-Machines">the libROM wiki
+page</a>.</p>
+<h2 id="spack">Spack</h2>
+<p>In addition to the build system described above, libROM packages are
+also available in Spack:</p>
+<ul>
+<li><a href="https://github.com/spack/spack">Spack</a></li>
+</ul></div>
             <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
         <li class="main active"><a href="#building-librom">Building libROM</a></li>
         
-            <li><a href="#instructions">Instructions</a></li>
+            <li><a href="#clone-librom">Clone libROM</a></li>
         
-            <li><a href="#installation">Installation</a></li>
+            <li><a href="#general-installation">General Installation</a></li>
+        
+            <li><a href="#using-docker-container">Using Docker container</a></li>
         
             <li><a href="#compiling-on-lc-machines">Compiling on LC Machines</a></li>
+        
+            <li><a href="#spack">Spack</a></li>
         
     
     </ul>
