@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jun 28th, 10 AM | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | Recent progress in reduced-order modeling for computer graphics and sound | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mc9e230035f28879356990d2e9824014d)
 July 12th, 10 AM | [Francesco Romor](https://www.wias-berlin.de/contact/staff/index.jsp?lang=1&uname=romor) | Weierstrass Instititute | Intrusive model order reduction of parametric PDEs using neural networks approximants of the solution manifold and adaptive hyper-reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mdd01a084a92bae70831aefbe8912fe03)
 Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbba06447ba8e702ebafca00d1407d0e5)
 Aug 23rd, 10 AM | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mff23f11dd0338c81e4fb6245465760a8)
@@ -22,8 +21,9 @@ Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Jun 21st | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine/gianluca-iaccarino-dont-be-afraid-non-linear-career-path) | Stanford | AutoEncoders for Aerodynamic Predictions | [link]()
-Jun 14th | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link]()
+Jun 28th | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | Recent progress in reduced-order modeling for computer graphics and sound | [link]()
+Jun 21st | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine/gianluca-iaccarino-dont-be-afraid-non-linear-career-path) | Stanford | AutoEncoders for Aerodynamic Predictions | [link](https://youtu.be/MZdcYM450vs?si=TGcBfkbiTLFazmlI)
+Jun 14th | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://youtu.be/FpsTMhAhlGQ?si=zjQjwVl9BkmAoCUM)
 May 10th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://youtu.be/rRi6Asx7SA8?si=P8vkuEmEcbHjn8_A)
 Apr 12th | [Burcu Beykal](https://beykal.engr.uconn.edu/research/) | University of Connecticut | A Data-Driven Process Systems Engineering Approach for Supply Chain Management and Enterprise-Wide Optimization | [link](https://youtu.be/NOM1GMEbbas?si=o-tt639KiSNuWcD3)
 Apr 5th | [Yanlai Chen](http://yanlaichen.reawritingmath.com/) | UMass Dartmouth | GPT-PINN and TGPT-PINN: Generative Pre-Trained Physics-Informed Neural Networks toward non-intrusive Meta-learning of parametric PDEs | [link](https://youtu.be/ODA9Po4FVWA?si=Z1RqncUtG5UlsL4g)
