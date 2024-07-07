@@ -22,7 +22,7 @@ Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Jun 28th | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | Recent progress in reduced-order modeling for computer graphics and sound | [link]()
+Jun 28th | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | Recent progress in reduced-order modeling for computer graphics and sound | [link](https://www.youtube.com/watch?v=BVqopLo0XvQ)
 Jun 21st | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine/gianluca-iaccarino-dont-be-afraid-non-linear-career-path) | Stanford | AutoEncoders for Aerodynamic Predictions | [link](https://youtu.be/MZdcYM450vs?si=TGcBfkbiTLFazmlI)
 Jun 14th | [Fabio Giampaolo](https://scholar.google.com/citations?user=I8q5NwUAAAAJ&hl=it) | University of Naples Federico II | Learning paradigms for neural networks: The locally backpropagated forward-forward algorithm | [link](https://youtu.be/FpsTMhAhlGQ?si=zjQjwVl9BkmAoCUM)
 May 10th | [Yexiang Xue](https://www.cs.purdue.edu/homes/yexiang/) | Purdue University | Vertical reasoning enhanced learning, generation and scientific discovery | [link](https://youtu.be/rRi6Asx7SA8?si=P8vkuEmEcbHjn8_A)
