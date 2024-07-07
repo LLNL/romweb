@@ -12,7 +12,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 July 12th, 10 AM | [Francesco Romor](https://www.wias-berlin.de/contact/staff/index.jsp?lang=1&uname=romor) | Weierstrass Instititute | Intrusive model order reduction of parametric PDEs using neural networks approximants of the solution manifold and adaptive hyper-reduction | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mdd01a084a92bae70831aefbe8912fe03)
-July 19th, 10 AM | [Alberto Padovan](https://albertopadovan.github.io/projects) | University of Illinois, Urbana-Champaign | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf2e09cb15dd7eca329f6b2b2dbef311d)
+July 19th, 10 AM | [Alberto Padovan](https://albertopadovan.github.io/projects) | University of Illinois, Urbana-Champaign | Data-driven model reduction via non-intrusive optimization of projection operators and reduced-order dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mf2e09cb15dd7eca329f6b2b2dbef311d)
 Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbba06447ba8e702ebafca00d1407d0e5)
 Aug 23rd, 10 AM | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mff23f11dd0338c81e4fb6245465760a8)
 Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
