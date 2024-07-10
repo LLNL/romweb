@@ -15,7 +15,9 @@ remote_name: origin
 nav:
 - Home: index.md
 - Features: features.md
-- Examples: examples.md
+- Examples:
+  - 'Examples': examples.md
+  - 'ScaleupROM': scaleup.md
 - Documentation:
   - '_News': news.md   # pages starting with '_' are hidden from the menu
   - 'Building libROM': building.md
