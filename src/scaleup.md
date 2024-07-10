@@ -9,6 +9,56 @@
 
 This page provides a list of ScaleupROM example applications. ScaleupROM is a projection-based reduced order model code with discontinuous Galerkin domain decomposition (DG-DD) using libROM and MFEM. It aims to create a robust and efficient large-scale ROM that is trained only from small scale component samples which can be used to solve a variety of physics PDEs. For more information, refer to the [ScaleupROM repo](https://github.com/LLNL/scaleupROM) and [online wiki](https://github.com/LLNL/scaleupROM/wiki).
 
+Select from the categories below to display examples that contain
+the respective feature. _All examples support (arbitrarily) high-order meshes
+and finite element spaces_.  The numerical results from the example codes can
+be visualized using the GLVis or VisIt visualization tools. See the [GLVis
+](http://glvis.org) and [VisIt](https://visit-dav.github.io/visit-website/)
+websites for more details.
+
+<div class="row" markdown="1">
+<div class="col-sm-7 col-md-2 small" markdown="1">
+   <h5><b>Application (PDE)</b></h5>
+   <select id="group1" onchange="update()">
+      <option id="all1">All</option>
+      <option id="stokes">Stokes flow</option>
+   </select>
+</div>
+<div class="col-sm-7 col-md-3 small" markdown="1">
+   <h5><b>Reduced order model type</b></h5>
+   <select id="group2" onchange="update()">
+      <option id="all2">All</option>
+      <option id="prom">pROM</option>
+      <!-- <option id="dmd">DMD</option> -->
+   </select>
+</div>
+<div class="clearfix hidden-md hidden-lg"></div>
+<div class="col-sm-7 col-md-3 small" markdown="1">
+   <h5><b>Assembly</b></h5>
+   <select id="group3" onchange="update()">
+      <option id="all3">All</option>
+      <option id="dg">Discontinuous Galerkin</option>
+   </select>
+</div>
+<div class="col-sm-7 col-md-4 small" markdown="1">
+   <h5><b>Hyper-reduction</b></h5>
+   <select id="group4" onchange="update()">
+      <option id="all4">All</option>
+      <!-- <option id="hr">Hyper-reduction</option> -->
+      <option id="no_hr">No hyper-reduction</option>
+   </select>
+</div>
+<div class="col-sm-7 col-md-5 small" markdown="1">
+   <h5><b>Physics code</b></h5>
+   <select id="group5" onchange="update()">
+      <option id="all5">All</option>
+      <option id="mfem">MFEM</option>
+   </select>
+</div>
+</div>
+<br>
+<hr>
+
 <!-- ------------------------------------------------------------------------- -->
 
 <div id="stokes" markdown="1">
@@ -65,19 +115,93 @@ The table below shows the ROM performance for the 8x8 system.
    |  0.08298 sec      |  0.00408 sec      |  20.34   |         4.193e-3            |      3.030e-3      |
 
 
-<!--
 _The code that generates the numerical results above can be found in
-([stokes_flow](https://github.com/LLNL/scaleupROM/tree/main/examples/stokes_flow/))_
--->
+([stokes_flow](https://github.com/LLNL/scaleupROM/tree/main/examples/stokes/))_
 <div style="clear:both;"/></div>
 <br></div>
 
 <!-- ------------------------------------------------------------------------- -->
 
+<div id="nomatch">
+<br/><br/><br/>
+<center>
+No examples or miniapps match your criteria.
+</center>
+<br/><br/><br/>
+<hr>
+</div>
+
 <div style="clear:both;"/></div>
 <script type="text/javascript"><!--
 
+function showElement(id, show)
+{
+    //document.getElementById(id).style.display = show ? "block" : "none";
+
+    // workaround because Doxygen splits and duplicates the divs for some reason
+    var divs = document.getElementsByTagName("div");
+    for (i = 0; i < divs.length; i++)
+    {
+       if (divs.item(i).id == id) {
+          divs.item(i).style.display = show ? "block" : "none";
+       }
+    }
+    return show ? 1 : 0;
+}
+
+function getBooleans(comboId)
+{
+   combo = document.getElementById(comboId);
+
+   first_selected = false;
+   for (i = 0; i < combo.options.length; i++)
+   {
+      opt = combo.options[i];
+      selected = opt.selected || first_selected;
+      if (!i) { first_selected = selected; }
+
+      // create a boolean variable named after the option
+      this[opt.id] = selected;
+   }
+}
+
+function update()
+{
+   getBooleans("group1");
+   getBooleans("group2");
+   getBooleans("group3");
+   getBooleans("group4");
+   getBooleans("group5");
+
+   numShown = 0 // expression continued...
+
+   // example codes
+   + showElement("stokes", (stokes) && (prom) && (dg) && (no_hr) && (mfem))
+   ; // ...end of expression
+
+   // show/hide the message "No examples match your criteria"
+   showElement("nomatch", numShown == 0);
+}
+
+function initCombos()
+{
+   var query = location.search.substr(1);
+   query.split("&").forEach(function(id)
+   {
+      if (id) {
+         opt = document.getElementById(id);
+         if (opt) { opt.selected = true; }
+      }
+   });
+}
+
+// make sure "no match" div is not visible after page is loaded
+window.onload = update;
+
 // force vertical scrollbar
 document.getElementsByTagName("body")[0].style = "overflow-y: scroll"
+
+// parse URL part after '?', e.g., http://.../index.html?elasticity&nurbs
+initCombos();
 
 //--></script>
