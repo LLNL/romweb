@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <meta name="keywords" content="Finite Element Library,Finite Element Code,Finite Element Method Library,Finite Element Method Code,Finite Element C++,Finite Element Method C++,Finite Element Library C++,Finite Element Code C++,FEM Code,FEM Library,FEM C++">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>libROM - Data-driven Modeling Library</title>
+
+        <link href="./css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/highlight.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="https://www.librom.net/">libROM</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="features.html">Features</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                            <li >
+                                 <a href="examples.html">Examples</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="active">
+                                 <a href="scaleup.html">ScaleupROM</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                    
+                        
+                            <li >
+                                 <a href="building.html">Building libROM</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson.html">Poisson equation</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="poisson_greedy.html">Greedy for Poisson</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="publications.html">Publications</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="about.html">About</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="download.html">Download</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="ddps.html">DDPS</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="hlcs.html">HLCS</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li>
+                    <a href="https://github.com/LLNL/libROM">
+                        
+                            <i class="fa fa-github-square"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-12" role="main">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<h1 id="scaleuprom">ScaleupROM</h1>
+<p>This page provides a list of ScaleupROM example applications. ScaleupROM is a projection-based reduced order model code with discontinuous Galerkin domain decomposition (DG-DD) using libROM and MFEM. It aims to create a robust and efficient large-scale ROM that is trained only from small scale component samples which can be used to solve a variety of physics PDEs. For more information, refer to the <a href="https://github.com/LLNL/scaleupROM">ScaleupROM repo</a> and <a href="https://github.com/LLNL/scaleupROM/wiki">online wiki</a>.</p>
+<p>Select from the categories below to display examples that contain
+the respective feature. <em>All examples support (arbitrarily) high-order meshes
+and finite element spaces</em>.  The numerical results from the example codes can
+be visualized using the GLVis or VisIt visualization tools. See the <a href="http://glvis.org">GLVis
+</a> and <a href="https://visit-dav.github.io/visit-website/">VisIt</a>
+websites for more details.</p>
+<div class="row">
+<div class="col-sm-7 col-md-2 small">
+<h5 id="application-pde"><b>Application (PDE)</b></h5>
+<p><select id="group1" onchange="update()">
+      <option id="all1">All</option>
+      <option id="stokes">Stokes flow</option>
+   </select></p>
+</div>
+<div class="col-sm-7 col-md-3 small">
+<h5 id="reduced-order-model-type"><b>Reduced order model type</b></h5>
+<p><select id="group2" onchange="update()">
+      <option id="all2">All</option>
+      <option id="prom">pROM</option>
+      <!-- <option id="dmd">DMD</option> -->
+   </select></p>
+</div>
+<div class="clearfix hidden-md hidden-lg"></div>
+<div class="col-sm-7 col-md-3 small">
+<h5 id="assembly"><b>Assembly</b></h5>
+<p><select id="group3" onchange="update()">
+      <option id="all3">All</option>
+      <option id="dg">Discontinuous Galerkin</option>
+   </select></p>
+</div>
+<div class="col-sm-7 col-md-4 small">
+<h5 id="hyper-reduction"><b>Hyper-reduction</b></h5>
+<p><select id="group4" onchange="update()">
+      <option id="all4">All</option>
+      <!-- <option id="hr">Hyper-reduction</option> -->
+      <option id="no_hr">No hyper-reduction</option>
+   </select></p>
+</div>
+<div class="col-sm-7 col-md-5 small">
+<h5 id="physics-code"><b>Physics code</b></h5>
+<p><select id="group5" onchange="update()">
+      <option id="all5">All</option>
+      <option id="mfem">MFEM</option>
+   </select></p>
+</div>
+</div>
+<p><br></p>
+<hr>
+
+<!-- ------------------------------------------------------------------------- -->
+
+<div id="stokes">
+<h2 id="stokes-flow">Stokes flow</h2>
+<p><a target="_blank">
+<img class="floatright" src="../img/examples/scaleuprom_stokes_8x8_rom_vel_mag.png" width="300">
+</a></p>
+<p>This example demonstrates the use of ScaleupROM to create a reduced order model for the Stokes flow problem discretized using Taylor-Hood elements. The governing equation for Stokes flow is defined as
+$$ - \nu \nabla^2 \mathbf{\tilde{u}} + \nabla \mathit{\widetilde{p}} = 0 $$</p>
+<p>$$ \nabla \cdot \mathbf{\tilde{u}} = 0 $$</p>
+<p>with boundary conditions</p>
+<p>$$ \mathbf{\tilde{u}} = \mathbf{g}_{di} $$</p>
+<p>$$ \mathbf{n} \cdot ( - \nu \nabla \mathbf{\tilde{u}} + \mathit{\widetilde{p}} \mathbf{I}) = \mathbf{g}_{ne} $$</p>
+<p>where $\mathbf{u}$ and $p$ denote the velocity and pressure field respectively, and $\nu \equiv \frac{\mu}{\mu_0} = 1.1$ is the non-dimensionalized dynamic viscosity with respect to a reference value.</p>
+<p>The global-scale system is constructed using a random arrangement from five different reference components: empty, circle, triangle, square, and star. In this example, the fluid flows past an array of these components. Sample snapshots for basis training are generated on 2x2 component domains to better capture downstream flow. A total of 1400 sample snapshots were taken for this example.</p>
+<p>On each sample domain, the inflow velocity Dirichlet boundary condition is parameterized as</p>
+<p>$$ \mathbf{g}_{di} = (g_1 + \Delta g_1 \sin 2\pi (\mathbf{k}_1 \cdot x + \theta_1),\ g_2 + \Delta g_2 \sin 2\pi (\mathbf{k}_2 \cdot x + \theta_2)) $$</p>
+<p>where the parameters are chosen from a uniform random distribution,</p>
+<p>$$ g_1, g_2 \sim U[-1, 1] $$</p>
+<p>$$ \Delta g_1, \Delta g_2 \sim U[-0.1, 0.1] $$</p>
+<p>$$ \mathbf{k}_1, \mathbf{k}_2 \sim U[-0.5, 0.5]^2 $$</p>
+<p>$$ \theta_1, \theta_2 \sim U[0, 1] $$</p>
+<p>Boundaries at the surface of the object inside the domain have a no-slip wall boundary $g_{di} = 0$ and boundaries on interior interfaces have a homogeneous Neumann boundary $g_{ne} = 0$.</p>
+<p>The figure above shows the ROM prediction for $\mathbf{u}$ on a 8x8 system composed of random components with parameter values $g_1 = 1.5, g_2 = -0.8, \Delta g_1 = \Delta g_2 = 0$.</p>
+<p>One can follow the command line options below to reproduce the numerical results
+summarized in the table below:</p>
+<ul>
+<li><strong>Sample Generation</strong>: <code>./main -i stokes.sampling.yml</code></li>
+<li><strong>ROM Training</strong>: <code>./main -i stokes.sampling.yml -f main/mode=train_rom</code></li>
+<li><strong>ROM Building</strong>: <code>./main -i stokes.sampling.yml -f main/mode=build_rom:main/use_rom=true</code></li>
+<li><strong>ROM Prediction</strong>: <code>./main -i array.8.yml</code></li>
+</ul>
+<p>The table below shows the ROM performance for the 8x8 system.</p>
+<table>
+<thead>
+<tr>
+<th>FOM Solution time</th>
+<th>ROM Solution time</th>
+<th>Speed-up</th>
+<th>$\mathbf{u}$ relative error</th>
+<th>$p$ relative error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.08298 sec</td>
+<td>0.00408 sec</td>
+<td>20.34</td>
+<td>4.193e-3</td>
+<td>3.030e-3</td>
+</tr>
+</tbody>
+</table>
+<p><em>The code that generates the numerical results above can be found in
+(<a href="https://github.com/LLNL/scaleupROM/tree/main/examples/stokes/">stokes_flow</a>)</em></p>
+<div style="clear:both;"/>
+</div>
+<p><br></div></p>
+<!-- ------------------------------------------------------------------------- -->
+
+<div id="nomatch">
+<br/><br/><br/>
+<center>
+No examples or miniapps match your criteria.
+</center>
+<br/><br/><br/>
+<hr>
+</div>
+
+<div style="clear:both;"/>
+</div>
+<script type="text/javascript"><!--
+
+function showElement(id, show)
+{
+    //document.getElementById(id).style.display = show ? "block" : "none";
+
+    // workaround because Doxygen splits and duplicates the divs for some reason
+    var divs = document.getElementsByTagName("div");
+    for (i = 0; i < divs.length; i++)
+    {
+       if (divs.item(i).id == id) {
+          divs.item(i).style.display = show ? "block" : "none";
+       }
+    }
+    return show ? 1 : 0;
+}
+
+function getBooleans(comboId)
+{
+   combo = document.getElementById(comboId);
+
+   first_selected = false;
+   for (i = 0; i < combo.options.length; i++)
+   {
+      opt = combo.options[i];
+      selected = opt.selected || first_selected;
+      if (!i) { first_selected = selected; }
+
+      // create a boolean variable named after the option
+      this[opt.id] = selected;
+   }
+}
+
+function update()
+{
+   getBooleans("group1");
+   getBooleans("group2");
+   getBooleans("group3");
+   getBooleans("group4");
+   getBooleans("group5");
+
+   numShown = 0 // expression continued...
+
+   // example codes
+   + showElement("stokes", (stokes) && (prom) && (dg) && (no_hr) && (mfem))
+   ; // ...end of expression
+
+   // show/hide the message "No examples match your criteria"
+   showElement("nomatch", numShown == 0);
+}
+
+function initCombos()
+{
+   var query = location.search.substr(1);
+   query.split("&").forEach(function(id)
+   {
+      if (id) {
+         opt = document.getElementById(id);
+         if (opt) { opt.selected = true; }
+      }
+   });
+}
+
+// make sure "no match" div is not visible after page is loaded
+window.onload = update;
+
+// force vertical scrollbar
+document.getElementsByTagName("body")[0].style = "overflow-y: scroll"
+
+// parse URL part after '?', e.g., http://.../index.html?elasticity&nurbs
+initCombos();
+
+//--></script></div>
+
+            
+        </div>
+
+        <footer class="footer">
+           <div class="container">
+              <p class="text-muted alignright">LLNL-WEB-827021</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about.html">ROM team</a> at
+                  <a href="http://computation.llnl.gov/casc/">CASC</a>,
+                  <a href="https://www.llnl.gov/">LLNL</a>, and based on 
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/retina.min.js"></script>
+        <script src="search/main.js"></script>
+    </body>
+</html>
