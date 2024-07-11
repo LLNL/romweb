@@ -103,10 +103,17 @@ The figure above shows the ROM prediction for $\mathbf{u}$ on a 8x8 system compo
 One can follow the command line options below to reproduce the numerical results
 summarized in the table below:
 
-* **Sample Generation**: `./main -i stokes.sampling.yml`
-* **ROM Training**: `./main -i stokes.sampling.yml -f main/mode=train_rom`
-* **ROM Building**: `./main -i stokes.sampling.yml -f main/mode=build_rom:main/use_rom=true`
-* **ROM Prediction**: `./main -i array.8.yml`
+**Generate Meshes**:
+```
+cd build/examples/stokes
+mkdir snapshots basis paraview rom-system
+./setup_stokes.sh
+```
+
+* **Sample Generation**: `../../bin/main -i stokes.sampling.yml`
+* **ROM Training**: `../../bin/main -i stokes.sampling.yml -f main/mode=train_rom`
+* **ROM Building**: `../../bin/main -i stokes.sampling.yml -f main/mode=build_rom:main/use_rom=true`
+* **ROM Prediction**: `../../bin/main -i array.8.yml`
 
 The table below shows the ROM performance for the 8x8 system.
 
