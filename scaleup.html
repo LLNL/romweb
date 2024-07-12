@@ -272,11 +272,16 @@ $$ - \nu \nabla^2 \mathbf{\tilde{u}} + \nabla \mathit{\widetilde{p}} = 0 $$</p>
 <p>The figure above shows the ROM prediction for $\mathbf{u}$ on a 8x8 system composed of random components with parameter values $g_1 = 1.5, g_2 = -0.8, \Delta g_1 = \Delta g_2 = 0$.</p>
 <p>One can follow the command line options below to reproduce the numerical results
 summarized in the table below:</p>
+<p><strong>Generate Meshes</strong>:</p>
+<pre><code>cd build/examples/stokes
+mkdir snapshots basis paraview rom-system
+./setup_stokes.sh
+</code></pre>
 <ul>
-<li><strong>Sample Generation</strong>: <code>./main -i stokes.sampling.yml</code></li>
-<li><strong>ROM Training</strong>: <code>./main -i stokes.sampling.yml -f main/mode=train_rom</code></li>
-<li><strong>ROM Building</strong>: <code>./main -i stokes.sampling.yml -f main/mode=build_rom:main/use_rom=true</code></li>
-<li><strong>ROM Prediction</strong>: <code>./main -i array.8.yml</code></li>
+<li><strong>Sample Generation</strong>: <code>../../bin/main -i stokes.sampling.yml</code></li>
+<li><strong>ROM Training</strong>: <code>../../bin/main -i stokes.sampling.yml -f main/mode=train_rom</code></li>
+<li><strong>ROM Building</strong>: <code>../../bin/main -i stokes.sampling.yml -f main/mode=build_rom:main/use_rom=true</code></li>
+<li><strong>ROM Prediction</strong>: <code>../../bin/main -i array.8.yml</code></li>
 </ul>
 <p>The table below shows the ROM performance for the 8x8 system.</p>
 <table>
