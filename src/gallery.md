@@ -157,7 +157,7 @@ image above for zoomed-in picture.  Visualization with
 
 ----
 
-[![](img/gallery/Re25.rom.vel1.png)](img/gallery/Re25.rom.vel1.png)
+<img src="../img/gallery/Re25.rom.vel1.png" width="70"  >
 
 
 *2D steady Navier-Stokes porous media problem solved by
