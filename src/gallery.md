@@ -155,4 +155,14 @@ image above for zoomed-in picture.  Visualization with
 
 </div>
 
+----
+
+[![](img/gallery/Re25.rom.vel1.png)](img/gallery/Re25.rom.vel1.png)
+
+
+*2D steady Navier-Stokes porous media problem solved by
+[ScaleupROM](https://github.com/LLNL/scaleupROM).  Visualization with
+[ParaView](https://www.paraview.org/).*
+
+</div>
 </center>
