@@ -21,7 +21,7 @@ Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-July 19th | [Alberto Padovan](https://albertopadovan.github.io/projects) | University of Illinois, Urbana-Champaign | Data-driven model reduction via non-intrusive optimization of projection operators and reduced-order dynamics | [link]()
+July 19th | [Alberto Padovan](https://albertopadovan.github.io/projects) | University of Illinois, Urbana-Champaign | Data-driven model reduction via non-intrusive optimization of projection operators and reduced-order dynamics | [link](https://youtu.be/DFc03crDVbc?si=4fc90kbbzSupZ7oh)
 July 12th | [Francesco Romor](https://www.wias-berlin.de/contact/staff/index.jsp?lang=1&uname=romor) | Weierstrass Instititute | Intrusive model order reduction of parametric PDEs using neural networks approximants of the solution manifold and adaptive hyper-reduction | [link](https://youtu.be/uksMn36aecg?si=JdCVHY2EVxexS1Y7)
 Jun 28th | [Doug James](https://graphics.stanford.edu/~djames/) | Stanford | Recent progress in reduced-order modeling for computer graphics and sound | [link](https://www.youtube.com/watch?v=BVqopLo0XvQ)
 Jun 21st | [Gianluca Iaccarino](https://engineering.stanford.edu/magazine/gianluca-iaccarino-dont-be-afraid-non-linear-career-path) | Stanford | AutoEncoders for Aerodynamic Predictions | [link](https://youtu.be/MZdcYM450vs?si=TGcBfkbiTLFazmlI)
