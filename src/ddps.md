@@ -14,6 +14,7 @@ When           | Speaker        |  Institution      | Title                     
 Aug 2nd, 10 AM | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | Multi-fidelity linear regression for scientific machine learning from scarce data | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mbba06447ba8e702ebafca00d1407d0e5)
 Aug 23rd, 10 AM | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mff23f11dd0338c81e4fb6245465760a8)
 Sep 6th, 10 AM | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1a73265ba05bc37e9b5244a629fe2f21)
+Sep 20th, 10 AM | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | University of Notre Dame  | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb2141bb12df6f095d2f26d85ed8eef6e)
 Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
