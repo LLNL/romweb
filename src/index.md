@@ -42,16 +42,16 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
-July 1, 2024 | [tLaSDI](https://doi.org/10.1016/j.cma.2024.117144) paper is published in CMAME
+Sep 1, 2024  | [tLaSDI](https://doi.org/10.1016/j.cma.2024.117144) paper is published in CMAME
+Aug 1, 2024  | [S-OPT](https://doi.org/10.1137/22M1484018) paper is published in SISC
+July 13, 2024| [Data-scarce](https://link.springer.com/article/10.1007/s00193-024-01177-2) paper is published in Shock Waves
+July 8, 2024 | [Progressive](https://www.nature.com/articles/s41598-024-64778-y) paper is published in Scientific Reports
 May 17, 2024 | [DD-NM-ROM](https://github.com/LLNL/DD-NM-ROM) open source code is available in gitHub
 May 15, 2024 | [DDFEM](https://doi.org/10.1016/j.cma.2024.117041) paper is published in CMAME
 Apr 29, 2024 | [wLaSDI](https://doi.org/10.1016/j.cma.2024.116998) paper is published in CMAME
 Apr 10, 2024 | [Gappy AE](https://doi.org/10.1016/j.cma.2024.116978) paper is published in CMAME
 Mar 25, 2024 | [DD-NM-ROM](https://doi.org/10.1016/j.cma.2024.116943) paper is published in CMAME
 Mar 16, 2024 | [LaSDI book chapter](https://arxiv.org/pdf/2403.10748) arXiv paper is available
-Jan 1, 2024 | [GPLaSDI](https://doi.org/10.1016/j.cma.2023.116535) paper is published in CMAME
-Dec 5, 2023 | [ScaleupROM](https://github.com/LLNL/scaleupROM) open source code is available in gitHub 
-Aug 8, 2023 | [pylibROM](https://github.com/LLNL/pylibROM) open source code is available in gitHub
 
 ## libROM tutorials in YouTube
 Date         | Title

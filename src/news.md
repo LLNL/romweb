@@ -4,6 +4,10 @@
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+Sep 1, 2024  | [tLaSDI](https://doi.org/10.1016/j.cma.2024.117144) paper is published in CMAME
+Aug 1, 2024  | [S-OPT](https://doi.org/10.1137/22M1484018) paper is published in SISC
+July 13, 2024| [Data-scarce](https://link.springer.com/article/10.1007/s00193-024-01177-2) paper is published in Shock Waves
+July 8, 2024 | [Progressive](https://www.nature.com/articles/s41598-024-64778-y) paper is published in Scientific Reports
 May 17, 2024 | [DD-NM-ROM](https://github.com/LLNL/DD-NM-ROM) open source code is available in gitHub
 May 15, 2024 | [DDFEM](https://doi.org/10.1016/j.cma.2024.117041) paper is published in CMAME
 Apr 29, 2024 | [wLaSDI](https://doi.org/10.1016/j.cma.2024.116998) paper is published in CMAME
