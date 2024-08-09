@@ -75,6 +75,10 @@ Aug. 23, 2023| [Complete derivation of dynamic mode decomposition](https://youtu
 ┊ [gLaSDI Sources](https://github.com/LLNL/gLaSDI)
 ┊ [GPLaSDI Sources](https://github.com/LLNL/GPLaSDI)
 ┊ [DD-NM-ROM Sources](https://github.com/LLNL/DD-NM-ROM)
+┊ [NM-ROM Sources](https://github.com/LLNL/NM-ROM)
+┊ [WLaSDI](https://github.com/MathBioCU/WLaSDI)
+┊ [tLaSDI](https://github.com/pjss1223/tLaSDI)
+┊ [gappyAE](https://github.com/youngkyu-kim/GappyAE)
 
 [<button type="button" class="btn btn-success">
 **Download libROM-master.zip**
