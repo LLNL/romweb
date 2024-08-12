@@ -11,7 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Aug 23rd, 10 AM | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mff23f11dd0338c81e4fb6245465760a8)
+Aug 23rd, 10 AM | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | Bringing numerical methods and deep learning with physics-constrained differentiable solvers | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mff23f11dd0338c81e4fb6245465760a8)
 Sep 6th, 10 AM | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1a73265ba05bc37e9b5244a629fe2f21)
 Sep 20th, 10 AM | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | University of Notre Dame  | Neural Differentiable Physics: Unifying Numerical PDEs and Deep Learning for Data-Augmented Computational Physics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb2141bb12df6f095d2f26d85ed8eef6e)
 Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
