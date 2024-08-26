@@ -17,7 +17,7 @@ Sep 20th, 10 AM | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | Universi
 Sep 27th, 10 AM | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma634068e73e6c4aa524d86d8ffd3b1ac)
 Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
 Nov 15th, 10 AM | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=maff3f9dabe589a2abb2facfbc9728cc3)
-Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f3e1975427889cfe99ebafc7e27ff18)
+Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f3e1975427889cfe99ebafc7e27ff18)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 <!--- TBD | [Annalisa Quaini](https://www.math.uh.edu/~quaini/) | University of Houston | TBD | [link]() -->
 
