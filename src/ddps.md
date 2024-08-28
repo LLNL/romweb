@@ -11,11 +11,10 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Aug 23rd, 10 AM | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | Bringing numerical methods and deep learning with physics-constrained differentiable solvers | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mff23f11dd0338c81e4fb6245465760a8)
-Sep 6th, 10 AM | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1a73265ba05bc37e9b5244a629fe2f21)
 Sep 20th, 10 AM | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | University of Notre Dame  | Neural Differentiable Physics: Unifying Numerical PDEs and Deep Learning for Data-Augmented Computational Physics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mb2141bb12df6f095d2f26d85ed8eef6e)
 Sep 27th, 10 AM | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=ma634068e73e6c4aa524d86d8ffd3b1ac)
 Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
+Oct 25th, 10 AM | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1a73265ba05bc37e9b5244a629fe2f21)
 Nov 15th, 10 AM | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=maff3f9dabe589a2abb2facfbc9728cc3)
 Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f3e1975427889cfe99ebafc7e27ff18)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
@@ -24,6 +23,7 @@ Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | Un
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Aug 23rd | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | Bringing numerical methods and deep learning with physics-constrained differentiable solvers | [link]()
 Aug 2nd | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | Multi-fidelity linear regression for scientific machine learning from scarce data | [link](https://youtu.be/2A0j1R0MgqA?si=_yX0KHQD7UKoQJg7)
 July 19th | [Alberto Padovan](https://albertopadovan.github.io/projects) | University of Illinois, Urbana-Champaign | Data-driven model reduction via non-intrusive optimization of projection operators and reduced-order dynamics | [link](https://youtu.be/DFc03crDVbc?si=4fc90kbbzSupZ7oh)
 July 12th | [Francesco Romor](https://www.wias-berlin.de/contact/staff/index.jsp?lang=1&uname=romor) | Weierstrass Instititute | Intrusive model order reduction of parametric PDEs using neural networks approximants of the solution manifold and adaptive hyper-reduction | [link](https://youtu.be/uksMn36aecg?si=JdCVHY2EVxexS1Y7)
