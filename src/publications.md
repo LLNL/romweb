@@ -1,6 +1,7 @@
 # Publications
 
 #### 2024
+  1. M. Juhasz, E. Chin, Y. Choi, J. T., McKeown, S. Khairallah, [Data-driven Virtual Test-bed of the Blown Powder Directed Energy Deposition Process](https://arxiv.org/pdf/2409.09092), *arXiv preprint*, arXiv:2409.09092 **2024**
   1. J. S. R. Park, S. W. Cheung, Y. Choi, and Y. Shin, [tLaSDI: Thermodynamics-informed latent space dynamics identification](https://doi.org/10.1016/j.cma.2024.117144), *Computer Methods in Applied Mechanics and Engineering* 429, p117144 **2024**
   1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh, [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://doi.org/10.1137/22M1484018), *SIAM Journal on Scientific Computing*, 46, 4, **2024**
   1. S.W. Cheung, Y. Choi, H.K. Springer, T. Kadeethum, [Data-scarce surrogate modeling of shock-induced pore collapse process](https://link.springer.com/article/10.1007/s00193-024-01177-2), *Shock Waves*, 34, p237--256, **2024**
