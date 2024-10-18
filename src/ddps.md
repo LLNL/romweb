@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct 18th, 10 AM | [Chiang-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcea886abdffc9d055f9f5eb5cee7901b)
 Oct 25th, 10 AM | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1a73265ba05bc37e9b5244a629fe2f21)
 Nov 15th, 10 AM | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=maff3f9dabe589a2abb2facfbc9728cc3)
 Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f3e1975427889cfe99ebafc7e27ff18)
@@ -22,6 +21,7 @@ Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Oct 18th | [Ching-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link]()
 Sep 27th | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | Data-driven techniques for analysis of turbulent flows  | [link]()
 Sep 20th | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | University of Notre Dame  | Neural Differentiable Physics: Unifying Numerical PDEs and Deep Learning for Data-Augmented Computational Physics | [link](https://youtu.be/hXGSpifdKWA?si=0ykCLD8dwUwqzm9F)
 Aug 23rd | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | Bringing numerical methods and deep learning with physics-constrained differentiable solvers | [link]()
