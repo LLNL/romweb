@@ -23,7 +23,7 @@ Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC 
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Oct 18th | [Ching-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link]()
-Sep 27th | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | Data-driven techniques for analysis of turbulent flows  | [link]()
+Sep 27th | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | Data-driven techniques for analysis of turbulent flows  | [link](https://youtu.be/6oPU4foiWds?si=9jvVKzUprjVvGK9q)
 Sep 20th | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | University of Notre Dame  | Neural Differentiable Physics: Unifying Numerical PDEs and Deep Learning for Data-Augmented Computational Physics | [link](https://youtu.be/hXGSpifdKWA?si=0ykCLD8dwUwqzm9F)
 Aug 23rd | [Aditi Krishnapriyan](https://a1k12.github.io/) | UC Berkeley | Bringing numerical methods and deep learning with physics-constrained differentiable solvers | [link]()
 Aug 2nd | [Elizabeth Qian](https://www.elizabethqian.com/) | Georgia Tech | Multi-fidelity linear regression for scientific machine learning from scarce data | [link](https://youtu.be/2A0j1R0MgqA?si=_yX0KHQD7UKoQJg7)
