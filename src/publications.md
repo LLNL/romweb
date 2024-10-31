@@ -1,6 +1,9 @@
 # Publications
 
 #### 2024
+  1. S. W. Chung, Y. Choi, P. Roy, T., Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker, [Scalable physics-guided data-driven component model reduction for steady Navier-Stokes flow](https://arxiv.org/pdf/2410.21583), *arXiv preprint*, arXiv:2410.21583 **2024**
+  1. S. W. Chung, Y. Choi, P. Roy, T., Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker, [Scaled-up prediction of steady Navier-Stokes equation with component reduced order modeling](https://arxiv.org/pdf/2410.21534), *arXiv preprint*, arXiv:2410.21534 **2024**
+  1. T. Moore, A. A. Wong, B. Giera, D. I. Oyarzun, A. E. Gongora, T. Y. Lin, W. Li, T. Owens, D. Nguyen, V. M. Ehlinger, A. Prajapati, S. W. Chung, Pratanu Roy, Joshua DeOtte, Nicholas R. Cross, A. Aui, Y. Choi, M. Goldman, H. Y. Jeong, C. Ye, A. Sarkar, E. B. Duoss, C. Hahn, S. E. Baker, [Accelerating Climate Technologies Through the Science of Scale-up](), accepted for publication in *Nature Chemical Engineering* **2024**
   1. M. Juhasz, E. Chin, Y. Choi, J. T., McKeown, S. Khairallah, [Data-driven Virtual Test-bed of the Blown Powder Directed Energy Deposition Process](https://arxiv.org/pdf/2409.09092), *arXiv preprint*, arXiv:2409.09092 **2024**
   1. J. S. R. Park, S. W. Cheung, Y. Choi, and Y. Shin, [tLaSDI: Thermodynamics-informed latent space dynamics identification](https://doi.org/10.1016/j.cma.2024.117144), *Computer Methods in Applied Mechanics and Engineering* 429, p117144 **2024**
   1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh, [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://doi.org/10.1137/22M1484018), *SIAM Journal on Scientific Computing*, 46, 4, **2024**
