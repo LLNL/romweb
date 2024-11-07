@@ -38,6 +38,7 @@ month = {oct}
 - [Kevin Huynh](https://people.llnl.gov/huynh24)
 - [Coleman James Kendrick](https://www.linkedin.com/in/coleman-kendrick-2692631ab)
 - [Tanya Kostova-Vassilevska](https://scholar.google.com/citations?user=oCuLEx4AAAAJ&hl=en)
+- [Minji Kim](https://github.com/mjkim1001)
 - [Axel Larsson](http://formfindinglab.princeton.edu/people/axel-larsson/)
 - [Jessica Lauzon](https://www.linkedin.com/in/jessielauzon/)
 - [Dan Messenger](https://www.linkedin.com/in/danielmessenger1/)
