@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov 1st, 10 AM | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md1e5f5419b0e06d3eb7608f97aad750f)
 Nov 15th, 10 AM | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=maff3f9dabe589a2abb2facfbc9728cc3)
 Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f3e1975427889cfe99ebafc7e27ff18)
 Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md349736fb7f4bdc8b508fbf270514fe6)
@@ -22,7 +21,8 @@ Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadlec
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Oct 25th | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link]()
+Nov 1st | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link]()
+Oct 25th | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://youtu.be/JmRMShKxeio?si=PDCIiWC6lntX4IFJ)
 Oct 18th | [Ching-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link](https://youtu.be/eKg5g7_zfvU?si=xC_fTf-BxXaJTkot)
 Sep 27th | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | Data-driven techniques for analysis of turbulent flows  | [link](https://youtu.be/6oPU4foiWds?si=9jvVKzUprjVvGK9q)
 Sep 20th | [Jian-Xun Wang](https://sites.nd.edu/jianxun-wang/) | University of Notre Dame  | Neural Differentiable Physics: Unifying Numerical PDEs and Deep Learning for Data-Augmented Computational Physics | [link](https://youtu.be/hXGSpifdKWA?si=0ykCLD8dwUwqzm9F)
