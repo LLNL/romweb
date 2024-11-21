@@ -11,7 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Nov 15th, 10 AM | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=maff3f9dabe589a2abb2facfbc9728cc3)
 Nov 22nd, 10 AM | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2f3e1975427889cfe99ebafc7e27ff18)
 Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md349736fb7f4bdc8b508fbf270514fe6)
 Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m69a84dcc234d6d4c007151fac71502b3)
@@ -21,6 +20,7 @@ Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadlec
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link]()
 Nov 1st | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link]()
 Oct 25th | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://youtu.be/JmRMShKxeio?si=PDCIiWC6lntX4IFJ)
 Oct 18th | [Ching-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link](https://youtu.be/eKg5g7_zfvU?si=xC_fTf-BxXaJTkot)
