@@ -20,7 +20,7 @@ Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadlec
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link]()
+Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link](https://www.youtube.com/watch?v=7UQNHPAAaNk)
 Nov 1st | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link]()
 Oct 25th | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://youtu.be/JmRMShKxeio?si=PDCIiWC6lntX4IFJ)
 Oct 18th | [Ching-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link](https://youtu.be/eKg5g7_zfvU?si=xC_fTf-BxXaJTkot)
