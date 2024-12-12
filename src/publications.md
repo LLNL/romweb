@@ -1,6 +1,10 @@
 # Publications
 
 #### 2024
+  1. He, X., Tran, A., Bortz, D.M., and Choi, Y. [Physics-Informed Active Learning With Simultaneous Weak-Form Latent Space Dynamics Identification](https://doi.org/10.1002/nme.7634), *International Journal for Numerical Methods in Engineering* **2024**
+  1. Kim, M., Wen, T., Lee, K., and Choi, Y. [Physics-informed reduced order model with conditional neural fields](https://arxiv.org/pdf/2412.05233), *arXiv preprint*, arXiv:2412.05233 **2024**
+  1. Deo I.K., Choi, Y., Khairallah, S.A., Reikher, A., and Strantza, M. [Data-Driven, Parameterized Reduced-order Models for Predicting Distortion in Metal 3D Printing](https://arxiv.org/pdf/2412.04577), *arXiv preprint*, arXiv:2412.04577 **2024**
+  1. Zanardi, I., Diaz, A.N., Chung, S.W., Panesi, M., and Choi, Y. [Scalable nonlinear manifold reduced order model for dynamical systems](https://arxiv.org/pdf/2412.00507), *arXiv preprint*, arXiv:2412.00507 **2024**
   1. S. W. Chung, Y. Choi, P. Roy, T., Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker, [Scalable physics-guided data-driven component model reduction for steady Navier-Stokes flow](https://arxiv.org/pdf/2410.21583), *arXiv preprint*, arXiv:2410.21583 **2024**
   1. S. W. Chung, Y. Choi, P. Roy, T., Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker, [Scaled-up prediction of steady Navier-Stokes equation with component reduced order modeling](https://arxiv.org/pdf/2410.21534), *arXiv preprint*, arXiv:2410.21534 **2024**
   1. T. Moore, A. A. Wong, B. Giera, D. I. Oyarzun, A. E. Gongora, T. Y. Lin, W. Li, T. Owens, D. Nguyen, V. M. Ehlinger, A. Prajapati, S. W. Chung, Pratanu Roy, Joshua DeOtte, Nicholas R. Cross, A. Aui, Y. Choi, M. Goldman, H. Y. Jeong, C. Ye, A. Sarkar, E. B. Duoss, C. Hahn, S. E. Baker, [Accelerating Climate Technologies Through the Science of Scale-up](), accepted for publication in *Nature Chemical Engineering* **2024**
