@@ -11,8 +11,9 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2024
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md349736fb7f4bdc8b508fbf270514fe6)
+Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md349736fb7f4bdc8b508fbf270514fe6)
 Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m69a84dcc234d6d4c007151fac71502b3)
+Mar 28th, 10 AM | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2151302b96d7fd11148cc0bbc04e4256)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2024
