@@ -8,10 +8,9 @@
 # DDPS Webinar (_in California time_)
 DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk or would like to recommend a speaker, please send an email to choi15@llnl.gov. If you are interested in being included in DDPS email list, please also send an email to choi15@llnl.gov.
 
-## Scheduled Talks in 2024
+## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Dec 13th, 10 AM | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=md349736fb7f4bdc8b508fbf270514fe6)
 Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m69a84dcc234d6d4c007151fac71502b3)
 Feb 20th, 4 PM | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | KAIST | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0b579a7808e346dde65d520d7576784e)
 Mar 28th, 10 AM | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2151302b96d7fd11148cc0bbc04e4256)
@@ -21,6 +20,7 @@ Apr 18th, 10 AM | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Dec 13th | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link]()
 Nov 22nd | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://youtu.be/2tUBuUMSE9M?si=-gkFj_Y5z6kfTwPu)
 Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link](https://www.youtube.com/watch?v=7UQNHPAAaNk)
 Nov 1st | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link]()
