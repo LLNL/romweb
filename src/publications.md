@@ -1,6 +1,7 @@
 # Publications
 
 #### 2024
+  1. Cheung, S.W., Choi, Y., Chung, S.W., Fattebert, J.L., Kendrick, C., and Osei-Kuffuor, D.  [Theory and numerics of subspace approximation of eigenvalue problems](https://arxiv.org/pdf/2412.08891), *arXiv preprint*, arXiv:2412.08891 **2024**
   1. He, X., Tran, A., Bortz, D.M., and Choi, Y. [Physics-Informed Active Learning With Simultaneous Weak-Form Latent Space Dynamics Identification](https://doi.org/10.1002/nme.7634), *International Journal for Numerical Methods in Engineering* **2024**
   1. Kim, M., Wen, T., Lee, K., and Choi, Y. [Physics-informed reduced order model with conditional neural fields](https://arxiv.org/pdf/2412.05233), *arXiv preprint*, arXiv:2412.05233 **2024**
   1. Deo I.K., Choi, Y., Khairallah, S.A., Reikher, A., and Strantza, M. [Data-Driven, Parameterized Reduced-order Models for Predicting Distortion in Metal 3D Printing](https://arxiv.org/pdf/2412.04577), *arXiv preprint*, arXiv:2412.04577 **2024**
