@@ -25,7 +25,7 @@ Date      | Speaker        |  Institution      | Title                         |
 Dec 13th | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link]()
 Nov 22nd | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://youtu.be/2tUBuUMSE9M?si=-gkFj_Y5z6kfTwPu)
 Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link](https://www.youtube.com/watch?v=7UQNHPAAaNk)
-Nov 1st | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link]()
+Nov 1st | [Annalisa Quaini](https://math.uh.edu/~quaini/) | University of Houston | Reducing the cost of ocean modeling with a data-driven ROM and LES | [link](https://www.youtube.com/watch?v=VX7dcoXvlvo)
 Oct 25th | [Marius Zeinhofer](https://www.linkedin.com/in/marius-zeinhofer-786219184/?originalSubdomain=no) | University Hospital Freiburg | Infinite Dimensional Optimization for Scientific Machine Learning | [link](https://youtu.be/JmRMShKxeio?si=PDCIiWC6lntX4IFJ)
 Oct 18th | [Ching-Yao Lai](https://icyphysics.stanford.edu/) | Stanford | Machine-Precision Neural Networks for Multiscale Dynamics | [link](https://youtu.be/eKg5g7_zfvU?si=xC_fTf-BxXaJTkot)
 Sep 27th | [Akhil Nekkanti](https://scholar.google.co.in/citations?user=qOpT0w0AAAAJ&hl=en) | CalTech | Data-driven techniques for analysis of turbulent flows  | [link](https://youtu.be/6oPU4foiWds?si=9jvVKzUprjVvGK9q)
