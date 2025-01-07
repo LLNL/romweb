@@ -14,6 +14,7 @@ When           | Speaker        |  Institution      | Title                     
 Jan 24th, 10 AM | [Max Welling](https://staff.fnwi.uva.nl/m.welling/) | University of Amsterdam | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me657090911f95690fa3b4b53da8de3b7)
 Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m69a84dcc234d6d4c007151fac71502b3)
 Feb 20th, 4 PM | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | KAIST | Operator Networks Based on Numerical Analysis | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0b579a7808e346dde65d520d7576784e)
+Feb 28th, 10 AM | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me657090911f95690fa3b4b53da8de3b7)
 Mar 28th, 10 AM | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2151302b96d7fd11148cc0bbc04e4256)
 Apr 3rd, 10 AM | [Johannes Brandstetter](https://brandstetter-johannes.github.io/) | Johannes Kepler University Linz | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m198ab0f481d45ee1dfb784a0f4689afc)
 Apr 18th, 10 AM | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3b83db5c101e7b167e23ce3e77c28fa0)
