@@ -11,8 +11,6 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Jan 24th, 10 AM | [Max Welling](https://staff.fnwi.uva.nl/m.welling/) | University of Amsterdam | Is AI Shifting the Paradigm of Scientific Discovery? | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me657090911f95690fa3b4b53da8de3b7)
-Jan 31st, 10 AM | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m69a84dcc234d6d4c007151fac71502b3)
 Feb 20th, 4 PM | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | KAIST | Operator Networks Based on Numerical Analysis | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0b579a7808e346dde65d520d7576784e)
 Feb 28th, 10 AM | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me657090911f95690fa3b4b53da8de3b7)
 Mar 28th, 10 AM | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2151302b96d7fd11148cc0bbc04e4256)
@@ -23,6 +21,8 @@ Apr 18th, 10 AM | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | 
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Jan 31st | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link]()
+Jan 24th | [Max Welling](https://staff.fnwi.uva.nl/m.welling/) | University of Amsterdam | Is AI Shifting the Paradigm of Scientific Discovery? | [link](https://youtu.be/z-PSNT5wp_Q?si=qgKcsEeK4LMLswPQ)
 Dec 13th | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link]()
 Nov 22nd | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://youtu.be/2tUBuUMSE9M?si=-gkFj_Y5z6kfTwPu)
 Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link](https://www.youtube.com/watch?v=7UQNHPAAaNk)
