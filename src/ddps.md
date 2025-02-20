@@ -12,7 +12,8 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Feb 20th, 4 PM | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | Seoul National University | Operator Networks Based on Numerical Analysis | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m0b579a7808e346dde65d520d7576784e)
-Feb 28th, 10 AM | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me657090911f95690fa3b4b53da8de3b7)
+Feb 28th, 10 AM | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | Reducing Data Resolution for better
+Reconstruction: Super-Resolution of Navier-Stokes Flows | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=me657090911f95690fa3b4b53da8de3b7)
 Mar 28th, 10 AM | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2151302b96d7fd11148cc0bbc04e4256)
 Apr 3rd, 10 AM | [Johannes Brandstetter](https://brandstetter-johannes.github.io/) | Johannes Kepler University Linz | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m198ab0f481d45ee1dfb784a0f4689afc)
 Apr 11th, 10 AM | [Cecilia Pagliantini](https://numpi.dm.unipi.it/people/cecilia-pagliantini/) | University of Pisa | Dynamical approximation and sensor placement for the state estimation of transport problems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfdaaa5a61547fc74cb62405b90afa0fa)
