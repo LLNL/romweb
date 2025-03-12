@@ -21,8 +21,8 @@ June 5th, 10 AM | [Alessandro Alla](http://www.alessandroalla.com/) | Universita
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Feb 28th | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | Reducing Data Resolution for better Reconstruction: Super-Resolution of Navier-Stokes Flows | [link]()
-Feb 20th | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | Seoul National University | Operator Networks Based on Numerical Analysis | [link]()
+Feb 28th | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | Reducing Data Resolution for better Reconstruction: Super-Resolution of Navier-Stokes Flows | [link](https://youtu.be/T68wKh04gTA?si=ISmSQoUGGCniujK5)
+Feb 20th | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | Seoul National University | Operator Networks Based on Numerical Analysis | [link](https://youtu.be/KWX_oGiHWVc)
 Jan 31st | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://youtu.be/stHK-epnxfE?si=tQ8dxpMp8YXKFKUa)
 Jan 24th | [Max Welling](https://staff.fnwi.uva.nl/m.welling/) | University of Amsterdam | Is AI Shifting the Paradigm of Scientific Discovery? | [link](https://youtu.be/z-PSNT5wp_Q?si=qgKcsEeK4LMLswPQ)
 Dec 13th | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link]()
