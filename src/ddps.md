@@ -11,9 +11,7 @@ DDPS stands for data-driven physical simulation. We hold weekly webinar, in aver
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Mar 28th, 10 AM | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | Extreme Aerodynamics: Flow Analysis and Control for Highly Gusty Conditions | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m2151302b96d7fd11148cc0bbc04e4256)
-Apr 11th, 10 AM | [Cecilia Pagliantini](https://numpi.dm.unipi.it/people/cecilia-pagliantini/) | University of Pisa | Dynamical approximation and sensor placement for the state estimation of transport problems | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mfdaaa5a61547fc74cb62405b90afa0fa)
-Apr 18th, 10 AM | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3b83db5c101e7b167e23ce3e77c28fa0)
+Apr 18th, 10 AM | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | Identifying differential equations from single observation with numerical methods: IDENT to WeakIDENT and more | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3b83db5c101e7b167e23ce3e77c28fa0)
 May 2nd, 10 AM | [Johannes Brandstetter](https://brandstetter-johannes.github.io/) | Johannes Kepler University Linz | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m198ab0f481d45ee1dfb784a0f4689afc)
 June 5th, 10 AM | [Alessandro Alla](http://www.alessandroalla.com/) | Universita di Roma |  Data-Driven Algorithms for Online Identification and Control of Partial Differential Equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3bfc283de430012deff1952c48168318)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
@@ -21,6 +19,8 @@ June 5th, 10 AM | [Alessandro Alla](http://www.alessandroalla.com/) | Universita
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Apr 11th | [Cecilia Pagliantini](https://numpi.dm.unipi.it/people/cecilia-pagliantini/) | University of Pisa | Dynamical approximation and sensor placement for the state estimation of transport problems | [link]()
+Mar 28th | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | Extreme Aerodynamics: Flow Analysis and Control for Highly Gusty Conditions | [link](https://youtu.be/pqmpdZogUPc?si=_iBvHPxO07WIagTT)
 Feb 28th | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | Reducing Data Resolution for better Reconstruction: Super-Resolution of Navier-Stokes Flows | [link](https://youtu.be/T68wKh04gTA?si=ISmSQoUGGCniujK5)
 Feb 20th | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | Seoul National University | Operator Networks Based on Numerical Analysis | [link](https://youtu.be/KWX_oGiHWVc)
 Jan 31st | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://youtu.be/stHK-epnxfE?si=tQ8dxpMp8YXKFKUa)
