@@ -6,7 +6,7 @@
 </script>
 
 # DDPS Webinar (_in California time_)
-DDPS stands for data-driven physical simulation. We hold weekly webinar, in average, either on Thursday or Friday at Lawrence Livermore National Laboratory. If you are interested in giving a webinar talk or would like to recommend a speaker, please send an email to choi15@llnl.gov. If you are interested in being included in DDPS email list, please also send an email to choi15@llnl.gov.
+Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by the libROM team at Lawrence Livermore National Laboratory ( https://www.librom.net/ddps.html ). Held weekly—or occasionally bi-weekly on Thursdays or Fridays—these webinars spotlight how emerging machine learning and AI methods are transforming computational science and physical simulation. Our sessions cover cutting-edge topics such as deep learning for simulation, generative models, and innovative data assimilation techniques, alongside traditional modeling and advanced computational approaches applied to domains like fluid dynamics, plasma physics, and beyond. Whether you're interested in presenting a talk, recommending a speaker, or joining our vibrant DDPS community, please contact choi15@llnl.gov for further details or to be added to our email list.
 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
