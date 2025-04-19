@@ -1,6 +1,9 @@
 # Publications
 
 #### 2025
+  1. Kim, Y., Q. Kong, Y. Choi, Yoo, B., Pitarka, A. [Real-time reconstruction of ground motion during small magnitude earthquakes: a pilot study](https://arxiv.org/pdf/2504.11752), *arXiv preprint*, arXiv:2504.11752 **2025**
+  1. M. Juhasz, E. Chin, Y. Choi, J. T., McKeown, S. Khairallah, [Harnessing on-machine metrology data for prints witha surrogate model for laser powder directed energy deposition](https://doi.org/10.1016/j.addma.2025.104745), *Additive Manufacturing*, **2025**
+  1. Kong, Q., Zou, C., Choi, Y., Matzel, E.M., Azizzadenesheli, K., Ross, Z.E., Rodgers, A.J., Clayton, R.W. [Reducing Frequency Bias of Fourier Neural Operators in 3D Seismic Wavefield Simulations through Multi-Stage Training](https://arxiv.org/pdf/2503.02023) *arXiv preprint*, arXiv:2503.02023 **2025**
   1. P.H. Tsai, S.W. Chung, D. Ghosh, J. Loffeld, Y. Choi, J.L. Belof [Local reduced-order modeling for electrostatic plasmas by physics-informed solution manifold decomposition](https://arxiv.org/pdf/2310.18493), *arXiv preprint*, arXiv:2310.18493 **2025**
   1. He, X., Tran, A., Bortz, D.M., and Choi, Y. [Physics-Informed Active Learning With Simultaneous Weak-Form Latent Space Dynamics Identification](https://doi.org/10.1002/nme.7634), *International Journal for Numerical Methods in Engineering* **2025**
 
@@ -12,7 +15,6 @@
   1. Zanardi, I., Diaz, A.N., Chung, S.W., Panesi, M., and Choi, Y. [Scalable nonlinear manifold reduced order model for dynamical systems](https://arxiv.org/pdf/2412.00507), *arXiv preprint*, arXiv:2412.00507 **2024**
   1. S. W. Chung, Y. Choi, P. Roy, T., Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker, [Scalable physics-guided data-driven component model reduction for steady Navier-Stokes flow](https://arxiv.org/pdf/2410.21583), *arXiv preprint*, arXiv:2410.21583 **2024**
   1. S. W. Chung, Y. Choi, P. Roy, T., Roy, T. Y. Lin, D. T. Nguyen, C. Hahn, E. B. Duoss, S. E. Baker, [Scaled-up prediction of steady Navier-Stokes equation with component reduced order modeling](https://arxiv.org/pdf/2410.21534), *arXiv preprint*, arXiv:2410.21534 **2024**
-  1. M. Juhasz, E. Chin, Y. Choi, J. T., McKeown, S. Khairallah, [Data-driven Virtual Test-bed of the Blown Powder Directed Energy Deposition Process](https://arxiv.org/pdf/2409.09092), *arXiv preprint*, arXiv:2409.09092 **2024**
   1. J. E. Lotz, G. D. Weymouth, and I. Akkerman, [Projection-based reduced-order modeling of time-periodic problems, with application to flow past flapping hydrofoils](https://doi.org/10.1016/j.cma.2024.117161), *Computer Methods in Applied Mechanics and Engineering* 429, p117161 **2024**
   1. J. S. R. Park, S. W. Cheung, Y. Choi, and Y. Shin, [tLaSDI: Thermodynamics-informed latent space dynamics identification](https://doi.org/10.1016/j.cma.2024.117144), *Computer Methods in Applied Mechanics and Engineering* 429, p117144 **2024**
   1. J.T. Lauzon, S.W. Cheung, Y. Shin, Y. Choi, D. M. Copeland, K. Huynh, [S-OPT: a points selection algorithm for hyper-reduction in reduced order models](https://doi.org/10.1137/22M1484018), *SIAM Journal on Scientific Computing*, 46, 4, **2024**
