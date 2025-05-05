@@ -13,6 +13,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 May 30th, 10:30 AM | [Gábor Csányi](https://www.eng.cam.ac.uk/profiles/gc121) | University of Cambridge | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mde98643277c675523f857b92ab0c070a)
 June 5th, 10 AM | [Alessandro Alla](http://www.alessandroalla.com/) | Universita di Roma |  Data-Driven Algorithms for Online Identification and Control of Partial Differential Equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3bfc283de430012deff1952c48168318)
+July 11th, 10 AM | [Raphael Pestourie]() | GeorgiaTech |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m40d5dd6c81768ae09a499b074baf8a0a)
 Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m060e79ee760d61fa4f8740bfb79bfcc5)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
