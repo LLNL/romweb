@@ -20,7 +20,7 @@ Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | Univ
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-May 2nd | [Johannes Brandstetter](https://brandstetter-johannes.github.io/) | Johannes Kepler University Linz | The next wave of scientific breakthroughs is in the latent space | [link]()
+May 2nd | [Johannes Brandstetter](https://brandstetter-johannes.github.io/) | Johannes Kepler University Linz | The next wave of scientific breakthroughs is in the latent space | [link](https://youtu.be/keKTwvknK3w)
 Apr 18th | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | Identifying differential equations from single observation with numerical methods: IDENT to WeakIDENT and more | [link](https://youtu.be/HimKPNZZmnk)
 Apr 11th | [Cecilia Pagliantini](https://numpi.dm.unipi.it/people/cecilia-pagliantini/) | University of Pisa | Dynamical approximation and sensor placement for the state estimation of transport problems | [link](https://youtu.be/czVDQQPh_MQ?si=G-MnIVYaMS-oem31)
 Mar 28th | [Kunihiko Taira](https://www.seas.ucla.edu/fluidflow/index.html) | UCLA | Extreme Aerodynamics: Flow Analysis and Control for Highly Gusty Conditions | [link](https://youtu.be/pqmpdZogUPc?si=_iBvHPxO07WIagTT)
