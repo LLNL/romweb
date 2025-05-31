@@ -11,7 +11,6 @@ Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-May 30th, 10:30 AM | [Gábor Csányi](https://www.eng.cam.ac.uk/profiles/gc121) | University of Cambridge | TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mde98643277c675523f857b92ab0c070a)
 June 5th, 10 AM | [Alessandro Alla](http://www.alessandroalla.com/) | Universita di Roma |  Data-Driven Algorithms for Online Identification and Control of Partial Differential Equations | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m3bfc283de430012deff1952c48168318)
 July 11th, 10 AM | [Raphael Pestourie]() | GeorgiaTech |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m40d5dd6c81768ae09a499b074baf8a0a)
 Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m060e79ee760d61fa4f8740bfb79bfcc5)
@@ -20,6 +19,8 @@ Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | Univ
 ## Past Talks in 2024
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+May 30th | [Gábor Csányi](https://www.eng.cam.ac.uk/profiles/gc121) | University of Cambridge | Foundation models for materials chemistry | [link]()
+May 29th | [Mandela Quashie](https://directory.natsci.msu.edu/directory/Profiles/Person/101022) | Michigan State University | Smarter Particles for Smarter Plasma Simulations: A Moment-Enhanced PIC Framework | [link]()
 May 2nd | [Johannes Brandstetter](https://brandstetter-johannes.github.io/) | Johannes Kepler University Linz | The next wave of scientific breakthroughs is in the latent space | [link](https://youtu.be/keKTwvknK3w)
 Apr 18th | [Sung Ha Kang](https://kang.math.gatech.edu/) | GeorgiaTech | Identifying differential equations from single observation with numerical methods: IDENT to WeakIDENT and more | [link](https://youtu.be/HimKPNZZmnk)
 Apr 11th | [Cecilia Pagliantini](https://numpi.dm.unipi.it/people/cecilia-pagliantini/) | University of Pisa | Dynamical approximation and sensor placement for the state estimation of transport problems | [link](https://youtu.be/czVDQQPh_MQ?si=G-MnIVYaMS-oem31)
