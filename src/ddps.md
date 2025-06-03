@@ -16,7 +16,7 @@ July 11th, 10 AM | [Raphael Pestourie]() | GeorgiaTech |  TBD | [link](https://l
 Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m060e79ee760d61fa4f8740bfb79bfcc5)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
-## Past Talks in 2024
+## Past Talks in 2025
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 May 30th | [Gábor Csányi](https://www.eng.cam.ac.uk/profiles/gc121) | University of Cambridge | Foundation models for materials chemistry | [link]()
@@ -29,6 +29,10 @@ Feb 28th | [Kyongmin Yeo](https://www.dam.brown.edu/people/kyeo/) | IBM | Reduci
 Feb 20th | [Youngjoon Hong](https://www.youngjoonhong.com/videos) | Seoul National University | Operator Networks Based on Numerical Analysis | [link](https://youtu.be/KWX_oGiHWVc)
 Jan 31st | [Soledad Le Clainche](https://sites.google.com/view/soledadleclainche) | Universidad Politecnica de Madrid | Hybrid reduced order models: from exploiting physical principles to novel machine learning approaches | [link](https://youtu.be/stHK-epnxfE?si=tQ8dxpMp8YXKFKUa)
 Jan 24th | [Max Welling](https://staff.fnwi.uva.nl/m.welling/) | University of Amsterdam | Is AI Shifting the Paradigm of Scientific Discovery? | [link](https://youtu.be/z-PSNT5wp_Q?si=qgKcsEeK4LMLswPQ)
+
+## Past Talks in 2024
+Date      | Speaker        |  Institution      | Title                         | YouTube
+---------- | -------------- | ----------------- | ----------------------------- | ---------
 Dec 13th | [Hamid Sadjadpour](https://users.soe.ucsc.edu/~hamid/) | UCSC | Everlasting Information-theoretic Encryption in the Era of Quantum Computing and AI | [link]()
 Nov 22nd | [David Bortz](https://www.colorado.edu/amath/david-bortz) | University of Colorado Boulder | The weak form is stronger than you think | [link](https://youtu.be/2tUBuUMSE9M?si=-gkFj_Y5z6kfTwPu)
 Nov 15th | [Yasaman Bahri](https://sites.google.com/view/yasamanbahri/home) | Google DeepMind | A first-principles approach to understanding deep learning | [link](https://www.youtube.com/watch?v=7UQNHPAAaNk)
