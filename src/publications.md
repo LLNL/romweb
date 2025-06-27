@@ -1,6 +1,9 @@
 # Publications
 
 #### 2025
+  1. He, X., Y. Shin, A. Gruber, S. Jung, K. Lee, Y. Choi [Thermodynamically consistent latent dynamics identification for parametric systems](https://arxiv.org/pdf/2506.08475?), *arXiv preprint*, arXiv:2506.08475 **2025**
+  1. Anderson, W., K. Chung, Y. Choi [mLaSDI: Multi-stage latent space dynamics identification](https://arxiv.org/pdf/2506.09207?), *arXiv preprint*, arXiv:2506.09207 **2025**
+  1. Choi, Y., S.W. Cheung, Y. Kim, P.H. Tsai, A.N. Diaz, I. Zanardi, S.W. Chung, D.M. Copeland, C. Kendrick, W. Anderson, T. Iliescu, M. Heinkenschloss [Defining foundation models for computational science: a call for clarity and rigor](https://arxiv.org/pdf/2505.22904?), *arXiv preprint*, arXiv:2505.22904 **2025**
   1. Kim, Y., Q. Kong, Y. Choi, Yoo, B., Pitarka, A. [Real-time reconstruction of ground motion during small magnitude earthquakes: a pilot study](https://arxiv.org/pdf/2504.11752), *arXiv preprint*, arXiv:2504.11752 **2025**
   1. M. Juhasz, E. Chin, Y. Choi, J. T., McKeown, S. Khairallah, [Harnessing on-machine metrology data for prints witha surrogate model for laser powder directed energy deposition](https://doi.org/10.1016/j.addma.2025.104745), *Additive Manufacturing*, **2025**
   1. Kong, Q., Zou, C., Choi, Y., Matzel, E.M., Azizzadenesheli, K., Ross, Z.E., Rodgers, A.J., Clayton, R.W. [Reducing Frequency Bias of Fourier Neural Operators in 3D Seismic Wavefield Simulations through Multi-Stage Training](https://arxiv.org/pdf/2503.02023) *arXiv preprint*, arXiv:2503.02023 **2025**
