@@ -50,10 +50,6 @@ June 10, 2025 | [Parametric tLaSDI](https://arxiv.org/pdf/2506.08475?) arXiv pap
 June 10, 2025 | [mLaSDI](https://arxiv.org/pdf/2506.09207?) arXiv paper is available 
 May 30, 2025 | [Defining Foundation Model](https://arxiv.org/pdf/2505.22904?) arXiv paper is available 
 May 5, 2025  | [ROM for DED control](https://doi.org/10.1016/j.addma.2025.104745) paper is published in Additive Manufacturing 
-Apr 30, 2025 | [gappyAE for earthquake](https://arxiv.org/pdf/2504.11752) arXiv paper is available  
-Mar 3, 2025  | [multi-stage FNO for earthquake](https://arxiv.org/pdf/2503.02023) arXiv paper is available  
-Feb 4, 2025  | [ROM for Plasma](https://arxiv.org/pdf/2310.18493) arXiv paper is available  
-Jan 15, 2025 | [WgLaSDI](https://doi.org/10.1002/nme.7634) paper is published in IJNME 
 
 ## libROM tutorials in YouTube
 Date         | Title
