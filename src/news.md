@@ -1,9 +1,34 @@
 # All News Updates
 
+## News in 2025
+
+Date         | Message
+------------ | -----------------------------------------------------------------
+July 2, 2025 | [Podcast on defining foundation model](https://hodgesj.substack.com/p/podcast-defining-foundation-models) is available 
+June 24-27, 2025 | [Kevin Chung](https://scholar.google.com/citations?user=K7KuqccAAAAJ&hl=en) presented LaSDI-IT at [54th International Annual Conference of the Fraunhofer ICT](file:///Users/choi15/Downloads/Jahrestagung_CallforPapers_2025-2.pdf)
+June 19, 2025 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented DD-FEM at [Large-Scale Scientific Computations Conference](https://parallel.bas.bg/Conferences/SciCom25/)
+June 10-12, 2025 | [Youngsoo Choi](https://people.llnl.gov/choi15) led a breakout session at [DOE ASCR Workshop on Inverse Methods for Complex Systems under Uncertainty](https://web.cvent.com/event/0fc81644-f4d8-416b-84d3-be802f613f7a/summary)
+June 10, 2025 | [Parametric tLaSDI](https://arxiv.org/pdf/2506.08475?) arXiv paper is available 
+June 10, 2025 | [mLaSDI](https://arxiv.org/pdf/2506.09207?) arXiv paper is available 
+May 30, 2025 | [Defining Foundation Model](https://arxiv.org/pdf/2505.22904?) arXiv paper is available 
+May 5, 2025  | [ROM for DED control](https://doi.org/10.1016/j.addma.2025.104745) paper is published in Additive Manufacturing 
+Apr 30, 2025 | [gappyAE for earthquake](https://arxiv.org/pdf/2504.11752) arXiv paper is available  
+Mar 3, 2025  | [multi-stage FNO for earthquake](https://arxiv.org/pdf/2503.02023) arXiv paper is available  
+Feb 4, 2025  | [ROM for Plasma](https://arxiv.org/pdf/2310.18493) arXiv paper is available  
+Jan 15, 2025 | [WgLaSDI](https://doi.org/10.1002/nme.7634) paper is published in IJNME 
+
+
 ## News in 2024
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+Dec 18, 2024 | [Accelerating Climate Tech](https://www.nature.com/articles/s44286-024-00143-0) paper is published in Nature Chemical Engineering 
+Dec 12, 2024 | [Approximation of Eigenvalue](https://arxiv.org/pdf/2412.08891) arXiv paper is available 
+Dec 6, 2024 | [Physics-informed CNF](https://ml4physicalsciences.github.io/2024/files/NeurIPS_ML4PS_2024_135.pdf) NeurIPS workshop paper is available 
+Dec 6, 2024 | [Physics-informed CNF](https://ml4physicalsciences.github.io/2024/files/NeurIPS_ML4PS_2024_135.pdf) NeurIPS workshop paper is available 
+Dec 5, 2024 | [ROM for Metal 3D printing](https://ml4physicalsciences.github.io/2024/files/NeurIPS_ML4PS_2024_182.pdf) NeurIPS workshop paper is available 
+Oct 28, 2024 | [DD-FEM for Navier-Stokes](https://ml4physicalsciences.github.io/2024/files/NeurIPS_ML4PS_2024_34.pdf) NeurIPS workshop paper is available 
+Sep 12, 2025 | [ROM for DED process](https://arxiv.org/pdf/2409.09092v1) arXiv paper is available
 Sep 1, 2024  | [tLaSDI](https://doi.org/10.1016/j.cma.2024.117144) paper is published in CMAME
 Aug 1, 2024  | [S-OPT](https://doi.org/10.1137/22M1484018) paper is published in SISC
 July 13, 2024| [Data-scarce](https://link.springer.com/article/10.1007/s00193-024-01177-2) paper is published in Shock Waves
