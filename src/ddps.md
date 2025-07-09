@@ -11,7 +11,7 @@ Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-July 11th, 10 AM | [Raphael Pestourie]() | GeorgiaTech |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m40d5dd6c81768ae09a499b074baf8a0a)
+July 11th, 10 AM | [Raphael Pestourie](https://www.raphaelpestourie.com/) | GeorgiaTech | Input-space Scientific machine learning for PDE-constrained optimization of geometries | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m40d5dd6c81768ae09a499b074baf8a0a)
 Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m060e79ee760d61fa4f8740bfb79bfcc5)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
