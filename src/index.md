@@ -42,6 +42,7 @@ See also our [Gallery](gallery.md), [Publications](publications.md) and
 
 Date         | Message
 ------------ | -----------------------------------------------------------------
+July 14, 2025| [LaSDI-IT](https://arxiv.org/pdf/2507.10647) arXiv paper is available
 July 2, 2025 | [Podcast on defining foundation model](https://hodgesj.substack.com/p/podcast-defining-foundation-models) is available 
 June 24-27, 2025 | [Kevin Chung](https://scholar.google.com/citations?user=K7KuqccAAAAJ&hl=en) presented LaSDI-IT at [54th International Annual Conference of the Fraunhofer ICT](file:///Users/choi15/Downloads/Jahrestagung_CallforPapers_2025-2.pdf)
 June 19, 2025 | [Youngsoo Choi](https://people.llnl.gov/choi15) presented DD-FEM at [Large-Scale Scientific Computations Conference](https://parallel.bas.bg/Conferences/SciCom25/)
@@ -49,7 +50,6 @@ June 10-12, 2025 | [Youngsoo Choi](https://people.llnl.gov/choi15) led a breakou
 June 10, 2025 | [Parametric tLaSDI](https://arxiv.org/pdf/2506.08475?) arXiv paper is available 
 June 10, 2025 | [mLaSDI](https://arxiv.org/pdf/2506.09207?) arXiv paper is available 
 May 30, 2025 | [Defining Foundation Model](https://arxiv.org/pdf/2505.22904?) arXiv paper is available 
-May 5, 2025  | [ROM for DED control](https://doi.org/10.1016/j.addma.2025.104745) paper is published in Additive Manufacturing 
 
 ## libROM tutorials in YouTube
 Date         | Title

@@ -1,6 +1,7 @@
 # Publications
 
 #### 2025
+  1. Chung, S.W., C. Miller, Y. Choi, P. Tranquilli, H.K. Springer, K. Sullivan [Latent Space Dynamics Identification for Interface Tracking with Application to Shock-Induced Pore Collapse](https://arxiv.org/pdf/2507.10647), *arXiv preprint*, arXiv:2507.10647 **2025**
   1. He, X., Y. Shin, A. Gruber, S. Jung, K. Lee, Y. Choi [Thermodynamically consistent latent dynamics identification for parametric systems](https://arxiv.org/pdf/2506.08475?), *arXiv preprint*, arXiv:2506.08475 **2025**
   1. Anderson, W., K. Chung, Y. Choi [mLaSDI: Multi-stage latent space dynamics identification](https://arxiv.org/pdf/2506.09207?), *arXiv preprint*, arXiv:2506.09207 **2025**
   1. Choi, Y., S.W. Cheung, Y. Kim, P.H. Tsai, A.N. Diaz, I. Zanardi, S.W. Chung, D.M. Copeland, C. Kendrick, W. Anderson, T. Iliescu, M. Heinkenschloss [Defining foundation models for computational science: a call for clarity and rigor](https://arxiv.org/pdf/2505.22904?), *arXiv preprint*, arXiv:2505.22904 **2025**
