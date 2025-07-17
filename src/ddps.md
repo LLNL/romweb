@@ -11,13 +11,13 @@ Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-July 11th, 10 AM | [Raphael Pestourie](https://www.raphaelpestourie.com/) | GeorgiaTech | Input-space Scientific machine learning for PDE-constrained optimization of geometries | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m40d5dd6c81768ae09a499b074baf8a0a)
 Aug 15th, 10 AM | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington |  TBD | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m060e79ee760d61fa4f8740bfb79bfcc5)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2025
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+July 11th | [Raphael Pestourie](https://www.raphaelpestourie.com/) | GeorgiaTech | Input-space Scientific machine learning for PDE-constrained optimization of geometries | [link](https://youtu.be/m_BQ6A8M8Nw)
 June 5th | [Alessandro Alla](http://www.alessandroalla.com/) | Universita di Roma |  Data-Driven Algorithms for Online Identification and Control of Partial Differential Equations | [link](https://www.youtube.com/watch?v=IxDLMtJZCw0)
 May 30th | [Gábor Csányi](https://www.eng.cam.ac.uk/profiles/gc121) | University of Cambridge | Foundation models for materials chemistry | [link](https://www.youtube.com/watch?v=c9Y1RIJuJ8Y)
 May 29th | [Mandela Quashie](https://directory.natsci.msu.edu/directory/Profiles/Person/101022) | Michigan State University | Smarter Particles for Smarter Plasma Simulations: A Moment-Enhanced PIC Framework | [link]()
