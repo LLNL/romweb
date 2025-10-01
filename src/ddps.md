@@ -11,12 +11,14 @@ Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
+Oct. 2nd 10am | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1fc64524a0bc435f22d5b84251b58dcc)
+Oct. 23rd 10am | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2025
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
-Aug 22th | [Siddhartha Mishra](https://camlab.ethz.ch/the-group/group-head.html) | ETH Zurich | AI for data-driven simulation in Physics | [link]()
+Aug 22nd | [Siddhartha Mishra](https://camlab.ethz.ch/the-group/group-head.html) | ETH Zurich | AI for data-driven simulation in Physics | [link]()
 Aug 15th | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington | Structure-Preserving Particle Method for Collisional Plasmas | [link](https://youtu.be/arPwGVsr2JE?si=ng1Kn8WplSQHW-gP)
 July 11th | [Raphael Pestourie](https://www.raphaelpestourie.com/) | GeorgiaTech | Input-space Scientific machine learning for PDE-constrained optimization of geometries | [link](https://youtu.be/m_BQ6A8M8Nw)
 June 5th | [Alessandro Alla](http://www.alessandroalla.com/) | Universita di Roma |  Data-Driven Algorithms for Online Identification and Control of Partial Differential Equations | [link](https://www.youtube.com/watch?v=IxDLMtJZCw0)
