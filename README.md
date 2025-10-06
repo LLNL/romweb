@@ -6,7 +6,7 @@ To make changes to the website:
 
 - use MkDocs v1.0.4 with Markdown v2.6.8, PyYAML v3.13 and futures v3.3.0, e.g.
   * `pip install --upgrade --user mkdocs==1.0.4`
-  * `pip install --upgrade --user Markdown==2.6.8`
+  * `pip install --upgrade --user Markdown>=3.5`
   * `pip install --upgrade --user PyYAML==3.13`
   * `pip install --upgrade --user futures==3.3.0`
 - clone this repo,
