@@ -13,6 +13,7 @@ When           | Speaker        |  Institution      | Title                     
 -------------- | -------------- | ----------------- | ----------------------------- | -----
 Oct. 2nd 10am | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1fc64524a0bc435f22d5b84251b58dcc)
 Oct. 23rd 10am | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | TBD | [link]()
+Oct. 30th 10am | [Nan Chen](https://people.math.wisc.edu/~nchen29/) | University of Wisconsin-Madison | Bridging Models and Data: From Traditional Assimilation to Bridging Model Hierarchies, Causal Inference, and Digital Twins | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcfcc43be72c673dee8af3d0ef7465d54)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2025
