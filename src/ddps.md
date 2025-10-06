@@ -11,6 +11,8 @@ Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
+Oct. 2nd 10am | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m1fc64524a0bc435f22d5b84251b58dcc)
+Oct. 23rd 10am | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2025
