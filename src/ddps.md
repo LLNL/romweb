@@ -11,13 +11,13 @@ Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by 
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct 23rd 10am | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | Scientific Machine Learning: From Physics-Informed to Data-Driven | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=m82062c675cf6e21eab507ac1c68b3d19)
-Oct 30th 10am | [Nan Chen](https://people.math.wisc.edu/~nchen29/) | University of Wisconsin-Madison | Bridging Models and Data: From Traditional Assimilation to Bridging Model Hierarchies, Causal Inference, and Digital Twins | [link](https://llnlfed.webex.com/llnlfed/j.php?MTID=mcfcc43be72c673dee8af3d0ef7465d54)
+Oct 30th 11am | [Nan Chen](https://people.math.wisc.edu/~nchen29/) | University of Wisconsin-Madison | Bridging Models and Data: From Traditional Assimilation to Bridging Model Hierarchies, Causal Inference, and Digital Twins | [link](ihttps://llnlfed.webex.com/llnlfed/j.php?MTID=m54647e3719c89c970f06b9f5f3c36116)
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2025
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Oct 23rd | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | Scientific Machine Learning: From Physics-Informed to Data-Driven | [link]()
 Oct 2nd | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link]()
 Aug 22th | [Siddhartha Mishra](https://camlab.ethz.ch/the-group/group-head.html) | ETH Zurich | AI for data-driven simulation in Physics | [link](https://youtu.be/DQtVhjGjAmA)
 Aug 15th | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington | Structure-Preserving Particle Method for Collisional Plasmas | [link](https://youtu.be/arPwGVsr2JE?si=ng1Kn8WplSQHW-gP)
