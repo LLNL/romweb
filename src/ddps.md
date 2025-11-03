@@ -8,15 +8,21 @@
 # DDPS Webinar (_in California time_)
 Join our engaging DDPS (Data-Driven Physical Simulations) seminars organized by the libROM team at Lawrence Livermore National Laboratory ( https://www.librom.net/ddps.html ). Held weekly—or occasionally bi-weekly on Thursdays or Fridays—these webinars spotlight how emerging machine learning and AI methods are transforming computational science and physical simulation. Our sessions cover cutting-edge topics such as deep learning for simulation, generative models, and innovative data assimilation techniques, alongside traditional modeling and advanced computational approaches applied to domains like fluid dynamics, plasma physics, and beyond. Whether you're interested in presenting a talk, recommending a speaker, or joining our vibrant DDPS community, please contact choi15@llnl.gov or cheung26@llnl.gov for further details or to be added to our email list.
 
+## Scheduled Talks in 2026
+When           | Speaker        |  Institution      | Title                         | WebEx
+-------------- | -------------- | ----------------- | ----------------------------- | -----
+January 29 | [Su Jiang](https://cee.engineering.cmu.edu/directory/bios/jiang-su.html) | Carnegie Mellon University | TBD | [link]()
+
 ## Scheduled Talks in 2025
 When           | Speaker        |  Institution      | Title                         | WebEx
 -------------- | -------------- | ----------------- | ----------------------------- | -----
-Oct 30th 11am | [Nan Chen](https://people.math.wisc.edu/~nchen29/) | University of Wisconsin-Madison | Bridging Models and Data: From Traditional Assimilation to Bridging Model Hierarchies, Causal Inference, and Digital Twins | [link](ihttps://llnlfed.webex.com/llnlfed/j.php?MTID=m54647e3719c89c970f06b9f5f3c36116)
+Dec 4 | [Michael Shields](https://engineering.jhu.edu/faculty/michael-shields/) | Johns Hopkins University | TBD | [link]()
 <!--- TBD | [Karen Veroy-Grepl](https://www.tue.nl/en/research/researchers/karen-veroy-grepl/) | Eindhoven University | TBD | [link]() -->
 
 ## Past Talks in 2025
 Date      | Speaker        |  Institution      | Title                         | YouTube
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
+Oct 30th | [Nan Chen](https://people.math.wisc.edu/~nchen29/) | University of Wisconsin-Madison | Bridging Models and Data: From Traditional Assimilation to Bridging Model Hierarchies, Causal Inference, and Digital Twins | [link]()
 Oct 23rd | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | Scientific Machine Learning: From Physics-Informed to Data-Driven | [link]()
 Oct 2nd | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link]()
 Aug 22th | [Siddhartha Mishra](https://camlab.ethz.ch/the-group/group-head.html) | ETH Zurich | AI for data-driven simulation in Physics | [link](https://youtu.be/DQtVhjGjAmA)
