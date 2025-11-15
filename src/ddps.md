@@ -24,7 +24,7 @@ Date      | Speaker        |  Institution      | Title                         |
 ---------- | -------------- | ----------------- | ----------------------------- | ---------
 Oct 30th | [Nan Chen](https://people.math.wisc.edu/~nchen29/) | University of Wisconsin-Madison | Bridging Models and Data: From Traditional Assimilation to Bridging Model Hierarchies, Causal Inference, and Digital Twins | [link]()
 Oct 23rd | [Ulisses M. Braga-Neto](https://braganeto.engr.tamu.edu) | TAMU | Scientific Machine Learning: From Physics-Informed to Data-Driven | [link]()
-Oct 2nd | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link]()
+Oct 2nd | [Youngsoo Choi](https://people.llnl.gov/choi15) | LLNL | Defining Foundation Models for Computational Science: Toward Clarity and Rigor | [link](https://www.youtube.com/watch?v=pJE6R2QH1ss)
 Aug 22th | [Siddhartha Mishra](https://camlab.ethz.ch/the-group/group-head.html) | ETH Zurich | AI for data-driven simulation in Physics | [link](https://youtu.be/DQtVhjGjAmA)
 Aug 15th | [Jingwei Hu](https://jingweihu-math.github.io/webpage/) | University of Washington | Structure-Preserving Particle Method for Collisional Plasmas | [link](https://youtu.be/arPwGVsr2JE?si=ng1Kn8WplSQHW-gP)
 July 11th | [Raphael Pestourie](https://www.raphaelpestourie.com/) | GeorgiaTech | Input-space Scientific machine learning for PDE-constrained optimization of geometries | [link](https://youtu.be/m_BQ6A8M8Nw)
